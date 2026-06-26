@@ -4,6 +4,7 @@ import d from "../terminals/terminals-en.yaml";
 import Logon from "~/components/terminals/logon.vue";
 import Logoff from "~/components/terminals/logoff.vue";
 import WithArrows from "~/components/terminals/with-arrows.vue";
+import { LEVELS } from "~/lib/levels";
 
 const levels = (d as TerminalsFile).levels;
 
@@ -11,68 +12,155 @@ definePageMeta({
   layout: "term-en",
 });
 
+type State = "logon" | "unfinished" | "success" | "failure" | "logoff";
+
 const levelIndex = ref(0);
 const terminalIndex = ref(0);
-const status = ref<"logon" | "unfinished" | "success" | "failure" | "logoff">(
-  "logon",
-);
+const state = ref<State>("logon");
 const screenIndex = ref(0);
 
 const currentLevel = computed(() => levels[levelIndex.value]!);
 const currentTerminal = computed(
   () => currentLevel.value.terminals[terminalIndex.value]!,
 );
+
+function handlePrevTerminal() {
+  if (terminalIndex.value > 0) {
+    terminalIndex.value -= 1;
+  } else {
+    const prevLevelIndex = levelIndex.value - 1;
+    levelIndex.value -= prevLevelIndex;
+    terminalIndex.value = levels[prevLevelIndex]!.terminals.length - 1;
+  }
+}
+
+function handleNextTerminal() {
+  if (terminalIndex.value < currentLevel.value.terminals.length - 1) {
+    terminalIndex.value += 1;
+  } else {
+    levelIndex.value += 1;
+    terminalIndex.value = 0;
+  }
+}
+
+function handleNextScreen() {
+  switch (state.value) {
+    case "logon": {
+      state.value = "unfinished";
+      screenIndex.value = 0;
+      break;
+    }
+    case "unfinished": {
+      if (
+        screenIndex.value <
+        currentTerminal.value.states.unfinished.length - 1
+      ) {
+        screenIndex.value += 1;
+      } else {
+        screenIndex.value = 0;
+        if (currentTerminal.value.states.success) {
+          state.value = "success";
+        } else {
+          state.value = "logoff";
+        }
+      }
+      break;
+    }
+    case "success": {
+      if (
+        screenIndex.value <
+        currentTerminal.value.states.success!.length - 1
+      ) {
+        screenIndex.value += 1;
+      } else {
+        screenIndex.value = 0;
+        state.value = "logoff";
+      }
+      break;
+    }
+    case "failure": {
+      throw new Error("don't handle failure");
+    }
+    case "logoff": {
+      state.value = "logon";
+      handleNextTerminal();
+      break;
+    }
+  }
+}
 </script>
 
 <template>
   <div>
-    <h1>{{ currentLevel.name }}</h1>
-    <button
-      @click="
-        () => {
-          levelIndex -= 1;
-          terminalIndex = 0;
-          status = 'logon';
-          screenIndex = 0;
-        }
-      "
-    >
-      prev level
-    </button>
-    <button
-      @click="
-        () => {
-          levelIndex += 1;
-          terminalIndex = 0;
-          status = 'logon';
-          screenIndex = 0;
-        }
-      "
-    >
-      next level
-    </button>
+    <select :value="levelIndex">
+      <option
+        v-for="(level, index) in LEVELS"
+        :value="index"
+        :disabled="level.terminals === 0"
+      >
+        {{ index }}. {{ level.name }} ({{ level.terminals }})
+      </option>
+    </select>
   </div>
 
-  <Logon v-if="status === 'logon'" :text="currentTerminal.logon.text" />
+  <h2>Terminal #{{ terminalIndex + 1 }}</h2>
+
+  <Logon v-if="state === 'logon'" :text="currentTerminal.logon.text" />
   <WithArrows
-    v-if="status === 'unfinished'"
+    v-if="state === 'unfinished'"
     :text="currentTerminal.states.unfinished[screenIndex]!.text"
   />
   <WithArrows
-    v-if="status === 'success'"
+    v-if="state === 'success'"
     :text="currentTerminal.states.success![screenIndex]!.text"
   />
-  <WithArrows
-    v-if="status === 'failure'"
+  <!-- <WithArrows
+    v-if="state === 'failure'"
     :text="currentTerminal.states.failure![screenIndex]!.text"
-  />
-  <Logoff v-if="status === 'logoff'" :text="currentTerminal.logon.text" />
+  /> -->
+  <Logoff v-if="state === 'logoff'" :text="currentTerminal.logon.text" />
 
-  <div>
+  <div class="buttons">
     <button
       @click="
         () => {
-          status = 'logon';
+          terminalIndex -= 1;
+          state = 'logon';
+          screenIndex = 0;
+        }
+      "
+    >
+      &lt;&lt;&lt;
+    </button>
+
+    <button
+      @click="
+        () => {
+          handleNextScreen();
+        }
+      "
+    >
+      Return
+    </button>
+
+    <button
+      @click="
+        () => {
+          terminalIndex += 1;
+          state = 'logon';
+          screenIndex = 0;
+        }
+      "
+    >
+      &gt;&gt;&gt;
+    </button>
+  </div>
+
+  <!-- <div>
+    <button
+      @click="
+        () => {
+          state = 'logon';
           screenIndex = 0;
         }
       "
@@ -83,7 +171,7 @@ const currentTerminal = computed(
     <button
       @click="
         () => {
-          status = 'unfinished';
+          state = 'unfinished';
           screenIndex = 0;
         }
       "
@@ -115,7 +203,7 @@ const currentTerminal = computed(
       v-if="currentTerminal.states.success"
       @click="
         () => {
-          status = 'success';
+          state = 'success';
           screenIndex = 0;
         }
       "
@@ -127,7 +215,7 @@ const currentTerminal = computed(
       v-if="currentTerminal.states.failure"
       @click="
         () => {
-          status = 'failure';
+          state = 'failure';
         }
       "
     >
@@ -137,7 +225,7 @@ const currentTerminal = computed(
     <button
       @click="
         () => {
-          status = 'logoff';
+          state = 'logoff';
         }
       "
     >
@@ -145,7 +233,7 @@ const currentTerminal = computed(
     </button>
   </div>
 
-  <div v-if="status === 'unfinished'">
+  <div v-if="state === 'unfinished'">
     <button
       @click="
         () => {
@@ -171,7 +259,7 @@ const currentTerminal = computed(
       @click="
         () => {
           terminalIndex -= 1;
-          status = 'logon';
+          state = 'logon';
           screenIndex = 0;
         }
       "
@@ -182,39 +270,12 @@ const currentTerminal = computed(
       @click="
         () => {
           terminalIndex += 1;
-          status = 'logon';
+          state = 'logon';
           screenIndex = 0;
         }
       "
     >
       next terminal
     </button>
-  </div>
-  <!-- <Logon :text="terminal.logon.text" />
-  <WithArrows
-    v-for="unfinished in terminal.states.unfinished"
-    :text="unfinished.text"
-  />
-  <WithArrows v-for="success in terminal.states.success" :text="success.text" />
-  <WithArrows v-for="failure in terminal.states.failure" :text="failure.text" />
-  <Logoff :text="terminal.logon.text" /> -->
-  <!-- <ul
-    :style="{
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '0.5rem',
-    }"
-  >
-    <template v-for="level in data.levels.slice(0, 1)">
-      <ul
-        v-for="terminal in level.terminals"
-        :style="{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '0.5rem',
-          marginBottom: '1rem',
-        }"
-      ></ul>
-    </template>
-</ul> -->
+  </div> -->
 </template>
