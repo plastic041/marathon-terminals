@@ -11,14 +11,5 @@ body {
   color: var(--text-main);
 }
 
-.with-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
 .controls {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
