@@ -5,7 +5,7 @@ import {
   layoutWithLines,
   type LayoutLine,
 } from "@chenglou/pretext";
-import { undeco } from "~/lib/decoration";
+import { undeco, redeco } from "~/lib/decoration";
 
 const props = defineProps<{
   text: string;
@@ -23,7 +23,7 @@ function split(array: string[], size: number) {
 
 const lines = ref<LayoutLine[] | null>(null);
 
-onMounted(() => {
+function calculate() {
   const undecoed = undeco(props.text);
   const prepared = prepareWithSegments(undecoed, '16px "courier"', {
     whiteSpace: "pre-wrap",
@@ -31,6 +31,14 @@ onMounted(() => {
   const { lines: _lines } = layoutWithLines(prepared, 576.09, 20);
 
   lines.value = _lines;
+}
+
+onMounted(() => {
+  calculate();
+});
+
+watchEffect(() => {
+  calculate();
 });
 
 const chunks = computed(() => {
@@ -39,10 +47,11 @@ const chunks = computed(() => {
   }
 
   if (lines.value.length >= 18) {
-    const splitted = split(
+    const decoratedLines = redeco(
+      props.text,
       lines.value.map((line) => line.text),
-      18,
     );
+    const splitted = split(decoratedLines, 18);
     return splitted;
   }
 
@@ -50,15 +59,14 @@ const chunks = computed(() => {
 });
 
 const index = ref(0);
-const indexLength = computed(() => {
-  return (chunks.value.length % 18) - 1;
+const maxIndex = computed(() => {
+  return chunks.value.length - 1;
 });
 </script>
 
 <template>
   <div class="with-controls">
     <TextOnly :text="chunks[index]!" />
-    <TextOnly :text="props.text" />
     <div class="controls">
       <button
         :disabled="index <= 0"
@@ -70,19 +78,19 @@ const indexLength = computed(() => {
           }
         "
       >
-        prev
+        PgUp
       </button>
       <button
-        :disabled="index >= indexLength"
+        :disabled="index >= maxIndex"
         @click="
           () => {
-            if (index < indexLength) {
+            if (index < maxIndex) {
               index += 1;
             }
           }
         "
       >
-        next
+        PgDown
       </button>
     </div>
   </div>
