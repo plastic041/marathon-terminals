@@ -1,0 +1,40 @@
+.floors polygon {
+  stroke: none;
+}
+.poly {
+  /* plain floor (also hill / teleporter) */
+  fill: #002f00;
+}
+.poly-platform {
+  /* platform / door */
+  fill: #750000;
+}
+.poly-minor-ouch {
+  /* minor damage floor (M1 lava) */
+  fill: #4c1b00;
+}
+.poly-major-ouch {
+  /* major damage floor */
+  fill: #890089;
+}
+
+line {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.wall {
+  /* solid walls */
+  stroke: #00ff00;
+  stroke-width: 1.2;
+}
+.elevation {
+  /* steps / height changes */
+  stroke: #009c00;
+  stroke-width: 0.8;
+}
+
+.checkpoint {
+  /* #checkpoint goal markers */
+  fill: #ff0000;
+  stroke: none;
+}
