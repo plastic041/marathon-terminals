@@ -34,3 +34,13 @@ function escapeHtml(original: string): string {
 export function decoration(original: string): string {
   return bold(italic(underline(escapeHtml(original))));
 }
+
+export function undeco(original: string): string {
+  return original
+    .replaceAll("$B", "")
+    .replaceAll("$b", "")
+    .replaceAll("$I", "")
+    .replaceAll("$i", "")
+    .replaceAll("$U", "")
+    .replaceAll("$u", "");
+}

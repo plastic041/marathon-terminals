@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import TextOnly from "~/components/terminals/text-only.vue";
-import { prepareWithSegments, layoutWithLines } from "@chenglou/pretext";
+import {
+  prepareWithSegments,
+  layoutWithLines,
+  type LayoutLine,
+} from "@chenglou/pretext";
+import { undeco } from "~/lib/decoration";
 
 const props = defineProps<{
   text: string;
@@ -16,15 +21,16 @@ function split(array: string[], size: number) {
   return chunks;
 }
 
-const lines = ref<string[] | null>(null);
+const lines = ref<LayoutLine[] | null>(null);
 
 onMounted(() => {
-  const prepared = prepareWithSegments(props.text, '16px "courier"', {
+  const undecoed = undeco(props.text);
+  const prepared = prepareWithSegments(undecoed, '16px "courier"', {
     whiteSpace: "pre-wrap",
   });
   const { lines: _lines } = layoutWithLines(prepared, 576.09, 20);
 
-  lines.value = _lines.map((line) => line.text);
+  lines.value = _lines;
 });
 
 const chunks = computed(() => {
@@ -33,8 +39,10 @@ const chunks = computed(() => {
   }
 
   if (lines.value.length >= 18) {
-    const splitted = split(lines.value, 18);
-    console.log(splitted);
+    const splitted = split(
+      lines.value.map((line) => line.text),
+      18,
+    );
     return splitted;
   }
 
@@ -50,6 +58,7 @@ const indexLength = computed(() => {
 <template>
   <div class="with-controls">
     <TextOnly :text="chunks[index]!" />
+    <TextOnly :text="props.text" />
     <div class="controls">
       <button
         :disabled="index <= 0"
