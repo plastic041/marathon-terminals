@@ -1,8 +1,45 @@
+@font-face {
+  font-family: "ChicagoKare";
+  src: url("/ChicagoKare-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --text-main: #0f0;
   --text-info: #f00;
   --bg-info: #270000;
   --bg-main: #000;
+
+  --terminal-width: 62ch;
+}
+
+button,
+a {
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  padding: 2px 16px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: ChicagoKare, courier;
+}
+
+button:disabled,
+a:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+button:hover,
+a:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
 }
 
 body {
@@ -12,4 +49,18 @@ body {
 }
 
 .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--terminal-width);
+  margin-top: 1rem;
+}
+
+.scrollers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }

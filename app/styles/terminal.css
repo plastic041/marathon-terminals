@@ -2,7 +2,7 @@
   line-height: 1.25rem;
   font-size: 1rem;
   font-family: Courier, monospace;
-  width: 62ch;
+  width: var(--terminal-width);
   background-color: var(--bg-main);
 }
 

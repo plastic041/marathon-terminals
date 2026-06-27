@@ -1,3 +1,4 @@
+import type { RouteLocationRaw } from "vue-router";
 import type { Level } from "~/types/terminal";
 
 export type TerminalState =
@@ -7,11 +8,28 @@ export type TerminalState =
   | "failure"
   | "logoff";
 
+type RouteInfo = {
+  levelIndex?: number;
+  terminalIndex?: number;
+  state?: TerminalState;
+  screenIndex?: number;
+  scroll?: number;
+};
+
+/**
+ * /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number.
+ */
 export function useTerminals(levels: Level[]) {
-  const levelIndex = ref(0);
-  const terminalIndex = ref(0);
-  const state = ref<TerminalState>("logon");
-  const screenIndex = ref(0);
+  const route = useRoute();
+
+  const lang = computed(() => route.params.lang ?? "en");
+  const levelIndex = computed(() => Number(route.params.levelIndex));
+  const terminalIndex = computed(() => Number(route.params.terminalIndex));
+  const state = computed<TerminalState>(
+    () => (route.query.state as TerminalState) || "logon",
+  );
+  const screenIndex = computed(() => Number(route.query.screenindex ?? 0));
+  const scroll = computed(() => Number(route.query.scroll ?? 0));
 
   const currentLevel = computed(() => levels[levelIndex.value]!);
   const currentTerminal = computed(
@@ -28,85 +46,132 @@ export function useTerminals(levels: Level[]) {
     return "";
   });
 
-  const scroller = useScroller(terminalText);
+  const scroller = useScroller(terminalText, scroll);
 
-  function prevTerminal() {
-    screenIndex.value = 0;
+  function makeRoute(info: RouteInfo): RouteLocationRaw {
+    return {
+      path: `/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
+      query: {
+        state: info.state ?? state.value,
+        screenindex: info.screenIndex ?? screenIndex.value,
+        scroll: info.scroll ?? scroll.value,
+      },
+    };
+  }
+
+  function getPrevTerminalRouteInfo(): RouteInfo {
     if (terminalIndex.value > 0) {
-      terminalIndex.value -= 1;
-    } else {
-      const prevLevelIndex = levelIndex.value - 1;
-      levelIndex.value -= prevLevelIndex;
-      terminalIndex.value = levels[prevLevelIndex]!.terminals.length - 1;
+      return { terminalIndex: terminalIndex.value - 1 };
     }
+    const prevLevelIndex = levelIndex.value - 1;
+    return {
+      levelIndex: prevLevelIndex,
+      terminalIndex: levels[prevLevelIndex]!.terminals.length - 1,
+    };
   }
 
-  function nextTerminal() {
-    screenIndex.value = 0;
+  function getNextTerminalRouteInfo(): RouteInfo {
     if (terminalIndex.value < currentLevel.value.terminals.length - 1) {
-      terminalIndex.value += 1;
-    } else {
-      levelIndex.value += 1;
-      terminalIndex.value = 0;
+      return { terminalIndex: terminalIndex.value + 1 };
     }
+    return { levelIndex: levelIndex.value + 1, terminalIndex: 0 };
   }
 
-  function nextScreen() {
+  function levelLink(dataIndex: number): RouteLocationRaw {
+    return makeRoute({
+      levelIndex: dataIndex,
+      terminalIndex: 0,
+      state: "logon",
+      screenIndex: 0,
+      scroll: 0,
+    });
+  }
+
+  const prevTerminalLink = computed<RouteLocationRaw | undefined>(() => {
+    if (terminalIndex.value === 0 && levelIndex.value === 0) {
+      return undefined;
+    }
+    return makeRoute({
+      ...getPrevTerminalRouteInfo(),
+      state: "logon",
+      screenIndex: 0,
+      scroll: 0,
+    });
+  });
+
+  const nextTerminalLink = computed<RouteLocationRaw | undefined>(() => {
+    if (terminalIndex.value === 2 && levelIndex.value === 20) {
+      return undefined;
+    }
+    return makeRoute({
+      ...getNextTerminalRouteInfo(),
+      state: "logon",
+      screenIndex: 0,
+      scroll: 0,
+    });
+  });
+
+  const nextScreenLink = computed<RouteLocationRaw>(() => {
     switch (state.value) {
       case "logon": {
-        state.value = "unfinished";
-        screenIndex.value = 0;
-        break;
+        return makeRoute({ state: "unfinished", screenIndex: 0, scroll: 0 });
       }
       case "unfinished": {
         if (
           screenIndex.value <
           currentTerminal.value.states.unfinished.length - 1
         ) {
-          screenIndex.value += 1;
-        } else {
-          screenIndex.value = 0;
-          if (currentTerminal.value.states.success) {
-            state.value = "success";
-          } else {
-            state.value = "logoff";
-          }
+          return makeRoute({ screenIndex: screenIndex.value + 1, scroll: 0 });
         }
-        break;
+        if (currentTerminal.value.states.success) {
+          return makeRoute({ state: "success", screenIndex: 0, scroll: 0 });
+        }
+        return makeRoute({ state: "logoff", screenIndex: 0, scroll: 0 });
       }
       case "success": {
         if (
           screenIndex.value <
           currentTerminal.value.states.success!.length - 1
         ) {
-          screenIndex.value += 1;
-        } else {
-          screenIndex.value = 0;
-          state.value = "logoff";
+          return makeRoute({ screenIndex: screenIndex.value + 1, scroll: 0 });
         }
-        break;
+        return makeRoute({ state: "logoff", screenIndex: 0, scroll: 0 });
       }
       case "failure": {
         throw new Error("don't handle failure");
       }
       case "logoff": {
-        state.value = "logon";
-        nextTerminal();
-        break;
+        return makeRoute({
+          ...getNextTerminalRouteInfo(),
+          state: "logon",
+          screenIndex: 0,
+          scroll: 0,
+        });
       }
     }
-  }
+  });
+
+  const scrollPrevLink = computed<RouteLocationRaw>(() =>
+    makeRoute({ scroll: scroll.value - 1 }),
+  );
+  const scrollNextLink = computed<RouteLocationRaw>(() =>
+    makeRoute({ scroll: scroll.value + 1 }),
+  );
 
   return {
     levelIndex,
     terminalIndex,
     state,
     screenIndex,
+    scroll,
     currentLevel,
     currentTerminal,
     scroller,
-    prevTerminal,
-    nextTerminal,
-    nextScreen,
+    levelLink,
+    prevTerminalLink,
+    nextTerminalLink,
+    nextScreenLink,
+    scrollPrevLink,
+    scrollNextLink,
   };
 }

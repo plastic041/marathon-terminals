@@ -15,9 +15,11 @@ function split(array: string[], size: number) {
   return chunks;
 }
 
-export function useScroller(text: MaybeRefOrGetter<string>) {
+export function useScroller(
+  text: MaybeRefOrGetter<string>,
+  index: MaybeRefOrGetter<number>,
+) {
   const lines = ref<LayoutLine[] | null>(null);
-  const index = ref(0);
 
   function calculate() {
     const value = toValue(text);
@@ -49,29 +51,14 @@ export function useScroller(text: MaybeRefOrGetter<string>) {
   });
 
   const maxIndex = computed(() => chunks.value.length - 1);
-  const current = computed(() => chunks.value[index.value] ?? "");
+  const current = computed(() => {
+    const clamped = Math.min(Math.max(toValue(index), 0), maxIndex.value);
+    return chunks.value[clamped] ?? "";
+  });
 
-  function prev() {
-    if (index.value > 0) {
-      index.value -= 1;
-    }
-  }
-
-  function next() {
-    if (index.value < maxIndex.value) {
-      index.value += 1;
-    }
-  }
-
-  watch(
-    () => toValue(text),
-    () => {
-      index.value = 0;
-      calculate();
-    },
-  );
+  watch(() => toValue(text), calculate);
 
   onMounted(calculate);
 
-  return { chunks, current, index, maxIndex, prev, next };
+  return { chunks, current, maxIndex };
 }
