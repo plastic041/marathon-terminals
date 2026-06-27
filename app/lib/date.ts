@@ -1,3 +1,5 @@
+import { Temporal } from "temporal-polyfill";
+
 const BASE = Temporal.PlainDateTime.from("1995-08-24T22:42:17");
 
 export function getGameCurrentDateTime(
