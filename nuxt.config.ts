@@ -15,7 +15,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      viewport: "",
+      // Fix layout width to the terminal width (64ch ≈ 614px at 16px Courier)
+      // so mobile browsers zoom the whole page to fill the screen → terminal = 100% width.
+      viewport: "width=615",
     },
   },
 });

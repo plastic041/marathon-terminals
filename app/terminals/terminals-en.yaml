@@ -3,10 +3,10 @@ levels:
     name: Arrival
     mapSvg: maps/00_Arrival.svg
     viewBox:
-      - 3128
-      - -5343
-      - 30663
-      - 36439
+      - 3359
+      - 1688
+      - 30200
+      - 29176
     terminals:
       - index: 0
         resourceId: 1000
@@ -41,21 +41,21 @@ levels:
                 index: 0
                 cx: 8519
                 cy: 8120
-                r: 405
+                r: 336
               text: This is where you are now.  From here you can explore the rest of the Hangar area, although not all of the doors on the level are functioning.
             - type: checkpoint
               checkpoint:
                 index: 3
                 cx: 30486
                 cy: 5964
-                r: 405
+                r: 336
               text: There is a pattern buffer at this location.
             - type: checkpoint
               checkpoint:
                 index: 1
                 cx: 22176
                 cy: 18944
-                r: 405
+                r: 336
               text: There is a jump pad at this location.  Activate the terminal to leave the Hangar area.
           success: null
           failure: null
@@ -117,7 +117,7 @@ levels:
                 index: 2
                 cx: 31232
                 cy: 24000
-                r: 405
+                r: 336
               text: |-
                 $B<Alert>  $b
                 Security Breach at <294.2.577.456>

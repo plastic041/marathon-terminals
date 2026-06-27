@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useElementSize } from "@vueuse/core";
 import Map from "~/components/map.vue";
 import Renderer from "~/components/terminals/renderer.vue";
 import { decoration } from "~/lib/decoration";
@@ -10,26 +11,20 @@ const props = defineProps<{
   checkpoint: Checkpoint;
 }>();
 
-const SCALE = 1.2;
+const WORLD_PER_PX = 81;
 
-const fraction = computed(() => {
-  const [minX, minY, width, height] = props.level.viewBox!;
-  return [
-    (props.checkpoint.cx! - minX) / width,
-    (props.checkpoint.cy! - minY) / height,
-  ] as const;
-});
+const mapWrapper = ref<HTMLElement | null>(null);
+const { width, height } = useElementSize(mapWrapper);
 
-const mapTransform = computed(() => {
-  const [fx, fy] = fraction.value;
-  const tx = (0.5 - fx) * 100;
-  const ty = (0.5 - fy) * 100;
-  return `translate(${tx}%, ${ty}%) scale(${SCALE})`;
-});
-
-const transformOrigin = computed(() => {
-  const [fx, fy] = fraction.value;
-  return `${fx * 100}% ${fy * 100}%`;
+const zoomViewBox = computed(() => {
+  if (!width.value || !height.value) {
+    return undefined;
+  }
+  const worldW = width.value * WORLD_PER_PX;
+  const worldH = height.value * WORLD_PER_PX;
+  const minX = props.checkpoint.cx! - worldW / 2;
+  const minY = props.checkpoint.cy! - worldH / 2;
+  return `${minX} ${minY} ${worldW} ${worldH}`;
 });
 
 const checkpointCss = computed(
@@ -43,14 +38,8 @@ const checkpointCss = computed(
   <Renderer type="reading">
     <component is="style">{{ checkpointCss }}</component>
     <div class="terminal-map-wrapper">
-      <div class="map-wrapper">
-        <Map
-          :index="level.index"
-          :style="{
-            transform: mapTransform,
-            transformOrigin: transformOrigin,
-          }"
-        />
+      <div ref="mapWrapper" class="map-wrapper">
+        <Map :index="level.index" :viewBox="zoomViewBox" />
       </div>
       <div v-html="decoration(props.text)" />
     </div>

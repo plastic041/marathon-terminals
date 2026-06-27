@@ -53,7 +53,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: var(--terminal-width);
+  width: calc(var(--terminal-width) + 2ch);
   margin-top: 1rem;
 }
 
@@ -63,4 +63,8 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+}
+
+select {
+  width: 100%;
 }

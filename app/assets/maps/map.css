@@ -1,0 +1,14 @@
+/* Marathon overhead-map colours (matches the in-game automap). */
+svg { background: #000000; }
+
+.floors polygon  { stroke: none; }
+.poly            { fill: #002f00; }  /* plain floor (also hill / teleporter) */
+.poly-platform   { fill: #750000; }  /* platform / door */
+.poly-minor-ouch { fill: #4c1b00; }  /* minor damage floor (M1 lava) */
+.poly-major-ouch { fill: #890089; }  /* major damage floor */
+
+line       { fill: none; vector-effect: non-scaling-stroke; }
+.wall      { stroke: #00ff00; stroke-width: 1.2; }  /* solid walls */
+.elevation { stroke: #009c00; stroke-width: 0.8; }  /* steps / height changes */
+
+.checkpoint { fill: #ff0000; stroke: none; }  /* #checkpoint goal markers */

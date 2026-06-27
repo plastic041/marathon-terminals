@@ -1,7 +1,6 @@
 <?xml-stylesheet type="text/css" href="map.css"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="3128 -5343 30663 36439">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3359 1688 30200 29176">
 <g class="floors">
-<polygon class="poly" points="24707,8686 25731,8686 26094,9049 26085,10035 25725,10395 25200,10395 24165,10395"/>
 <polygon class="poly" points="24090,6000 24439,5656 24720,6096 24457,6361"/>
 <polygon class="poly" points="24439,5656 24816,5280 24976,5840 24720,6096"/>
 <polygon class="poly" points="24457,6361 24720,6096 24976,5840 26976,5840 26512,8560 24768,8560"/>
@@ -60,19 +59,13 @@
 <polygon class="poly" points="6473,7350 7208,6624 8281,7709 7559,8436"/>
 <polygon class="poly" points="7559,8436 8277,9154 7552,9878 6834,9160"/>
 <polygon class="poly" points="5848,9440 6834,9160 7552,9878 7064,10138 6085,10435"/>
-<polygon class="poly" points="4738,6519 5824,7605 5940,7740 5690,9400 4800,9600"/>
 <polygon class="poly" points="4738,6519 4815,6435 5904,7515 5824,7605"/>
 <polygon class="poly" points="4815,6435 4663,6263 5118,5807 5657,5267 6473,7350 6112,7712 5904,7515"/>
 <polygon class="poly" points="5566,5176 5657,5267 5118,5807 5023,5718"/>
 <polygon class="poly" points="5657,5267 6111,4814 6624,5312 7168,5848 7558,6261 7208,6624 6473,7350"/>
 <polygon class="poly" points="6624,5312 6705,5247 7245,5787 7168,5848"/>
-<polygon class="poly" points="6253,4779 8498,4187 9024,6144 7622,6144 7245,5787 6705,5247"/>
-<polygon class="poly" points="8498,4187 9410,3946 9760,5408 9506,5665 9212,5960 9024,6144"/>
 <polygon class="poly" points="9094,7285 9094,6261 9303,6051 9597,5756 9818,5536 10841,8008 9817,8008"/>
 <polygon class="poly" points="9818,5536 10152,5536 11424,5536 11866,5536 11865,8008 10841,8008"/>
-<polygon class="poly" points="9410,3946 12176,3218 12504,4724 11808,5408 11424,5408 10144,5408 9760,5408"/>
-<polygon class="poly" points="12176,3218 13416,2892 13258,3218 13089,3563 12979,3777"/>
-<polygon class="poly" points="12176,3218 12979,3777 12640,4464 12504,4724"/>
 <polygon class="poly" points="13258,3218 13390,3257 13210,3605 13089,3563"/>
 <polygon class="poly" points="12979,3777 13105,3810 12748,4502 12640,4464"/>
 <polygon class="poly" points="13105,3810 13210,3605 13390,3257 14949,4654 14738,5120"/>
@@ -122,8 +115,6 @@
 <polygon class="poly" points="20205,16479 22272,17152 22272,18432 22016,18688 21504,18688 20205,18432"/>
 <polygon class="poly" points="20205,18432 21504,18688 21504,19200 21248,19456 20736,19456 20224,18944"/>
 <polygon class="poly" points="22272,18432 22528,18432 22528,19456 22272,19456"/>
-<polygon class="poly" points="21637,6851 21637,5630 23955,5895 23955,6960 23955,7800 21637,8899"/>
-<polygon class="poly" points="23955,7800 24465,8400 24707,8686 24165,10395 23670,10395 22650,10395 21630,10395 21637,8899"/>
 <polygon class="poly" points="24090,6972 24090,6000 24457,6361 24768,8560 24556,8330 24090,7776"/>
 <polygon class="poly" points="8864,11712 8992,11712 8992,16480 8864,16480"/>
 <polygon class="poly" points="30564,5477 30736,5472 30736,6496 30564,6489"/>
@@ -252,8 +243,6 @@
 <polygon class="poly" points="26206,29051 26816,29024 26762,29561 26250,29561"/>
 <polygon class="poly" points="16640,22528 16896,22528 16896,23040 16640,23040"/>
 <polygon class="poly" points="22528,15360 23040,15360 23040,15616 22528,15616"/>
-<polygon class="poly" points="21632,416 23808,384 23955,5895 21637,5630"/>
-<polygon class="poly" points="25088,-3808 30688,-3808 29540,5160 28020,5160 26980,5160 25460,5160"/>
 </g>
 <g class="elevation">
 <line x1="6705" y1="5247" x2="7245" y2="5787"/>
@@ -911,9 +900,9 @@
 <line x1="28020" y1="5160" x2="26980" y2="5160"/>
 </g>
 <g class="checkpoints">
-<circle class="checkpoint" data-cp="0" cx="8519" cy="8120" r="405"/>
-<circle class="checkpoint" data-cp="1" cx="22176" cy="18944" r="405"/>
-<circle class="checkpoint" data-cp="2" cx="31232" cy="24000" r="405"/>
-<circle class="checkpoint" data-cp="3" cx="30486" cy="5964" r="405"/>
+<circle class="checkpoint" data-cp="0" cx="8519" cy="8120" r="336"/>
+<circle class="checkpoint" data-cp="1" cx="22176" cy="18944" r="336"/>
+<circle class="checkpoint" data-cp="2" cx="31232" cy="24000" r="336"/>
+<circle class="checkpoint" data-cp="3" cx="30486" cy="5964" r="336"/>
 </g>
 </svg>
