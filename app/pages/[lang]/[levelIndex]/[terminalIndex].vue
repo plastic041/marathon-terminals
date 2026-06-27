@@ -88,7 +88,8 @@ const {
       <button v-else disabled>PgDown</button>
     </div>
 
-    <NuxtLink :to="nextScreenLink">Return</NuxtLink>
+    <NuxtLink v-if="nextScreenLink" :to="nextScreenLink">Return</NuxtLink>
+    <button v-else disabled>Return</button>
 
     <NuxtLink v-if="nextTerminalLink" :to="nextTerminalLink"
       >&gt;&gt;&gt;</NuxtLink

@@ -120,10 +120,22 @@ export function useTerminals(levels: Level[]) {
     });
   });
 
-  const nextScreenLink = computed<RouteLocationRaw>(() => {
+  const nextScreenLink = computed<RouteLocationRaw | null>(() => {
+    if (
+      levelIndex.value === 20 &&
+      terminalIndex.value === 2 &&
+      state.value === "logoff"
+    ) {
+      return null;
+    }
+
     switch (state.value) {
       case "logon": {
-        return makeRoute({ state: "unfinished", screenIndex: 0, scroll: 0 });
+        if (terminal.value.states.unfinished.length > 0) {
+          return makeRoute({ state: "unfinished", screenIndex: 0, scroll: 0 });
+        } else {
+          return makeRoute({ state: "success", screenIndex: 0, scroll: 0 });
+        }
       }
       case "unfinished": {
         if (screenIndex.value < terminal.value.states.unfinished.length - 1) {
