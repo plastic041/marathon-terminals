@@ -16,9 +16,7 @@ type RouteInfo = {
   scroll?: number;
 };
 
-/**
- * /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number.
- */
+/** /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number */
 export function useTerminals(levels: Level[]) {
   const route = useRoute();
 
