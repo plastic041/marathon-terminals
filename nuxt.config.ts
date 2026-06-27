@@ -10,4 +10,9 @@ export default defineNuxtConfig({
       include: ["@chenglou/pretext"],
     },
   },
+  app: {
+    head: {
+      viewport: "",
+    },
+  },
 });
