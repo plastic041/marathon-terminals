@@ -15,9 +15,29 @@ function split(array: string[], size: number) {
   return chunks;
 }
 
+const CH63 = 595.3;
+const CH30 = 288;
+
+const WIDTH = {
+  unfinished: CH63,
+  success: CH63,
+  failure: CH63,
+  information: CH63,
+  briefing: CH63,
+  checkpoint: CH30,
+};
+
 export function useScroller(
   text: MaybeRefOrGetter<string>,
   index: MaybeRefOrGetter<number>,
+  type: MaybeRefOrGetter<
+    | "unfinished"
+    | "success"
+    | "failure"
+    | "information"
+    | "briefing"
+    | "checkpoint"
+  >,
 ) {
   const lines = ref<LayoutLine[] | null>(null);
 
@@ -27,7 +47,11 @@ export function useScroller(
     const prepared = prepareWithSegments(undecoed, '16px "courier"', {
       whiteSpace: "pre-wrap",
     });
-    const { lines: _lines } = layoutWithLines(prepared, 576.09, 20);
+    const { lines: _lines } = layoutWithLines(
+      prepared,
+      WIDTH[toValue(type)],
+      20,
+    );
 
     lines.value = _lines;
   }
@@ -39,15 +63,21 @@ export function useScroller(
       return [value];
     }
 
-    if (lines.value.length >= 18) {
-      const decoratedLines = redeco(
-        value,
-        lines.value.map((line) => line.text),
-      );
-      return split(decoratedLines, 18);
-    }
+    const decoratedLines = redeco(
+      value,
+      lines.value.map((line) => line.text),
+    );
+    return split(decoratedLines, 18);
 
-    return [value];
+    // if (lines.value.length >= 18) {
+    //   const decoratedLines = redeco(
+    //     value,
+    //     lines.value.map((line) => line.text),
+    //   );
+    //   return split(decoratedLines, 18);
+    // }
+
+    // return [value];
   });
 
   const maxIndex = computed(() => chunks.value.length - 1);

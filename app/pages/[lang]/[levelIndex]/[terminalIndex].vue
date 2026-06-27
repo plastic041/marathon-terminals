@@ -1,10 +1,15 @@
 <script setup lang="ts">
-import type { TerminalsFile } from "~/types/terminal";
+import type {
+  Checkpoint,
+  CheckpointGroup,
+  TerminalsFile,
+} from "~/types/terminal";
 import d from "~/terminals/terminals-en.yaml";
 import Logon from "~/components/terminals/logon.vue";
 import Logoff from "~/components/terminals/logoff.vue";
 import TextOnly from "~/components/terminals/text-only.vue";
 import { LEVELS } from "~/lib/levels";
+import WithMap from "~/components/terminals/with-map.vue";
 
 const levels = (d as TerminalsFile).levels;
 
@@ -15,9 +20,12 @@ definePageMeta({
 const {
   levelIndex,
   terminalIndex,
+  screenIndex,
   state,
   scroll,
-  currentTerminal,
+  level,
+  terminal,
+  groupType,
   scroller: { current: scrollerCurrent, maxIndex: scrollerMaxIndex },
   levelLink,
   prevTerminalLink,
@@ -50,12 +58,19 @@ const {
 
   <h2>Terminal #{{ terminalIndex + 1 }}</h2>
 
-  <Logon v-if="state === 'logon'" :text="currentTerminal.logon.text" />
-  <TextOnly
-    v-if="state === 'unfinished' || state === 'success'"
-    :text="scrollerCurrent"
-  />
-  <Logoff v-if="state === 'logoff'" :text="currentTerminal.logon.text" />
+  <Logon v-if="state === 'logon'" :text="terminal.logon.text" />
+  <template v-if="state === 'unfinished' || state === 'success'">
+    <WithMap
+      v-if="groupType === 'checkpoint'"
+      :text="scrollerCurrent"
+      :level="level"
+      :checkpoint="
+        (terminal.states[state]![screenIndex]! as CheckpointGroup).checkpoint
+      "
+    />
+    <TextOnly v-else :text="scrollerCurrent" />
+  </template>
+  <Logoff v-if="state === 'logoff'" :text="terminal.logon.text" />
 
   <div class="controls">
     <NuxtLink v-if="prevTerminalLink" :to="prevTerminalLink"

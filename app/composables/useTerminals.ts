@@ -29,22 +29,33 @@ export function useTerminals(levels: Level[]) {
   const screenIndex = computed(() => Number(route.query.screenindex ?? 0));
   const scroll = computed(() => Number(route.query.scroll ?? 0));
 
-  const currentLevel = computed(() => levels[levelIndex.value]!);
-  const currentTerminal = computed(
-    () => currentLevel.value.terminals[terminalIndex.value]!,
-  );
+  const level = computed(() => levels[levelIndex.value]!);
+  const terminal = computed(() => level.value.terminals[terminalIndex.value]!);
 
-  const terminalText = computed(() => {
+  const screenText = computed(() => {
     if (state.value === "unfinished") {
-      return currentTerminal.value.states.unfinished[screenIndex.value]!.text;
+      return terminal.value.states.unfinished[screenIndex.value]!.text;
     }
     if (state.value === "success") {
-      return currentTerminal.value.states.success![screenIndex.value]!.text;
+      return terminal.value.states.success![screenIndex.value]!.text;
     }
     return "";
   });
 
-  const scroller = useScroller(terminalText, scroll);
+  const groupType = computed(() => {
+    switch (state.value) {
+      case "unfinished":
+      case "success":
+      case "failure": {
+        return terminal.value.states[state.value]![screenIndex.value]!.type;
+      }
+      default: {
+        return "unfinished";
+      }
+    }
+  });
+
+  const scroller = useScroller(screenText, scroll, groupType);
 
   function makeRoute(info: RouteInfo): RouteLocationRaw {
     return {
@@ -69,7 +80,7 @@ export function useTerminals(levels: Level[]) {
   }
 
   function getNextTerminalRouteInfo(): RouteInfo {
-    if (terminalIndex.value < currentLevel.value.terminals.length - 1) {
+    if (terminalIndex.value < level.value.terminals.length - 1) {
       return { terminalIndex: terminalIndex.value + 1 };
     }
     return { levelIndex: levelIndex.value + 1, terminalIndex: 0 };
@@ -115,22 +126,16 @@ export function useTerminals(levels: Level[]) {
         return makeRoute({ state: "unfinished", screenIndex: 0, scroll: 0 });
       }
       case "unfinished": {
-        if (
-          screenIndex.value <
-          currentTerminal.value.states.unfinished.length - 1
-        ) {
+        if (screenIndex.value < terminal.value.states.unfinished.length - 1) {
           return makeRoute({ screenIndex: screenIndex.value + 1, scroll: 0 });
         }
-        if (currentTerminal.value.states.success) {
+        if (terminal.value.states.success) {
           return makeRoute({ state: "success", screenIndex: 0, scroll: 0 });
         }
         return makeRoute({ state: "logoff", screenIndex: 0, scroll: 0 });
       }
       case "success": {
-        if (
-          screenIndex.value <
-          currentTerminal.value.states.success!.length - 1
-        ) {
+        if (screenIndex.value < terminal.value.states.success!.length - 1) {
           return makeRoute({ screenIndex: screenIndex.value + 1, scroll: 0 });
         }
         return makeRoute({ state: "logoff", screenIndex: 0, scroll: 0 });
@@ -162,8 +167,8 @@ export function useTerminals(levels: Level[]) {
     state,
     screenIndex,
     scroll,
-    currentLevel,
-    currentTerminal,
+    level,
+    terminal,
     scroller,
     levelLink,
     prevTerminalLink,
@@ -171,5 +176,6 @@ export function useTerminals(levels: Level[]) {
     nextScreenLink,
     scrollPrevLink,
     scrollNextLink,
+    groupType,
   };
 }

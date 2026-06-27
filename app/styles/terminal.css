@@ -2,7 +2,7 @@
   line-height: 1.25rem;
   font-size: 1rem;
   font-family: Courier, monospace;
-  width: var(--terminal-width);
+  width: calc(var(--terminal-width) + 2ch);
   background-color: var(--bg-main);
 }
 
@@ -56,4 +56,10 @@
 
 .contents {
   display: contents;
+}
+
+.terminal-map-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2ch;
 }
