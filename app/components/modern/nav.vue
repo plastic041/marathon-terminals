@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { TerminalsFile } from "~/types/terminal";
 import d from "~/terminals/terminals-en.yaml";
+import { PopoverClose } from "reka-ui";
 
 const levels = (d as TerminalsFile).levels;
 </script>
@@ -19,52 +20,58 @@ const levels = (d as TerminalsFile).levels;
               <h4 :class="$style['terminal-index']">#{{ term.index }}</h4>
               <ul :class="$style['terminal-types']">
                 <li v-if="term.states.unfinished">
-                  <NuxtLink
-                    :to="{
-                      name: 'modern-lang-levelIndex-terminalIndex',
-                      params: {
-                        lang: 'en',
-                        levelIndex: level.index,
-                        terminalIndex: term.index,
-                      },
-                      query: {
-                        state: 'unfinished',
-                      },
-                    }"
-                    >Unfinished</NuxtLink
-                  >
+                  <PopoverClose as-child>
+                    <NuxtLink
+                      :to="{
+                        name: 'modern-lang-levelIndex-terminalIndex',
+                        params: {
+                          lang: 'en',
+                          levelIndex: level.index,
+                          terminalIndex: term.index,
+                        },
+                        query: {
+                          state: 'logon',
+                        },
+                      }"
+                      >Unfinished</NuxtLink
+                    >
+                  </PopoverClose>
                 </li>
                 <li v-if="term.states.success">
-                  <NuxtLink
-                    :to="{
-                      name: 'modern-lang-levelIndex-terminalIndex',
-                      params: {
-                        lang: 'en',
-                        levelIndex: level.index,
-                        terminalIndex: term.index,
-                      },
-                      query: {
-                        state: 'success',
-                      },
-                    }"
-                    >Success</NuxtLink
-                  >
+                  <PopoverClose as-child>
+                    <NuxtLink
+                      :to="{
+                        name: 'modern-lang-levelIndex-terminalIndex',
+                        params: {
+                          lang: 'en',
+                          levelIndex: level.index,
+                          terminalIndex: term.index,
+                        },
+                        query: {
+                          state: 'success',
+                        },
+                      }"
+                      >Success</NuxtLink
+                    >
+                  </PopoverClose>
                 </li>
                 <li v-if="term.states.failure">
-                  <NuxtLink
-                    :to="{
-                      name: 'modern-lang-levelIndex-terminalIndex',
-                      params: {
-                        lang: 'en',
-                        levelIndex: level.index,
-                        terminalIndex: term.index,
-                      },
-                      query: {
-                        state: 'failure',
-                      },
-                    }"
-                    >Failure</NuxtLink
-                  >
+                  <PopoverClose as-child>
+                    <NuxtLink
+                      :to="{
+                        name: 'modern-lang-levelIndex-terminalIndex',
+                        params: {
+                          lang: 'en',
+                          levelIndex: level.index,
+                          terminalIndex: term.index,
+                        },
+                        query: {
+                          state: 'failure',
+                        },
+                      }"
+                      >Failure</NuxtLink
+                    >
+                  </PopoverClose>
                 </li>
               </ul>
             </li>

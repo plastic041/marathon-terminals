@@ -49,7 +49,6 @@ export function useTerminalsModern(levels: Level[]) {
   });
 
   function makeRoute(info: RouteInfo): RouteLocationRaw {
-    console.log(info);
     return {
       path: `/modern/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
@@ -64,19 +63,23 @@ export function useTerminalsModern(levels: Level[]) {
       return null;
     }
 
+    const firstTerminalIndex = level.value.terminals[0]!.index;
+
     const lIndex =
-      terminalIndex.value > 0
-        ? levelIndex.value
-        : levels[
+      terminalIndex.value === firstTerminalIndex
+        ? levels[
             levels.findIndex((level) => level.index === levelIndex.value) - 1
-          ]?.index;
+          ]?.index!
+        : levelIndex.value;
 
     const tIndex =
-      terminalIndex.value === 0
-        ? levels[lIndex!]!.terminals.find(
-            (t) => t.index === terminalIndex.value,
-          )!.index
-        : terminalIndex.value - 1;
+      terminalIndex.value === firstTerminalIndex
+        ? levels.find((l) => l.index === lIndex)!.terminals.at(-1)!.index
+        : levels.find((l) => l.index === lIndex)!.terminals[
+            level.value.terminals.findIndex(
+              (t) => t.index === terminalIndex.value,
+            )! - 1
+          ]!.index;
 
     return {
       levelIndex: lIndex,
@@ -102,7 +105,7 @@ export function useTerminalsModern(levels: Level[]) {
 
     const tIndex =
       terminalIndex.value === lastTerminalIndex
-        ? 0
+        ? levels.find((level) => level.index === lIndex)!.terminals[0]!.index
         : level.value.terminals[
             level.value.terminals.findIndex(
               (t) => t.index === terminalIndex.value,
@@ -134,24 +137,18 @@ export function useTerminalsModern(levels: Level[]) {
   }
 
   const prevTerminalLink = computed<RouteLocationRaw | null>(() => {
-    // if (prevTerminalRouteInfo.value) {
-    //   console.log(1);
-    //   return makeRoute(prevTerminalRouteInfo.value);
-    //   console.log(2);
-    // }
+    if (prevTerminalRouteInfo.value) {
+      return makeRoute(prevTerminalRouteInfo.value);
+    }
     return null;
   });
 
   const nextTerminalLink = computed<RouteLocationRaw | null>(() => {
-    if (terminalIndex.value === 2 && levelIndex.value === 20) {
-      return null;
+    if (nextTerminalRouteInfo.value) {
+      return makeRoute(nextTerminalRouteInfo.value);
     }
 
-    return makeRoute({
-      ...getNextTerminalRouteInfo(),
-      state: "logon",
-      screenIndex: 0,
-    });
+    return null;
   });
 
   const nextScreenLink = computed<RouteLocationRaw | null>(() => {
@@ -179,9 +176,6 @@ export function useTerminalsModern(levels: Level[]) {
         if (screenIndex.value < terminal.value.states.unfinished.length - 1) {
           return makeRoute({ screenIndex: screenIndex.value + 1 });
         }
-        if (terminal.value.states.success) {
-          return makeRoute({ state: "success", screenIndex: 0 });
-        }
         return makeRoute({ state: "logoff", screenIndex: 0 });
       }
       case "success": {
@@ -191,7 +185,10 @@ export function useTerminalsModern(levels: Level[]) {
         return makeRoute({ state: "logoff", screenIndex: 0 });
       }
       case "failure": {
-        throw new Error("don't handle failure");
+        if (screenIndex.value < terminal.value.states.failure!.length - 1) {
+          return makeRoute({ screenIndex: screenIndex.value + 1 });
+        }
+        return makeRoute({ state: "logoff", screenIndex: 0 });
       }
     }
   });

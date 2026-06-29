@@ -2,7 +2,7 @@
 import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
 import d from "~/terminals/terminals-en.yaml";
 import { LEVELS } from "~/lib/levels";
-import { ArrowRightIcon } from "@radix-icons/vue";
+import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 
 const levels = (d as TerminalsFile).levels;
 
@@ -37,6 +37,12 @@ const {
     <ModernHeader />
     <main :class="$style.main">
       <div :class="$style.contents">
+        <h1 :class="$style['terminal-name']">
+          L{{ level.index }}#{{ terminal.index }}
+          <template v-if="state === 'success' || state === 'failure'">
+            [{{ state }}]
+          </template>
+        </h1>
         <div :class="$style['terminal-wrapper']">
           <TerminalsModernLog
             v-if="state === 'logon' || state === 'logoff'"
@@ -49,39 +55,61 @@ const {
           />
         </div>
         <div>
-          <UiButton v-if="nextScreenLink" as-child :class="$style.button">
-            <NuxtLink :to="nextScreenLink"> <ArrowRightIcon /> Next </NuxtLink>
-          </UiButton>
-          <UiButton v-else :class="$style.button" disabled>
-            <ArrowRightIcon /> Next
-          </UiButton>
-
-          <div>
-            {{ nextTerminalRouteInfo }}
-            <UiButton v-if="nextScreenLink" as-child :class="$style.button">
-              <NuxtLink :to="nextScreenLink">
-                <ArrowRightIcon /> Term ()
+          <div :class="$style['navigation-controls']">
+            <UiButton
+              v-if="prevTerminalRouteInfo"
+              as-child
+              :class="`${$style.button} ${$style['nav-button']}`"
+            >
+              <NuxtLink :to="prevTerminalLink!">
+                <ArrowLeftIcon /> Term L{{
+                  prevTerminalRouteInfo.levelIndex
+                }}#{{ prevTerminalRouteInfo.terminalIndex }}
               </NuxtLink>
             </UiButton>
-            <UiButton v-else :class="$style.button" disabled>
-              <ArrowRightIcon /> Next Terminal
+            <UiButton
+              v-else
+              :class="`${$style.button} ${$style['nav-button']}`"
+              disabled
+            >
+              <ArrowLeftIcon /> -
             </UiButton>
 
-            <UiButton v-if="nextScreenLink" as-child :class="$style.button">
+            <UiButton
+              v-if="nextTerminalRouteInfo"
+              as-child
+              :class="`${$style.button} ${$style['nav-button']}`"
+            >
+              <NuxtLink :to="nextTerminalLink!">
+                <ArrowRightIcon /> Term L{{
+                  nextTerminalRouteInfo.levelIndex
+                }}#{{ nextTerminalRouteInfo.terminalIndex }}
+              </NuxtLink>
+            </UiButton>
+            <UiButton
+              v-else
+              :class="`${$style.button} ${$style['nav-button']}`"
+              disabled
+            >
+              <ArrowRightIcon /> -
+            </UiButton>
+
+            <UiButton
+              v-if="nextScreenLink"
+              as-child
+              :class="$style.button"
+              style="margin-left: auto"
+            >
               <NuxtLink :to="nextScreenLink">
                 <ArrowRightIcon /> Next
               </NuxtLink>
             </UiButton>
-            <UiButton v-else :class="$style.button" disabled>
-              <ArrowRightIcon /> Next
-            </UiButton>
-
-            <UiButton v-if="nextScreenLink" as-child :class="$style.button">
-              <NuxtLink :to="nextScreenLink">
-                <ArrowRightIcon /> Next
-              </NuxtLink>
-            </UiButton>
-            <UiButton v-else :class="$style.button" disabled>
+            <UiButton
+              v-else
+              :class="$style.button"
+              style="margin-left: auto"
+              disabled
+            >
               <ArrowRightIcon /> Next
             </UiButton>
           </div>
@@ -96,6 +124,7 @@ const {
   height: 100dvh;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .main {
@@ -121,8 +150,22 @@ const {
   gap: 1rem;
 }
 
+.terminal-name {
+  line-height: 1;
+}
+
 .button {
   padding-left: 0.5ch;
   gap: 0.5ch;
+}
+
+.nav-button {
+  min-width: 13ch;
+}
+
+.navigation-controls {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1ch;
 }
 </style>

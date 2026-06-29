@@ -10,7 +10,7 @@ const props = defineProps<{
 
 <template>
   <Renderer :type="props.type">
-    <div :class="$style['terminal-inner-logon']">
+    <div :class="$style['terminal-inner-log']">
       <img
         src="/logon_c0_s44.png"
         :class="$style['terminal-inner-logon-logo']"
@@ -24,7 +24,8 @@ const props = defineProps<{
 </template>
 
 <style module>
-.terminal-inner-logon {
+.terminal-inner-log {
+  width: 100%;
   min-height: 0;
   height: 100%;
   display: flex;
