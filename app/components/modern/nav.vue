@@ -6,74 +6,82 @@ const levels = (d as TerminalsFile).levels;
 </script>
 
 <template>
-  <nav>
-    <ul>
-      <li v-for="level in levels">
-        <h3 :class="$style['level-name']">
-          {{ level.index }}. {{ level.name }}
-        </h3>
+  <UiScrollArea as-child>
+    <nav>
+      <ul :class="$style.levels">
+        <li v-for="level in levels">
+          <h3 :class="$style['level-name']">
+            {{ level.index }}. {{ level.name }}
+          </h3>
 
-        <ul v-for="term in level.terminals" :class="$style.terminals">
-          <li :class="$style.terminal">
-            <h4 :class="$style['terminal-index']">#{{ term.index }}</h4>
-            <ul :class="$style['terminal-types']">
-              <li v-if="term.states.unfinished">
-                <NuxtLink
-                  :to="{
-                    name: 'modern-lang-levelIndex-terminalIndex',
-                    params: {
-                      lang: 'en',
-                      levelIndex: level.index,
-                      terminalIndex: term.index,
-                    },
-                    query: {
-                      state: 'unfinished',
-                    },
-                  }"
-                  >Unfinished</NuxtLink
-                >
-              </li>
-              <li v-if="term.states.success">
-                <NuxtLink
-                  :to="{
-                    name: 'modern-lang-levelIndex-terminalIndex',
-                    params: {
-                      lang: 'en',
-                      levelIndex: level.index,
-                      terminalIndex: term.index,
-                    },
-                    query: {
-                      state: 'success',
-                    },
-                  }"
-                  >Success</NuxtLink
-                >
-              </li>
-              <li v-if="term.states.failure">
-                <NuxtLink
-                  :to="{
-                    name: 'modern-lang-levelIndex-terminalIndex',
-                    params: {
-                      lang: 'en',
-                      levelIndex: level.index,
-                      terminalIndex: term.index,
-                    },
-                    query: {
-                      state: 'failure',
-                    },
-                  }"
-                  >Failure</NuxtLink
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+          <ul v-for="term in level.terminals" :class="$style.terminals">
+            <li :class="$style.terminal">
+              <h4 :class="$style['terminal-index']">#{{ term.index }}</h4>
+              <ul :class="$style['terminal-types']">
+                <li v-if="term.states.unfinished">
+                  <NuxtLink
+                    :to="{
+                      name: 'modern-lang-levelIndex-terminalIndex',
+                      params: {
+                        lang: 'en',
+                        levelIndex: level.index,
+                        terminalIndex: term.index,
+                      },
+                      query: {
+                        state: 'unfinished',
+                      },
+                    }"
+                    >Unfinished</NuxtLink
+                  >
+                </li>
+                <li v-if="term.states.success">
+                  <NuxtLink
+                    :to="{
+                      name: 'modern-lang-levelIndex-terminalIndex',
+                      params: {
+                        lang: 'en',
+                        levelIndex: level.index,
+                        terminalIndex: term.index,
+                      },
+                      query: {
+                        state: 'success',
+                      },
+                    }"
+                    >Success</NuxtLink
+                  >
+                </li>
+                <li v-if="term.states.failure">
+                  <NuxtLink
+                    :to="{
+                      name: 'modern-lang-levelIndex-terminalIndex',
+                      params: {
+                        lang: 'en',
+                        levelIndex: level.index,
+                        terminalIndex: term.index,
+                      },
+                      query: {
+                        state: 'failure',
+                      },
+                    }"
+                    >Failure</NuxtLink
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </UiScrollArea>
 </template>
 
 <style module>
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .level-name {
   margin-left: 1rem;
 }

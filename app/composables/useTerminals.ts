@@ -59,7 +59,7 @@ export function useTerminals(levels: Level[]) {
 
   function makeRoute(info: RouteInfo): RouteLocationRaw {
     return {
-      path: `/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
+      path: `/classic/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
         state: info.state ?? state.value,
         screenindex: info.screenIndex ?? screenIndex.value,

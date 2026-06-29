@@ -16,12 +16,14 @@ const delegatedProps = reactiveOmit(props, "class");
   <ScrollAreaRoot
     v-bind="delegatedProps"
     :class="`${$style.root} ${props.class}`"
-    type="always"
+    type="auto"
   >
     <ScrollAreaViewport :class="$style.area">
       <slot />
     </ScrollAreaViewport>
-    <ScrollBar />
+    <ClientOnly>
+      <ScrollBar />
+    </ClientOnly>
     <ScrollAreaCorner />
   </ScrollAreaRoot>
 </template>
@@ -35,6 +37,7 @@ const delegatedProps = reactiveOmit(props, "class");
   outline: none;
   width: 100%;
   height: 100%;
+  padding: 0 1ch;
 }
 
 .area:focus-visible {

@@ -6,5 +6,7 @@ import "~/assets/styles/modern.css";
 </script>
 
 <template>
-  <slot />
+  <div class="layout-modern">
+    <slot />
+  </div>
 </template>

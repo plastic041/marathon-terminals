@@ -10,5 +10,7 @@ useHead({
 </script>
 
 <template>
-  <slot />
+  <div class="layout-classic">
+    <slot />
+  </div>
 </template>

@@ -2,25 +2,24 @@
 import {
   PopoverRoot,
   PopoverTrigger,
-  PopoverAnchor,
   PopoverPortal,
   PopoverContent,
-  PopoverClose,
 } from "reka-ui";
 import Nav from "~/components/modern/nav.vue";
+import { HamburgerMenuIcon } from "@radix-icons/vue";
 </script>
 
 <template>
   <header :class="$style.header">
     <PopoverRoot>
       <PopoverTrigger as-child>
-        <button>+</button>
+        <UiButton>
+          <HamburgerMenuIcon :class="$style.icon" />
+        </UiButton>
       </PopoverTrigger>
-      <PopoverAnchor />
       <PopoverPortal>
         <PopoverContent :class="$style.content">
           <Nav />
-          <PopoverClose />
         </PopoverContent>
       </PopoverPortal>
     </PopoverRoot>
@@ -30,12 +29,22 @@ import Nav from "~/components/modern/nav.vue";
 <style module>
 .header {
   flex-shrink: 0;
+  display: flex;
 }
 
 .content {
   width: 100vw;
-  height: 80dvh;
+  height: 40dvh;
   min-height: 0;
   overflow: auto;
+  background-color: #000;
+  color: var(--text-main);
+  border-top: 1px solid lightgreen;
+  border-bottom: 1px solid lightgreen;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 </style>

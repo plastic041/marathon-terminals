@@ -1,11 +1,4 @@
 <script setup lang="ts">
-import {
-  ScrollAreaCorner,
-  ScrollAreaRoot,
-  ScrollAreaScrollbar,
-  ScrollAreaThumb,
-  ScrollAreaViewport,
-} from "reka-ui";
 import { BORDERS } from "~/lib/borders";
 
 const props = defineProps<{
@@ -20,9 +13,14 @@ const props = defineProps<{
       <span> 0025 08.25.2337 </span>
     </div>
     <div :class="$style['terminal-inner']">
-      <UiScrollArea :class="$style['terminal-inner-content']">
+      <UiScrollArea
+        :class="$style['terminal-inner-content']"
+        v-if="props.type === 'reading'"
+      >
         <slot />
       </UiScrollArea>
+
+      <slot v-else />
     </div>
   </div>
 </template>
@@ -38,7 +36,7 @@ const props = defineProps<{
 
 .terminal-header {
   color: var(--text-info);
-  background-color: darkgreen;
+  background-color: rgb(0, 57, 0);
   display: flex;
   flex-direction: column;
   padding: 0 1ch;
@@ -47,7 +45,6 @@ const props = defineProps<{
 .terminal-inner {
   color: var(--text-main);
   height: 24lh;
-  padding: 0 1ch;
   white-space: pre-wrap;
   display: flex;
   border-top: 1px solid greenyellow;

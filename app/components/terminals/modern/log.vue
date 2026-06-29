@@ -4,20 +4,26 @@ import { decorate } from "~/lib/decoration";
 
 const props = defineProps<{
   text: string;
+  type: "logon" | "logoff";
 }>();
 </script>
 
 <template>
-  <Renderer type="logon">
-    <div class="terminal-inner-logon">
-      <img src="/logon_c0_s44.png" class="terminal-inner-logon-logo" />
-      <span class="terminal-inner-logon-heading">U.E.S.C Marathon</span>
+  <Renderer :type="props.type">
+    <div :class="$style['terminal-inner-logon']">
+      <img
+        src="/logon_c0_s44.png"
+        :class="$style['terminal-inner-logon-logo']"
+      />
+      <span :class="$style['terminal-inner-logon-heading']"
+        >U.E.S.C Marathon</span
+      >
       <span v-html="decorate(props.text)" />
     </div>
   </Renderer>
 </template>
 
-<style>
+<style module>
 .terminal-inner-logon {
   min-height: 0;
   height: 100%;
@@ -26,6 +32,8 @@ const props = defineProps<{
   gap: 0;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .terminal-inner-logon-logo {
@@ -37,9 +45,5 @@ const props = defineProps<{
   margin-top: 1lh;
   font-size: 1.15rem;
   font-weight: bold;
-}
-
-.contents {
-  display: contents;
 }
 </style>

@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "ChicagoKare";
-  src: url("/ChicagoKare-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --text-main: #0f0;
   --text-info: #f00;
@@ -15,8 +7,8 @@
   --terminal-width: 62ch;
 }
 
-button,
-a {
+.layout-classic button,
+.layout-classic a {
   text-decoration: none;
   border-radius: 6px;
   background-color: #fff;
@@ -28,28 +20,30 @@ a {
   font-family: ChicagoKare, courier;
 }
 
-button:disabled,
-a:disabled {
+.layout-classic button:disabled,
+.layout-classic a:disabled {
   background-color: #aaa;
   color: #888;
   border: 1px solid #aaa;
   cursor: not-allowed;
 }
 
-button:hover:not(:disabled),
-a:hover:not(:disabled) {
+.layout-classic button:hover:not(:disabled),
+.layout-classic a:hover:not(:disabled) {
   color: #fff;
   background-color: #000;
   border: 1px solid #fff;
 }
 
-body {
+.layout-classic {
   font-family: "courier new", "courier", monospace;
   background-color: var(--bg-main);
   color: var(--text-main);
+  width: 100vw;
+  height: 100dvh;
 }
 
-.controls {
+.layout-classic .controls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,7 +52,7 @@ body {
   margin-top: 1rem;
 }
 
-.scrollers {
+.layout-classic .scrollers {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,6 +60,6 @@ body {
   gap: 1rem;
 }
 
-select {
+.layout-classic select {
   width: 100%;
 }

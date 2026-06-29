@@ -2,6 +2,7 @@
 import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
 import d from "~/terminals/terminals-en.yaml";
 import { LEVELS } from "~/lib/levels";
+import { ArrowRightIcon } from "@radix-icons/vue";
 
 const levels = (d as TerminalsFile).levels;
 
@@ -13,13 +14,20 @@ const {
   levelIndex,
   terminalIndex,
   screenIndex,
+
   state,
   level,
   terminal,
+
   groupType,
   levelLink,
+
+  prevTerminalRouteInfo,
+  nextTerminalRouteInfo,
+
   prevTerminalLink,
   nextTerminalLink,
+
   nextScreenLink,
 } = useTerminalsModern(levels);
 </script>
@@ -30,12 +38,53 @@ const {
     <main :class="$style.main">
       <div :class="$style.contents">
         <div :class="$style['terminal-wrapper']">
+          <TerminalsModernLog
+            v-if="state === 'logon' || state === 'logoff'"
+            :text="terminal.logon.text"
+            :type="state"
+          />
           <TerminalsModernTextOnly
-            :text="levels[0]?.terminals[0]?.states.unfinished[0]?.text!"
+            v-else
+            :text="terminal.states[state]![screenIndex]?.text!"
           />
         </div>
         <div>
-          <button>-&gt;</button>
+          <UiButton v-if="nextScreenLink" as-child :class="$style.button">
+            <NuxtLink :to="nextScreenLink"> <ArrowRightIcon /> Next </NuxtLink>
+          </UiButton>
+          <UiButton v-else :class="$style.button" disabled>
+            <ArrowRightIcon /> Next
+          </UiButton>
+
+          <div>
+            {{ nextTerminalRouteInfo }}
+            <UiButton v-if="nextScreenLink" as-child :class="$style.button">
+              <NuxtLink :to="nextScreenLink">
+                <ArrowRightIcon /> Term ()
+              </NuxtLink>
+            </UiButton>
+            <UiButton v-else :class="$style.button" disabled>
+              <ArrowRightIcon /> Next Terminal
+            </UiButton>
+
+            <UiButton v-if="nextScreenLink" as-child :class="$style.button">
+              <NuxtLink :to="nextScreenLink">
+                <ArrowRightIcon /> Next
+              </NuxtLink>
+            </UiButton>
+            <UiButton v-else :class="$style.button" disabled>
+              <ArrowRightIcon /> Next
+            </UiButton>
+
+            <UiButton v-if="nextScreenLink" as-child :class="$style.button">
+              <NuxtLink :to="nextScreenLink">
+                <ArrowRightIcon /> Next
+              </NuxtLink>
+            </UiButton>
+            <UiButton v-else :class="$style.button" disabled>
+              <ArrowRightIcon /> Next
+            </UiButton>
+          </div>
         </div>
       </div>
     </main>
@@ -72,10 +121,8 @@ const {
   gap: 1rem;
 }
 
-/* .terminal-wrapper {
-  flex-grow: 1;
-
-  display: grid;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-} */
+.button {
+  padding-left: 0.5ch;
+  gap: 0.5ch;
+}
 </style>

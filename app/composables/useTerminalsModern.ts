@@ -13,7 +13,6 @@ type RouteInfo = {
   terminalIndex?: number;
   state?: TerminalState;
   screenIndex?: number;
-  scroll?: number;
 };
 
 /** /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number */
@@ -28,18 +27,13 @@ export function useTerminalsModern(levels: Level[]) {
   );
   const screenIndex = computed(() => Number(route.query.screenindex ?? 0));
 
-  const level = computed(() => levels[levelIndex.value]!);
-  const terminal = computed(() => level.value.terminals[terminalIndex.value]!);
-
-  const screenText = computed(() => {
-    if (state.value === "unfinished") {
-      return terminal.value.states.unfinished[screenIndex.value]!.text;
-    }
-    if (state.value === "success") {
-      return terminal.value.states.success![screenIndex.value]!.text;
-    }
-    return "";
-  });
+  const level = computed(
+    () => levels.find((level) => level.index === levelIndex.value)!,
+  );
+  const terminal = computed(
+    () =>
+      level.value.terminals.find((term) => term.index === terminalIndex.value)!,
+  );
 
   const groupType = computed(() => {
     switch (state.value) {
@@ -55,8 +49,9 @@ export function useTerminalsModern(levels: Level[]) {
   });
 
   function makeRoute(info: RouteInfo): RouteLocationRaw {
+    console.log(info);
     return {
-      path: `/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
+      path: `/modern/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
         state: info.state ?? state.value,
         screenindex: info.screenIndex ?? screenIndex.value,
@@ -64,16 +59,63 @@ export function useTerminalsModern(levels: Level[]) {
     };
   }
 
-  function getPrevTerminalRouteInfo(): RouteInfo {
-    if (terminalIndex.value > 0) {
-      return { terminalIndex: terminalIndex.value - 1 };
+  const prevTerminalRouteInfo = computed<RouteInfo | null>(() => {
+    if (terminalIndex.value === 0 && levelIndex.value === 0) {
+      return null;
     }
-    const prevLevelIndex = levelIndex.value - 1;
+
+    const lIndex =
+      terminalIndex.value > 0
+        ? levelIndex.value
+        : levels[
+            levels.findIndex((level) => level.index === levelIndex.value) - 1
+          ]?.index;
+
+    const tIndex =
+      terminalIndex.value === 0
+        ? levels[lIndex!]!.terminals.find(
+            (t) => t.index === terminalIndex.value,
+          )!.index
+        : terminalIndex.value - 1;
+
     return {
-      levelIndex: prevLevelIndex,
-      terminalIndex: levels[prevLevelIndex]!.terminals.length - 1,
+      levelIndex: lIndex,
+      screenIndex: 0,
+      state: "logon",
+      terminalIndex: tIndex,
     };
-  }
+  });
+
+  const nextTerminalRouteInfo = computed<RouteInfo | null>(() => {
+    if (terminalIndex.value === 9 && levelIndex.value === 26) {
+      return null;
+    }
+
+    const lastTerminalIndex = level.value.terminals.at(-1)!.index;
+
+    const lIndex =
+      terminalIndex.value === lastTerminalIndex
+        ? levels[
+            levels.findIndex((level) => level.index === levelIndex.value) + 1
+          ]?.index
+        : levelIndex.value;
+
+    const tIndex =
+      terminalIndex.value === lastTerminalIndex
+        ? 0
+        : level.value.terminals[
+            level.value.terminals.findIndex(
+              (t) => t.index === terminalIndex.value,
+            )! + 1
+          ]!.index;
+
+    return {
+      levelIndex: lIndex,
+      screenIndex: 0,
+      state: "logon",
+      terminalIndex: tIndex,
+    };
+  });
 
   function getNextTerminalRouteInfo(): RouteInfo {
     if (terminalIndex.value < level.value.terminals.length - 1) {
@@ -91,21 +133,20 @@ export function useTerminalsModern(levels: Level[]) {
     });
   }
 
-  const prevTerminalLink = computed<RouteLocationRaw | undefined>(() => {
-    if (terminalIndex.value === 0 && levelIndex.value === 0) {
-      return undefined;
-    }
-    return makeRoute({
-      ...getPrevTerminalRouteInfo(),
-      state: "logon",
-      screenIndex: 0,
-    });
+  const prevTerminalLink = computed<RouteLocationRaw | null>(() => {
+    // if (prevTerminalRouteInfo.value) {
+    //   console.log(1);
+    //   return makeRoute(prevTerminalRouteInfo.value);
+    //   console.log(2);
+    // }
+    return null;
   });
 
-  const nextTerminalLink = computed<RouteLocationRaw | undefined>(() => {
+  const nextTerminalLink = computed<RouteLocationRaw | null>(() => {
     if (terminalIndex.value === 2 && levelIndex.value === 20) {
-      return undefined;
+      return null;
     }
+
     return makeRoute({
       ...getNextTerminalRouteInfo(),
       state: "logon",
@@ -119,6 +160,10 @@ export function useTerminalsModern(levels: Level[]) {
       terminalIndex.value === 2 &&
       state.value === "logoff"
     ) {
+      return null;
+    }
+
+    if (state.value === "logoff") {
       return null;
     }
 
@@ -148,13 +193,6 @@ export function useTerminalsModern(levels: Level[]) {
       case "failure": {
         throw new Error("don't handle failure");
       }
-      case "logoff": {
-        return makeRoute({
-          ...getNextTerminalRouteInfo(),
-          state: "logon",
-          screenIndex: 0,
-        });
-      }
     }
   });
 
@@ -170,8 +208,13 @@ export function useTerminalsModern(levels: Level[]) {
     screenIndex,
 
     levelLink,
+
+    prevTerminalRouteInfo,
+    nextTerminalRouteInfo,
+
     prevTerminalLink,
     nextTerminalLink,
+
     nextScreenLink,
 
     groupType,
