@@ -1,9 +1,32 @@
 <script setup lang="ts">
 import type { TerminalsFile } from "~/types/terminal";
+import type { ComponentPublicInstance } from "vue";
 import d from "~/terminals/terminals-en.yaml";
 import { PopoverClose } from "reka-ui";
 
 const levels = (d as TerminalsFile).levels;
+
+const route = useRoute();
+const selectedEl = ref<HTMLElement | null>(null);
+
+function setSelectedRef(
+  el: Element | ComponentPublicInstance | null,
+  levelIndex: number,
+  terminalIndex: number,
+) {
+  if (
+    String(levelIndex) === String(route.params.levelIndex) &&
+    String(terminalIndex) === String(route.params.terminalIndex)
+  ) {
+    selectedEl.value = el as HTMLElement | null;
+  }
+}
+
+onMounted(() => {
+  nextTick(() => {
+    selectedEl.value?.scrollIntoView({ block: "center" });
+  });
+});
 </script>
 
 <template>
@@ -16,7 +39,10 @@ const levels = (d as TerminalsFile).levels;
           </h3>
 
           <ul v-for="term in level.terminals" :class="$style.terminals">
-            <li :class="$style.terminal">
+            <li
+              :class="$style.terminal"
+              :ref="(el) => setSelectedRef(el, level.index, term.index)"
+            >
               <h4 :class="$style['terminal-index']">#{{ term.index }}</h4>
               <ul :class="$style['terminal-types']">
                 <li v-if="term.states.unfinished">
