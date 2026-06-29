@@ -1,18 +1,20 @@
 <script setup lang="ts">
 import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
-import d from "~/terminals/terminals-en.yaml";
-import { LEVELS } from "~/lib/levels";
+import dataEN from "~/terminals/terminals-en.yaml";
+import dataKR from "~/terminals/terminals-kr.yaml";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 
-const levels = (d as TerminalsFile).levels;
+const route = useRoute();
+const lang = computed(() => route.params.lang);
+
+const levels = ((lang.value === "en" ? dataEN : dataKR) as TerminalsFile)
+  .levels;
 
 definePageMeta({
   layout: "term-modern",
 });
 
 const {
-  levelIndex,
-  terminalIndex,
   screenIndex,
 
   state,
@@ -20,7 +22,6 @@ const {
   terminal,
 
   groupType,
-  levelLink,
 
   prevTerminalRouteInfo,
   nextTerminalRouteInfo,
