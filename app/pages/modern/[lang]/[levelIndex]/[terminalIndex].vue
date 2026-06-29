@@ -38,7 +38,7 @@ const {
     <main :class="$style.main">
       <div :class="$style.contents">
         <h1 :class="$style['terminal-name']">
-          L{{ level.index }}#{{ terminal.index }}
+          {{ level.index }}. {{ level.name }}#{{ terminal.index }}
           <template v-if="state === 'success' || state === 'failure'">
             [{{ state }}]
           </template>
@@ -161,6 +161,8 @@ const {
 
 .terminal-name {
   line-height: 1;
+  font-size: 1.25rem;
+  text-wrap: pretty;
 }
 
 .button {
