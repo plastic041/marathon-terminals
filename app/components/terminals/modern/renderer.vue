@@ -2,7 +2,7 @@
 import { BORDERS } from "~/lib/borders";
 
 const props = defineProps<{
-  type: "logon" | "logoff" | "reading";
+  type: "logon" | "logoff" | "reading" | "checkpoint";
 }>();
 </script>
 

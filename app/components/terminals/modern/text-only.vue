@@ -9,6 +9,6 @@ const props = defineProps<{
 
 <template>
   <Renderer type="reading">
-    <div v-html="decorate(props.text)" class="contents" />
+    <div v-html="decorate(props.text)" />
   </Renderer>
 </template>

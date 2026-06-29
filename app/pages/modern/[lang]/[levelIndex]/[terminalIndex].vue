@@ -49,6 +49,15 @@ const {
             :text="terminal.logon.text"
             :type="state"
           />
+          <TerminalsModernWithMap
+            v-else-if="groupType === 'checkpoint'"
+            :text="terminal.states[state]![screenIndex]?.text!"
+            :level="level"
+            :checkpoint="
+              (terminal.states[state]![screenIndex]! as CheckpointGroup)
+                .checkpoint
+            "
+          />
           <TerminalsModernTextOnly
             v-else
             :text="terminal.states[state]![screenIndex]?.text!"

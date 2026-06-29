@@ -18,7 +18,7 @@ const props = defineProps<{
       <span :class="$style['terminal-inner-logon-heading']"
         >U.E.S.C Marathon</span
       >
-      <span v-html="decorate(props.text)" />
+      <div v-html="decorate(props.text)" :class="$style['terminal-name']" />
     </div>
   </Renderer>
 </template>
@@ -35,6 +35,7 @@ const props = defineProps<{
   justify-content: center;
   text-align: center;
   text-wrap: balance;
+  padding: 0 4ch;
 }
 
 .terminal-inner-logon-logo {
@@ -46,5 +47,9 @@ const props = defineProps<{
   margin-top: 1lh;
   font-size: 1.15rem;
   font-weight: bold;
+}
+
+.terminal-name {
+  height: 2lh;
 }
 </style>
