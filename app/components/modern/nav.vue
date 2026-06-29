@@ -1,0 +1,107 @@
+<script setup lang="ts">
+import type { TerminalsFile } from "~/types/terminal";
+import d from "~/terminals/terminals-en.yaml";
+
+const levels = (d as TerminalsFile).levels;
+</script>
+
+<template>
+  <nav>
+    <ul>
+      <li v-for="level in levels">
+        <h3 :class="$style['level-name']">
+          {{ level.index }}. {{ level.name }}
+        </h3>
+
+        <ul v-for="term in level.terminals" :class="$style.terminals">
+          <li :class="$style.terminal">
+            <h4 :class="$style['terminal-index']">#{{ term.index }}</h4>
+            <ul :class="$style['terminal-types']">
+              <li v-if="term.states.unfinished">
+                <NuxtLink
+                  :to="{
+                    name: 'modern-lang-levelIndex-terminalIndex',
+                    params: {
+                      lang: 'en',
+                      levelIndex: level.index,
+                      terminalIndex: term.index,
+                    },
+                    query: {
+                      state: 'unfinished',
+                    },
+                  }"
+                  >Unfinished</NuxtLink
+                >
+              </li>
+              <li v-if="term.states.success">
+                <NuxtLink
+                  :to="{
+                    name: 'modern-lang-levelIndex-terminalIndex',
+                    params: {
+                      lang: 'en',
+                      levelIndex: level.index,
+                      terminalIndex: term.index,
+                    },
+                    query: {
+                      state: 'success',
+                    },
+                  }"
+                  >Success</NuxtLink
+                >
+              </li>
+              <li v-if="term.states.failure">
+                <NuxtLink
+                  :to="{
+                    name: 'modern-lang-levelIndex-terminalIndex',
+                    params: {
+                      lang: 'en',
+                      levelIndex: level.index,
+                      terminalIndex: term.index,
+                    },
+                    query: {
+                      state: 'failure',
+                    },
+                  }"
+                  >Failure</NuxtLink
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<style module>
+.level-name {
+  margin-left: 1rem;
+}
+
+.terminals {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: row;
+}
+
+.terminal-index {
+  flex-shrink: 0;
+  min-width: 4ch;
+}
+
+.terminal-types {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.terminal-types a {
+  text-decoration: underline;
+  background-color: #131;
+  color: #0f0;
+}
+</style>

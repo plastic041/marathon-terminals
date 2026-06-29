@@ -6,7 +6,7 @@ import { LEVELS } from "~/lib/levels";
 const levels = (d as TerminalsFile).levels;
 
 definePageMeta({
-  layout: "term-en",
+  layout: "term-classic",
 });
 
 const {

@@ -31,7 +31,7 @@ function escapeHtml(original: string): string {
     .replace(/'/g, "&#39;");
 }
 
-export function decoration(original: string): string {
+export function decorate(original: string): string {
   return bold(italic(underline(escapeHtml(original))));
 }
 

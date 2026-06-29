@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Renderer from "~/components/terminals/classic/renderer.vue";
-import { decoration } from "~/lib/decoration";
+import { decorate } from "~/lib/decoration";
 
 const props = defineProps<{
   text: string;
@@ -12,7 +12,7 @@ const props = defineProps<{
     <div class="terminal-inner-logon">
       <img src="/logon_c0_s44.png" class="terminal-inner-logon-logo" />
       <span class="terminal-inner-logon-heading">U.E.S.C Marathon</span>
-      <span v-html="decoration(props.text)" />
+      <span v-html="decorate(props.text)" />
     </div>
   </Renderer>
 </template>

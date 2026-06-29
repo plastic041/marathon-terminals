@@ -2,7 +2,7 @@
 import { useElementSize } from "@vueuse/core";
 import Map from "~/components/map.vue";
 import Renderer from "~/components/terminals/classic/renderer.vue";
-import { decoration } from "~/lib/decoration";
+import { decorate } from "~/lib/decoration";
 import type { Checkpoint, Level } from "~/types/terminal";
 
 const props = defineProps<{
@@ -36,12 +36,12 @@ const checkpointCss = computed(
 
 <template>
   <Renderer type="reading">
-    <component is="style">{{ checkpointCss }}</component>
+    <component :is="`style`">{{ checkpointCss }}</component>
     <div class="terminal-map-wrapper">
       <div ref="mapWrapper" class="map-wrapper">
         <Map :index="level.index" :viewBox="zoomViewBox" />
       </div>
-      <div v-html="decoration(props.text)" />
+      <div v-html="decorate(props.text)" />
     </div>
   </Renderer>
 </template>

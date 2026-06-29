@@ -13,6 +13,7 @@
     "@chenglou/pretext": "^0.0.8",
     "@vueuse/core": "^14.3.0",
     "nuxt": "^4.4.8",
+    "reka-ui": "^2.10.1",
     "temporal-polyfill": "^1.0.1",
     "vite-svg-loader": "^5.1.1",
     "vue": "^3.5.38",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^5.0.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.5"
   }
 }

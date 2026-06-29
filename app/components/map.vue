@@ -48,11 +48,12 @@ const MAPS = {
 
 const props = defineProps<{
   index: number;
+  viewBox?: string;
 }>();
 
 const map = computed(() => MAPS[props.index as keyof typeof MAPS]);
 </script>
 
 <template>
-  <component :is="map" />
+  <component :is="map" :viewBox="props.viewBox" />
 </template>

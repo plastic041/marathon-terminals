@@ -13,9 +13,12 @@ export default defineNuxtConfig({
     },
   },
 
-  app: {
-    head: {
-      viewport: "width=615",
+  typescript: {
+    typeCheck: true,
+    tsConfig: {
+      vueCompilerOptions: {
+        strictTemplates: true,
+      },
     },
   },
 });

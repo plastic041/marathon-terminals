@@ -75,3 +75,12 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*
+ Added -----------------------------
+*/
+
+ul {
+  list-style: none;
+  padding: 0;
+}
