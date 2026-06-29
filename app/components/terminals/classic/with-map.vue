@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useElementSize } from "@vueuse/core";
 import Map from "~/components/map.vue";
-import Renderer from "~/components/terminals/renderer.vue";
+import Renderer from "~/components/terminals/classic/renderer.vue";
 import { decoration } from "~/lib/decoration";
 import type { Checkpoint, Level } from "~/types/terminal";
 
@@ -45,3 +45,13 @@ const checkpointCss = computed(
     </div>
   </Renderer>
 </template>
+
+<style>
+.terminal-map-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2ch;
+  width: 100%;
+  height: 100%;
+}
+</style>

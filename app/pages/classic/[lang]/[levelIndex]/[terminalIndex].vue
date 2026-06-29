@@ -1,15 +1,7 @@
 <script setup lang="ts">
-import type {
-  Checkpoint,
-  CheckpointGroup,
-  TerminalsFile,
-} from "~/types/terminal";
+import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
 import d from "~/terminals/terminals-en.yaml";
-import Logon from "~/components/terminals/logon.vue";
-import Logoff from "~/components/terminals/logoff.vue";
-import TextOnly from "~/components/terminals/text-only.vue";
 import { LEVELS } from "~/lib/levels";
-import WithMap from "~/components/terminals/with-map.vue";
 
 const levels = (d as TerminalsFile).levels;
 
@@ -58,9 +50,9 @@ const {
 
   <h2>Terminal #{{ terminalIndex + 1 }}</h2>
 
-  <Logon v-if="state === 'logon'" :text="terminal.logon.text" />
+  <TerminalsClassicLogon v-if="state === 'logon'" :text="terminal.logon.text" />
   <template v-if="state === 'unfinished' || state === 'success'">
-    <WithMap
+    <TerminalsClassicWithMap
       v-if="groupType === 'checkpoint'"
       :text="scrollerCurrent"
       :level="level"
@@ -68,9 +60,12 @@ const {
         (terminal.states[state]![screenIndex]! as CheckpointGroup).checkpoint
       "
     />
-    <TextOnly v-else :text="scrollerCurrent" />
+    <TerminalsClassicTextOnly v-else :text="scrollerCurrent" />
   </template>
-  <Logoff v-if="state === 'logoff'" :text="terminal.logon.text" />
+  <TerminalsClassicLogoff
+    v-if="state === 'logoff'"
+    :text="terminal.logon.text"
+  />
 
   <div class="controls">
     <NuxtLink v-if="prevTerminalLink" :to="prevTerminalLink"

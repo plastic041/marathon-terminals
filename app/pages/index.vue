@@ -1,5 +1,5 @@
 <script setup lang="ts">
 definePageMeta({
-  redirect: "/en/0/0",
+  redirect: "/classic/en/0/0",
 });
 </script>

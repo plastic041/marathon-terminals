@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Renderer from "~/components/terminals/renderer.vue";
+import Renderer from "~/components/terminals/classic/renderer.vue";
 import { decoration } from "~/lib/decoration";
 
 const props = defineProps<{

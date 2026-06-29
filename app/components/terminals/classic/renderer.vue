@@ -1,3 +1,30 @@
+<script setup lang="ts">
+import { BORDERS } from "~/lib/borders";
+
+const props = defineProps<{
+  type: "logon" | "logoff" | "reading";
+}>();
+</script>
+
+<template>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span> {{ BORDERS[type].tl }} </span>
+      <span> 0025 08.25.2337 </span>
+    </div>
+    <div class="terminal-inner">
+      <div class="terminal-inner-content">
+        <slot />
+      </div>
+    </div>
+    <div class="terminal-footer">
+      <span> {{ BORDERS[type].bl }} </span>
+      <span> {{ BORDERS[type].br }} </span>
+    </div>
+  </div>
+</template>
+
+<style>
 .terminal {
   line-height: 1.25;
   font-size: 1rem;
@@ -32,36 +59,4 @@
   overflow-y: hidden;
   word-break: break-word;
 }
-
-.terminal-inner-logon {
-  min-height: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  align-items: center;
-  justify-content: center;
-}
-
-.terminal-inner-logon-logo {
-  width: 10.5ch;
-  aspect-ratio: 1/1;
-}
-
-.terminal-inner-logon-heading {
-  margin-top: 1lh;
-  font-size: 1.15rem;
-  font-weight: bold;
-}
-
-.contents {
-  display: contents;
-}
-
-.terminal-map-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2ch;
-  width: 100%;
-  height: 100%;
-}
+</style>
