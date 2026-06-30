@@ -9,6 +9,8 @@ const levels = (d as TerminalsFile).levels;
 const route = useRoute();
 const selectedEl = ref<HTMLElement | null>(null);
 
+const lang = computed(() => route.params.lang as "en" | "ko");
+
 function setSelectedRef(
   el: Element | ComponentPublicInstance | null,
   levelIndex: number,
@@ -51,7 +53,7 @@ onMounted(() => {
                       :to="{
                         name: 'modern-m1-lang-levelIndex-terminalIndex',
                         params: {
-                          lang: 'en',
+                          lang,
                           levelIndex: level.index,
                           terminalIndex: term.index,
                         },
@@ -69,7 +71,7 @@ onMounted(() => {
                       :to="{
                         name: 'modern-m1-lang-levelIndex-terminalIndex',
                         params: {
-                          lang: 'en',
+                          lang,
                           levelIndex: level.index,
                           terminalIndex: term.index,
                         },
@@ -87,7 +89,7 @@ onMounted(() => {
                       :to="{
                         name: 'modern-m1-lang-levelIndex-terminalIndex',
                         params: {
-                          lang: 'en',
+                          lang,
                           levelIndex: level.index,
                           terminalIndex: term.index,
                         },
