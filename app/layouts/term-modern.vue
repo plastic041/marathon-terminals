@@ -3,6 +3,15 @@ import "~/assets/styles/reset.css";
 import "~/assets/styles/map.css";
 
 import "~/assets/styles/modern.css";
+
+useHead({
+  meta: [
+    {
+      name: "theme-color",
+      content: "#000",
+    },
+  ],
+});
 </script>
 
 <template>
