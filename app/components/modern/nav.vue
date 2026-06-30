@@ -31,7 +31,7 @@ onMounted(() => {
 
 <template>
   <UiScrollArea as-child>
-    <nav>
+    <nav :class="$style.nav">
       <ul :class="$style.levels">
         <li v-for="level in levels">
           <h3 :class="$style['level-name']">
@@ -49,7 +49,7 @@ onMounted(() => {
                   <PopoverClose as-child>
                     <NuxtLink
                       :to="{
-                        name: 'modern-lang-levelIndex-terminalIndex',
+                        name: 'modern-m1-lang-levelIndex-terminalIndex',
                         params: {
                           lang: 'en',
                           levelIndex: level.index,
@@ -67,7 +67,7 @@ onMounted(() => {
                   <PopoverClose as-child>
                     <NuxtLink
                       :to="{
-                        name: 'modern-lang-levelIndex-terminalIndex',
+                        name: 'modern-m1-lang-levelIndex-terminalIndex',
                         params: {
                           lang: 'en',
                           levelIndex: level.index,
@@ -85,7 +85,7 @@ onMounted(() => {
                   <PopoverClose as-child>
                     <NuxtLink
                       :to="{
-                        name: 'modern-lang-levelIndex-terminalIndex',
+                        name: 'modern-m1-lang-levelIndex-terminalIndex',
                         params: {
                           lang: 'en',
                           levelIndex: level.index,
@@ -109,6 +109,10 @@ onMounted(() => {
 </template>
 
 <style module>
+.nav {
+  font-family: monospace, monospace;
+}
+
 .levels {
   display: flex;
   flex-direction: column;

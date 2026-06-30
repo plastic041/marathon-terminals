@@ -1,4 +1,4 @@
-import { Temporal } from "temporal-polyfill";
+import { Temporal, Intl } from "@js-temporal/polyfill";
 
 const BASE = Temporal.PlainDateTime.from("1995-08-24T22:42:17");
 
@@ -35,8 +35,8 @@ export function format(dt: Temporal.PlainDateTime): string {
 }
 
 // test
-// const gc = getGameCurrentDateTime(
-//   Temporal.PlainDateTime.from("2022-06-06T00:00:00"),
-//   Temporal.PlainDateTime.from("2022-06-06T00:00:30"),
-// );
-// console.log(format(gc));
+const gc = getGameCurrentDateTime(
+  Temporal.PlainDateTime.from("2022-06-06T00:00:00"),
+  Temporal.PlainDateTime.from("2022-06-06T00:00:00"),
+);
+console.log(format(gc));

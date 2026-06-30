@@ -50,7 +50,7 @@ export function useTerminalsModern(levels: Level[]) {
 
   function makeRoute(info: RouteInfo): RouteLocationRaw {
     return {
-      path: `/modern/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
+      path: `/modern/m1/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
         state: info.state ?? state.value,
         screenindex: info.screenIndex ?? screenIndex.value,

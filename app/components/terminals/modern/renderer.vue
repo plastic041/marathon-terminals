@@ -4,12 +4,15 @@ import { BORDERS } from "~/lib/borders";
 const props = defineProps<{
   type: "logon" | "logoff" | "reading" | "checkpoint";
 }>();
+
+const route = useRoute();
+const lang = computed(() => route.params.lang as "en" | "ko");
 </script>
 
 <template>
   <div :class="$style.terminal">
     <div :class="$style['terminal-header']">
-      <span> {{ BORDERS[type].tl }} </span>
+      <span> {{ BORDERS[lang][props.type].tl }} </span>
       <span> 0025 08.25.2337 </span>
     </div>
     <div :class="$style['terminal-inner']">
