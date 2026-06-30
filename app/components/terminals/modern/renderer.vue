@@ -29,7 +29,7 @@ const props = defineProps<{
 .terminal {
   line-height: 1.25;
   font-size: 1rem;
-  font-family: Courier, monospace;
+  font-family: monospace;
 
   width: 100%;
 }
