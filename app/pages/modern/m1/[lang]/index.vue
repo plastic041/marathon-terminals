@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ArrowRightIcon } from "@radix-icons/vue";
+import { decorate } from "~/lib/decoration";
 import { intro as introEN } from "~/texts/m1/intro-en";
 import { intro as introKO } from "~/texts/m1/intro-ko";
 
@@ -20,9 +21,7 @@ definePageMeta({
           {{ introEN.title }}
         </span>
 
-        <div :class="$style.content">
-          {{ introEN.text }}
-        </div>
+        <div :class="$style.content" v-html="decorate(introEN.text)" />
       </template>
 
       <template v-if="lang === 'ko'">
@@ -30,9 +29,7 @@ definePageMeta({
           {{ introKO.title }}
         </span>
 
-        <div :class="$style.content">
-          {{ introKO.text }}
-        </div>
+        <div :class="$style.content" v-html="decorate(introKO.text)" />
       </template>
 
       <UiButton as-child :class="`${$style.button} ${$style['nav-button']}`">
@@ -62,13 +59,16 @@ definePageMeta({
 }
 
 .container {
+  font-family: "Orbit", sans-serif;
+  margin: 0 auto;
   width: 100%;
+  max-width: 65ch;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1lh;
-  padding-bottom: 20rem;
   padding: 0 2ch;
+  padding-bottom: 20rem;
 }
 
 .content {
@@ -78,7 +78,7 @@ definePageMeta({
 
 .title {
   font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .button {

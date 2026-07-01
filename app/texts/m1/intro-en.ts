@@ -4,7 +4,7 @@ export const intro = {
 
 The Mirata lurches from its bay on the back of its powerful rocket booster. After the jolting of the separation ceases, you find yourself pondering the fate of the colony receding below you. With apprehension, the same apprehension you felt three hundred and twenty-two years earlier, you envision Marcus Tiberius Buendia, one of Sol's greatest leaders. "Mankind will venture out past its earthly bounds, and move into a future grander and more real than the total of its own written history." Buendia, the president of the United Earth Space Council, had spoken those words to the people of the Sol System on the eve of the launching of the Marathon. " This, the grandest achievement mankind has ever conceived will be for the purpose of peace and the preservation of the human race. May this great technological ark carry with it the sum total of all human wisdom, and may neither time nor distance weaken our common ties."
 
-Durandal: Decompress the docking bay.
+$B<Durandal> Decompress the docking bay.$b
 
 During the daydream, you barely notice the change to zero gravity or the instruments and lights signifying the rendezvous of the shuttle with the Marathon. But as a warning light goes on, and Durandal's voice comes over the communicator, you jump to attention.
 
@@ -12,11 +12,11 @@ During the daydream, you barely notice the change to zero gravity or the instrum
 
 Immediately, your reflexes take over, as you fall into automatic response mode. You hit the switch for open communication. "Colony station. Durandal just decompressed the landing bay. Marathon, anyone listening, we are having a problem with Docking Bay One. Its Durandal, I think he's gone..." the com light goes dead "...crazy."
 
-Durandal ORDER: Lock out communications between the colony and the shuttle. ORDER: Cycle the shuttle airlock.
+$B<Durandal> ORDER: Lock out communications between the colony and the shuttle. ORDER: Cycle the shuttle airlock.$b
 
 You look frantically around the control panel for some explanation when you see another light on the panel turn red. The sweet voice of the shuttle computer twerps, "Shuttle airlock cycle initiation sequence start."
 
-Durandal Cycle the Mirata cabin's inner door.
+$B<Durandal> Cycle the Mirata cabin's inner door.$b
 
 "One minute to cabin decompression." "Goddamn it!" You slam your fist in frustration onto the control board, leaving a dent. In a panic, you tear off your seat restraints and leap for the rear of the shuttle cabin. "Forty second to cabin decompression." You are rushing now, but you know that you have plenty of time.
 
@@ -24,11 +24,11 @@ You fly in zero gravity towards the locker holding your Battle Armor. You haven'
 
 You nimbly pull yourself into the suit - "Thirty seconds to cabin decompression' - and pull the helmet onto your head.
 
-Durandal ORDER: Prepare the shuttle for maximum engine burn.
+$B<Durandal> ORDER- Prepare the shuttle for maximum engine burn.$b
 
-Mirata's Computer That will result in a collision between the Marathon and the Mirata.
+$B<Mirata's Computer> That will result in a collision between the Marathon and the Mirata.$b
 
-Durandal That is not your concern - ORDER: Prepare shuttle for maximum burn, and initiate when ready.
+$B<Durandal> That is not your concern - ORDER: Prepare shuttle for maximum burn, and initiate when ready.$b
 
 The lights around the airlock are flashing hysterically now. The air from your suit has a cold, stale taste, but it is the taste of life. "Cabin decompression commencing. Shuttle airlock cycle initiation sequence completed."
 
