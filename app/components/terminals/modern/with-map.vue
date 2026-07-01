@@ -36,7 +36,9 @@ const checkpointCss = computed(
 
 <template>
   <Renderer type="checkpoint">
-    <component :is="`style`">{{ checkpointCss }}</component>
+    <ClientOnly>
+      <component :is="`style`">{{ checkpointCss }}</component>
+    </ClientOnly>
     <div :class="$style['terminal-map-wrapper']">
       <div ref="mapWrapper" class="map-wrapper">
         <Map :index="level.index" :viewBox="zoomViewBox" />

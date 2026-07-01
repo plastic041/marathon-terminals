@@ -23,6 +23,10 @@ import { HamburgerMenuIcon } from "@radix-icons/vue";
         </PopoverContent>
       </PopoverPortal>
     </PopoverRoot>
+
+    <div :class="$style['fanmade-notice']">
+      <Notice />
+    </div>
   </header>
 </template>
 
@@ -30,6 +34,8 @@ import { HamburgerMenuIcon } from "@radix-icons/vue";
 .header {
   flex-shrink: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {

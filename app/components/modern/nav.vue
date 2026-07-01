@@ -107,6 +107,8 @@ onMounted(() => {
         </li>
       </ul>
     </nav>
+
+    <Notice style="margin-top: 2rem" />
   </UiScrollArea>
 </template>
 

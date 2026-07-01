@@ -9,7 +9,13 @@ export default defineNuxtConfig({
   vite: {
     plugins: [yaml(), svgLoader()],
     optimizeDeps: {
-      include: ["@chenglou/pretext"],
+      include: [
+        "@chenglou/pretext",
+        "@chenglou/pretext",
+        "@radix-icons/vue",
+        "@vueuse/core",
+        "reka-ui",
+      ],
     },
   },
 
