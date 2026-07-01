@@ -6,33 +6,37 @@ import { intro as introKO } from "~/texts/m1/intro-ko";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang);
-
-definePageMeta({
-  layout: "term-modern",
-});
 </script>
 
 <template>
-  <div :class="$style.body">
-    <ModernHeader />
-    <div :class="$style.container">
+  <div class="h-100dvh flex flex-col gap-8">
+    <Header />
+    <div
+      class="font-[Orbit] mx-auto w-full max-w-[65ch] flex flex-col items-center gap-[1lh] px-[2ch] pb-80"
+    >
       <template v-if="lang === 'en'">
-        <span :class="$style.title">
+        <span class="text-lg">
           {{ introEN.title }}
         </span>
 
-        <div :class="$style.content" v-html="decorate(introEN.text)" />
+        <div
+          class="whitespace-pre-wrap w-full"
+          v-html="decorate(introEN.text)"
+        />
       </template>
 
       <template v-if="lang === 'ko'">
-        <span :class="$style.title">
+        <span class="text-lg">
           {{ introKO.title }}
         </span>
 
-        <div :class="$style.content" v-html="decorate(introKO.text)" />
+        <div
+          class="whitespace-pre-wrap w-full"
+          v-html="decorate(introKO.text)"
+        />
       </template>
 
-      <UiButton as-child :class="`${$style.button} ${$style['nav-button']}`">
+      <UiButton as-child>
         <NuxtLink
           :to="{
             name: 'modern-m1-lang-levelIndex-terminalIndex',
@@ -49,44 +53,3 @@ definePageMeta({
     </div>
   </div>
 </template>
-
-<style module>
-.body {
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.container {
-  font-family: "Orbit", sans-serif;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 65ch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1lh;
-  padding: 0 2ch;
-  padding-bottom: 20rem;
-}
-
-.content {
-  width: 100%;
-  white-space: pre-wrap;
-}
-
-.title {
-  font-family: sans-serif;
-  font-size: 1.25rem;
-}
-
-.button {
-  padding-left: 0.5ch;
-  gap: 0.5ch;
-}
-
-.nav-button {
-  min-width: 13ch;
-}
-</style>

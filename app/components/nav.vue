@@ -3,6 +3,7 @@ import type { TerminalsFile } from "~/types/terminal";
 import type { ComponentPublicInstance } from "vue";
 import d from "~/texts/m1/terminals-en.yaml";
 import { PopoverClose } from "reka-ui";
+import ScrollArea from "~/components/ui/scroll-area/scroll-area.vue";
 
 const levels = (d as TerminalsFile).levels;
 
@@ -32,24 +33,31 @@ onMounted(() => {
 </script>
 
 <template>
-  <UiScrollArea as-child>
-    <nav :class="$style.nav">
-      <ul :class="$style.levels">
+  <ScrollArea as-child>
+    <nav class="[&_a]:text-green1 [&_a]:underline [&_a]:bg-green-1">
+      <ul class="flex flex-col gap-2">
         <li>
-          <NuxtLink> Intro </NuxtLink>
+          <NuxtLink
+            :to="{
+              name: 'modern-m1-lang',
+              params: {
+                lang,
+              },
+            }"
+          >
+            Intro
+          </NuxtLink>
         </li>
         <li v-for="level in levels">
-          <h3 :class="$style['level-name']">
-            {{ level.index }}. {{ level.name }}
-          </h3>
+          <h3>{{ level.index }}. {{ level.name }}</h3>
 
-          <ul v-for="term in level.terminals" :class="$style.terminals">
+          <ul v-for="term in level.terminals" class="flex flex-col">
             <li
-              :class="$style.terminal"
+              class="flex flex-row"
               :ref="(el) => setSelectedRef(el, level.index, term.index)"
             >
-              <h4 :class="$style['terminal-index']">#{{ term.index }}</h4>
-              <ul :class="$style['terminal-types']">
+              <h4 class="shrink-0 min-w-[4ch]">#{{ term.index }}</h4>
+              <ul class="grid grid-cols-3 grow">
                 <li v-if="term.states.unfinished">
                   <PopoverClose as-child>
                     <NuxtLink
@@ -110,48 +118,5 @@ onMounted(() => {
         </li>
       </ul>
     </nav>
-  </UiScrollArea>
+  </ScrollArea>
 </template>
-
-<style module>
-.nav {
-  font-family: monospace, monospace;
-}
-
-.levels {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.level-name {
-  margin-left: 1rem;
-}
-
-.terminals {
-  display: flex;
-  flex-direction: column;
-}
-
-.terminal {
-  display: flex;
-  flex-direction: row;
-}
-
-.terminal-index {
-  flex-shrink: 0;
-  min-width: 4ch;
-}
-
-.terminal-types {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.nav a {
-  text-decoration: underline;
-  background-color: #131;
-  color: #0f0;
-}
-</style>
