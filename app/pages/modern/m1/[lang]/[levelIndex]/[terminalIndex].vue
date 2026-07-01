@@ -7,8 +7,9 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 const route = useRoute();
 const lang = computed(() => route.params.lang);
 
-const levels = ((lang.value === "en" ? dataEN : dataKR) as TerminalsFile)
-  .levels;
+const levels = (
+  (lang.value === "en" ? dataEN : dataKR) as TerminalsFile
+).chapters.flatMap((c) => c.levels);
 
 const {
   screenIndex,
