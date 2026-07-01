@@ -35,6 +35,9 @@ onMounted(() => {
   <UiScrollArea as-child>
     <nav :class="$style.nav">
       <ul :class="$style.levels">
+        <li>
+          <NuxtLink> Intro </NuxtLink>
+        </li>
         <li v-for="level in levels">
           <h3 :class="$style['level-name']">
             {{ level.index }}. {{ level.name }}
@@ -107,8 +110,6 @@ onMounted(() => {
         </li>
       </ul>
     </nav>
-
-    <Notice style="margin-top: 2rem" />
   </UiScrollArea>
 </template>
 
@@ -148,7 +149,7 @@ onMounted(() => {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.terminal-types a {
+.nav a {
   text-decoration: underline;
   background-color: #131;
   color: #0f0;
