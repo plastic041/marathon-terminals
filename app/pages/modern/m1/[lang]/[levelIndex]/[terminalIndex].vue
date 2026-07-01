@@ -35,8 +35,13 @@ const {
     <Header />
     <main class="w-full max-w-200 min-h-0 h-4/5 mx-auto flex flex-col">
       <div class="size-full min-h-0 flex flex-col gap-4">
-        <h1 class="leading-none text-xl text-pretty px-[1ch]">
-          {{ level.index }}. {{ level.name }}#{{ terminal.index }}
+        <h1 class="leading-none text-xl text-pretty px-[1ch] flex flex-col">
+          <span class="leading-normal">
+            {{ level.index }}. {{ level.name }}
+          </span>
+          <span class="text-sm leading-tight">
+            #{{ terminal.index }} - {{ terminal.logon.text }}
+          </span>
           <template v-if="state === 'success' || state === 'failure'">
             [{{ state }}]
           </template>
