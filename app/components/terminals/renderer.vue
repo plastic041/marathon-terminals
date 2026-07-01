@@ -12,7 +12,7 @@ const lang = computed(() => route.params.lang as "en" | "ko");
 
 <template>
   <div class="leading-tight w-full">
-    <div class="text-red bg-green-1 flex flex-col px-[1ch]">
+    <div class="text-red bg-red-1 flex flex-col px-[1ch]">
       <span> {{ BORDERS[lang][props.type].tl }} </span>
       <span> 0025 08.25.2337 </span>
     </div>
