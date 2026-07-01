@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { TerminalsFile } from "~/types/terminal";
 import type { ComponentPublicInstance } from "vue";
-import d from "~/terminals/terminals-en.yaml";
+import d from "~/texts/m1/terminals-en.yaml";
 import { PopoverClose } from "reka-ui";
 
 const levels = (d as TerminalsFile).levels;

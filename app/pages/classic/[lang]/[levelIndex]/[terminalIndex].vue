@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
-import d from "~/terminals/terminals-en.yaml";
+import d from "~/texts/m1/terminals-en.yaml";
 import { LEVELS } from "~/lib/levels";
 
 const levels = (d as TerminalsFile).levels;

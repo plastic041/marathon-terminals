@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
-import dataEN from "~/terminals/terminals-en.yaml";
-import dataKR from "~/terminals/terminals-kr.yaml";
+import dataEN from "~/texts/m1/terminals-en.yaml";
+import dataKR from "~/texts/m1/terminals-kr.yaml";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 
 const route = useRoute();
