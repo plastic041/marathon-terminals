@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ChicagoKare";
+  src: url("/ChicagoKare-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+}
+
+@theme {
+  --color-*: initial;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-green: #0f0;
+  --color-green-1: #040;
+  --color-green0: #080;
+  --color-green1: #4f4;
+  --color-red: #f00;
+  --color-red0: #800;
+  --color-red-1: #270000;
+
+  --font-sans: monospace, monospace;
+}
+
+@layer base {
+  * {
+    @apply outline-green/50;
+  }
+  body {
+    @apply bg-black text-green;
+  }
+  strong {
+    @apply font-bold;
+  }
+  i {
+    @apply italic;
+  }
+}

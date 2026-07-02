@@ -7,12 +7,9 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 const route = useRoute();
 const lang = computed(() => route.params.lang);
 
-const levels = ((lang.value === "en" ? dataEN : dataKR) as TerminalsFile)
-  .levels;
-
-definePageMeta({
-  layout: "term-modern",
-});
+const levels = (
+  (lang.value === "en" ? dataEN : dataKR) as TerminalsFile
+).chapters.flatMap((c) => c.levels);
 
 const {
   screenIndex,
@@ -34,23 +31,28 @@ const {
 </script>
 
 <template>
-  <div :class="$style.body">
-    <ModernHeader />
-    <main :class="$style.main">
-      <div :class="$style.contents">
-        <h1 :class="$style['terminal-name']">
-          {{ level.index }}. {{ level.name }}#{{ terminal.index }}
+  <div class="h-dvh flex flex-col gap-4">
+    <Header />
+    <main class="w-full max-w-200 min-h-0 h-4/5 mx-auto flex flex-col">
+      <div class="size-full min-h-0 flex flex-col gap-4">
+        <h1 class="leading-none text-xl text-pretty px-[1ch] flex flex-col">
+          <span class="leading-normal">
+            {{ level.index }}. {{ level.name }}
+          </span>
+          <span class="text-sm leading-tight">
+            #{{ terminal.index }} - {{ terminal.logon.text }}
+          </span>
           <template v-if="state === 'success' || state === 'failure'">
             [{{ state }}]
           </template>
         </h1>
-        <div :class="$style['terminal-wrapper']">
-          <TerminalsModernLog
+        <div>
+          <TerminalsLog
             v-if="state === 'logon' || state === 'logoff'"
             :text="terminal.logon.text"
             :type="state"
           />
-          <TerminalsModernWithMap
+          <TerminalsWithMap
             v-else-if="groupType === 'checkpoint'"
             :text="terminal.states[state]![screenIndex]?.text!"
             :level="level"
@@ -59,17 +61,17 @@ const {
                 .checkpoint
             "
           />
-          <TerminalsModernTextOnly
+          <TerminalsTextOnly
             v-else
             :text="terminal.states[state]![screenIndex]?.text!"
           />
         </div>
         <div>
-          <div :class="$style['navigation-controls']">
+          <div class="flex flex-row px-[1ch]">
             <UiButton
               v-if="prevTerminalRouteInfo"
               as-child
-              :class="`${$style.button} ${$style['nav-button']}`"
+              class="min-w-[13ch]"
             >
               <NuxtLink :to="prevTerminalLink!">
                 <ArrowLeftIcon /> Term L{{
@@ -77,18 +79,14 @@ const {
                 }}#{{ prevTerminalRouteInfo.terminalIndex }}
               </NuxtLink>
             </UiButton>
-            <UiButton
-              v-else
-              :class="`${$style.button} ${$style['nav-button']}`"
-              disabled
-            >
+            <UiButton v-else class="min-w-[13ch]" disabled>
               <ArrowLeftIcon /> -
             </UiButton>
 
             <UiButton
               v-if="nextTerminalRouteInfo"
               as-child
-              :class="`${$style.button} ${$style['nav-button']}`"
+              class="min-w-[13ch]"
             >
               <NuxtLink :to="nextTerminalLink!">
                 <ArrowRightIcon /> Term L{{
@@ -96,30 +94,20 @@ const {
                 }}#{{ nextTerminalRouteInfo.terminalIndex }}
               </NuxtLink>
             </UiButton>
-            <UiButton
-              v-else
-              :class="`${$style.button} ${$style['nav-button']}`"
-              disabled
-            >
+            <UiButton v-else class="min-w-[13ch]" disabled>
               <ArrowRightIcon /> -
             </UiButton>
 
             <UiButton
               v-if="nextScreenLink"
               as-child
-              :class="$style.button"
-              style="margin-left: auto"
+              class="min-w-[13ch] ml-auto"
             >
               <NuxtLink :to="nextScreenLink">
                 <ArrowRightIcon /> Next
               </NuxtLink>
             </UiButton>
-            <UiButton
-              v-else
-              :class="$style.button"
-              style="margin-left: auto"
-              disabled
-            >
+            <UiButton v-else class="min-w-[13ch] ml-auto" disabled>
               <ArrowRightIcon /> Next
             </UiButton>
           </div>
@@ -128,56 +116,3 @@ const {
     </main>
   </div>
 </template>
-
-<style module>
-.body {
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.main {
-  width: 100%;
-  max-width: 800px;
-
-  min-height: 0;
-  height: 80%;
-
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.contents {
-  width: 100%;
-
-  min-height: 0;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.terminal-name {
-  line-height: 1;
-  font-size: 1.25rem;
-  text-wrap: pretty;
-}
-
-.button {
-  padding-left: 0.5ch;
-  gap: 0.5ch;
-}
-
-.nav-button {
-  min-width: 13ch;
-}
-
-.navigation-controls {
-  display: flex;
-  flex-direction: row;
-  padding: 0 1ch;
-}
-</style>

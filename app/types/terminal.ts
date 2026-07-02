@@ -4,6 +4,12 @@
 
 /** Root object of terminals.json. */
 export interface TerminalsFile {
+  chapters: Chapter[];
+}
+
+export interface Chapter {
+  index: number;
+  name: string;
   levels: Level[];
 }
 

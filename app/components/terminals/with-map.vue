@@ -39,7 +39,7 @@ const checkpointCss = computed(
     <ClientOnly>
       <component :is="`style`">{{ checkpointCss }}</component>
     </ClientOnly>
-    <div :class="$style['terminal-map-wrapper']">
+    <div class="grid grid-cols-2 gap-[2ch] size-full">
       <div ref="mapWrapper" class="map-wrapper">
         <Map :index="level.index" :viewBox="zoomViewBox" />
       </div>
@@ -49,13 +49,3 @@ const checkpointCss = computed(
     </div>
   </Renderer>
 </template>
-
-<style module>
-.terminal-map-wrapper {
-  display: grid;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  gap: 2ch;
-  width: 100%;
-  height: 100%;
-}
-</style>

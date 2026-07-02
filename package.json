@@ -12,10 +12,15 @@
   "dependencies": {
     "@chenglou/pretext": "^0.0.8",
     "@js-temporal/polyfill": "^0.5.1",
+    "@lucide/vue": "^1.22.0",
     "@radix-icons/vue": "^1.0.0",
     "@vueuse/core": "^14.3.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "nuxt": "^4.4.8",
     "reka-ui": "^2.10.1",
+    "shadcn-nuxt": "2.7.4",
+    "tailwind-merge": "^3.6.0",
     "temporal-polyfill": "^1.0.1",
     "vite-svg-loader": "^5.1.1",
     "vue": "^3.5.38",
@@ -23,6 +28,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^5.0.0",
+    "@tailwindcss/vite": "^4.3.2",
+    "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.5"
   }

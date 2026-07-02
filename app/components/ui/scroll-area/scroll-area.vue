@@ -4,6 +4,7 @@ import type { HTMLAttributes } from "vue";
 import { reactiveOmit } from "@vueuse/core";
 import { ScrollAreaCorner, ScrollAreaRoot, ScrollAreaViewport } from "reka-ui";
 import ScrollBar from "./bar.vue";
+import { cn } from "~/lib/utils.js";
 
 const props = defineProps<
   ScrollAreaRootProps & { class?: HTMLAttributes["class"] }
@@ -15,10 +16,10 @@ const delegatedProps = reactiveOmit(props, "class");
 <template>
   <ScrollAreaRoot
     v-bind="delegatedProps"
-    :class="`${$style.root} ${props.class}`"
+    :class="cn('relative', props.class)"
     type="auto"
   >
-    <ScrollAreaViewport :class="$style.area">
+    <ScrollAreaViewport class="outline-none size-full px-[1ch]">
       <slot />
     </ScrollAreaViewport>
     <ClientOnly>
@@ -27,24 +28,3 @@ const delegatedProps = reactiveOmit(props, "class");
     <ScrollAreaCorner />
   </ScrollAreaRoot>
 </template>
-
-<style module>
-.root {
-  position: relative;
-}
-
-.area {
-  outline: none;
-  width: 100%;
-  height: 100%;
-  padding: 0 1ch;
-}
-
-.area:focus-visible {
-  outline: 1px solid lightgreen;
-}
-
-/* focus-visible:ring-ring/50
-  size-full rounded-[inherit] transition-[color,box-shadow]
-outline-none focus-visible:ring-3 focus-visible:outline-1 */
-</style>
