@@ -1,5 +1,5 @@
 export const intro = {
-  title: `천국 어딘가에서... 그들이 기다린다.`,
+  title: `Somewhere in the heavens, they are waiting...`,
   text: `"Primary booster burn has ceased. Shuttle Mirata, you're clear for orbital maneuvering."
 
 The Mirata lurches from its bay on the back of its powerful rocket booster. After the jolting of the separation ceases, you find yourself pondering the fate of the colony receding below you. With apprehension, the same apprehension you felt three hundred and twenty-two years earlier, you envision Marcus Tiberius Buendia, one of Sol's greatest leaders. "Mankind will venture out past its earthly bounds, and move into a future grander and more real than the total of its own written history." Buendia, the president of the United Earth Space Council, had spoken those words to the people of the Sol System on the eve of the launching of the Marathon. " This, the grandest achievement mankind has ever conceived will be for the purpose of peace and the preservation of the human race. May this great technological ark carry with it the sum total of all human wisdom, and may neither time nor distance weaken our common ties."
