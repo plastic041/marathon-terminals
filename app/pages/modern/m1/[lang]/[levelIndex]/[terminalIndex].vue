@@ -45,7 +45,7 @@ useHead({
     { property: "og:description", content: ogDescription },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: ogTitle },
-    { name: "twitter:description", content: ogDescription.value },
+    { name: "twitter:description", content: ogDescription },
     { property: "og:image", content: `${BASE_URL}/marathon-logo.png` },
     { name: "twitter:image", content: `${BASE_URL}/marathon-logo.png` },
   ],
