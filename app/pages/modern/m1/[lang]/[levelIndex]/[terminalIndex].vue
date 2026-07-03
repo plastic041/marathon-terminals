@@ -41,11 +41,11 @@ useHead({
   meta: [
     { property: "og:title", content: ogTitle },
     { property: "og:description", content: ogDescription },
-    { property: "og:image", content: "/logon_c0_s44.png" },
+    { property: "og:image", content: "/marathon-logo.png" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: ogTitle },
     { name: "twitter:description", content: ogDescription },
-    { name: "twitter:image", content: "/logon_c0_s44.png" },
+    { name: "twitter:image", content: "/marathon-logo.png" },
   ],
 });
 </script>
