@@ -6,6 +6,22 @@ import { intro as introKO } from "~/texts/m1/intro-ko";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang);
+
+const ogTitle = `Marathon`;
+const ogDescription = `그들이 하늘에서, 기다린다.`;
+
+useHead({
+  title: "Marathon",
+  meta: [
+    { property: "og:title", content: ogTitle },
+    { property: "og:description", content: ogDescription },
+    { property: "og:image", content: "/marathon-logo.png" },
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:title", content: ogTitle },
+    { name: "twitter:description", content: ogDescription },
+    { name: "twitter:image", content: "/marathon-logo.png" },
+  ],
+});
 </script>
 
 <template>
