@@ -4,6 +4,7 @@ import dataEN from "~/texts/m1/terminals-en.yaml";
 import dataKR from "~/texts/m1/terminals-kr.yaml";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 import { BASE_URL } from "~/lib/url";
+import { escapeHtml } from "~/lib/decoration";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang);
@@ -35,7 +36,7 @@ const {
 const ogTitle = computed(
   () => `L${String(levelIndex.value).padStart(2, "0")}#${terminalIndex.value}`,
 );
-const ogDescription = computed(() => terminal.value.logon.text);
+const ogDescription = computed(() => escapeHtml(terminal.value.logon.text));
 
 useHead({
   title: ogTitle,
@@ -44,7 +45,7 @@ useHead({
     { property: "og:description", content: ogDescription },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: ogTitle },
-    { name: "twitter:description", content: ogDescription },
+    { name: "twitter:description", content: ogDescription.value },
     { property: "og:image", content: `${BASE_URL}/marathon-logo.png` },
     { name: "twitter:image", content: `${BASE_URL}/marathon-logo.png` },
   ],

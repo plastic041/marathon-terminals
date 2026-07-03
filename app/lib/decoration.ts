@@ -22,7 +22,7 @@ function underline(original: string): string {
     );
 }
 
-function escapeHtml(original: string): string {
+export function escapeHtml(original: string): string {
   return original
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
