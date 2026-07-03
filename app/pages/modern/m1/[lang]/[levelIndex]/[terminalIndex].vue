@@ -16,7 +16,9 @@ const {
 
   state,
   level,
+  levelIndex,
   terminal,
+  terminalIndex,
 
   groupType,
 
@@ -28,6 +30,24 @@ const {
 
   nextScreenLink,
 } = useTerminalsModern(levels);
+
+const ogTitle = computed(
+  () => `L${String(levelIndex.value).padStart(2, "0")}#${terminalIndex.value}`,
+);
+const ogDescription = computed(() => terminal.value.logon.text);
+
+useHead({
+  title: ogTitle,
+  meta: [
+    { property: "og:title", content: ogTitle },
+    { property: "og:description", content: ogDescription },
+    { property: "og:image", content: "/logon_c0_s44.png" },
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:title", content: ogTitle },
+    { name: "twitter:description", content: ogDescription },
+    { name: "twitter:image", content: "/logon_c0_s44.png" },
+  ],
+});
 </script>
 
 <template>
