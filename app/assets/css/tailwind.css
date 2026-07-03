@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "HBIOS-SYS";
+  src: url("/HBIOS-SYS.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "ChicagoKare";
   src: url("/ChicagoKare-Regular.woff2") format("woff2");
   font-weight: normal;
@@ -27,7 +35,7 @@
   --color-red0: #800;
   --color-red-1: #270000;
 
-  --font-sans: monospace, monospace;
+  --font-sans: HBIOS-SYS, monospace;
 }
 
 @layer base {

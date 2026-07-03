@@ -35,11 +35,11 @@ const {
     <Header />
     <main class="w-full max-w-200 min-h-0 h-4/5 mx-auto flex flex-col">
       <div class="size-full min-h-0 flex flex-col gap-4">
-        <h1 class="leading-none text-xl text-pretty px-[1ch] flex flex-col">
-          <span class="leading-normal">
+        <h1 class="leading-none text-xl px-[1ch] flex flex-col">
+          <span class="leading-normal text-pretty">
             {{ level.index }}. {{ level.name }}
           </span>
-          <span class="text-sm leading-tight">
+          <span class="text-sm leading-tight text-pretty">
             #{{ terminal.index }} - {{ terminal.logon.text }}
           </span>
           <template v-if="state === 'success' || state === 'failure'">
@@ -74,9 +74,9 @@ const {
               class="min-w-[13ch]"
             >
               <NuxtLink :to="prevTerminalLink!">
-                <ArrowLeftIcon /> Term L{{
-                  prevTerminalRouteInfo.levelIndex
-                }}#{{ prevTerminalRouteInfo.terminalIndex }}
+                <ArrowLeftIcon /> L{{ prevTerminalRouteInfo.levelIndex }}#{{
+                  prevTerminalRouteInfo.terminalIndex
+                }}
               </NuxtLink>
             </UiButton>
             <UiButton v-else class="min-w-[13ch]" disabled>
@@ -89,9 +89,9 @@ const {
               class="min-w-[13ch]"
             >
               <NuxtLink :to="nextTerminalLink!">
-                <ArrowRightIcon /> Term L{{
-                  nextTerminalRouteInfo.levelIndex
-                }}#{{ nextTerminalRouteInfo.terminalIndex }}
+                <ArrowRightIcon /> L{{ nextTerminalRouteInfo.levelIndex }}#{{
+                  nextTerminalRouteInfo.terminalIndex
+                }}
               </NuxtLink>
             </UiButton>
             <UiButton v-else class="min-w-[13ch]" disabled>
