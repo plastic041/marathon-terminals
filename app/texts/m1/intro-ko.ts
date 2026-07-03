@@ -1,71 +1,72 @@
 export const intro = {
   title: `그들이 하늘에서, 기다린다.`,
-  text: `"Primary booster burn has ceased. Shuttle Mirata, you're clear for orbital maneuvering."
+  text: `“주 추진기 연소 종료 확인. 미라타 왕복선, 궤도 기동을 시작해도 좋습니다.”
 
-The Mirata lurches from its bay on the back of its powerful rocket booster. After the jolting of the separation ceases, you find yourself pondering the fate of the colony receding below you. With apprehension, the same apprehension you felt three hundred and twenty-two years earlier, you envision Marcus Tiberius Buendia, one of Sol's greatest leaders. "Mankind will venture out past its earthly bounds, and move into a future grander and more real than the total of its own written history." Buendia, the president of the United Earth Space Council, had spoken those words to the people of the Sol System on the eve of the launching of the Marathon. " This, the grandest achievement mankind has ever conceived will be for the purpose of peace and the preservation of the human race. May this great technological ark carry with it the sum total of all human wisdom, and may neither time nor distance weaken our common ties."
+강력한 로켓 추진기를 단 미라타가 요동치며 격납 통로와 분리된다. 이윽고 흔들림이 멎고, 식민지가 발밑으로 멀어진다. 당신은 삼백이십이년 전과 같은 불안감을 느끼며 식민지의 미래를 생각한다. 마커스 티베리우스 부엔디아는 태양계의 위대한 지도자였다. “인류는 기록된 역사보다 웅장한 미래를 찾기 위해 지구의 경계를 넘어 모험할 것입니다.” 연합지구우주위원회의 의장이었던 부엔디아는 마라톤 호의 발사 전날에 말했다. “마라톤은 인류의 평화와 보존을 위한 인류의 가장 위대한 업적입니다. 이 기계 방주가 인류의 모든 지혜를 담기를, 그리고 시간과 공간을 초월해 우리의 유대가 이어지기를 바랍시다.”
 
-$B<Durandal> Decompress the docking bay.$b
+$B<듀란달> 격납 통로를 감압하세요.$b
 
-During the daydream, you barely notice the change to zero gravity or the instruments and lights signifying the rendezvous of the shuttle with the Marathon. But as a warning light goes on, and Durandal's voice comes over the communicator, you jump to attention.
+당신은 몽상에 빠져 갑작스러운 무중력 상태, 혹은 미라타가 마라톤과 도킹함을 알리는 계기판의 불빛을 놓치고 만다. 정신을 차린 것은 경고등이 켜지고 통신기 너머로 듀란달의 목소리가 들려왔을 때였다.
 
-"Docking bay one: Decompression completes. Mirata this is Durandal. Abort landing. Repeat. Abort landing." A faint chuckle. A chuckle which means that something has gone horribly wrong.
+“격납 통로 일 감압 완료. 왕복선, 여기는 듀란달입니다. 착륙을 중지하세요. 반복합니다. 착륙을 중지하세요.” 희미한 웃음소리. 무언가 끔찍하게 잘못되었다는 뜻이었다.
 
-Immediately, your reflexes take over, as you fall into automatic response mode. You hit the switch for open communication. "Colony station. Durandal just decompressed the landing bay. Marathon, anyone listening, we are having a problem with Docking Bay One. Its Durandal, I think he's gone..." the com light goes dead "...crazy."
+당신의 뇌보다 몸이 먼저 반사적으로 움직여 통신 개방 스위치를 켠다. “식민지 정거장, 듀란달이 방금 착륙 통로를 감압했다. 마라톤, 들리나. 격납 통로에 문제가 생겼다. 아마 듀란달이…” 통신 상태를 나타내는 전구의 불이 꺼진다. “미친 것 같다.”
 
-$B<Durandal> ORDER- Lock out communications between the colony and the shuttle- ORDER- Cycle the shuttle airlock.$b
+$B<듀란달> 명령, 식민지와 왕복선 간의 통신을 차단하세요. 명령, 왕복선의 하선 통로를 감압하세요.$b
 
-You look frantically around the control panel for some explanation when you see another light on the panel turn red. The sweet voice of the shuttle computer twerps, "Shuttle airlock cycle initiation sequence start."
+제어판을 미친 듯이 둘러보며 해결책을 찾던 당신 눈앞에 붉은 빛이 하나 켜진다. 왕복선의 컴퓨터가 달콤한 목소리로 쫑알댄다. “왕복선 감압 절차 개시-”
 
-$B<Durandal> Cycle the Mirata cabin's inner door.$b
+$B<듀란달> 미라타의 선실 문을 여세요.$b
 
-"One minute to cabin decompression."
+“-선실 감압 완료까지 일 분 남았습니다.”
 
-"Goddamn it!" You slam your fist in frustration onto the control board, leaving a dent. In a panic, you tear off your seat restraints and leap for the rear of the shuttle cabin. "Forty second to cabin decompression." You are rushing now, but you know that you have plenty of time.
+“망할!” 분노한 당신은 제어판을 주먹으로 내리쳐 찌그러뜨린다. 당신은 황망히 좌석 고정 장치를 뜯어내고 왕복선 뒤쪽으로 달린다. “삼십 초 남았습니다.” 몹시 서두르면서도, 시간이 충분하다는 건 잘 알고 있다.
 
-You fly in zero gravity towards the locker holding your Battle Armor. You haven't worn it since you had to hunt down some Chockisens which were harassing the work teams on the fringe of the colony, almost three years ago, but training is something that you never forget. It's funny, but you've always been the colony's trouble shooter. You're bigger and stronger, and a better shot. In games, you always scored the most points and looked the hero. And now, it looks as if you're heading right into the colony's biggest crisis since it was established seven years ago.
+당신은 무중력 속에서 전투 장갑이 든 보관함을 향해 몸을 날린다. 약 삼 년 전 식민지 외곽에서 작업자들을 괴롭히던 초키센 몇 마리를 사냥한 이후로는 입지 않았지만, 훈련의 성과는 결코 잊을 수 없는 법이다. 아이러니하게도 당신은 언제나 식민지의 해결사였다. 사람들은 크고 강하며 사격 솜씨도, 실적도 좋은 당신을 영웅으로 대우했다. 그리고 지금, 당신은 칠 년 전 식민지가 설립된 이래 가장 큰 위기 속으로 돌진하고 있다.
 
-You nimbly pull yourself into the suit - "Thirty seconds to cabin decompression' - and pull the helmet onto your head.
+당신은 재빨리 장갑 속으로 몸을 집어넣고 - “삼십 초 남았습니다” - 헬멧을 쓴다.
 
-$B<Durandal> ORDER- Prepare the shuttle for maximum engine burn.$b
+$B<듀란달> 명령, 왕복선 추진기를 최대 출력으로 가동할 준비하세요.$b
 
-$B<Mirata's Computer> That will result in a collision between the Marathon and the Mirata.$b
+$B<미라타의 컴퓨터> 하지만 그러면 미라타가 마라톤에 충돌하게 됩니다.$b
 
-$B<Durandal> That is not your concern - ORDER- Prepare shuttle for maximum burn, and initiate when ready.$b
+$B<듀란달> 상관 마세요. 명령, 왕복선의 추진기를 최대 출력으로 연소하세요.$b
 
-The lights around the airlock are flashing hysterically now. The air from your suit has a cold, stale taste, but it is the taste of life. "Cabin decompression commencing. Shuttle airlock cycle initiation sequence completed."
+감압 통로의 경고들이 발광한다. 장갑을 통해 제공되는 차가운 산소에서는 오래된 냄새가 나지만, 이는 또한 생명의 맛이다. “왕복선 감압 준비 절차가 끝났습니다. 선실 감압을 시작합니다.”
 
-Grey white decompressing vapor fills the cylindrical passageway of the airlock. Through the degenerating clouds of the airlock passageway, instead of looking upon the Tau Ceti starscape, you see the Tuncer Mirage Effect: space blurring and focusing in diminishing cycles. The TME is commonplace to you. Humanity has used teleporters for almost five hundred years, and you yourself have been teleporting since before you were born. But you've never seen the TME cover an area so big before, and never at all without a landing pad. And yet another first: a space fighter materializes right in front of your eyes. Since you don't recognize the model, it must be an Alien ship.
+회백색의 감압용 증기가 통로를 채운다. 흩어지는 구름 사이로 당신의 눈에 들어온 것은 별이 흩어진 타우 세티의 우주가 아니라 툰서 신기루 효과였다. 이는 공간이 흐려졌다가 선명해지는 현상으로, 당신에게는 전혀 낯설지 않다. 인류는 지난 오백 년 동안 순간 이동장치를 사용해 왔으며, 당신도 마찬가지로 태어나기 전부터 순간 이동에 익숙했다. 하지만 이렇게 넓은 형태로 나타난 효과는 처음이었다. 심지어 착륙 공간 없이 효과가 발생한 것은 더더욱 본 적이 없다. 게다가, 당신의 눈앞에 순간 이동한 것은 우주 전투기다. 처음 보는 형태이니 외계인의 함선임이 분명하다.
 
-First, an insane computer and ALIENS!. This has almost ruffled your otherwise calm outward appearance, and you don't remember the last time you had such a terrible day. But it gets worse when the fighter begins to spin around and yaw down on you and your defenseless Mirata.
+미쳐버린 컴퓨터에 이어 외계인까지! 평소 차분한 당신조차 당황해 마땅한 경광이다. 이렇게 절망적인 순간은 태어나 처음이다. 그러나 곧 두 번째를 겪게 되는데, 전투기가 회전하며 당신과 무방비한 미라타를 겨누었기 때문이었다.
 
-"Maximum burn in five seconds. Three... Two... One... "
+“최대 출력으로 연소하기까지 5, 4, 3, 2, 1…”
 
-You don't wait to hear the rest of the countdown. Instinct acts on its own. The entrance to the Maneuvering Pod is directly behind you, so you punch the switch for it to open. The hatch flips down, but just as you're about to climb in, the Mirata's main engines fire at maximum burn. The jolt send you crashing headfirst into the pod where you land in a tangle of levers, dials, and limbs.
+초세기를 끝까지 들어줄 생각은 없다. 본능이 몸을 움직여 바로 뒤 기동 포드의 문을 여는 버튼을 누른다. 해치가 아래로 젖혀지자마자 당신은 몸을 던지지만, 그 순간 미라타의 주 추진기가 최대 출력으로 연소한다. 그 충격으로 당신은 머리부터 포드 안으로 처박혀 손잡이와 버튼과 팔다리가 뒤엉킨다.
 
-The hatch closes behind you, and before you can untangle yourself, a missile appears from under the Alien Fighter and speeds towards the Mirata. The Mirata onboard computer, detecting the incoming missile and knowing that you are already on board the MP, fires the emergency deployment charges. You are rocketed away, seeming to ride the shock wave of the exploding shuttle.
+등  뒤로 해치가 닫힌다. 당신이 몸을 펴기도 전에 외계 전투기가 미사일을 발사한다. 다가오는 미사일을 감지한 미라타의 컴퓨터가 비상 탈출용 폭발 장치를 작동시킨다. 당신은 왕복선의 폭발에 밀려 로켓처럼 튕겨 나간다.
 
-You have just freed your arms when over the Battle Armor communicator, Durandal remarks dryly, "That little computer always did have impeccable timing. I wonder if I should let the Aliens know that you aren't just space debris? Hmmmm..."
+팔을 겨우 꺼낸 순간, 전투 장갑의 통신기를 통해 듀란달의 목소리가 들려온다. “작은 컴퓨터 주제에 항상 타이밍이 좋았단 말이죠. 당신이 우주 쓰레기가 아니라고 외계인에게 알려주는 게 좋을까요? 흐음…”
 
-"You can't do that! Damn you, computer!"
+“그러면 안 되지, 망할 컴퓨터!”
 
-Durandal chuckles again, "Ah, lucky you. I've found a new distraction. I am going to play with the Alien Virtual Parasites. I'll look you up when you arrive..." You can almost imagine the face of a wicked computer with its eyes wide and its lips folding out in a grotesque smile. A smile which reminds you of something from your past, but you can't remember exactly what it is.
+듀란달이 다시 웃습니다. “운이 좋군요. 외계 가상 기생충들과 노느라 당신에게서는 잠시 시선을 돌릴 테니까요. 이곳에 도착하면 다시 얘기를 나누죠…” 눈을 크게 뜨고 입술을 비틀며 기괴하게 웃는 사악한 컴퓨터의 얼굴이 머릿속에 그려진다. 과거에 본 적이 있는 것만 같지만, 정확히 무엇인지는 떠올릴 수 없다.
 
-You breathe a sigh of relief, and begin to survey your situation. You are currently floating towards the midsection of the Marathon - near the docking bay section's port side. You could get there faster, but if you use the Pod's thruster, chances are that the Aliens will detect it and destroy you. So you sit back, check the Pod's oxygen levels, and wait.
+당신은 안도의 한숨을 내쉬고 상황을 살핀다. 당신이 탄 포드는 마라톤 호의 가운데, 즉 격납 통로의 좌현 쪽으로 떠가고 있다. 속도를 낼 수는 있지만, 지금 포드의 추진기를 사용하면 외계인이 감지하고 파괴할 것이다. 따라서 당신은 뒤로 기대어 포드의 산소 수치만 확인하고 때를 기다린다.
 
-You've always been a daydreamer. Your mind has constantly filled the time between activities with imagination. Now, you fall into your old habit, and begin to daydream about your childhood on Mars, your father's death when you were eleven, and his last words to you, "Make me proud. Never lose your honor." You come out of your dream twenty-two minutes later. Judging it safe, you thrust over to one of the empty MP docking bays. You pull out your pistol, and pound the switch to open the door.
+당신은 언제나 몽상가였다. 몸이 움직이는 도중에도 머리는 항상 공상하고 있었다. 당신은 또다시 습관대로 화성에서의 어린 시절, 일곱 살 때 돌아가신 아버지, 그리고 유언을 떠올린다. “자랑스러운 아들로 자라라. 절대 명예를 잃지 마라.” 이십이분 후 현실로 돌아온 당신은 추진기를 작동시켜 빈 기동 포드 통로로 비행한다. 당신은 권총을 꺼내고 문을 여는 버튼을 누른다.
 
-Oddly , this is familiar to you, as if it were from an old dream, but you can't exactly remember...
-
-
-STATUS REPORT
+이상하게도 이 상황은 마치 꿈에서 본 것처럼 익숙하다. 또렷이 기억나지는 않지만…
 
 
 
-At 0820 hours the UESC Marathon Space Station came under surprise attack by unknown alien forces. You were returning from the colony in a shuttle that was also attacked. Your escape pod reached the Marathon 30 minutes after the attack started. There have been numerous security breaches all over the station. The spaceport on the planet below was destroyed by low yield nuclear weapons minutes after the attack on the Marathon began, but the aliens seem to be more interested in the station. Most communications with the colonists have been interrupted because the medium range radio antenna has been disabled.
+상황 보고
+
+0820, UESC 마라톤 우주 정거장이 미확인 외계 세력으로부터 기습 공격을 받았습니다. 왕복선을 타고 식민지로부터 복귀하던 귀하 또한 공격받았고 기동 포드로 탈출했습니다. 포드는 공격 개시 삼십 분 후에 마라톤에 도착했습니다. 정거장 전역에서 수많은 보안 위반이 발생했습니다. 행성의 우주 공항은 공격이 개시된 지 몇 분 만에 저위력 핵무기로 파괴되었으나 외계인들은 정거장에 더 관심이 있는 것으로 보입니다. 중거리 무선 안테나가 무력화되었으므로 식민지 거주민들과의 통신은 대부분 두절되었습니다.
 
 
-The Marathon is equipped with three Artificial Intelligence units. Tycho handles the science and engineering network, Durandal controls the Marathon autonomous functions such as doors, air, kitchens, and stairs, and Leela takes care of defense, etc. Leela and Durandal are severely damaged while Tycho is destroyed. Your mission is to reactivate the defense systems of the Marathon and eradicate the alien invasion. Leela has constructed three replacement boards that will repair the defense system but needs you to install them, but it seems that Durandal has been taken control of and is playing a deadly game.
+마라톤에는 세 대의 인공지능 장치가 장착되어 있습니다. 타이코는 과학과 엔지니어링 시설을, 듀란달은 문과 공기, 주방, 계단 등 자율 기능을, 릴라는 방어 등을 맡고 있었습니다. 릴라와 듀란달은 심각한 손상을 입었고, 타이코는 파괴되었습니다. 귀하의 임무는 마라톤의 방어 체계를 재가동하고 외계인의 침략을 물리치는 것입니다. 릴라는 방어 체계 수리에 쓸 교체용 보드 세 개를 제작했지만, 귀하가 직접 설치해야 합니다. 또한 듀란달은 통제권을 빼앗겨 몹시 위험한 상태로 보입니다.
 
 
-Your mission will take you to places no human has ever gone and you will see things you should not see. You must save the Marathon and the colony from the invasion and keep on your toes as things go wrong. Good luck...`,
+귀하는 어떤 인간도 겪어본 적 없는 일을 하게 될 것이며, 보지 말아야 할 것들을 볼 것입니다. 침략으로부터 마라톤과 식민지를 구하십시오. 긴장을 늦추지 마십시오. 행운을 빕니다…
+
+`,
 };
