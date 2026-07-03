@@ -3,6 +3,7 @@ import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
 import dataEN from "~/texts/m1/terminals-en.yaml";
 import dataKR from "~/texts/m1/terminals-kr.yaml";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
+import { BASE_URL } from "~/lib/url";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang);
@@ -41,11 +42,11 @@ useHead({
   meta: [
     { property: "og:title", content: ogTitle },
     { property: "og:description", content: ogDescription },
-    { property: "og:image", content: "/marathon-logo.png" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: ogTitle },
     { name: "twitter:description", content: ogDescription },
-    { name: "twitter:image", content: "/marathon-logo.png" },
+    { property: "og:image", content: `${BASE_URL}/marathon-logo.png` },
+    { name: "twitter:image", content: `${BASE_URL}/marathon-logo.png` },
   ],
 });
 </script>

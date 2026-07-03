@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ArrowRightIcon } from "@radix-icons/vue";
 import { decorate } from "~/lib/decoration";
+import { BASE_URL } from "~/lib/url";
 import { intro as introEN } from "~/texts/m1/intro-en";
 import { intro as introKO } from "~/texts/m1/intro-ko";
 
@@ -15,11 +16,11 @@ useHead({
   meta: [
     { property: "og:title", content: ogTitle },
     { property: "og:description", content: ogDescription },
-    { property: "og:image", content: "/marathon-logo.png" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: ogTitle },
     { name: "twitter:description", content: ogDescription },
-    { name: "twitter:image", content: "/marathon-logo.png" },
+    { property: "og:image", content: `${BASE_URL}/marathon-logo.png` },
+    { name: "twitter:image", content: `${BASE_URL}/marathon-logo.png` },
   ],
 });
 </script>
