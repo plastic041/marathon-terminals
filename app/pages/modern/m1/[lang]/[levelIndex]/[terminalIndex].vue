@@ -54,12 +54,14 @@ useHead({
   <div class="h-dvh flex flex-col gap-4">
     <Header />
     <main class="w-full max-w-200 min-h-0 h-4/5 mx-auto flex flex-col">
-      <div class="size-full min-h-0 flex flex-col gap-4">
+      <div class="size-full min-h-0 flex flex-col">
         <h1 class="leading-none text-xl px-[1ch] flex flex-col">
           <span class="leading-normal text-pretty">
             {{ level.index }}. {{ level.name }}
           </span>
-          <span class="text-sm leading-tight text-pretty">
+          <span
+            class="text-sm leading-tight text-pretty break-keep indent-[5ch_hanging] h-[2lh]"
+          >
             #{{ terminal.index }} - {{ terminal.logon.text }}
           </span>
           <template v-if="state === 'success' || state === 'failure'">
@@ -86,61 +88,45 @@ useHead({
             :text="terminal.states[state]![screenIndex]?.text!"
           />
         </div>
-        <div>
-          <div class="flex flex-row px-[1ch]">
-            <UiButton
-              v-if="prevTerminalRouteInfo"
-              as-child
-              class="min-w-[13ch]"
-            >
-              <NuxtLink :to="prevTerminalLink!">
-                <template v-if="isChapterRouteInfo(prevTerminalRouteInfo)">
-                  <ArrowLeftIcon />
-                </template>
-                <template v-else>
-                  <ArrowLeftIcon /> L{{ prevTerminalRouteInfo.levelIndex }}#{{
-                    prevTerminalRouteInfo.terminalIndex
-                  }}
-                </template>
-              </NuxtLink>
-            </UiButton>
-            <UiButton v-else class="min-w-[13ch]" disabled>
-              <ArrowLeftIcon /> -
-            </UiButton>
+        <div class="flex flex-row px-[1ch] mt-[1lh]">
+          <UiButton v-if="prevTerminalRouteInfo" as-child class="min-w-[13ch]">
+            <NuxtLink :to="prevTerminalLink!">
+              <template v-if="isChapterRouteInfo(prevTerminalRouteInfo)">
+                <ArrowLeftIcon />
+              </template>
+              <template v-else>
+                <ArrowLeftIcon /> L{{ prevTerminalRouteInfo.levelIndex }}#{{
+                  prevTerminalRouteInfo.terminalIndex
+                }}
+              </template>
+            </NuxtLink>
+          </UiButton>
+          <UiButton v-else class="min-w-[13ch]" disabled>
+            <ArrowLeftIcon /> -
+          </UiButton>
 
-            <UiButton
-              v-if="nextTerminalRouteInfo"
-              as-child
-              class="min-w-[13ch]"
-            >
-              <NuxtLink :to="nextTerminalLink!">
-                <template v-if="isChapterRouteInfo(nextTerminalRouteInfo)">
-                  <ArrowRightIcon />
-                </template>
-                <template v-else>
-                  <ArrowRightIcon /> L{{ nextTerminalRouteInfo.levelIndex }}#{{
-                    nextTerminalRouteInfo.terminalIndex
-                  }}
-                </template>
-              </NuxtLink>
-            </UiButton>
-            <UiButton v-else class="min-w-[13ch]" disabled>
-              <ArrowRightIcon /> -
-            </UiButton>
+          <UiButton v-if="nextTerminalRouteInfo" as-child class="min-w-[13ch]">
+            <NuxtLink :to="nextTerminalLink!">
+              <template v-if="isChapterRouteInfo(nextTerminalRouteInfo)">
+                <ArrowRightIcon />
+              </template>
+              <template v-else>
+                <ArrowRightIcon /> L{{ nextTerminalRouteInfo.levelIndex }}#{{
+                  nextTerminalRouteInfo.terminalIndex
+                }}
+              </template>
+            </NuxtLink>
+          </UiButton>
+          <UiButton v-else class="min-w-[13ch]" disabled>
+            <ArrowRightIcon /> -
+          </UiButton>
 
-            <UiButton
-              v-if="nextScreenLink"
-              as-child
-              class="min-w-[13ch] ml-auto"
-            >
-              <NuxtLink :to="nextScreenLink">
-                <ArrowRightIcon /> Next
-              </NuxtLink>
-            </UiButton>
-            <UiButton v-else class="min-w-[13ch] ml-auto" disabled>
-              <ArrowRightIcon /> Next
-            </UiButton>
-          </div>
+          <UiButton v-if="nextScreenLink" as-child class="min-w-[13ch] ml-auto">
+            <NuxtLink :to="nextScreenLink"> <ArrowRightIcon /> Next </NuxtLink>
+          </UiButton>
+          <UiButton v-else class="min-w-[13ch] ml-auto" disabled>
+            <ArrowRightIcon /> Next
+          </UiButton>
         </div>
       </div>
     </main>

@@ -39,11 +39,11 @@ const checkpointCss = computed(
     <ClientOnly>
       <component :is="`style`">{{ checkpointCss }}</component>
     </ClientOnly>
-    <div class="grid grid-cols-2 gap-[2ch] size-full">
+    <div class="grid grid-cols-2 size-full">
       <div ref="mapWrapper" class="map-wrapper">
         <Map :index="level.index" :viewBox="zoomViewBox" />
       </div>
-      <UiScrollArea>
+      <UiScrollArea class="py-[1lh]">
         <div v-html="decorate(props.text)" />
       </UiScrollArea>
     </div>

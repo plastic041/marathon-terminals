@@ -46,7 +46,8 @@
     @apply bg-black text-green;
   }
   strong {
-    @apply font-bold;
+    @apply font-extrabold;
+    -webkit-text-stroke: 0.3px var(--color-green);
   }
   i {
     @apply italic;
