@@ -3,8 +3,6 @@ import { ArrowRightIcon } from "@radix-icons/vue";
 import { decorate } from "~/lib/decoration";
 import { BASE_URL } from "~/lib/url";
 import { INTRO } from "~/texts/m1/intro";
-import { intro as introEN } from "~/texts/m1/intro-en";
-import { intro as introKO } from "~/texts/m1/intro-ko";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang as "en" | "ko");
@@ -44,15 +42,14 @@ useHead({
       <UiButton as-child>
         <NuxtLink
           :to="{
-            name: 'modern-m1-lang-levelIndex-terminalIndex',
+            name: 'modern-m1-lang-chapterIndex',
             params: {
-              lang: 'ko',
-              levelIndex: 0,
-              terminalIndex: 0,
+              lang,
+              chapterIndex: 0,
             },
           }"
         >
-          <ArrowRightIcon /> Term L00#0
+          <ArrowRightIcon />
         </NuxtLink>
       </UiButton>
     </div>

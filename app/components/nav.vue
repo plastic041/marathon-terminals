@@ -50,7 +50,19 @@ onMounted(() => {
           </NuxtLink>
         </li>
         <li v-for="chapter in chapters" class="flex flex-col gap-[0.5lh]">
-          <h2 class="font-bold">--- {{ chapter.name }}</h2>
+          <h2 class="font-bold">
+            <NuxtLink
+              :to="{
+                name: 'modern-m1-lang-chapterIndex',
+                params: {
+                  lang,
+                  chapterIndex: chapter.index,
+                },
+              }"
+            >
+              --- {{ chapter.name }}
+            </NuxtLink>
+          </h2>
           <ul class="flex flex-col gap-[1lh]">
             <li
               v-for="level in chapter.levels"

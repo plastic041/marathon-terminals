@@ -1,5 +1,5 @@
 import type { RouteLocationRaw } from "vue-router";
-import type { Level } from "~/types/terminal";
+import type { Chapter, Level } from "~/types/terminal";
 
 export type TerminalState =
   | "logon"
@@ -8,15 +8,28 @@ export type TerminalState =
   | "failure"
   | "logoff";
 
-type RouteInfo = {
+type TerminalRouteInfo = {
   levelIndex?: number;
   terminalIndex?: number;
   state?: TerminalState;
   screenIndex?: number;
 };
 
+/** Routes to a chapter page instead of a terminal. */
+type ChapterRouteInfo = {
+  chapterIndex: number;
+};
+
+type RouteInfo = TerminalRouteInfo | ChapterRouteInfo;
+
+export function isChapterRouteInfo(info: RouteInfo): info is ChapterRouteInfo {
+  return "chapterIndex" in info;
+}
+
 /** /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number */
-export function useTerminalsModern(levels: Level[]) {
+export function useTerminalsModern(chapters: Chapter[]) {
+  const levels = computed(() => chapters.flatMap((c) => c.levels));
+
   const route = useRoute();
 
   const lang = computed(() => route.params.lang ?? "en");
@@ -28,7 +41,7 @@ export function useTerminalsModern(levels: Level[]) {
   const screenIndex = computed(() => Number(route.query.screenindex ?? 0));
 
   const level = computed(
-    () => levels.find((level) => level.index === levelIndex.value)!,
+    () => levels.value.find((level) => level.index === levelIndex.value)!,
   );
   const terminal = computed(
     () =>
@@ -49,6 +62,12 @@ export function useTerminalsModern(levels: Level[]) {
   });
 
   function makeRoute(info: RouteInfo): RouteLocationRaw {
+    if (isChapterRouteInfo(info)) {
+      return {
+        path: `/modern/m1/${lang.value}/${info.chapterIndex}`,
+      };
+    }
+
     return {
       path: `/modern/m1/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
@@ -59,23 +78,35 @@ export function useTerminalsModern(levels: Level[]) {
   }
 
   const prevTerminalRouteInfo = computed<RouteInfo | null>(() => {
-    if (terminalIndex.value === 0 && levelIndex.value === 0) {
-      return null;
+    // if (terminalIndex.value === 0 && levelIndex.value === 0) {
+    //   return null;
+    // }
+
+    const chapter = chapters.find((c) =>
+      c.levels.some((l) => l.index === levelIndex.value),
+    )!;
+    const isFirstLevelOfChapter = levelIndex.value === chapter.levels[0]!.index;
+    const isFirstTerminalOfLevel =
+      terminalIndex.value === level.value.terminals[0]!.index;
+    if (isFirstLevelOfChapter && isFirstTerminalOfLevel) {
+      return { chapterIndex: chapter.index };
     }
 
     const firstTerminalIndex = level.value.terminals[0]!.index;
 
     const lIndex =
       terminalIndex.value === firstTerminalIndex
-        ? levels[
-            levels.findIndex((level) => level.index === levelIndex.value) - 1
+        ? levels.value[
+            levels.value.findIndex(
+              (level) => level.index === levelIndex.value,
+            ) - 1
           ]?.index!
         : levelIndex.value;
 
     const tIndex =
       terminalIndex.value === firstTerminalIndex
-        ? levels.find((l) => l.index === lIndex)!.terminals.at(-1)!.index
-        : levels.find((l) => l.index === lIndex)!.terminals[
+        ? levels.value.find((l) => l.index === lIndex)!.terminals.at(-1)!.index
+        : levels.value.find((l) => l.index === lIndex)!.terminals[
             level.value.terminals.findIndex(
               (t) => t.index === terminalIndex.value,
             )! - 1
@@ -94,18 +125,36 @@ export function useTerminalsModern(levels: Level[]) {
       return null;
     }
 
+    const chapterArrIndex = chapters.findIndex((c) =>
+      c.levels.some((l) => l.index === levelIndex.value),
+    );
+    const chapter = chapters[chapterArrIndex]!;
+    const isLastLevelOfChapter =
+      levelIndex.value === chapter.levels.at(-1)!.index;
+    const isLastTerminalOfLevel =
+      terminalIndex.value === level.value.terminals.at(-1)!.index;
+    if (isLastLevelOfChapter && isLastTerminalOfLevel) {
+      const nextChapter = chapters[chapterArrIndex + 1];
+      if (nextChapter) {
+        return { chapterIndex: nextChapter.index };
+      }
+    }
+
     const lastTerminalIndex = level.value.terminals.at(-1)!.index;
 
     const lIndex =
       terminalIndex.value === lastTerminalIndex
-        ? levels[
-            levels.findIndex((level) => level.index === levelIndex.value) + 1
+        ? levels.value[
+            levels.value.findIndex(
+              (level) => level.index === levelIndex.value,
+            ) + 1
           ]?.index
         : levelIndex.value;
 
     const tIndex =
       terminalIndex.value === lastTerminalIndex
-        ? levels.find((level) => level.index === lIndex)!.terminals[0]!.index
+        ? levels.value.find((level) => level.index === lIndex)!.terminals[0]!
+            .index
         : level.value.terminals[
             level.value.terminals.findIndex(
               (t) => t.index === terminalIndex.value,
@@ -119,13 +168,6 @@ export function useTerminalsModern(levels: Level[]) {
       terminalIndex: tIndex,
     };
   });
-
-  function getNextTerminalRouteInfo(): RouteInfo {
-    if (terminalIndex.value < level.value.terminals.length - 1) {
-      return { terminalIndex: terminalIndex.value + 1 };
-    }
-    return { levelIndex: levelIndex.value + 1, terminalIndex: 0 };
-  }
 
   function levelLink(dataIndex: number): RouteLocationRaw {
     return makeRoute({

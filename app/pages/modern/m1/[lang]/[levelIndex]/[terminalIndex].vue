@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CheckpointGroup, TerminalsFile } from "~/types/terminal";
+import type { Chapter, CheckpointGroup } from "~/types/terminal";
 import dataEN from "~/texts/m1/terminals-en.yaml";
 import dataKR from "~/texts/m1/terminals-kr.yaml";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
@@ -9,9 +9,7 @@ import { escapeHtml } from "~/lib/decoration";
 const route = useRoute();
 const lang = computed(() => route.params.lang);
 
-const levels = (
-  (lang.value === "en" ? dataEN : dataKR) as TerminalsFile
-).chapters.flatMap((c) => c.levels);
+const chapters = (lang.value === "en" ? dataEN : dataKR).chapters as Chapter[];
 
 const {
   screenIndex,
@@ -31,7 +29,7 @@ const {
   nextTerminalLink,
 
   nextScreenLink,
-} = useTerminalsModern(levels);
+} = useTerminalsModern(chapters);
 
 const ogTitle = computed(
   () => `L${String(levelIndex.value).padStart(2, "0")}#${terminalIndex.value}`,
@@ -96,9 +94,14 @@ useHead({
               class="min-w-[13ch]"
             >
               <NuxtLink :to="prevTerminalLink!">
-                <ArrowLeftIcon /> L{{ prevTerminalRouteInfo.levelIndex }}#{{
-                  prevTerminalRouteInfo.terminalIndex
-                }}
+                <template v-if="isChapterRouteInfo(prevTerminalRouteInfo)">
+                  <ArrowLeftIcon />
+                </template>
+                <template v-else>
+                  <ArrowLeftIcon /> L{{ prevTerminalRouteInfo.levelIndex }}#{{
+                    prevTerminalRouteInfo.terminalIndex
+                  }}
+                </template>
               </NuxtLink>
             </UiButton>
             <UiButton v-else class="min-w-[13ch]" disabled>
@@ -111,9 +114,14 @@ useHead({
               class="min-w-[13ch]"
             >
               <NuxtLink :to="nextTerminalLink!">
-                <ArrowRightIcon /> L{{ nextTerminalRouteInfo.levelIndex }}#{{
-                  nextTerminalRouteInfo.terminalIndex
-                }}
+                <template v-if="isChapterRouteInfo(nextTerminalRouteInfo)">
+                  <ArrowLeftIcon />
+                </template>
+                <template v-else>
+                  <ArrowRightIcon /> L{{ nextTerminalRouteInfo.levelIndex }}#{{
+                    nextTerminalRouteInfo.terminalIndex
+                  }}
+                </template>
               </NuxtLink>
             </UiButton>
             <UiButton v-else class="min-w-[13ch]" disabled>
