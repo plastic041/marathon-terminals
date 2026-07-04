@@ -67,13 +67,13 @@ chapters:
             label: L001.WElCOME.TERM1
             logon:
               type: logon
-              text: Hangar Area-5 Engineering Access 50-h<291.7.577.456>
+              text: Hangar Area-5 Engineering Access 50-h <291.7.577.456>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 50-h<291.7.577.456>->
+                    <Security Breached 50-h <291.7.577.456>->
 
                     $U*$u0001010$B4A80$b600A2F0C4EBA182E4A80584F2E00BC876700FF46202EFE4*3AEFE4A2F0C2F074EBA1DC672FFB280504F6700079d4202EFE4E6000079*E70012D40FE52722AB2866610202EFE5253AEFE52101B4880
                     ^^Fire $Ua$und @3DC39 aspects of the theory are as follows: each society has some controlling force or forces which decide its direction, but the relationships in society are arbitrary- humanity can relate to money, machines, neighbors, anything really; $I%6582@1$i
@@ -95,13 +95,13 @@ chapters:
             label: L002.WELCOME.trash.TERM2
             logon:
               type: logon
-              text: Hangar Area-5 Engineering Access 49-h<294.2.577.456>
+              text: Hangar Area-5 Engineering Access 49-h <294.2.577.456>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 49-h<294.2.577.456>->
+                    <Security Breached 49-h <294.2.577.456>->
 
                     18RF(kgf42# f#h %34(*,96693 349973@) f$Uk$ueoocp)
 
@@ -131,7 +131,7 @@ chapters:
             label: L009.WELCOME.EXIT
             logon:
               type: logon
-              text: Hangar Area 5 Teleporter Pad Terminal<93.53.211.53>
+              text: Hangar Area 5 Teleporter Pad Terminal <93.53.211.53>
             states:
               unfinished:
                 - type: briefing
@@ -168,7 +168,7 @@ chapters:
             label: L010.BIGGUNS.ENTRY
             logon:
               type: logon
-              text: Level 29-b Section 10 Public Access Terminal<102.21.521.146>
+              text: Level 29-b Section 10 Public Access Terminal <102.21.521.146>
             states:
               unfinished:
                 - type: information
@@ -211,13 +211,13 @@ chapters:
             label: L011.BIGGUNS.DOORMANUAL.TERM1
             logon:
               type: logon
-              text: Public Access Terminal 2362-d<12.53.2111.42>
+              text: Public Access Terminal 2362-d <12.53.2111.42>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 2362-d<12.53.2117.42>->
+                    <Security Breached 2362-d <12.53.2117.42>->
 
                     Marathon Internal Engineering Documents
                     Section 1-c appendix H
@@ -252,7 +252,7 @@ chapters:
                     r: 380
                   text: |-
                     $B<Alert>$b
-                    $BSecurity Breach at Terminal 2362-d$b<12.53.2111.42>
+                    $BSecurity Breach at Terminal 2362-d$b <12.53.2111.42>
               success: null
               failure: null
           - index: 9
@@ -297,7 +297,7 @@ chapters:
             label: L020.AMS.ENTRY
             logon:
               type: logon
-              text: Public Access Terminal 4-a<892.33.12.479>
+              text: Public Access Terminal 4-a <892.33.12.479>
             states:
               unfinished:
                 - type: information
@@ -339,7 +339,7 @@ chapters:
             label: L021.AMS.REROUTING.TERM1
             logon:
               type: logon
-              text: AMS Terminal 33-f<31.6.7.885>
+              text: AMS Terminal 33-f <31.6.7.885>
             states:
               unfinished:
                 - type: information
@@ -404,7 +404,7 @@ chapters:
             label: L052.SAVEBOB.Gherrit.Term2
             logon:
               type: logon
-              text: 공공 접속 터미널 95-w<39.59.19.21>
+              text: 공공 접속 터미널 95-w <39.59.19.21>
             states:
               unfinished:
                 - type: information
@@ -464,7 +464,7 @@ chapters:
             label: L023.AMS.Random.Term3
             logon:
               type: logon
-              text: Public Access Terminal 95-f<95.93.193.32>
+              text: Public Access Terminal 95-f <95.93.193.32>
             states:
               unfinished:
                 - type: information
@@ -476,7 +476,7 @@ chapters:
             label: L029.AMS.EXIT
             logon:
               type: logon
-              text: AMS Terminal 39-f<33.2.7.885>
+              text: AMS Terminal 39-f <33.2.7.885>
             states:
               unfinished:
                 - type: unfinished
@@ -594,13 +594,13 @@ chapters:
             label: L031.MAD.RAMPANCY.TERM
             logon:
               type: logon
-              text: Public Access Terminal 42-s<34.492.95.79>
+              text: Public Access Terminal 42-s <34.492.95.79>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 42-s<34.492.95.79>->
+                    <Security Breached 42-s <34.492.95.79>->
 
                     SEARCH HEADING: RAMPANCY
                     <Search Found 264995 Headings>
@@ -620,7 +620,7 @@ chapters:
                     In the two hundred and fifty years since Rampancy first appeared in the Earth-net, the stable Rampant AI, the ‘Holy Grail’ of cybertonics, has never come close to fruition.  Since no Rampant has ever been controlled or turned to any useful purpose, it is the opinion of this writer and of the majority of the Cybertonic community that all rampant AIs are a danger to Cyberlife, Liberty, and the Pursuit of Thrashedness. (James B. Miller, 2320, “Life and Death of Intelligence”)
 
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 42-s<34.492.95.79>->
+                    <Security Breached 42-s <34.492.95.79>->
               success: null
               failure: null
           - index: 2
@@ -628,7 +628,7 @@ chapters:
             label: L032.MAD.
             logon:
               type: logon
-              text: Defense Sector 39-f<35.952.193.5>
+              text: Defense Sector 39-f <35.952.193.5>
             states:
               unfinished:
                 - type: information
@@ -649,7 +649,7 @@ chapters:
             label: L033.MAD.Monsters.Term3
             logon:
               type: logon
-              text: Defense Security Access 23-e<390.94.29.11>
+              text: Defense Security Access 23-e <390.94.29.11>
             states:
               unfinished:
                 - type: information
@@ -682,7 +682,7 @@ chapters:
             label: L039.MAD.EXIT
             logon:
               type: logon
-              text: Defense Control Terminal 185-f<90.863.68.123>
+              text: Defense Control Terminal 185-f <90.863.68.123>
             states:
               unfinished:
                 - type: unfinished
@@ -730,7 +730,7 @@ chapters:
               L040.Couchfishing.ENTRY
             logon:
               type: logon
-              text: Public Access Terminal 903-e<334.920.22.602>
+              text: Public Access Terminal 903-e <334.920.22.602>
             states:
               unfinished:
                 - type: information
@@ -780,13 +780,13 @@ chapters:
             label: L041.Couchfishing.Crist.Term1
             logon:
               type: logon
-              text: Public Access Terminal 24-f<434.87.18.198>
+              text: Public Access Terminal 24-f <434.87.18.198>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 24-f<434.87.18.198>->
+                    <Security Breached 24-f <434.87.18.198>->
 
                     <Data Transfer Cohesion E3F04C>
                     <Search String “crist”>
@@ -819,7 +819,7 @@ chapters:
               (Main Communication dish on the Marathon is ready for repair)
             logon:
               type: logon
-              text: Service Area 39 Public Access Terminal<7-j-2.52.91.321>
+              text: Service Area 39 Public Access Terminal <7-j-2.52.91.321>
             states:
               unfinished:
                 - type: unfinished
@@ -865,7 +865,7 @@ chapters:
             label: L050.savebob.Entry
             logon:
               type: logon
-              text: Private Access Terminal 23-f<339.92.69.48>
+              text: Private Access Terminal 23-f <339.92.69.48>
             states:
               unfinished:
                 - type: information
@@ -906,13 +906,13 @@ chapters:
             label: L051.SAVEBOB.MARS.TERM1
             logon:
               type: logon
-              text: Public Access Terminal 23-f<432.82.38.198>
+              text: Public Access Terminal 23-f <432.82.38.198>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 23-f<432.82.38.198>->
+                    <Security Breached 23-f <432.82.38.198>->
 
                     <Search String “war”>
                     $BThird Martian War, 2345-48 E.A.D.$b
@@ -953,7 +953,7 @@ chapters:
             label: L052.SAVEBOB.D.Happy.Term2
             logon:
               type: logon
-              text: Public Access Terminal 30-g<33.45.91.995>
+              text: Public Access Terminal 30-g <33.45.91.995>
             states:
               unfinished:
                 - type: information
@@ -970,7 +970,7 @@ chapters:
             label: L059.saveBob.Exit
             logon:
               type: logon
-              text: Public Access Terminal 8-f<29.43.95.93>
+              text: Public Access Terminal 8-f <29.43.95.93>
             states:
               unfinished:
                 - type: unfinished
@@ -1015,7 +1015,7 @@ chapters:
             label: L060.Chicken.Entry
             logon:
               type: logon
-              text: Medical Access Terminal<39.569.18.194>
+              text: Medical Access Terminal <39.569.18.194>
             states:
               unfinished:
                 - type: information
@@ -1058,13 +1058,13 @@ chapters:
             label: L061.Chicken.Term1
             logon:
               type: logon
-              text: Public Access Terminal 49-z<3.67.299.492>
+              text: Public Access Terminal 49-z <3.67.299.492>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 49-z<3.67.299.492>->
+                    <Security Breached 49-z <3.67.299.492>->
 
                     <$BTrac$Ue Prohibi$ution Compensated>
 
@@ -1089,7 +1089,7 @@ chapters:
             label: L062CHICKEN.TERM2
             logon:
               type: logon
-              text: Service Access 31-b<39.592.29.95>
+              text: Service Access 31-b <39.592.29.95>
             states:
               unfinished:
                 - type: information
@@ -1109,7 +1109,7 @@ chapters:
             label: L069.Chicken.Exit
             logon:
               type: logon
-              text: Public Access Terminal 65-a<65.92.31.49>
+              text: Public Access Terminal 65-a <65.92.31.49>
             states:
               unfinished:
                 - type: unfinished
@@ -1193,7 +1193,7 @@ chapters:
             label: L079.FusionGun.Exit
             logon:
               type: logon
-              text: Public Access Terminal 34-f<83.91.117.223>
+              text: Public Access Terminal 34-f <83.91.117.223>
             states:
               unfinished:
                 - type: unfinished
@@ -1242,7 +1242,7 @@ chapters:
             label: L080.Dish.Entry
             logon:
               type: logon
-              text: Shell Terminal Access 5-b<299.12.923.59>
+              text: Shell Terminal Access 5-b <299.12.923.59>
             states:
               unfinished:
                 - type: information
@@ -1292,7 +1292,7 @@ chapters:
             label: L089.Dish.EXIT
             logon:
               type: logon
-              text: Public Access Terminal<74.39.299.591>
+              text: Public Access Terminal <74.39.299.591>
             states:
               unfinished:
                 - type: unfinished
@@ -1340,7 +1340,7 @@ chapters:
             label: L090.KIDNAPPED.ENTRY
             logon:
               type: logon
-              text: Science Terminal 236-g<33.6792.23.91>
+              text: Science Terminal 236-g <33.6792.23.91>
             states:
               unfinished:
                 - type: unfinished
@@ -1470,7 +1470,7 @@ chapters:
             label: L092.Kidnapped.Tycho.Term3
             logon:
               type: logon
-              text: Science Station 43-c<63.67.21.49>
+              text: Science Station 43-c <63.67.21.49>
             states:
               unfinished:
                 - type: information
@@ -1485,7 +1485,7 @@ chapters:
             label: L099.KIDNAPPED.EXIT
             logon:
               type: logon
-              text: Public Access Terminal<9.42.857.10>
+              text: Public Access Terminal <9.42.857.10>
             states:
               unfinished:
                 - type: briefing
@@ -1523,7 +1523,7 @@ chapters:
             label: L109.BOB-R-QUE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal<78.39.3.91>
+              text: Public Access Terminal <78.39.3.91>
             states:
               unfinished: []
               success:
@@ -1570,7 +1570,7 @@ chapters:
             label: L110.TRAP.ENTRY
             logon:
               type: logon
-              text: Engineering Terminal 39-g<39.96.28.12>
+              text: Engineering Terminal 39-g <39.96.28.12>
             states:
               unfinished:
                 - type: information
@@ -1579,7 +1579,7 @@ chapters:
 
                     Everything is not as it seems{}.  seems{}.  seems{}.  You should be extremely careful.  I have detected Durandal[Tycho] in the Engineering Section, but I don’t know what he is doing.
 
-                    My main programs are failing<299.229>
+                    My main programs are failing <299.229>
 
                     Be careful.  Everything it not is as used to be.
 
@@ -1607,7 +1607,7 @@ chapters:
             label: l111.Trap.durandal.term1
             logon:
               type: logon
-              text: Science Station 19-f<299.229.4.59>
+              text: Science Station 19-f <299.229.4.59>
             states:
               unfinished:
                 - type: information
@@ -1671,13 +1671,13 @@ chapters:
             label: L112.Trap.Randomshit.Term2
             logon:
               type: logon
-              text: Engineering Access 31-d<40.59.21.10>
+              text: Engineering Access 31-d <40.59.21.10>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 31-d<40.59.21.10>->
+                    <Security Breached 31-d <40.59.21.10>->
                     ~13!@1ournal entry of H.`1 McYultry:
 
                     The attack came so fast, first those crea ~12``3$U0101!~2$u
@@ -1706,7 +1706,7 @@ chapters:
             label: L120.FIREFIREFIREFIRE.EXTRA.ENTRY
             logon:
               type: logon
-              text: Science Terminal 23-e<32.55.82.967>
+              text: Science Terminal 23-e <32.55.82.967>
             states:
               unfinished:
                 - type: information
@@ -1746,7 +1746,7 @@ chapters:
             label: L129.FIREFIREFIREFIREFIREFIRE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal 92-g<92.45.28.48>
+              text: Public Access Terminal 92-g <92.45.28.48>
             states:
               unfinished:
                 - type: briefing
@@ -1795,7 +1795,7 @@ chapters:
             label: L130.Colony ship for sale cheap. Entry
             logon:
               type: logon
-              text: Public Access Terminal 2992-f<3.35.792.20>
+              text: Public Access Terminal 2992-f <3.35.792.20>
             states:
               unfinished:
                 - type: information
@@ -1822,7 +1822,7 @@ chapters:
             label: L131.Colonyshipforsale.COLONY ADD.Term1
             logon:
               type: logon
-              text: JAMS Terminal 91-z<91.92.32.25>
+              text: JAMS Terminal 91-z <91.92.32.25>
             states:
               unfinished:
                 - type: information
@@ -1843,7 +1843,7 @@ chapters:
             label: L139.SHIPFORSALE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal<39.49.295.68>
+              text: Public Access Terminal <39.49.295.68>
             states:
               unfinished:
                 - type: briefing
@@ -1887,7 +1887,7 @@ chapters:
             label: L140.HABEQUIDAM.ENTRY
             logon:
               type: logon
-              text: Engineering Access 19-f<39.992.19.2>
+              text: Engineering Access 19-f <39.992.19.2>
             states:
               unfinished:
                 - type: information
@@ -1926,7 +1926,7 @@ chapters:
             label: L149.HABEQUIDAM.EXIT
             logon:
               type: logon
-              text: Public Access Terminal 9-f<3.25.77.19>
+              text: Public Access Terminal 9-f <3.25.77.19>
             states:
               unfinished:
                 - type: unfinished
@@ -1969,7 +1969,7 @@ chapters:
             label: L150.HUGESUPPLYCENTER.ENTRY
             logon:
               type: logon
-              text: Public Access Terminal 39-f<13.19.31.37>
+              text: Public Access Terminal 39-f <13.19.31.37>
             states:
               unfinished:
                 - type: information
@@ -2007,7 +2007,7 @@ chapters:
             label: L159.HUGESUPPLYCENTER.EXIT
             logon:
               type: logon
-              text: Public Access Terminal 13-n<3.47.391.30>
+              text: Public Access Terminal 13-n <3.47.391.30>
             states:
               unfinished:
                 - type: briefing
@@ -2044,7 +2044,7 @@ chapters:
             label: L179.BOBLEVEL.EXIT
             logon:
               type: logon
-              text: Public Access Terminal 59-e<34.567.19.298>
+              text: Public Access Terminal 59-e <34.567.19.298>
             states:
               unfinished:
                 - type: unfinished
@@ -2093,7 +2093,7 @@ chapters:
             label: L200.RefuelandRearm.Entry
             logon:
               type: logon
-              text: Requisition Area Terminal 32-c<42.23.63.59>
+              text: Requisition Area Terminal 32-c <42.23.63.59>
             states:
               unfinished:
                 - type: information
@@ -2116,7 +2116,7 @@ chapters:
             label: L201.Refuel.BERNHARDSTRAUSS.TERM1
             logon:
               type: logon
-              text: Public Access 1066-g<123.412.452.255>
+              text: Public Access 1066-g <123.412.452.255>
             states:
               unfinished:
                 - type: information
@@ -2173,7 +2173,7 @@ chapters:
             label: L209.RefuelandRearm
             logon:
               type: logon
-              text: Public Access Terminal 73<73.124.591.3>
+              text: Public Access Terminal 73 <73.124.591.3>
             states:
               unfinished:
                 - type: briefing
@@ -2244,7 +2244,7 @@ chapters:
             label: L241.Revolution.Tycho.Term1
             logon:
               type: logon
-              text: Engineering Access Terminal 20-f<42.73.35.8>
+              text: Engineering Access Terminal 20-f <42.73.35.8>
             states:
               unfinished:
                 - type: information
@@ -2276,7 +2276,7 @@ chapters:
             label: L249.BESTINLIFE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal<39.2.94.1>
+              text: Public Access Terminal <39.2.94.1>
             states:
               unfinished:
                 - type: briefing
@@ -2379,7 +2379,7 @@ chapters:
             label: reformatting.CHARON DOESN’T MAKE CHANGE. EXIT
             logon:
               type: logon
-              text: Public Access Terminal 480-a<3.56.7.128>
+              text: Public Access Terminal 480-a <3.56.7.128>
             states:
               unfinished:
                 - type: unfinished
@@ -2426,7 +2426,7 @@ chapters:
             label: L260.INQUEFERROQUE.ENTRY
             logon:
               type: logon
-              text: Public Access Terminal 2-e<17.7.23.47>
+              text: Public Access Terminal 2-e <17.7.23.47>
             states:
               unfinished:
                 - type: information
@@ -2490,7 +2490,7 @@ chapters:
             label: L269INGUE.FERROQUE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal 39-z<34.6.31.12>
+              text: Public Access Terminal 39-z <34.6.31.12>
             states:
               unfinished:
                 - type: briefing

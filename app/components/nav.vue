@@ -65,7 +65,10 @@ onMounted(() => {
                 >
                   <h4 class="shrink-0 min-w-[4ch]">#{{ term.index }}</h4>
                   <ul class="grid grid-cols-3 grow">
-                    <li v-if="term.states.unfinished">
+                    <li
+                      v-if="term.states.unfinished"
+                      class="col-span-3 break-keep"
+                    >
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
@@ -79,7 +82,7 @@ onMounted(() => {
                               state: 'logon',
                             },
                           }"
-                          >Unfinished</NuxtLink
+                          >{{ term.logon.text }}</NuxtLink
                         >
                       </PopoverClose>
                     </li>
