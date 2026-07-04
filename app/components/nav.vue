@@ -4,6 +4,7 @@ import type { ComponentPublicInstance } from "vue";
 import d from "~/texts/m1/terminals-en.yaml";
 import { PopoverClose } from "reka-ui";
 import ScrollArea from "~/components/ui/scroll-area/scroll-area.vue";
+import { INTRO } from "~/texts/m1/intro";
 
 const chapters = (d as TerminalsFile).chapters;
 
@@ -45,7 +46,7 @@ onMounted(() => {
               },
             }"
           >
-            Intro
+            {{ INTRO[lang].nav }}
           </NuxtLink>
         </li>
         <li v-for="chapter in chapters" class="flex flex-col gap-[0.5lh]">
@@ -100,7 +101,7 @@ onMounted(() => {
                               state: 'success',
                             },
                           }"
-                          >Success</NuxtLink
+                          >[Success]</NuxtLink
                         >
                       </PopoverClose>
                     </li>
@@ -118,7 +119,7 @@ onMounted(() => {
                               state: 'failure',
                             },
                           }"
-                          >Failure</NuxtLink
+                          >[Failure]</NuxtLink
                         >
                       </PopoverClose>
                     </li>

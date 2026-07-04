@@ -2,11 +2,12 @@
 import { ArrowRightIcon } from "@radix-icons/vue";
 import { decorate } from "~/lib/decoration";
 import { BASE_URL } from "~/lib/url";
+import { INTRO } from "~/texts/m1/intro";
 import { intro as introEN } from "~/texts/m1/intro-en";
 import { intro as introKO } from "~/texts/m1/intro-ko";
 
 const route = useRoute();
-const lang = computed(() => route.params.lang);
+const lang = computed(() => route.params.lang as "en" | "ko");
 
 const ogTitle = `Marathon`;
 const ogDescription = `그들이 하늘에서, 기다린다.`;
@@ -31,27 +32,14 @@ useHead({
     <div
       class="font-[Orbit] mx-auto w-full max-w-[65ch] flex flex-col items-center gap-[1lh] px-[2ch] pb-80"
     >
-      <template v-if="lang === 'en'">
-        <span class="text-lg">
-          {{ introEN.title }}
-        </span>
+      <span class="text-lg">
+        {{ INTRO[lang].title }}
+      </span>
 
-        <div
-          class="whitespace-pre-wrap w-full"
-          v-html="decorate(introEN.text)"
-        />
-      </template>
-
-      <template v-if="lang === 'ko'">
-        <span class="text-lg">
-          {{ introKO.title }}
-        </span>
-
-        <div
-          class="whitespace-pre-wrap w-full"
-          v-html="decorate(introKO.text)"
-        />
-      </template>
+      <div
+        class="whitespace-pre-wrap w-full"
+        v-html="decorate(INTRO[lang].text)"
+      />
 
       <UiButton as-child>
         <NuxtLink

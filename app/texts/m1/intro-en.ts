@@ -1,4 +1,5 @@
 export const intro = {
+  nav: "Intro",
   title: `Somewhere in the heavens, they are waiting...`,
   text: `"Primary booster burn has ceased. Shuttle Mirata, you're clear for orbital maneuvering."
 

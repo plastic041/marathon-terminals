@@ -404,7 +404,7 @@ chapters:
             label: L052.SAVEBOB.Gherrit.Term2
             logon:
               type: logon
-              text: 공공 접속 터미널 95-w <39.59.19.21>
+              text: 공공 접속 단말 95-w <39.59.19.21>
             states:
               unfinished:
                 - type: information
