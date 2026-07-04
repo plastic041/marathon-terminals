@@ -115,7 +115,7 @@ useHead({
             >
               <NuxtLink :to="nextTerminalLink!">
                 <template v-if="isChapterRouteInfo(nextTerminalRouteInfo)">
-                  <ArrowLeftIcon />
+                  <ArrowRightIcon />
                 </template>
                 <template v-else>
                   <ArrowRightIcon /> L{{ nextTerminalRouteInfo.levelIndex }}#{{
