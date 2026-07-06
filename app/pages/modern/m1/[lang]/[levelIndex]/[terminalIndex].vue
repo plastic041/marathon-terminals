@@ -94,6 +94,10 @@ useHead({
               <template v-if="isChapterRouteInfo(prevTerminalRouteInfo)">
                 <ArrowLeftIcon />
               </template>
+              <template v-else-if="isEndRouteInfo(prevTerminalRouteInfo)">
+                <ArrowLeftIcon />
+                <!-- This won't happen -->
+              </template>
               <template v-else>
                 <ArrowLeftIcon /> L{{ prevTerminalRouteInfo.levelIndex }}#{{
                   prevTerminalRouteInfo.terminalIndex
@@ -108,6 +112,9 @@ useHead({
           <UiButton v-if="nextTerminalRouteInfo" as-child class="min-w-[13ch]">
             <NuxtLink :to="nextTerminalLink!">
               <template v-if="isChapterRouteInfo(nextTerminalRouteInfo)">
+                <ArrowRightIcon />
+              </template>
+              <template v-else-if="isEndRouteInfo(nextTerminalRouteInfo)">
                 <ArrowRightIcon />
               </template>
               <template v-else>

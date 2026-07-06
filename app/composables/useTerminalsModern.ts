@@ -20,10 +20,19 @@ type ChapterRouteInfo = {
   chapterIndex: number;
 };
 
-type RouteInfo = TerminalRouteInfo | ChapterRouteInfo;
+/** Routes to End */
+type EndRouteInfo = {
+  end: true;
+};
+
+type RouteInfo = TerminalRouteInfo | ChapterRouteInfo | EndRouteInfo;
 
 export function isChapterRouteInfo(info: RouteInfo): info is ChapterRouteInfo {
   return "chapterIndex" in info;
+}
+
+export function isEndRouteInfo(info: RouteInfo): info is EndRouteInfo {
+  return "end" in info;
 }
 
 /** /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number */
@@ -68,6 +77,12 @@ export function useTerminalsModern(chapters: Chapter[]) {
       };
     }
 
+    if (isEndRouteInfo(info)) {
+      return {
+        path: `/modern/m1/${lang.value}/end`,
+      };
+    }
+
     return {
       path: `/modern/m1/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
@@ -78,10 +93,6 @@ export function useTerminalsModern(chapters: Chapter[]) {
   }
 
   const prevTerminalRouteInfo = computed<RouteInfo | null>(() => {
-    // if (terminalIndex.value === 0 && levelIndex.value === 0) {
-    //   return null;
-    // }
-
     const chapter = chapters.find((c) =>
       c.levels.some((l) => l.index === levelIndex.value),
     )!;
@@ -122,7 +133,9 @@ export function useTerminalsModern(chapters: Chapter[]) {
 
   const nextTerminalRouteInfo = computed<RouteInfo | null>(() => {
     if (terminalIndex.value === 9 && levelIndex.value === 26) {
-      return null;
+      return {
+        end: true,
+      };
     }
 
     const chapterArrIndex = chapters.findIndex((c) =>
