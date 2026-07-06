@@ -28,7 +28,7 @@ const firstTerminalLink = computed(() => {
 <template>
   <div class="h-100dvh flex flex-col gap-8">
     <Header />
-    <img :src="`/chapters/${chapterIndex}.gif`" />
+    <img :src="`/chapters/${chapterIndex}.gif`" class="max-w-4xl mx-auto" />
     <UiButton as-child class="w-fit mx-auto">
       <NuxtLink :to="firstTerminalLink">
         <ArrowRightIcon />

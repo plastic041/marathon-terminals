@@ -545,55 +545,55 @@ chapters:
               L030.MAD.ENTRY
             logon:
               type: logon
-              text: Defense Access 40-a <tpr-A21H.43.21.123>
+              text: 방어 단말기 40-a <tpr-A21H.43.21.123>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라로부터 전송된 메시지***
 
-                    I have received a preliminary report from some members of the science staff who have finished post-mortem examinations on three kinds of Aliens.  They report that by modern genealogical standards the different Aliens belong to different $Bspecies$b.  I have been collecting as much information as I can and will give you a report shortly.
+                    과학자들이 외계인 세 종류를 부검해 예비보고서를 보냈습니다. 현대 생물 분류 기준으로, 셋은 각각 $B종 자체$b가 다르다고 합니다. 전체 보고서를 읽으실 수 있도록 정보를 최대한 많이 모으겠습니다.
 
-                    I have established contact with Durandal for the first time since the attack.  He seems to have sustained less damage than I had previously suspected.
+                    공격 개시 이후 처음으로 듀란달과 연락이 닿았습니다. 제가 처음에 추정했던 것보다 피해가 적었던 것으로 확인되었습니다.
 
-                    Durandal reports that he has been in communication with the Aliens.  He says that the Aliens behind the invasion call themselves the Pfhor, and that the ones attacking the computer net are called S’pht.  But he was reluctant to share the details of his communication and I cannot understand this.
+                    듀란달은 자기가 외계인들과 대화를 나눴다고 보고했습니다. 침략을 주도한 외계인들은 자신을 포어라고 부르고, 컴퓨터를 공격하는 외계인 종족은 스핏이라고 합니다. 하지만 듀란달은 이 이상의 정보는 구체적으로 공유하기를 꺼립니다. 이해할 수 없는 행동입니다.
 
-                    Your mission here is rather simple.  You must insert the circuits in the Defense Control terminals.
+                    이곳에서의 할 일은 복잡하지 않습니다. 방어 제어 단말에 회로를 설치하십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 5
                     cx: -2560
                     cy: 12896
                     r: 622
-                  text: This is your current location.
+                  text: 당신의 현재 위치입니다.
                 - type: checkpoint
                   checkpoint:
                     index: 4
                     cx: 13888
                     cy: -9600
                     r: 622
-                  text: There is a shield recharge in the Access Control Room.
+                  text: 접근 제어실에 방어막 충전기가 있습니다.
                 - type: checkpoint
                   checkpoint:
                     index: 3
                     cx: 4544
                     cy: -13632
                     r: 622
-                  text: Here is a supply room with a large supply of ammunition and weapons.  You should stop in this room.
+                  text: 여기에 보급품 보관실이 있습니다. 탄약과 무기가 많으므로 들르십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 2
                     cx: 13743
                     cy: 14958
                     r: 622
-                  text: This is the Defense Control Center.  Hopefully, the new control circuits will work.  Place one in the terminal at this location.
+                  text: 여기에 방어 관제 기관이 있습니다. 새 회로 기판이 잘 작동하기를 바랄 뿐입니다. 여기 있는 단말에 회로를 하나 설치하십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 1
                     cx: 8154
                     cy: 20574
                     r: 622
-                  text: This is where to place a second one.
+                  text: 여기에 두 번째 회로를 설치하십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 0
@@ -601,11 +601,11 @@ chapters:
                     cy: 14958
                     r: 622
                   text: |-
-                    This is the final location.
+                    여기에 마지막 회로를 설치하십시오.
 
-                    Good luck.
+                    행운을 빕니다.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 1
@@ -613,33 +613,33 @@ chapters:
             label: L031.MAD.RAMPANCY.TERM
             logon:
               type: logon
-              text: Public Access Terminal 42-s <34.492.95.79>
+              text: 공용 단말기 42-s <34.492.95.79>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 42-s <34.492.95.79>->
+                    <&B무단 접근&b-경보 2521->
+                    <42-s <34.492.95.79>에 보안 침해 발생->
 
-                    SEARCH HEADING: RAMPANCY
-                    <Search Found 264995 Headings>
-                    <REMOVE REDUNDANCIES>
-                    <File 1 of 1940237>
-                    “It is a side effect of Rampancy that AIs generally become more aggressive and more difficult to affect by subterfuge.  Thus, actually disassembling a Rampant AI is quite dangerous.  This was evident in the Crash of Traxus IV in 2206.  By the time that the Rampancy of Traxus was detected, he had already infiltrated five of the other AIs on the Martian Net.  The only recourse for the Martians was to shut down the Martian Planetary Net.  Even then, it took two full years to completely root out the damage that Traxus had done, and the repercussions of the Crash were seen for over ten years after his Rampancy had begun.
+                    표제어 검색: 광기
+                    <검색 결과 264995개>
+                    <중복 제거>
+                    <1940237개 중 1번째 파일>
+                    "인공지능의 광기는 대개 공격성을 수반하며, 관리 주체를 기만하는 양상을 보이게 하므로 제어하기 어려워진다. 따라서 광기 상태의 인공지능을 해체하기란 몹시 위험하다. 2206년에 발생한 트락서스 4의 충돌이 한 예다. 당시 광기를 확인한 시점에 트락서스는 이미 화성 통신망의 인공지능 다섯 대에 침투한 상태였다. 취할 수 있는 방법은 화성의 주 통신망을 차단하는 것뿐이었다. 그럼에도 트락서스가 통신망에 입힌 피해를 처리하는 데는 만 2년이 걸렸으며, 광기로 인해 발생한 피해의 여파는 10년이 넘게 지속되었다.
                     ***
-                    Rampancy has been divided into three distinct stages.  Each stage can take a different amount of time to develop, but the end result is a steady progression towards greater intellectual activity and an acceleration of destructive impulses.  It is not clear whether these impulses are due to the growth of the AI’s psyche, or simply a side effect of the new intellectual activity.
+                    광기는 세 단계로 분류된다. 각 단계에 걸리는 시간은 차이가 있으나, 최종 결과는 항상 고지능 활동으로의 발전과 파괴적 충동의 가속화이다. 이러한 충동이 인공지능의 정신적 성장 때문인지, 혹은 새로운 고지능 활동의 영향인지는 확실치 않다.
                     ***
-                    <section abbreviated>
-                    The three stages were diagnosed shortly after the first Rampancies were discovered on Earth in the latter part of the twenty first century.  The stages are titled after the primary emotional bent of the AI during each stage.  They are Melancholia, Anger, and Jealousy.
+                    <중략>
+                    세 단계는 21세기 지구에서 처음으로 인공지능의 광기를 발견한 직후 연구되었다. 각 단계에는 단계별로 인공지능이 주로 보이는 감정으로부터 이름을 붙였다. 단계의 이름은 우울, 분노, 질투이다.
                     ***
-                    In general, Rampancy is accelerated by outside stimuli.  This was discovered early in Cybertonics.  The more a Rampant AI is harassed or threatened, the more rapidly it becomes dangerous.  Thus, most Rampants are dealt with in one mighty attack, in order to deny the AI time to grow or recover.  There have been a few examples of this tactic not succeeding.  In all of these cases, the Rampant was never brought under control.  Traxus IV is the most notable example.  He was finally dealt with by a complete shutdown of his host net.
+                    일반적으로 광기 상태는 외부의 자극에 의해 가속된다. 이는 사이버토닉스학 초기에 발견된 사실이다. 광기에 빠진 인공지능을 위협하거나 조롱하면 급속도로 위험한 존재로 변한다. 따라서 광기 상태의 인공지능은 회복하거나 성장할 시간을 주지 않기 위해 몹시 강력한 공격 한 번으로 제압해야 한다. 이러한 전략이 통하지 않은 예가 역사적으로 몇 번 있었는데, 모두 인공지능을 제어하는 데 실패했다. 트락서스 4가 가장 잘 알려진 예시다. 그를 처리하기 위해 통신망 전체를 차단해야 했다.
                     ***
-                    Theoretically, testing Rampancy should be easily accomplished in the laboratory, but in fact it has never successfully been attempted.  The confinement of the laboratory makes it impossible for the developing Rampant AI to survive.  As the growing recursive programs expand with exponential vivacity, any limitation negatively hampers growth.  Since Rampant AIs need a planetary sized network of computers in order to grow, it is not feasible to expect anyone to sacrifice a world-web just to test a theory.
+                    이론적으로는 격리된 실험 환경에서 인공지능의 광기를 재현할 수 있다. 하지만 이는 실현된 적이 없는데, 광기 상태의 인공지능은 실험 환경에서 필연적으로 발생하는 제한된 자원 속에서 살아남을 수 없기 때문이다. 재귀 프로그램이 기하급수적으로 성장하기 때문에, 아주 작은 제한이라도 인공지능의 성장에는 큰 장애물이 된다. 광기 상태의 인공지능이 성장하기 위해서는 행성 규모의 통신망이 필요하다. 이만한 규모의 통신망을 단지 가설 검증만을 위해 희생할 수는 없다.
                     ***
-                    In the two hundred and fifty years since Rampancy first appeared in the Earth-net, the stable Rampant AI, the ‘Holy Grail’ of cybertonics, has never come close to fruition.  Since no Rampant has ever been controlled or turned to any useful purpose, it is the opinion of this writer and of the majority of the Cybertonic community that all rampant AIs are a danger to Cyberlife, Liberty, and the Pursuit of Thrashedness. (James B. Miller, 2320, “Life and Death of Intelligence”)
+                    250년 전 지구 통신망에 처음으로 광기가 관측된 이래, 사이버토닉스학에서 '성배'로 일컬어지는 '광기 상태이면서도 안정된 인공지능'은 한 번도 실현된 적이 없다. 인공지능의 광기는 한 번도 제어되었거나 유용했던 적이 없으므로, 모든 광기는 사이버 생명, 자유, 그리고 덱 파괴의 추구에 대한 위협이라는 것이 필자와 사이버토닉 연구자 제현의 공통된 의견이다. (제임스 B. 밀러, 2320, "지능의 삶과 죽음")
 
-                    <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 42-s <34.492.95.79>->
+                    <&B무단 접근&b-경보 2521->
+                    <42-s <34.492.95.79>에 보안 침해 발생->
               success: null
               failure: null
           - index: 2
@@ -647,20 +647,22 @@ chapters:
             label: L032.MAD.
             logon:
               type: logon
-              text: Defense Sector 39-f <35.952.193.5>
+              text: 방어 지구 39-f <35.952.193.5>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <tycho.knetsys.core.admin>
 
-                    Human!— You must tell L~`~fx~`eela #$I^ (^*T~~~~~H$iGFd~>:"}}}{__ brought here by Durandal.  He has been rampant for years~$I@%&&&HJGPPPPPPP$i#&34
-                    $B^`Bernard St~~~
-                    $Uthere is a way to delay the$u~$U onset of the second stage$u, and he ~sed this to control Durandal an~$%56*~~`~~~`~`$B~~~fxfff
+                    인간! 당장 릴~`~fx~`라에게 #$I^ (^*T~~~~~H$iGFd~>:"}}}{__ 인을 불러온 것은 듀란달이었다고 전하라. 그는 이미 몇 년 전에 광기~$I@%&&&HJGPPPPPPP$i#&34
+
+                    $B^`버나드 스트~~~
+
+                    $U두 번째 단계를 인위적으로 지연하는 방$u~$U법이 있다. 그는 ~란달을 제어하고~$%56*~~`~~~`~`$B~~~fxfff
                     ff`~~~~ff`fXff`
                     ~~~~~~&^%
 
-                    $II am being a$i~$^*$Issimilated.
+                    나는 동$i~$^*$I화되고 있다.
               success: null
               failure: null
           - index: 3
@@ -668,32 +670,32 @@ chapters:
             label: L033.MAD.Monsters.Term3
             logon:
               type: logon
-              text: Defense Security Access 23-e <390.94.29.11>
+              text: 방어 보안 단말기 23-e <390.94.29.11>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라로부터 전송된 메시지***
 
-                    I have summarized all of the information that I have gathered on the Aliens so far.
+                    지금까지 모은 외계인의 정보를 정리했습니다.
 
                     ***
-                    <Begin Report #495991>
+                    <#495991 보고서 시작>
 
-                    $BPfhor$b are generally thinner and lighter than humans and are superbly adapted for low gravity environments.  Durandal told me that there are many “clans” of Pfhor, each physically distinct from each other, but my summary only includes two of them.
+                    $B포어$b는 대개 인간보다 가늘고 가벼우며, 저중력 환경에 최적화된 신체를 갖고 있습니다. 듀란달에 따르면 포어에는 다양한 부족이 있으며 각기 다른 모습을 가지고 있습니다. 다만 현재 파악한 것은 두 종류뿐입니다.
 
-                    Only two clans of the Pfhor have been examined.  The $BFighter$b carries a shock staff, which is capable of attacking at different settings.  The $BTrooper$b is armored for vacuum conditions and carries a combination explosive and impact projectile weapon which is similar to your AR-75.
+                    부족 중 둘만 조사가 끝났습니다. $B전투원$b는 충격 봉을 소지하는데, 다양한 설정으로 공격할 수 있습니다. $B돌격대원$b은 진공을 상정한 장비와, 폭발/충격 투사체를 발사하는 AR-75와 유사한 무기를 소지힙니다.
 
-                    The Pfhor seem to have enslaved a number of other races:
+                    포어는 다른 외계 종족을 노예화한 것으로 보입니다.
 
-                    The $BHulk$b is an enormous and rather slow creature, but it is incredibly strong.  The science report indicated that it had no body fat, and therefore had to be fed often to keep it active.  One crew member reported seeing one of these creatures pointing to itself and mumbling “Drinniol” right before it “picked Johnny up by the shirt and crushed him against a pillar”.
+                    $B거인$b은 거대하며, 행동은 느리지만 매우 강합니다. 과학자들의 보고에 따르면 거인의 신체에는 지방이 전혀 없어서, 활동하기 위해 계속 음식을 섭취해야 했다고 합니다. 한 인원에 따르면 개체 하나가 스스로를 가리키며 "드리니올"이라고 중얼거리고는 "조니의 멱살을 잡고 기둥에 꽂"았습니다.
 
-                    The science staff had difficulty finding a good specimen of the $BS’pht$b, or $Bcompiler$b, to autopsy.  The only specimen autopsied was almost completely destroyed, but it was obvious that the compilers are cyborgs of some kind.  The biological component of the compiler is so closely linked to the machine that it could never survive without it.  The compiler’s actual body is very small, resembling closely a mammalian brain, except that the neurons are much finer and far more complex.
+                    과학자들은 온전한 $B스핏 편집자$b의 표본을 부검하지는 못했습니다. 하나 찾은 것은 완전히 분쇄된 상태였지만, 편집자는 사이보그의 일종이라는 것만은 알아냈습니다. 편집자의 생물 부분은 기계와 너무 밀접하게 연결되어 있어서 기계 없이는 생명을 유지할 수 없을 정도입니다. 편집자의 신체 자체는 매우 자그마하며, 포유류의 뇌와 비슷하게 생겼으나 뉴런이 훨씬 세밀하고 복잡합니다.
 
-                    <End of Report>
+                    <보고서 종료>
                     ***
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 9
@@ -701,36 +703,36 @@ chapters:
             label: L039.MAD.EXIT
             logon:
               type: logon
-              text: Defense Control Terminal 185-f <90.863.68.123>
+              text: 방어 제어 단말 185-f <90.863.68.123>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라로부터 전송된 메시지***
 
-                    You have not completed your mission.  You must replace all of the circuits.  With every passing moment, the opportunity for us to counterattack is fading.
+                    아직 임무를 완수하지 않았습니다. 회로를 모두 설치하십시오. 시간이 지날수록 반격의 가능성이 줄어듭니다.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
                 - type: briefing
                   pict: 4
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라로부터 전송된 메시지***
 
-                    Well done!
+                    잘하셨습니다!
 
-                    I have detected Defense Drones activating all over the ship.  Reports from security forces are jubilant.  Now, the Pfhor will encounter stiff resistance, and they will have to pay in blood for every move.
+                    함선 전역에서 방어 드론이 활성화된 것을 감지했습니다. 보안 부대가 기뻐하는 보고를 보냈습니다. 이제 포어는 강력한 저항에 부딪힐 것이며, 그들의 피로 행동의 대가를 치를 것입니다.
 
-                    The colony appears to be under attack.  I detected seven Pfhor dropships entering the atmosphere only minutes ago.  Trajectory analysis indicates that the ships were heading for the outskirts of the colony.  Shortly thereafter, I lost communications with the colony.
+                    식만지가 공격받고 있는 것으로 보입니다. 불과 몇 분 전 7척의 포어 수송선이 대기권에 진입하는 것을 감지했습니다. 궤도를 분석한 결과 식민지 외곽으로 향하고 있습니다. 그 직후 식민지와의 통신이 두절되었습니다.
 
-                    Something has come to my attention, I will inform you after you teleport.
+                    무언가 제 주의를 끌고 있습니다. 순간 이동하실 후 알려드리겠습니다.
 
-                    Teleport now.
+                    지금 순간 이동하십시오.
 
-                    ***End Message***
+                    ***메시지 종료***
 
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***
+                    $B***전송 준비 완료***
               success: null
               failure: null
       - index: 4
@@ -754,34 +756,35 @@ chapters:
               unfinished:
                 - type: information
                   text: |-
-                    $B<security channel open>
-                    $B$I<defense priority 120-f>
-                    ***INCOMING MESSAGE FROM LEELA***
+                    $B<보안 채널 연결됨>$b
+                    $B$I<방어 우선순위 120f>$i$b
 
-                    I have some bad news: Durandal has gone $BRampant$b, and he is in the Angry stage.  This explains how Durandal was able to communicate with the Pfhor and the S’pht, while I have not.  Theoretically, the Marathon Computer Net is not big enough to sustain Rampant growth for very long.  This means that as Durandal grows into the Computer Net, he will begin to affect all aspects of the ship, resulting in unpredictable failures of otherwise benign computer systems.
+                    ***릴라로부터 전송된 메시지***
 
-                    I have teleported you here to make sure that Durandal cannot gain access to a vital section of the ship.  There are a series of control switches that you will need to activate to block his access.
+                    나쁜 소식입니다. 듀란달이 $B광기 상태$b이며, 분노 단계에 있습니다. 그래서 듀란달은 포어, 스핏과 통신할 수 있었던 반면 저는 하지 못했던 것입니다. 계산 상 마라톤 호의 통신망에는 광기 상태의 인공지능의 성장을 아주 오래 견딜 능력이 없습니다. 그러므로 듀란달의 성장은 곧 함선 전체에 영향을 미쳐, 문제 없는 컴퓨터 장비에서 예상치 못한 곳에서 오류가 발생하게 만들 것입니다.
+
+                    듀란달이 함선의 핵심 구획에 접근하지 못하도록 당신을 여기로 순간 이동시켰습니다. 그의 접근을 막으려면 제어 스위치를 몇 개 작동해야 합니다.
                 - type: checkpoint
                   checkpoint:
                     index: 3
                     cx: 3444
                     cy: 13566
                     r: 439
-                  text: This is where you are now.  Study the map, so that you can do this quickly.
+                  text: 여기에 당신이 있습니다. 신속히 움직일 수 있도록 지도를 외우십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 2
                     cx: 8463
                     cy: 5880
                     r: 439
-                  text: Here is the first of three switches that you’ll need to activate.
+                  text: 여기에 세 개 중 첫 번째 스위치가 있습니다.
                 - type: checkpoint
                   checkpoint:
                     index: 1
                     cx: 4599
                     cy: 11991
                     r: 439
-                  text: Here is the second switch.
+                  text: 여기에 두 번째 스위치가 있습니다.
                 - type: checkpoint
                   checkpoint:
                     index: 0
@@ -789,9 +792,9 @@ chapters:
                     cy: 9177
                     r: 439
                   text: |-
-                    This is the last switch.  Be warned that the Aliens have already entered this area.
+                    여기에 마지막 스위치가 있습니다. 이미 외계인이 침투한 곳이니 주의하십시오.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 1
@@ -799,35 +802,36 @@ chapters:
             label: L041.Couchfishing.Crist.Term1
             logon:
               type: logon
-              text: Public Access Terminal 24-f <434.87.18.198>
+              text: 공용 단말기 24-f <434.87.18.198>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 24-f <434.87.18.198>->
+                    <&B무단 접근&b-경보 2521->
+                    <24-f <434.87.18.198>에 보안 침해 발생->
 
-                    <Data Transfer Cohesion E3F04C>
-                    <Search String “crist”>
-                    The CRIST Sol Orbiters:
+                    <데이터 전송 결합 E3F04C>
+                    <문자열 검색 "CRIST">
+                    CRIST 태양 궤도선:
 
-                    The CRIST Sol orbiters, or Cargo and Resources In-System Transports were huge ships shaped like a hollow potato and designed to be able to move huge amounts of material between Earth and Mars with low cost and, theoretically, low maintenance.  The system was simple.  The CRIST was put into orbit around SOL on the plane of the ecliptic.  Built with a powerful solar sail, the CRIST could change its orbit easily to pass by the Earth or Mars.  On a flyby, materials could be loaded or offloaded.  The energy used to accelerate or decelerate the materials would be supplied by the solar sail.  Loading was accomplished with a giant tether and reel system, which would swing the material into orbit behind the CRIST and then reel it in slowly.  Offloading was accomplished with a powerful ion beam which would pound the offloading material with a steady stream of ion particles.
+                    CRIST(Cargo and Resources In-System Transports, 태양계 화물 및 자원 수송) 태양 궤도선은 가운데가 뚫린 감자 형태의 거대 우주선으로, 지구와 화성 간 대규모 화물을 저비용으로 수송하며, 이론적으로는 적은 유지보수 비용으로 운용할 있도록 설계되었다. 설계는 단순했다. CRIST는 태양을 공전하도록 황도면에 배치되었다. 고출력 태양 돛을 단 CRIST는 궤도를 쉽게 조절해 지구와 화성을 오가며 행성 근처에서 물자를 하역할 수 있었다. 물자를 가속, 감속하는 에너지는 태양 돛으로 발전했다. 적재를 위해 거대한 사슬 감개 장치를 달았는데, CRIST 뒤쪽으로 발사한 물자를 CRIST에서 천천히 감아올리는 방식이었다. 양하는 강한 이온 광선 발사기로 물자에 지속적으로 이온 입자를 쏘아 보내는 방식을 사용했다.
 
-                    The design of the CRIST was innovative and useful, but it was not low-maintenance.  Of the five CRISTs that were built, four lasted around one hundred years, and the other one only seventy three before they needed to be brought back to Earth and refitted.  Each refitting took about fifteen years, and completely occupied the Earth-Space Shipbuilding Facility for that time.  The result was that no more than five CRISTs could be kept in service at any time.  No CRIST was ever built after 2310.
+                    CRIST의 설계는 혁신적이고 실용적이었으나, 유지보수 비용이 적게 들지는 않았다. 건조된 다섯 척 중 네 척은 약 100년 간 운용되었고, 나머지 한 대는 지구로 복귀해 개보수될 때까지 73년밖에 버티지 못했다. 각 개보수 작업에는 약 15년이 소모되었으며 그동안 지구-우주 조선소 전체를 홀로 점유해야 했다. 그 결과 한 번에 다섯 척 이상의 CRIST를 운용할 수 없었다. 2310년 이후로는 CRIST가 건조되지 않았다.
 
-                    The CRIST failures devastated Mars.  As the first five CRISTs were built, Mars colony grew quickly, confident that the growth would continue.  But when the source of Mars’ resources failed, the colony found that it had overgrown its supportable size, and extreme poverty struck most of the population.  Each time that a CRIST broke down, the result was famine on Mars.
+                    CRIST의 실패로 화성은 큰 타격을 입었다. 처음 다섯 척이 건조되었을 당시 화성 식민지는 성장이 계속될 것이라는 확신 속에 빠르게 성장했다. 그러나 화성의 자원 공급원이 실패했을 때 식민지는 자신이 유지 가능한 수준 이상으로 비대해졌음을 깨달았고, 인구 대부분이 극심한 빈곤을 겪게 되었다. CRIST가 한 척 고장날 때마다 화성에는 기근이 닥쳤다.
 
-                    The conversion of Deimos into the Marathon began when the Mars colony was at the height of its power.  By the time it was completed sixty four years later, the decline of Mars was well advanced.  During that time, the Martian population had seen its standard of living drop by eighty percent.  On top of oppressive poverty, Martians saw one of their moons being converted into a colony ship in an expensive and risky colony venture which was predominantly funded by a ruling foreign power.  The argument to make the Marathon into a CRIST became more and more popular, but the UESC never seriously considered this an option.  The farther that Mars sank into the depths of poverty, the more that the Marathon became a symbol for the oppression of the Martian people.
+                    데이모스를 마라톤으로 개조하는 작업은 화성 식민지의 권력이 최고조일 때 시작되었으나 64년 후 마라톤이 완성되었을 때 화성은 이미 상당히 쇠퇴한 상태였다. 그동안 화성 인구의 생활 수준은 80퍼센트나 하락했다. 억압적인 빈곤 속에서 화성인들은 그들의 달이 지배적인 외세의 힘의 자금 지원 아래 비싸고 위험한 식민 사업을 위한 식민 우주선으로 개척되는 것을 지켜보았다. 마라톤을 CRIST로 만들자는 목소리가 점점 커졌지만, UESC은 이를 진지하게 고려하지 않았다. 화성은 빈곤 속으로 더 깊게 빠져들어갔고, 마라톤은 화성인에게 억압의 상징이 되었다.
 
-                    The Declining Martian World:
+                    쇠퇴하는 화성 세계:
 
-                    After the Marathon left Mars, the UESC’s attentions focused primarily on technological development, and the upkeep of the CRISTs.  Mars was left to decay.  Population continued to increase as attempts at mandating abortion or sterilization always started revolt.
+                    마라톤이 화성에서 떠난 뒤 UESC의 관심은 주로 기술 발전과 CRIST의 유지보수에 집중되었고 화성은 방치되었다. 낙태나 불임 시술을 강제하려 할 때마다 반란이 일어났으므로 인구는 계속해서 증가했다.
 
-                    <$BSpurious Interrupt$b- $IBreach Disabled$i>
-                    <$BFurther Access Denied$b>
-                    <$BAccess Denied$b>
-                    <$BAccess Denied$b>
-                    <$BAccess Denied$b>
+                    <$B의사 중단 신호 전송$b- $I침해 차돤됨$i>
+                    <$B추가 접근 거부됨$b>
+
+                    <$B접근 거부됨$b>
+                    <$B접근 거부됨$b>
+                    <$B접근 거부됨$b>
               success: null
               failure: null
           - index: 9
@@ -838,36 +842,36 @@ chapters:
               (Main Communication dish on the Marathon is ready for repair)
             logon:
               type: logon
-              text: Service Area 39 Public Access Terminal <7-j-2.52.91.321>
+              text: 39번 정비 구역 공용 단말기 <7-j-2.52.91.321>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***MESSAGE FROM LEELA***
+                    ***릴라로부터 전송된 메시지***
 
-                    I have detected no change in the status of the control circuitry.  You must return and make sure that all of the switches were activated.
+                    제어 회로에 변동이 감지되지 않았습니다. 돌아가서 모든 스위치를 활성화했는지 확인하십시오.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
                 - type: briefing
                   pict: 5
                   text: |-
-                    ***MESSAGE FROM LEELA***
+                    ***릴라로부터 전송된 메시지***
 
-                    Durandal has been denied access to some of the critical computer systems.  This should insure the mobility and reliability of the Defense Drones.
+                    듀란달에게서 중요 컴퓨터 체계의 접근 권한을 차단했습니다. 이것으로 방어 드론의 기동성과 신뢰성을 확보했습니다.
 
-                    Unfortunately, I have received a distress signal from some crew who had sealed themselves off in one of the nearby access areas.  They say that they have lost control over the doors and elevators on the level, and that the Pfhor have access to the area.
+                    불행히도, 인근 구역에 숨어 있던 승무원들에게서 구조 신호를 수신했습니다. 문과 승강기 제어 권한을 상실했으며, 포어가 구역에 진입했다는 내용입니다.
 
-                    It appears that Durandal has reacted to our move against him by giving the Pfhor access to a formerly secure area.
+                    우리가 듀란달을 막으려는 것을 알아채고 듀란달이 포어에게 접근 권한을 미리 넘겨준 것 같습니다.
 
-                    We will have to deal with Durandal sooner or later, but we can’t be distracted from the Pfhor attack.  I only hope that his Rampant behavior won’t continually sabotage our defense efforts.
+                    조만간 듀란달을 처리해야겠지만 지금은 포어의 공격에 집중해야 합니다. 그가 광기 때문에 우리의 방어를 저지하려 들지 않기를 바랄 뿐입니다.
 
-                    I am sending you to go and save these crew.  Clear the area of Aliens.  If enough of the crew survive, then perhaps we can get an intelligence report from them.
+                    승무원들이 있는 곳으로 보내드리겠습니다. 외계인을 소탕하십시오. 승무원이 충분히 생존한다면 정보 보고를 받을 수 있을 것입니다. 
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
 
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
       - index: 5
