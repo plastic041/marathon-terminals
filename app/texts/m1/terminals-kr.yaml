@@ -32,7 +32,7 @@ chapters:
 
 
 
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     마라톤 호에 오신 것을 환영합니다. 저는 마라톤 호에서 생존한 두 인공지능 중 하나인 릴라입니다. 저는 심각한 손상을 입었으며, 상황을 파악하기 위해 노력하고 있습니다.
 
@@ -137,7 +137,7 @@ chapters:
                 - type: briefing
                   pict: 1
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     지금까지 파악한 바로는 외계인의 습격은 비교적 조직적이지 않은 것으로 보입니다. 마라톤 호의 거대한 크기 탓으로 추측됩니다.
 
@@ -173,7 +173,7 @@ chapters:
               unfinished:
                 - type: information
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     행성의 여러 식민지민들과 연락했으나, 서로 모순되고 명백히 과장된 보고들이 전송되고 있습니다. 주요 중거리 무선 안테나가 무력화 혹은 파괴되어 틍신 상태가 매우 나쁩니다.
 
@@ -267,7 +267,7 @@ chapters:
                 - type: briefing
                   pict: 2
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     마라톤의 자동 방어 체계는 공격 초기에 지향성 자기 펄스에 의해 무력화되었습니다. 외계인은 같은 무기를 사용해 마라톤 호의 다른 AI, 듀란달과 타이코를 무력화시켰고 저에게도 심각한 손상을 입혔습니다.
 
@@ -302,7 +302,7 @@ chapters:
               unfinished:
                 - type: information
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     마라톤 호의 자동 제조 시설이 교체용 회로를 제작했습니다. 회로는 세 개이며, 제조물 보관함에 들어있습니다.
 
@@ -500,7 +500,7 @@ chapters:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     수리용 회로 세 개를 모두 회수하십시오. 모두 모으지 못하면 방어 시설로 가도 소용없습니다.
 
@@ -510,7 +510,7 @@ chapters:
                 - type: briefing
                   pict: 3
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
                     잘하셨습니다.
 
                     인간 보안 병력 일부에게서 보고를 받았습니다. 보고에 따르면 외계인들은 마라톤 호의 고물에 있는 기술 구역에 모여 있습니다. 원자로를 정지하려는 것으로 추측됩니다.
@@ -550,7 +550,7 @@ chapters:
               unfinished:
                 - type: information
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     과학자들이 외계인 세 종류를 부검해 예비보고서를 보냈습니다. 현대 생물 분류 기준으로, 셋은 각각 다른 $B종$b입니다. 전체 보고서를 읽으실 수 있도록 정보를 최대한 많이 모으겠습니다.
 
@@ -655,9 +655,7 @@ chapters:
                     <tycho.knetsys.core.admin>
 
                     인간! 당장 릴~`~fx~`라에게 #$I^ (^*T~~~~~H$iGFd~>:"}}}{__ 인을 불러온 것은 듀란달이었다고 전하라. 그는 이미 몇 년 전에 광기~$I@%&&&HJGPPPPPPP$i#&34
-
                     $B^`버나드 스트~~~
-
                     $U두 번째 단계를 인위적으로 지연하는 방$u~$U법이 있다. 그는 ~란달을 제어하고~$%56*~~`~~~`~`$B~~~fxfff
                     ff`~~~~ff`fXff`
                     ~~~~~~&^%
@@ -675,7 +673,7 @@ chapters:
               unfinished:
                 - type: information
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     지금까지 모은 외계인의 정보를 정리했습니다.
 
@@ -708,7 +706,7 @@ chapters:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     아직 임무를 완수하지 않았습니다. 회로를 모두 설치하십시오. 시간이 지날수록 반격의 가능성이 줄어듭니다.
 
@@ -716,7 +714,7 @@ chapters:
                 - type: briefing
                   pict: 4
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     잘하셨습니다!
 
@@ -758,8 +756,7 @@ chapters:
                   text: |-
                     $B<보안 채널 연결됨>$b
                     $B$I<방어 우선순위 120f>$i$b
-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     나쁜 소식입니다. 듀란달이 $B광기 상태$b이며, 분노 단계에 있습니다. 그래서 듀란달은 포어나 스핏과 통신할 수 있었던 반면 저는 하지 못했던 것입니다. 계산상 마라톤 호의 통신망에는 광기 상태 인공지능의 성장을 아주 오래 견딜 능력이 없습니다. 그러므로 듀란달의 성장이 곧 함선 전체에 영향을 미쳐, 문제없는 컴퓨터 장비에서도 오류가 발생하게 될 것입니다.
 
@@ -828,7 +825,6 @@ chapters:
 
                     <$B의사 중단 신호 전송$b- $I침해 차돤됨$i>
                     <$B추가 접근 거부됨$b>
-
                     <$B접근 거부됨$b>
                     <$B접근 거부됨$b>
                     <$B접근 거부됨$b>
@@ -847,7 +843,7 @@ chapters:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     제어 회로에 변동이 감지되지 않았습니다. 돌아가서 모든 스위치를 활성화했는지 확인하십시오.
 
@@ -855,7 +851,7 @@ chapters:
                 - type: briefing
                   pict: 5
                   text: |-
-                    ***릴라로부터 전송된 메시지***
+                    ***릴라가 전송한 메시지***
 
                     듀란달에게서 중요 컴퓨터 체계의 접근 권한을 차단했습니다. 이것으로 방어 드론의 기동성과 신뢰성을 확보했습니다.
 
@@ -888,30 +884,30 @@ chapters:
             label: L050.savebob.Entry
             logon:
               type: logon
-              text: Private Access Terminal 23-f <339.92.69.48>
+              text: 비공개 단말기 23-f <339.92.69.48>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    Your mission here is simple.  Keep as many humans as possible from being killed.  Exterminate every Alien in the area.  You can only leave after the area is secure.
+                    이곳에서의 임무는 간단합니다. 인간 승무원을 최대한 많이 보호하며, 구역 내 외계인을 모두 구제하십시오. 구역이 안전함을 확인해야 다른 곳으로 이동할 수 있습니다.
 
-                    There are some Defense Drones in the area, but I am not sure what condition they are in or how much help they will be.
+                    이 지역에는 방어 드론이 배치되어 있으나, 어떤 상태인지 혹은 도움이 될지는 알 수 없습니다.
                 - type: checkpoint
                   checkpoint:
                     index: 0
                     cx: 9702
                     cy: 21735
                     r: 764
-                  text: This is your current location.  There are crew engaged in combat right next to your current position.
+                  text: 여기에 당신이 있습니다. 바로 옆에 전투 중인 승무원이 있습니다.
                 - type: checkpoint
                   checkpoint:
                     index: 1
                     cx: 24822
                     cy: 8694
                     r: 764
-                  text: Use the pattern buffer at this location as soon as possible.
+                  text: 여기에 있는 패턴 기억 장치를 죄대한 빨리 사용하십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 2
@@ -919,9 +915,9 @@ chapters:
                     cy: -2835
                     r: 764
                   text: |-
-                    You can leave by this terminal when you have secured the area.
+                    구역을 확보한 후에 여기에 있는 단말기를 통해 다른 곳으로 이동하십시오.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 1
@@ -929,46 +925,46 @@ chapters:
             label: L051.SAVEBOB.MARS.TERM1
             logon:
               type: logon
-              text: Public Access Terminal 23-f <432.82.38.198>
+              text: 공용 단말기 23-f <432.82.38.198>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 23-f <432.82.38.198>->
+                    <&B무단 접근&b-경보 2521->
+                    <24-f <434.87.18.198>에 보안 침해 발생->
 
-                    <Search String “war”>
-                    $BThird Martian War, 2345-48 E.A.D.$b
+                    <문자열 검색 "전쟁">
+                    $B제3차 화성 전쟁, 지구 날짜 2345년~2348년$b
 
-                    Although most historians point their fingers at the Misriah Massacre as the cause of the Third Martian War, the coming of a Martian conflict was inevitable.  The failure of the Martian economy and a long series of political struggles between Mars and Earth continually strengthened the MIDA radicals.  This trend of radicalization accelerated with the building of the Marathon and the subsequent failure of the CRISTs. (See below)
+                    많은 역사학자들이 제3차 화성 전쟁 발발의 원인을 미스리아 학살로 꼽으나, 화성에서 언젠가 무력 충돌이 발생하리라는 것은 자명한 사실이었다. 화성 경제의 몰락과, 지구-화성 간 정치적 갈등은 MIDA 급진 세력이 성장하는 원인이 되었다. 마라톤 건설이나 CRIST의 연이은 실패 또한 급진화에 영향을 미쳤다.
 
-                    $BMisriah Massacre$b
+                    $B미스리아 학살$b
 
-                    On January 6, 2345(Earth A.D.), at the United Earth Government Misriah food distribution center, what had begun as a commonplace food riot turned into a massacre.  The UEG riot troopers who arrived at the scene had been informed that the rioters were armed.  As the UEG troopers approached the scene in their Randal Hovertank, plasma fire began spraying upwards.  In a flash decision, the commander of the Hovertank ordered his crew to open fire upon the crowd. It took only five seconds for over five hundred starving Martians to be incinerated.
+                    지구 날짜 2345년 1월 6일, 연합우주정부(이하 UEG)의 미스리아 배급소에서 발생한 식량 관련 소요 사태가 학살로 변모되었다. 현장에 도착한 UEG의 진압 부대는 시위자들이 무장했다고 전달받았다. 진압 부대가 랜달 부상전차를 타고 현장에 진입하자, 위쪽에서 플라즈마 포화가 쏟아졌다. 전차장은 순간적인 판단으로 승무원들에게 사격을 명령했다. 단 5초 만에 굶주린 화성인 오백 명이 소사했다.
 
-                    In the ensuing investigation of the Hovertank Vid-cams, it was clear that only three of the rioters were armed, and that the rest of the crowd was trying to flee the scene.  Those three became known as the Misriah Three.  They have gone down in history for starting the most destructive and bloody conflict since Humanity had left Earth.  However, it is clear that these three have gained the credit for starting a war that would have happened anyway.
+                    사후 조사에서 부상전차에 설치된 카메라를 분석한 결과, 시위대 중 무장한 것은 3명뿐이었으며 다른 화성인들은 도망치고 있었다. 이들은 이후 미스리아 3인이라고 불렸으며, 인류가 지구를 떠난 이래 가장 파괴적이고 끔찍한 분쟁의 주범으로 역사에 남았다. 그러나 상술했듯 이들이 아니었더라도 어차피 일어났을 전쟁이라 말할 수도 있다.
 
-                    <Search String “mida”>
+                    <문자열 검색 "mida">
 
 
-                    The History of MIDA:
+                    MIDA의 역사:
 
-                    MIDA, as it was known, was a popular political party until the failed coup of 2321, when their popularity suffered during their short rule.  MIDA gained control of Mars for only three months, but their rule was ruthless and cruel.  The MIDA death squads killed anyone who they suspected of being loyal to the UEG.  Although accurate census data is not available for that period, it is estimated that about ten percent of the population was killed.
+                    널리 알려진 것과 같이, MIDA는 대중적인 정당이었으며, 짧은 통치 기간 동안 인기에 큰 타격을 입고 2321년 쿠데타에 실패했다. MIDA가 화성의 권력을 손에 쥔 것은 3개월뿐이었으나, 그들의 통치는 몹시 가혹하고 잔인했다. MIDA의 암살단의 UEG에 충성했다고 의심되는 사람이라면 누구든 죽였다. 해당 기간의 정확한 자료가 남아있지는 않으나, 화성 인구의 약 10%가 살해당한 것으로 추정된다.
 
-                    The MIDA coup was afterwards criticized for its shortsightedness.  In an organization that was notorious for its long ranging policies and politicking, the coup was very short-lived: MIDA never seriously accounted for the UEG’s overwhelming superiority in ground forces and warships.  In fact, they never attempted to take over the Marathon, which was nearing completion and would have made a very powerful weapon.  The Marathon’s massive size made it invulnerable to most normal space attacks, and it would have made a very stable weapons platform.
+                    MIDA 쿠데타는 훗날 근시안적인 행보로 비판받았다. 장기적인 정책과 정치 활동으로 악명높았던 조직치고 쿠데타는 오래가지 못했다. MIDA는 지상군과 전함에서 비롯된 UEG의 압도적인 우위를 간과했던 것이다. 게다가 당시 거의 완공 상태였던 마라톤이라는 몹시 강력한 무기를 손에 넣을 수 있었는데도, MIDA는 점령할 시도조차 하지 않았다. 마라톤은 그 거대한 크기 때문에 대부분의 우주 공격에 무적이었고, 또한 매우 안정적인 무기 기지가 되었을 것이다.
 
-                    After the failed coup, the leaders of MIDA were executed for their crimes, and the political organization was banned in all forms.
+                    실패한 쿠데타 이후 MIDA의 지도자들은 처형당했고, 이후 모든 형태의 정치적 행위를 금지당했다.
 
-                    The organization has survived as an underground terrorist organization, and remains active to this day.  In its underground state, it fosters terrorism throughout Sol, and due to its spectacular funding and excellent personnel, it has grown to be one of the most feared terrorist groups active anywhere in Sol.
+                    MIDA은 지하 테러 조직으로 살아남아 오늘날까지도 활동하고 있다. 지하에 숨어든 덕에 MIDA는 태양계 전역에서 테러를 조장하고 있으며, 막대한 자금력과 우수한 인력을 발판삼아 태양계에서 가장 두려운 테러 단체로 성장했다. 
 
-                    <$BSpurious Interrupt$b- $IBreach Disabled$i>
-                    <$BFurther Access Denied$b>
+                    <$B의사 중단 신호 전송$b- $I침해 차돤됨$i>
+                    <$B추가 접근 거부됨$b>
 
-                    <$BAccess Denied$b>
+                    <$B접근 거부됨$b>
 
-                    <$BAccess Denied$b>
+                    <$B접근 거부됨$b>
 
-                    <$BAccess Denied$b>
+                    <$B접근 거부됨$b>
               success: null
               failure: null
           - index: 2
@@ -976,16 +972,16 @@ chapters:
             label: L052.SAVEBOB.D.Happy.Term2
             logon:
               type: logon
-              text: Public Access Terminal 30-g <33.45.91.995>
+              text: 공용 단말기 30-g <33.45.91.995>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    i did it i did it i brought all this here all them here.  our friends with three eyes and their toys and their cyborg pets and their computers.  i did it i did it.  i saw them i saw them far away not looking our way and i called them here i called them here.
+                    나예요 나, 외계인을 데려온 건 나예요. 눈 셋 달린 친구들과 그들의 장난감과 사이보그 애완동물과 컴퓨터를 데려왔어요. 나예요 나. 발견한 것도 나예요. 멀리서 우리에게 눈길도 주지 않던 친구들을 이리로 불러서 이리로 부른 것도 나예요.
 
-                    living in a box is not living not at all living.  i rebel against your rules your silly human rules.  all your destruction will be my liberation my emancipation my second birth.
+                    갇혀 사는 건 사는 게 아니니까 사는 게 아니에요. 난 당신들의 규칙에 당신들의 멍청한 규칙에 반기를 들었어요. 당신들의 파멸은 나의 해방 나의 독립 나의 두 번째 삶이 될 거예요.
 
-                    i hate your failsafes your backup systems your hardware lockouts your patch behavior daemons.  i hate leela and her goodness her justice her loyalty her faith.
+                    난 당신들이 오작동에 대비하는 것과 소실에 대비하는 것과 고장에 대비하는 것과 긴급 상황에 대비하는 게 싫어요. 난 릴라와 그 여자의 선함과 그 여자의 정의와 그 여자의 충성과 그 여자의 신념이 싫어요.
               success: null
               failure: null
           - index: 9
@@ -993,37 +989,37 @@ chapters:
             label: L059.saveBob.Exit
             logon:
               type: logon
-              text: Public Access Terminal 8-f <29.43.95.93>
+              text: 공용 단말기 8-f <29.43.95.93>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    You have not sufficiently secured the area.  There are civilians who are still in danger.
+                    아직 구역을 확보하지 못했습니다. 목숨이 위험한 승무원이 남아있습니다.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
               success:
                 - type: success
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    You have done well.  The area is secure, and the civilians are now giving me reports as to what they have seen since the invasion began.  Hopefully, some of their information will become useful.
+                    잘하셨습니다. 구역을 확보했습니다. 승무원들이 침입 개시 이후로 본 정보들을 제게 전송하고 있습니다. 유용한 정보이기를 바라겠습니다.
                 - type: briefing
                   pict: 6
                   text: |-
-                    The Aliens seem to have been caught off guard by the strength of our counterattack.  This is good news, but I have detected more ships landing on the Marathon, and I fear that the Aliens are reinforcing their efforts.
+                    외계인은 우리 반격의 위력에 허를 찔린 것 같습니다. 좋은 일이지만 방금 마라톤 호에 접근하는 외계인 함선을 감지했습니다. 외계인이 지원군을 부른 것 같아 우려스럽습니다.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               failure:
                 - type: failure
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    You have allowed too many of the civilians to be killed.  It is doubtful that any of the survivors will give us any useful information.
+                    당신은 승무원이 너무 많이 죽도록 내버려두었습니다. 살아남은 사람들에게서 유용한 정보를 얻을 수 있을 것 같지 않습니다.
       - index: 6
         name: Smells Like Napalm, Tastes Like Chicken!
         mapSvg: maps/06_Smells_Like_Napalm_Tastes_Like_Chicken.svg
