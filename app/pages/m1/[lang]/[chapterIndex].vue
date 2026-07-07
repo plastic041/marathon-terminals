@@ -20,7 +20,7 @@ const firstTerminalLink = computed(() => {
   const firstLevel = chapter.value.levels[0]!;
   const firstTerminal = firstLevel.terminals[0]!;
   return {
-    path: `/modern/m1/${lang.value}/${firstLevel.index}/${firstTerminal.index}`,
+    path: `/m1/${lang.value}/${firstLevel.index}/${firstTerminal.index}`,
   };
 });
 </script>
@@ -28,7 +28,10 @@ const firstTerminalLink = computed(() => {
 <template>
   <div class="h-100dvh flex flex-col gap-8">
     <Header />
-    <img :src="`/chapters/${chapterIndex}.gif`" class="max-w-4xl mx-auto" />
+    <img
+      :src="`/chapters/${chapterIndex}.gif`"
+      class="max-w-4xl mx-auto w-full"
+    />
     <UiButton as-child class="w-fit mx-auto">
       <NuxtLink :to="firstTerminalLink">
         <ArrowRightIcon />

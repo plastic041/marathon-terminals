@@ -35,8 +35,7 @@ export function isEndRouteInfo(info: RouteInfo): info is EndRouteInfo {
   return "end" in info;
 }
 
-/** /:levelIndex/:terminalIndex?state=&screenindex=number&scroll=number */
-export function useTerminalsModern(chapters: Chapter[]) {
+export function useTerminals(chapters: Chapter[]) {
   const levels = computed(() => chapters.flatMap((c) => c.levels));
 
   const route = useRoute();
@@ -73,18 +72,18 @@ export function useTerminalsModern(chapters: Chapter[]) {
   function makeRoute(info: RouteInfo): RouteLocationRaw {
     if (isChapterRouteInfo(info)) {
       return {
-        path: `/modern/m1/${lang.value}/${info.chapterIndex}`,
+        path: `/m1/${lang.value}/${info.chapterIndex}`,
       };
     }
 
     if (isEndRouteInfo(info)) {
       return {
-        path: `/modern/m1/${lang.value}/end`,
+        path: `/m1/${lang.value}/end`,
       };
     }
 
     return {
-      path: `/modern/m1/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
+      path: `/m1/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
         state: info.state ?? state.value,
         screenindex: info.screenIndex ?? screenIndex.value,

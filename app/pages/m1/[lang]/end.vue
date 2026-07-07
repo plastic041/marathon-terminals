@@ -42,7 +42,7 @@ useHead({
       <UiButton as-child>
         <NuxtLink
           :to="{
-            name: 'modern-m1-lang-chapterIndex',
+            name: 'm1-lang-chapterIndex',
             params: {
               lang,
               chapterIndex: 0,

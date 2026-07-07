@@ -40,7 +40,7 @@ onMounted(() => {
         <li>
           <NuxtLink
             :to="{
-              name: 'modern-m1-lang',
+              name: 'm1-lang',
               params: {
                 lang,
               },
@@ -53,7 +53,7 @@ onMounted(() => {
           <h2 class="font-bold">
             <NuxtLink
               :to="{
-                name: 'modern-m1-lang-chapterIndex',
+                name: 'm1-lang-chapterIndex',
                 params: {
                   lang,
                   chapterIndex: chapter.index,
@@ -85,7 +85,7 @@ onMounted(() => {
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
-                            name: 'modern-m1-lang-levelIndex-terminalIndex',
+                            name: 'm1-lang-levelIndex-terminalIndex',
                             params: {
                               lang,
                               levelIndex: level.index,
@@ -103,7 +103,7 @@ onMounted(() => {
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
-                            name: 'modern-m1-lang-levelIndex-terminalIndex',
+                            name: 'm1-lang-levelIndex-terminalIndex',
                             params: {
                               lang,
                               levelIndex: level.index,
@@ -121,7 +121,7 @@ onMounted(() => {
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
-                            name: 'modern-m1-lang-levelIndex-terminalIndex',
+                            name: 'm1-lang-levelIndex-terminalIndex',
                             params: {
                               lang,
                               levelIndex: level.index,

@@ -5,6 +5,7 @@ import dataKR from "~/texts/m1/terminals-kr.yaml";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
 import { BASE_URL } from "~/lib/url";
 import { escapeHtml } from "~/lib/decoration";
+import { useTerminals } from "~/composables/useTerminals";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang);
@@ -29,7 +30,7 @@ const {
   nextTerminalLink,
 
   nextScreenLink,
-} = useTerminalsModern(chapters);
+} = useTerminals(chapters);
 
 const ogTitle = computed(
   () => `L${String(levelIndex.value).padStart(2, "0")}#${terminalIndex.value}`,
