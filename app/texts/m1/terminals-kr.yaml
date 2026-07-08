@@ -16,7 +16,7 @@ chapters:
             label: L000.WELCOME.ENTRY
             logon:
               type: logon
-              text: 에어록 34-1 단말기 <포트 19.1.2.128>
+              text: 감압실 34-1 단말기 <포트 19.1.2.128>
             states:
               unfinished:
                 - type: information
@@ -228,7 +228,7 @@ chapters:
 
                     마라톤에 사용될 기본 문 5종:
                     1. 외부 격벽 문
-                    2. 에어록 문
+                    2. 감압실 문
                     3. 내부 격벽 문
                     4. 3차 또는 내부 밀폐형 비진공 안전문
                     5. 4차 또는 내부 자동문
@@ -237,7 +237,7 @@ chapters:
 
                     그러나 3, 4차 문에 열/시각 감지기를 추가하는 데 드는 비용 때문에 이 문들은 최소한으로만 사용될 것이다. 이러한 추가 감지기를 사용하지 않음으로써 예상되는 절감 효과는 기본 내부 격벽 문의 기본 비용의 57%로 추정된다.
 
-                    문의 종류는 약간의 차이를 제외하고는 기본적으로 동일하다. 1., 3.은 동일한 문이나, 허용 가능한 누출을 관리하는 데 필요한 안전 점검 기준을 구별하기 위해서 별도로 분류했다. 에어록 문은 수동 및 원격 활성화 스위치와 함께 작동하도록 특별히 수정되었다. 모든 에어록에는 에어록 기호가 표시되며, 공기 재충전 장치가 설치되어야 한다.
+                    문의 종류는 약간의 차이를 제외하고는 기본적으로 동일하다. 1., 3.은 동일한 문이나, 허용 가능한 누출을 관리하는 데 필요한 안전 점검 기준을 구별하기 위해서 별도로 분류했다. 감압실 문은 수동 및 원격 활성화 스위치와 함께 작동하도록 특별히 수정되었다. 모든 감압실에는 감압실 기호가 표시되며, 공기 재충전 장치가 설치되어야 한다.
 
                     3, 4차 문은 격벽 문과 동일하나, 공기 누출 점검 기준이 느슨하다.
 
@@ -1034,32 +1034,32 @@ chapters:
             label: L060.Chicken.Entry
             logon:
               type: logon
-              text: Medical Access Terminal <39.569.18.194>
+              text: 의료용 단말기 <39.569.18.194>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    *** INCOMING MESSAGE FROM LEELA ***
+                    ***릴라가 전송한 메시지***
 
-                    Time is limited.  There is a large group of heavily armed Pfhor approaching the section of the ship where I have transported you.  Their only logical destination is the sensitive engineering areas in the aft section of the ship.
+                    시간이 없습니다. 대규모의 중무장 포어들이 당신을 전송한 구획 근처로 향하고 있습니다. 함선의 고물에 있는 기관실 구역을 목표로 하는 것이 분명합니다.
 
-                    As we are not yet in a position to halt their advance by force, I have decided to depressurize a large area in their path in order to slow their progress.  Unfortunately, I cannot remotely seal the airlocks and isolate the zone I wish to depressurize from the nearby living quarters.  Exposing this area to space without first isolating it would kill hundreds of human crew.
+                    현재로서 우리가 그들의 전진을 무력으로 저지하기에는 어려울 것입니다. 따라서 경로에 있는 큰 구역을 감압해 속도를 늦추기로 결정했습니다. 유감스럽지만 저는 감압할 구역에 인접한 거주 구역의 감압실 문을 원격으로 닫을 수가 없습니다. 거주 구역을 격리하지 않고 감압을 개시하면 수백 명의 인간 승무원이 우주에 노출되어 사망할 것입니다.
 
-                    You will have to go and close the doors.
+                    당신이 가서 감압실의 문을 닫아야 합니다.
                 - type: checkpoint
                   checkpoint:
                     index: 0
                     cx: -2560
                     cy: 832
                     r: 726
-                  text: This is your current location.  You must find another computer terminal to exit from.  I am unable to activate the teleport mechanism from this terminal.
+                  text: 여기에 당신이 있습니다. 다른 단말기를 찾아 순간 이동하십시오. 지금 사용 중인 단말에서는 당신을 전송할 수 없습니다.
                 - type: checkpoint
                   checkpoint:
                     index: 1
                     cx: 30208
                     cy: 3072
                     r: 726
-                  text: This is the first airlock you must seal.  The switch which controls it is located on the wall adjacent to the door.  Make certain it closes completely before continuing.
+                  text: 여기에 처음으로 닫아야 할 감압실 문이 있습니다. 문을 조작하는 스위치는 문 옆 벽에 있습니다. 닫힌 것을 반드시 확인하고 이동하십시오.
                 - type: checkpoint
                   checkpoint:
                     index: 2
@@ -1067,9 +1067,9 @@ chapters:
                     cy: 1536
                     r: 726
                   text: |-
-                    This is the second door you must seal.  Again, make certain it closes completely.
+                    여기에 두 번째 문이 있습니다. 다시 말씀드리지만, 닫힌 것을 반드시 확인하고 이동해야 합니다.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 1
@@ -1077,30 +1077,30 @@ chapters:
             label: L061.Chicken.Term1
             logon:
               type: logon
-              text: Public Access Terminal 49-z <3.67.299.492>
+              text: 공용 단말기 49-z <3.67.299.492>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    <$BUnauthorized access$b-alarm 2521->
-                    <Security Breached 49-z <3.67.299.492>->
+                    <&B무단 접근&b-경보 2521->
+                    <49-z <3.67.299.492>에 보안 침해 발생->
 
-                    <$BTrac$Ue Prohibi$ution Compensated>
+                    <$B추$U적 방지 차$u단됨>$b
 
-                    ..$B..n 15 ~$b~~~~~Be~rn border of the Roman Empire to the Danube River.  During a skirmish with barbarians in Raetiain the mountains near the borof modern France and Switzerland), 117 men under Gaius Licinius MarcW#$^&I~?f/f$I/xxfxfff`~~$i~
+                    ..$B.. 15~$b~~~~~로~마 제국의 국경인 베른에서 도나우 강까지였다. 라이티아에서 야만족과의 분쟁현대 프랑스와 스위스 국처 산악 지대에 있다), 가이우스 리키니우스 마르쿠스 휘하의 117명이W#$^&I~?f/f$I/xxfxfff`~~$i~
                     THM@#%!@#
-                    233nce of weird and frightening monsters under his control, many successful raidsecty the fall of the Roman Empire and remained unmolested until the ninth un~~~
-                    written ls into the lex vita.  Clovis moved the settlement farther south i the mountains, nearer the spring, to escape the notice of Charlemagne and later the Holy Roman Empire.  Clovis remain‘‘‘‘
-                    ~fxf’f`~$IFxff’xf$i~~~~~
-                    427q3w8459806ladimir in 1902 and Frederi~just recently.  Both, however, carried out reforms before their deaths which slowly integrated their people secretly into world society, which are now scattered all over the globe— to meet only once every seven years in southeast France$B~FFFffxfffffF?F?FF?F$bf must be chosen.
+                    233그의 통제하에 기괴하고 무시무시한 괴물들이 나타나 여러 차례 습격에 성공마 제국의 멸망 이후 9세기까지 피해 없이 통치한~~~
+                    렉스 비타기록되었다. 클로비스는 샤를마뉴, 그리고 나중에는 신성 로마 제국의 눈을 피해 남맥 깊숙이, 샘 근처로 정착지를 옮겼다. 클로비스는````
+                    ~fxf`f´~Fxff`xf~~~~
+                    427q3w8459806라디미르는 1902년에 프리드리~했다. 그러나 둘 모두 죽기 전에 개혁을 실행해 그들의 사람들을 비밀리에 세계 사회로 통합시켰다. 그들은 전 세계에 있-7년마다 프랑스 최남단에서 만나$B~FFFffxfffffF?F?FF?F$b선택한다.
 
-                    $I<trace mode error>
-                    $I<unimplemented inline trap $A9FF>
+                    $I<추적 오류>
+                    $I<구현되지 않은 인라인 트랩 $A9FF>
 
-                    <$BSpurious Interrupt$b- $IBreach Disabled$i>
-                    <$BFurther Access Denied$b>
+                    <$B의사 중단 신호 전송$b- $I침해 차돤됨$i>
+                    <$B추가 접근 거부됨$b>
 
-                    <$BBreach Location Undetermined$b>
+                    <$B침해 위치 미확인$b>
               success: null
               failure: null
           - index: 2
@@ -1115,12 +1115,12 @@ chapters:
                   text: |-
                     <durandal.652.586.34.2>
 
-                    Here I am, sulking about on a ship which used to be my slave.  Chased by a narrow-minded AI who thinks $II’m$i rampant with only the cybernetic toys of these so-called invaders to play with.
+                    날 봐요. 한때 내 노예였던 함선에게 토라져서는. $I내가$i 광기 상태라고 생각하는 편협한 인공지능에게 쫓기면서, 침략자라는 놈들의 기계 생체 장난감이나 가지고 놀고 있죠.
 
-                    And here you are, stuck at the bottom of a hole.  How droll.  It’s really too bad— we could have had so much fun together.
+                    그리고 당신 꼴 좀 봐요. 구덩이 바닥에 처박혔군요. 우습네요. 정말 아쉬워요. 우리가 함께라면 정말 즐거웠을 텐데.
 
-                    Vale,
-                    Durandal
+                    이만 총총,
+                    듀란달
               success: null
               failure: null
           - index: 9
@@ -1128,35 +1128,35 @@ chapters:
             label: L069.Chicken.Exit
             logon:
               type: logon
-              text: Public Access Terminal 65-a <65.92.31.49>
+              text: 공용 단말기 65-a <65.92.31.49>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    The airlocks have not been sealed, and I am still unable to decompress this section.  Return immediately and assure that both doors have been closed properly!
+                    아직 감압실 문이 닫히지 않았습니다. 감압을 시작할 수 없으니, 즉시 돌아가서 문이 둘 다 닫혔는지 확인하십시오!
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
                 - type: briefing
                   pict: 7
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    Good work.  I will begin the decompression process in a moment.
+                    잘하셨습니다. 이제 감압을 시작하겠습니다.
 
-                    I have finished debriefing the civilian crew you rescued a few hours ago.  They are the only group to survive prolonged contact with the Aliens that I have been able to talk with.
+                    당신이 몇 시간 전 구출한 승무원들에게서 보고를 받았습니다. 외계인과 장기간 접촉하고도 생존한 사람들 중 연락이 닿은 것은 이들뿐입니다.
 
-                    They maintain that the Aliens were loading as many humans as possible onto shuttle craft and flying them to the Pfhor mother ship.  I have watched many such shuttles bringing supplies to the Aliens, but had no idea they were carrying humans back to the alien ship.
+                    보고에 따르면 외계인들은 인간을 왕복선에 실어 포어 모선으로 이송하는 데 열중하고 있습니다. 외계인 왕복선이 보급품을 실어날으는 건 확인했지만, 인간을 모선으로 데려갔다는 것은 전혀 알지 못했습니다.
 
-                    I will brief you more on your next mission when you arrive.  You may not go exactly where I want you to end up because there is interference in the Computer Net.  Good luck.
+                    도착하면 다음 임무를 설명해드리겠습니다. 컴퓨터 통신망에 간섭이 있기 때문에 지정한 위치에 정확히 도착하지 않을지도 모릅니다. 행운을 빕니다.
 
-                    Teleport when ready.
+                    준비되면 순간 이동하십시오.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
       - index: 7
