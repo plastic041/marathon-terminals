@@ -682,9 +682,9 @@ chapters:
 
                     $B포어$b는 대개 인간보다 가늘고 가벼우며, 저중력 환경에 최적화된 신체를 갖고 있습니다. 듀란달에 따르면 포어에는 다양한 부족이 있으며 각기 다른 모습을 가지고 있습니다. 다만 현재 파악한 것은 두 종류뿐입니다.
 
-                    부족 중 둘만 조사가 끝났습니다. $B전투원$b은 들고 있는 충격봉을 다양한 설정으로 변경해 공격합니다. $B돌격대원$b은 진공을 상정한 장비와, 폭발/충격 투사체를 발사하는 AR-75와 유사한 무기를 소지힙니다.
+                    부족 중 둘만 조사가 끝났습니다. $B전사$b는 들고 있는 충격봉을 다양한 설정으로 변경해 공격합니다. $B돌격병$b은 진공을 상정한 장비와, 폭발/충격 투사체를 발사하는 AR-75와 유사한 무기를 소지힙니다.
 
-                    포어는 다른 외계 종족을 노예화한 것으로 보입니다.
+                    또한, 포어는 다른 외계 종족을 노예화한 것으로 보입니다.
 
                     $B거인$b은 거대하며, 행동은 느리지만 매우 강합니다. 과학자들의 보고에 따르면 거인의 신체에는 지방이 전혀 없어서, 활동하기 위해 계속 음식을 섭취해야 했다고 합니다. 한 인원에 따르면 개체 하나가 스스로를 가리키며 "드리니올"이라고 중얼거리고는 "조니의 멱살을 잡고 기둥에 꽂"았습니다.
 
@@ -1043,7 +1043,7 @@ chapters:
 
                     시간이 없습니다. 대규모의 중무장 포어들이 당신을 전송한 구획 근처로 향하고 있습니다. 함선의 고물에 있는 기관실 구역을 목표로 하는 것이 분명합니다.
 
-                    현재로서 우리가 그들의 전진을 무력으로 저지하기에는 어려울 것입니다. 따라서 경로에 있는 큰 구역을 감압해 속도를 늦추기로 결정했습니다. 유감스럽지만 저는 감압할 구역에 인접한 거주 구역의 감압실 문을 원격으로 닫을 수가 없습니다. 거주 구역을 격리하지 않고 감압을 개시하면 수백 명의 인간 승무원이 우주에 노출되어 사망할 것입니다.
+                    현재로서 우리가 그들의 진격을 무력으로 저지하기에는 어려울 것입니다. 따라서 경로에 있는 큰 구역을 감압해 속도를 늦추기로 결정했습니다. 유감스럽지만 저는 감압할 구역에 인접한 거주 구역의 감압실 문을 원격으로 닫을 수가 없습니다. 거주 구역을 격리하지 않고 감압을 개시하면 수백 명의 인간 승무원이 우주에 노출되어 사망할 것입니다.
 
                     당신이 가서 감압실의 문을 닫아야 합니다.
                 - type: checkpoint
@@ -1173,26 +1173,26 @@ chapters:
             label: L070.fusiongun. Entry
             logon:
               type: logon
-              text: Public Access Terminal <46.02.32.55>
+              text: 공용 단말기 <46.02.32.55>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    There has been an unexpected lull in the fighting.  I don’t know exactly why, but it seems that the Aliens have stopped their advance.  I want to use this break in the fighting to send a message to Earth apprising them of our situation.
+                    전투가 예상치 못하게 멈췄습니다. 이유는 모르겠지만, 외계인이 진격을 멈춘 것 같습니다. 소란이 멈춘 틈을 이용해, 지구에게 이곳 상황을 정리한 메시지를 보내겠습니다.
 
-                    However, the long range transmitter array has been destroyed, and you must manually reset the secondary transmitter.  To do this, you will need to go into the G-4 Sunbathing Landing Station.
+                    하지만 주 송신기가 파괴되었기 때문에 당신이 보조 송신기를 초기화해야 합니다. 보조 송신기는 G-4 '햇살' 착륙장에 있습니다.
 
-                    It would be foolhardy to send you into vacuum conditions without a better vacuum-capable%#29SC^7 than your pistol.  The AR-75 doesn’t work in vacuum.
+                    당신의 무장 중 AR-75는 진공 상태에서 무용지물입니다. 진공 상태에서도 작동하는 %#29SC^7 없이 권총만 든 당신을 진공 상태로 보내는 것은 멍청한 행동일 것입니다. 
 
-                    I want you to find a Zeus Class Fusion Pistol.  It has two firing modes.  Standard firing ejects hi$U#2423#Bfjr$bf$u volts, and secondary firing mode charges on $B<transmission error>$b and ejects a blast that does a huge amount of damage.
+                    제우스급 융합 권총을 획득하십시오. 두 가지 방식으로 발사할 수 있는 무기입니다. 기본 발사는 고$U#2423#Bfjr$bf$u 볼트를, 보조 발사는 $B<교신 오류>$b에서 충전한 충격파를 발사해 큰 피해를 입힙니다.
 
                     @t $#cY B.    Ex
                     @t Y#C9 B.
-                    @t $Y#9 B.  exception
+                    @t $Y#9 B.  예외 발생
 
-                    $B<bypassing through traffic>$b
+                    $B<교신 우회함>$b
                 - type: checkpoint
                   checkpoint:
                     index: 0
@@ -1200,11 +1200,11 @@ chapters:
                     cy: 16912
                     r: 499
                   text: |-
-                    My records and sensors are becoming less reliable, but I believe that you should find a Zeus Class Fusion Pistol at this location.
+                    제 기록과 감지기가 점점 망가지고 있습니다만, 여기서 제우스급 융합 권총을 찾으실 수 있을 것입니다.
 
-                    Do not rely too much on this information that I have given you.  It has been intercepted in transmission, and I cannot verify its accuracy.
+                    방금 알려드린 정보를 너무 믿지 마십시오. 교신 중 방해가 발생했기 때문에 정확한 정보임을 보장할 수 없습니다.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 9
@@ -1212,39 +1212,39 @@ chapters:
             label: L079.FusionGun.Exit
             logon:
               type: logon
-              text: Public Access Terminal 34-f <83.91.117.223>
+              text: 공용 단말기 34-f <83.91.117.223>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    You have not retrieved the Fusion Gun.  Return when you have done so.
+                    융합 권총을 획득하지 않으셨습니다. 찾은 뒤 돌아오십시오.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
                 - type: briefing
                   pict: 8
                   text: |-
-                    ***MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    I have obtained more debriefing reports from the crew whom you rescued earlier.
+                    당신이 이전에 구한 승무원들과의 면담을 통해 새로운 정보를 얻었습니다.
 
-                    They have reported seeing two types of Pfhor that you have not yet encountered.  Evidently, these are two of the other “clans” which Durandal alluded to in earlier communications.
+                    아직 당신이 만나지 못한 포어 외계인이 두 종류 더 있다고 합니다. 듀란달이 이전 통신에서 암시했던 부족임이 분명합니다.
 
-                    One is taller than the Fighters.  Oddly, the report indicated that this new Pfhor fired only upon other Pfhor and never on any humans.  Because of this and their general appearance, the crew who saw them referred to them as Enforcers.
+                    하나는 전사보다 키가 큽니다. 이상하게도 보고에 따르면 이들은 다른 포어만 공격했으며, 인간은 공격하지 않았다고 합니다. 이런 태도와 외모에 기반해, 승무원들은 이들을 집행관이라고 불렀습니다.
 
-                    The other Alien was named Hunter by the crew due to its size and appearance.  It fires an energy weapon from its shoulder and is heavily armored.  Unlike the Fighters, the Hunters never take prisoners.
+                    다른 외계인은 크기와 외모 때문에 사냥꾼이라는 별명이 붙었습니다. 장갑이 튼튼하며, 어깨에서 어깨에 에너지 무기를 달고 있습니다. 전사와는 달리, 사냥꾼들은 절대 인질을 잡지 않습니다.
 
-                    I am sending you to the G-4 Sunbathing Landing Station.
+                    G-4 '햇살' 착륙장으로 전송하겠습니다.
 
-                    Standby to teleport.
+                    순간 이동할 준비를 하십시오.
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
 
-                    $B***JUMP PAD ACTIVATION INITIATION ERROR***
+                    $B***도약 발판 활성화 오류 발생***$b
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
       - index: 8
