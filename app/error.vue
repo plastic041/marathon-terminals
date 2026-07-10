@@ -25,7 +25,7 @@
 
     <h1>페이지를 찾을 수 없습니다.</h1>
     <UiButton as-child>
-      <a href="m1-ko"> 첫 화면으로 </a>
+      <a href="/"> 첫 화면으로 </a>
     </UiButton>
   </div>
 </template>
