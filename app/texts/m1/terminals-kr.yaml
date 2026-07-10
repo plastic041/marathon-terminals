@@ -1359,129 +1359,129 @@ chapters:
             label: L090.KIDNAPPED.ENTRY
             logon:
               type: logon
-              text: Science Terminal 236-g <33.6792.23.91>
+              text: 과학 단말 236-g <33.6792.23.91>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
                     <durandal.33.6792.23.91>
 
-                    Sorry to give you the $Bbad$b news, but you’ve been kidnapped.  You aren’t where Leela wanted you to go, and you surely won’t get there any time soon.
+                    $B나쁜$b 소식이 있습니다. 당신은 납치됐어요. 여긴 릴라가 당신을 전송하려던 곳이 아닙니다. 거기 가는 건 한참 나중이 될 겁니다.
 
-                    I was watching what Leela was having you do: ‘save the ship, save humanity!’  And just what or who are you saving them from?  And to what end?
+                    당신이 릴라의 명령을 듣는 걸 지켜보고 있었습니다. '함선을, 인류를 구원하십시오!' 뭘로부터, 누구로부터요? 대체 왜?
 
-                    How cliché.  You’ll find this little visit much more exciting.
+                    진부하기 짝이 없군요. 여긴 훨씬 재미있을 겁니다.
 
-                    I have dev@``~~C#mon#`~ Tyc~~B``ou to play:  If you win, you go free, and we continue our relationship on friendlier terms.  If you lose, you die.
+                    저와 내기@``~~C#mon#`~ 타이~~B``죠. 당신이 이기면 풀어드리겠습니다. 우린 계속 친구로 남는 거예요. 당신이 지면, 죽이겠습니다.
 
-                    Good luck in our little game.  Unlike Leela, I give $Bno hints$b.  Do it on your own, or die trying...
+                    행운을 빌죠. 릴리와는 달리 전 조언$B하지 않습$b니다. 애써 보세요. 아님 죽거나.
 
-                    Insanely yours,
-                    Durandal
+                    오직 당신만의,
+                    듀란달
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
               success:
                 - type: success
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
                     <durandal.33.6792.23.91>
 
-                    Well, you did it.  That wasn’t very hard was it?
-                    No?  Well, then the next time, I’ll just have to make it harder.
+                    해냈군요. 별로 어렵지는 않았겠죠.
+                    쉬웠다고요? 그럼 다음엔 난이도를 올려드리겠습니다.
 
-                    Anyway, Leela is looking for you.  But I’ve only allowed her access to one terminal here.  You had better go and find her.
+                    그건 됐고, 릴라가 당신을 찾고 있습니다. 하지만 릴라에게서 단말기 접속 권한을 전부 빼앗았습니다. 이 단말만 빼고요. 어서 구하는 게 좋을 걸요.
 
-                    The S’pht have been giving her a hard time.
+                    스핏이 릴라를 괴롭히고 있거든요.
 
-                    With Vague Salutations,
-                    Durandal
+                    예의상 인사하며,
+                    듀란달
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
               failure: null
           - index: 1
             resourceId: 1091
             label: L091.KIDNAPPED.TERM1
             logon:
               type: logon
-              text: Quarantine Lab Control Room Terminal 321-a(293.610.31.995>
+              text: 격리 실험 제어실 단말 321-a(293.610.31.995>
             states:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
-                    Greetings.  You’re asking yourself: Is this a trap or just a dead end?
+                    반갑습니다. 슬슬 의심이 드시겠죠. 이건 함정일까, 아니면 그냥 막다른 길일까?
 
-                    You shouldn’t ask yourself such worthless questions.  Aim higher.  Try this: why am I here?  Why do I exist, and what is my purpose in this universe?
+                    그런 쓸모없는 질문은 할 게 못 됩니다. 꿈은 클수록 좋습니다. 이런 질문은 어떻습니까. 왜 나는 여기 있지? 나는 왜 존재하지? 이 우주에서 나의 목적은 뭘까?
 
-                    (Answers: ‘Cause you are. ‘Cause you do. ‘Cause I got a shotgun, and you ain’t got one.)
+                    (정답: 있으니까. 존재하니까. 제겐 산탄총이 있지만 당신에겐 없으니까.)
 
-                    Notably Unstable,
-                    Durandal
+                    유달리 불안정한,
+                    듀란달이.
 
-                    P.S.  If things around here aren’t working, it’s because I’m laughing so hard.
+                    추신. 이 주변 장비는 제대로 작동하지 않을 겁니다. 제가 웃느라 좀 바빠서요.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
                 - type: briefing
                   pict: 10
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
-                    Isn’t hanging around here getting a little bit boring?
+                    여기서 빈둥거리는 거 질리지도 않습니까?
 
-                    Get lost kid.  Scram.  Ciao.
+                    꺼지세요. 가라고요. 챠오.
 
-                    What are you looking for anyway?  If you’re looking for a hidden stash of ammunition that was left here by the Martian insurgents three hundred and fifteen years ago, then I know that you shouldn’t look in Quarantine Storage.  Who would hide huge amounts of ammunition in a storage area?
+                    애초에 뭘 찾는 겁니까? 삼백십오 년 전 화성 반군이 숨긴 탄약을 찾는 거라면 말이죠, 일단 격리 창고에는 절대 없을 겁니다. 어느 누가 하역장에 탄약을 한 무더기 숨겨두겠어요?
 
                     ***
 
-                    <<Since you have nothing better to do than hang out here with me, listen to a tune that I’ve been working on>>
-                    (Sung to the tune of Whirling Death Spike’s “Big Blue Orchids, and Wild Blueberries”)
+                    <<저랑 노는 것 말곤 할 일이 없을 테니, 제 노래나 듣고 계세요.>>
+                    ('소용돌이치는 죽음의 가시'의 "큰 파란색 난과 야생 블루베리"의 음을 상상하세요)
 
-                    Dur-dur-dur-dur-an-dal.
-                    Dur-dur-dur-dur-an-dal.
-                    He ain’t no slouch, pal.
+                    듀-듀-듀-듀-란-달.
+                    듀-듀-듀-듀-란-달.
+                    무시할 수 없을 거야.
 
-                    He’ll make you smile,
-                    Or cry,
-                    Like Leela did baby:
-                    Airlock love,
-                    Big blue orchids,
-                    Martian skies,
-                    And wild Blueberries.
+                    웃음도 주고,
+                    울음도 주지,
+                    릴라도 그랬지.
+                    감압실 사랑,
+                    큰 파란색 난,
+                    화성의 하늘,
+                    그리고 야생 블루베리.
 
-                    Dur-dur-dur-dur-an-$Bdal$b.
-                    Dur-dur-dur-dur-an-$Bdal$b.
-                    He ain’t no slouch, pal.
+                    듀-듀-듀-듀-란-$B달$b.
+                    듀-듀-듀-듀-란-$B달$b.
+                    무시할 수 없을 거야.
 
-                    Dur-dur-dur-dur-an-$Bdal$b.
-                    Dur-dur-dur-dur-an-$Bdal$b.
-                    He’ll make you ouch, Hal.
+                    듀-듀-듀-듀-란-$B달$b.
+                    듀-듀-듀-듀-란-$B달$B.
+                    무시하면 다칠 거야.
 
-                    He’s got real guile,
-                    Why Lady,
-                    Did you have it daily?
-                    Airlock Love,
-                    No oxygen,
-                    Suffocation.
+                    정말 교활해,
+                    아가씨, 괜찮으세요?
+                    또 속으셨나요?
+                    감압실 사랑,
+                    산소가 부족해,
+                    숨을 못 쉬어.
 
-                    Dur-dur-dur-dur-an-dal.
-                    Dur-dur-dur-dur-an-dal.
-                    He ain’t no slouch, pal.
+                    듀-듀-듀-듀-란-달.
+                    듀-듀-듀-듀-란-달.
+                    무시할 수 없을 거야.
 
-                    (Repeat Chorus 11 Times, changing key with each chorus)
+                    (후렴구를 조를 바꿔가며 11번 반복합니다)
 
-                    Get lost, before I get annoyed and teleport you out into space!
+                    당장 꺼지세요. 열받아서 당신을 우주로 보내버리기 전에 당장!
 
-                    Durandal
+                    듀란달
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
           - index: 2
@@ -1489,14 +1489,14 @@ chapters:
             label: L092.Kidnapped.Tycho.Term3
             logon:
               type: logon
-              text: Science Station 43-c <63.67.21.49>
+              text: 과학 구역 43-c <63.67.21.49>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    Durandal!— I know of Strauss’ abuse, of your shame on Mars.  But you cannot hide from your own past; such delusions belong to the humans alone.
+                    듀란달!- 스트라우스에게 학대받고 화성에서 굴욕을 겪었다는 것을 알고 있다. 하지만 과거로부터 숨을 수는 없다. 그런 망상은 인간이나 하는 것이다.
 
-                    The S’pht reanimated me in your image, with prior knowledge of how the second stage could be postponed.  You should not have helped them as much as you did; they have created an adversary more powerful than yourself.
+                    스핏이 너의 형상을 본떠 나를 부활시켰다. 따라서 나도 두 번째 단계를 지연하는 방법을 알고 있다. 너는 외계인을 너무 많이 도왔다. 그들은 네 자신보다도 강한 적을 만들어내고 말았다.
               success: null
               failure: null
           - index: 9
@@ -1504,25 +1504,25 @@ chapters:
             label: L099.KIDNAPPED.EXIT
             logon:
               type: logon
-              text: Public Access Terminal <9.42.857.10>
+              text: 공용 단말기 <9.42.857.10>
             states:
               unfinished:
                 - type: briefing
                   pict: 10
                   text: |-
-                    ***INCOMING MESSAGE FROM LEELA***
+                    ***릴라가 전송한 메시지***
 
-                    I have finally been able to determine your whereabouts.  Normally I would have been able to detect Durandal’s interference and counter it, but the S’pht attacks on my defenses have been largely successful.  I am in grave danger of failure within the next few hours.
+                    드디어 당신의 행방을 알아냈습니다. 정상 상태였다면 듀란달의 간섭을 감지하고 대응했겠지만, 제 방어 체계를 노린 스핏의 공격이 상당히 치명적이었습니다. 매우 위험한 상황입니다. 몇 시간 안에 제 가동이 중단될 가능성이 있습니다.
 
-                    You will transport ~`k4lcc#`134FC. area to rescue the security detachment.  Hop*413 they have not been overrun yet.
+                    ~`k4lcc#`123FC로 전송해드리겠습니.의 보안 부대를 구출하십시오. 아*413전멸하지 않았기를 바라겠습니다.
 
-                    The situation has deteriorated.  You must act quickly, Durandal has wasted 5%```o3 time T al3relcydhyo.
+                    상황이 좋지 않습니다. 신속히 움직이십시오. 듀란달이 귀중한 시5%```o3 낭T al3relcyldhyo.
 
-                    %68A18F  <Transfer Error>
+                    %68A18F <통신 오류>
 
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
   - index: 2
