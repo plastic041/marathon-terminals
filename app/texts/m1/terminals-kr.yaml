@@ -1626,7 +1626,7 @@ chapters:
             label: l111.Trap.durandal.term1
             logon:
               type: logon
-              text: Science Station 19-f <299.229.4.59>
+              text: 과학 구역 19-f <299.229.4.59>
             states:
               unfinished:
                 - type: information
@@ -1690,7 +1690,7 @@ chapters:
             label: L112.Trap.Randomshit.Term2
             logon:
               type: logon
-              text: Engineering Access 31-d <40.59.21.10>
+              text: 기술 단말 31-d <40.59.21.10>
             states:
               unfinished:
                 - type: information
