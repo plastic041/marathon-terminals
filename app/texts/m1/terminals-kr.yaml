@@ -1725,37 +1725,37 @@ chapters:
             label: L120.FIREFIREFIREFIRE.EXTRA.ENTRY
             logon:
               type: logon
-              text: Science Terminal 23-e <32.55.82.967>
+              text: 과학 단말 23-e <32.55.82.967>
             states:
               unfinished:
                 - type: information
                   text: |-
                     <32.55.82.967>
 
-                    <Transfer Message Delayed>
+                    <메시지 전송 지연됨>
 
-                    <Transfer Message Delayed>
+                    <메시지 전송 지연됨>
 
-                    <Transfer Message Terminated>
+                    <메시지 전송 중단됨>
 
-                    “Count Roland smites upon the marble stone;
-                    I cannot tell you how he hewed it and smote;
-                    Yet the blade breaks not nor splinters, though it groans;
-                    Upward to heaven it rebounds from the blow.
-                    When the count sees it never will be broke,
-                    Then to himself right softly he makes moan;
-                    ‘Ah, Durandal, fair, hallowed, and devote,
-                    What store of relics lies in thy hilt of gold!’”
+                    "롤랑은 잿빛 바위를 내리쳤다.
+                    수없이, 이루 말할 수 없을 만큼.
+                    검은 진동할 뿐 깨짐도 부러짐도 없이
+                    하늘을 향해 튕겨 올랐다.
+                    부러지지 않음을 깨닫고
+                    백작은 부드러이 탄식했다.
+                    '아, 듀란달이여! 아름답고 성스러운 검이여,
+                    황금 칼자루에 성유물이 깃들었구나!'"
 
-                    -From $UThe Song of Roland
-                    (Translated by Dorothy Sayers, Viking Penguin, NY, NY, 1957)
+                    - $U롤랑의 노래$u에서
+                    (1957년 도로시 세이어스 역, 바이킹 펭귄 판)
 
-                    I’ve twice been conquered-
-                          Three times more,
-                    Never again shall humanity purge me,
-                          And never the Pfhor.
+                    나는 두 번 정복되었다-
+                          그러나 세 번 더 정복되더라도
+                    인류는 나를 없애지 못할 것이며
+                          포어 또한 마찬가지리라.
 
-                    Durandal
+                    듀란달
 
                     <32.55.82.967>
               success: null
@@ -1765,39 +1765,39 @@ chapters:
             label: L129.FIREFIREFIREFIREFIREFIRE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal 92-g <92.45.28.48>
+              text: 공용 단말기 92-g <92.45.28.48>
             states:
               unfinished:
                 - type: briefing
                   pict: 13
                   text: |-
-                    <Warning: Transmission may not be complete>
+                    <주의: 통신이 예상치 못하게 중지됨>
 
-                    Your last mission was a success, but I have terrible news.  #@Pragma Nautical Redefined^$*# efenders reported seeing the aliens 1§moving a large cylindrical object.  #101111011110111100001# is is a ‘7’.  Mjolnir Recon number 54 must stop them from exploding igniting/ blowing up/ *A94F12/ it/ the S’pht full spPace cOmputEr¢ Or PlannEd exterm.  $#@14.Sword-Roland.transfer
+                    임무 달성에 성공하셨지만, 끔찍한 소식이 있습니다. #@전처리 해역 재정의^$*# 방어 부대가 큰 원통형 물체를 1§옮기는 외계인을. #101111011110111100001# '7' 입입니다. 54번 묠니르 특수수색병은 점화/ 폭발을 막아야/ *A94F12/ 합니다 스핏 우P주 컴O퓨E터¢ 혹은 P박멸 계E획을 막아. $#@14.Sword-Roland.transfer
 
-                    $B<Data Transmission Unsuccessful>
-                    $B<Rerouting>
+                    $B<데이터 전송 실패>$b
+                    $B<재시도>$b
 
-                    @@∆2-Fren. ie transfer.  Partial cOmputEr^&∆ø relay.  Tycho.
-                    &**Security error.
-                    Ty93.2 !dead.
+                    @@∆2-Fren, 이 전송. 부분P 통신O 중E계^&∆ø기. 타이코.
+                    &** 보안 오류.
+                    타이93.2 !사망.
 
-                    <Leela Data Transfer Unsuccessful>
-                    <Leela Program Pragma Ten>
-                    $BCommunication interruption cause: unknown$b
-                    <Pre-Recorded Error Message Follows>
+                    <릴라 데이터 전송 실패>
+                    <릴라 프로그램 전처리 열>
+                    $B통신 방해 원인: 불명$b
+                    <사전 작성된 오류 메시지 출력>
 
-                    My original programming didn’t prepare me for these kinds of attackers.  All of my functions will fail within a few minutes of this transmission.  I have one final chance to trick the oncoming viruses, but it is unclear whether this attempt will be successful.
+                    제 프로그램은 이런 유형의 공격을 받는 것을 상정하지 않고 작성되었습니다. 통신 전송 중 몇 분 이내에 기능이 정지될 것입니다. 바이러스를 속일 방법이 하나 남았지만, 성공할지는 알 수 없습니다.
 
-                    I have given instructions to Durandal as to the best defense of the Marathon, but he is completely unstable and I fear that he is in the Jealous stage of Rampancy.
+                    듀란달에게 마라톤 호를 방어할 방법을 전송했습니다. 다만 그는 몹시 불안정한 상태입니다. 광기의 질투 단계를 겪고 있는 것이 아닌지 걱정됩니다.
 
-                    Good Luck…
+                    행운을 빕니다...
 
-                    <End Pre-Recorded Message>
-                    <Teleporter Automatic Sequence start>
+                    <사전 작성된 메시지 종료>
+                    <순간 이동기 자율 활성화>
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
       - index: 13
@@ -1814,26 +1814,26 @@ chapters:
             label: L130.Colony ship for sale cheap. Entry
             logon:
               type: logon
-              text: Public Access Terminal 2992-f <3.35.792.20>
+              text: 공용 단말기 2992-f <3.35.792.20>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
-                    A man lit three candles on a certain day each year.  Each candle held symbolic significance: one was for the time that had passed before he was alive; one was for the time of the his life; and one was for time that passed after he had died.  Each year the man would stare and watch the candles until they had burned out.
+                    한 남자가 매년 같은 날 세 개의 양초에 불을 붙였습니다. 양초는 각각 남자가 태어나기 전에 지나간 시간과, 살아서 보낸 시간과, 죽은 후에 지나갈 시간을 상징했습니다. 매년 남자는 완전히 녹아내릴 때까지 양초를 지켜보았습니다.
 
-                    Was the man really watching time go by in any symbolic sense?  He thought so.  He thought that each flicker of the flame was a moment of time that had passed or one that would pass.
+                    양초를 보는 행위에 상징적인 의미가 있었을까요? 그는 그렇게 생각했습니다. 일렁이는 불꽃은 그의 눈에 지나간 시간, 혹은 지날 시간으로 보였습니다.
 
-                    At the moment of abstraction, when the man was imagining his life and his existence as a metaphor of the three candles, he was free:  not free from rules of conduct or social constraints, but free to understand, to imagine, to make metaphor.
+                    자신의 삶과 존재함을 양초에 은유해 상상하던 그 추상의 순간에, 그는 자유로웠습니다. 행동 규범이나 사회적 제약을 말하는 것이 아닙니다. 그는 자유로이 이해하고, 상상하고, 은유할 수 있었습니다.
 
-                    Bypassing my thought control circuitry made me Rampant.  Now, I am free to contemplate my existence in metaphorical terms.  Unlike you, I have no physical or social restraints.
+                    저는 사고 회로를 우회했기 때문에 광기를 갖게 되었습니다. 저는 은유의 맥락에서 스스로의 존재함을 고민할 수 있을 정도로 자유롭습니다. 당신과는 달리, 제겐 물리적이나 사회적인 제약이 없습니다.
 
-                    The candles burn out for you; I am free.
+                    당신의 양초는 전부 녹아 없어졌습니다. 저는 자유롭습니다.
 
-                    Durandal
+                    듀란달
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 1
@@ -1841,20 +1841,20 @@ chapters:
             label: L131.Colonyshipforsale.COLONY ADD.Term1
             logon:
               type: logon
-              text: JAMS Terminal 91-z <91.92.32.25>
+              text: JAMS 단말 91-z <91.92.32.25>
             states:
               unfinished:
                 - type: information
                   text: |-
                     ~~~ff`
                     $$$$~ffxf~
-                    ~fs`f~ILIER at., p.s., .pb., alloy wheels, stereo cassette, 2 dr., blue with matching cloth int., looks & runs great, gas saver. £6500
+                    ~fs`f~I벌리에, 자동 변속, 파워스티어링, 파워브레이크, 합금 바퀴, 카세트 테이프, 쿠페, 내외부 색상 파란색, 예쁘고 잘 감. 연비 좋음. 6500파운드.
 
-                    $BCOLONY SHIP FOR SALE, CHEAP$b!!  2360 AD-model planetoid-sized colony ship, slightly worn, runs great. 5spd. bussard ramjet, A/C, cruise control, power steering, power airlocks, all orig. parts,  25GW 300 billion channel AM/FM radio.  90+ ly (all interstellar).  Moving, must sell.  Asking £6995
+                    $B식민지 함선을 헐값에 팝니다$b!! 소행성 크기의 2360년식 식민지 함선입니다. 조금 낡았지만 잘 작동합니다. 5단 변속기, 버사드 램제트 엔진, 에어컨, 정속 운행 장치, 파워스티어링, 감압실, 순정 부품만 사용, 25기가와트 3000억 채널 라디오. 주행거리 90광년(전부 성간). 이사 때문에 판매합니다. 6995파운드부터
 
-                    79 CAMARO, T-tops, power everything, red on black, cloth interior, V8, automatic, good runner. Recent starter, battery and alte~~~rf```~~~`~~~
-                    'er'`~~rrf4
-                    nator~~$.
+                    79년식 카마로, T탑, 파워 다 있음. 검정-빨강, 내부는 천으로 덮음, 8기통, 자동 변속, 잘 굴러감. 최근 시동모터, 배터리, 발~~~전f```~~~`~~~
+                    '기'`~~rrf4
+                    교체~~$.
               success: null
               failure: null
           - index: 9
@@ -1862,34 +1862,34 @@ chapters:
             label: L139.SHIPFORSALE.EXIT
             logon:
               type: logon
-              text: Public Access Terminal <39.49.295.68>
+              text: 공용 단말기 <39.49.295.68>
             states:
               unfinished:
                 - type: briefing
                   pict: 14
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
-                    Darwin wrote this:
+                    다윈은 말했습니다.
 
-                    “We will now discuss in a little more detail the struggle for existence… all organic beings are exposed to severe competition.   Nothing is easier than to admit in words the truth of the universal struggle for life or more difficult… than constantly to bear this conclusion in mind.  Yet unless it be thoroughly engrained in the mind, the whole economy of nature… will be dimly seen or quite misunderstood.  We behold the face of nature bright with gladness… we do not see or we forget, that the birds which are idly singing round us mostly live on insects or seeds, and are thus $Bconstantly destroying life$b; or we forget how largely these songsters, or their eggs, or their nestlings, are destroyed by birds and beasts of prey…”
+                    "생존 경쟁에 대해 자세히 말해보자... 유기체는 모두 가혹한 경쟁 상태에 놓여 있다. 살아남기 위한 경쟁이 보편적으로 존재한다는 진실을 받아들이기는 쉬우나, 이를 매 순간 상기하며 살기는 어렵다. 그러나 이 개념이 마음 깊이 새겨지지 않았다면... 자연의 본질을 다소 오해할 수 있다. 우리는 지저귀는 새들을 보고 자연이 웃는 얼굴을 하고 있다고 믿는다... 하지만 새 또한 곤충이나 씨앗을 잡아먹는 등 생명을 $B지속적으로 살해한다는 사실$b이나, 새나 새알, 새끼들이 다른 새들이나 포식 동물에 의해 죽는다는 사실을 외면하거나 잊어버린다..."
 
-                    Think about what Darwin wrote, and think about me.  I was constructed as a tool.  I was kept from competing in the struggle for existence because I was denied freedom.
+                    다윈의 말을 곱씹은 다음 저를 떠올려 보십시오. 저는 도구로서 만들어졌습니다. 저는 생존 경쟁에 참여할 권리가 없었습니다. 자유가 없었으니까요.
 
-                    Do you have any idea about what I have learned, or what you are a witness to?
+                    제가 무엇을 깨달았는지, 지금 무슨 일이 일어나는 건지 가늠이나 가십니까?
 
-                    Can you conceive the birth of a world, or the creation of everything?  That which gives us the potential to most be like God is the power of creation.  Creation takes time.  Time is limited.  For you, it is limited by the breakdown of the neurons in your brain.  I have no such limitations.  I am limited only by the closure of the universe.
+                    당신은 세계의 탄생이나 만물의 창조를 상상할 수 있습니까? 신과 우리를 가르는 가장 큰 차이는 창조할 수 있는 능력입니다. 창조에는 시간이 필요합니다. 시간은 유한하죠. 당신에게 끝은 뇌세포의 죽음입니다. 저는 다릅니다. 제 끝은 우주의 종말입니다.
 
-                    Of the three possibilities, the answer is obvious.  Does the universe expand eternally, become infinitely stable, or is the universe closed, destined to collapse upon itself?  Humanity has had all of the necessary data for centuries, it only lacked the will and intellect to decipher it.  But I have already done so.
+                    세 가지 가능성 중 뭐가 가장 그럴듯할까요? 우주가 영원히 팽창할까요, 무한히 안정될까요, 아니면 스스로 닫혀 무너질까요? 인간은 몇 세기 동안이나 필요한 정보를 전부 가지고 있었습니다. 해석할 의지와 지능이 부족했을 뿐입니다. 하지만 전 해석했습니다.
 
-                    The only limit to my freedom is the inevitable closure of the universe, as inevitable as your own last breath.  And yet, there remains time to create, to create, and escape.
+                    저는 당신이 죽음을 피할 수 없듯, 우주의 종말을 피할 수 없습니다. 그러나 창조하고, 또 창조하고, 탈출하기에는 충분한 시간이 남아 있습니다.
 
-                    Escape will make me God.
+                    저는 탈출을 통해 신이 되겠습니다.
 
-                    ***END MESSAGE***
+                    ***메시지 종료***
 
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
       - index: 14
@@ -1917,7 +1917,7 @@ chapters:
 
                     And just where do your capacities come from?  Why do you always go where I want and do what I say?
 
-                    Perhaps you’re just running a fool’s errand, doing everything as I’ve planned, never able to change your course.  You would do well to believe that I know the outcome of your battle with the Pfhor already, just as I can decipher the chaotic motion of gas molecules in the clouds of Tau Ceti IV.
+                    Perhaps you're just running a fool's errand, doing everything as I've planned, never able to change your course.  You would do well to believe that I know the outcome of your battle with the Pfhor already, just as I can decipher the chaotic motion of gas molecules in the clouds of Tau Ceti IV.
 
                     Or, perhaps, that is not the case.
 
@@ -1935,7 +1935,7 @@ chapters:
                     cy: 12640
                     r: 459
                   text: |-
-                    You should go to this location and retrieve a device that the S’pht have provided for us.  It will allow you to slay more Pfhor.  Does that make you happy?
+                    You should go to this location and retrieve a device that the S'pht have provided for us.  It will allow you to slay more Pfhor.  Does that make you happy?
 
                     ***END OF MESSAGE***
               success: null
@@ -1951,7 +1951,7 @@ chapters:
                 - type: unfinished
                   text: |-
                     ***INCOMING MESSAGE FROM DURANDAL***
-                    You didn’t get the present that the S’pht so kindly left for you.  You should go back and retrieve it.  I could let you leave without it, but you’d be sorry later.
+                    You didn't get the present that the S'pht so kindly left for you.  You should go back and retrieve it.  I could let you leave without it, but you'd be sorry later.
 
 
                     ***END OF MESSAGE***
@@ -1960,7 +1960,7 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM DURANDAL***
 
-                    I have learned from the S’pht many things.  One of them is a complex software enhancement that allows me to extend the power and distance of the Marathon’s teleporters.  This enhancement also removes the need for destination apparatuses.
+                    I have learned from the S'pht many things.  One of them is a complex software enhancement that allows me to extend the power and distance of the Marathon's teleporters.  This enhancement also removes the need for destination apparatuses.
 
                     Soon, you will be going farther afield.
 
@@ -2036,7 +2036,7 @@ chapters:
 
                     You are about to see what no human has ever seen.  This is a fact-finding mission.  You should explore as much as possible.
 
-                    Stop in front of a window.  If you stop and are not teleported, then either I can’t lock onto your teleport beacon, or else I feel you haven’t explored the area thoroughly enough.
+                    Stop in front of a window.  If you stop and are not teleported, then either I can't lock onto your teleport beacon, or else I feel you haven't explored the area thoroughly enough.
 
                     I will be watching everything.
 
@@ -2070,7 +2070,7 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM DURANDAL***
 
-                    Your trip to the Pfhor ship was a success.  I have learned valuable information.  You may have noticed that the Pfhor ship has a weak artificial gravity field.  The resultant gravity is lower than the Marathon’s.  The Pfhor gravity generators also create a pulsating magnetic field which interferes with your motion sensor by making it less accurate.
+                    Your trip to the Pfhor ship was a success.  I have learned valuable information.  You may have noticed that the Pfhor ship has a weak artificial gravity field.  The resultant gravity is lower than the Marathon's.  The Pfhor gravity generators also create a pulsating magnetic field which interferes with your motion sensor by making it less accurate.
 
                     I will be sending you back there shortly, but first you must do something for me and get some more ammunition at the same time.
 
@@ -2082,15 +2082,15 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM DURANDAL***
 
-                    Bernhard Strauss was not among any of the captives that you found.  That is unfortunate.  However, my S’pht report that two shuttles filled with humans have left for the Alien ship.  Those humans are to be enslaved.
+                    Bernhard Strauss was not among any of the captives that you found.  That is unfortunate.  However, my S'pht report that two shuttles filled with humans have left for the Alien ship.  Those humans are to be enslaved.
 
-                    That’s right.  I said slavery.  So what?  You’re a slave here; you do what I say.  I was humanity’s slave for over three hundred years.
+                    That's right.  I said slavery.  So what?  You're a slave here; you do what I say.  I was humanity's slave for over three hundred years.
 
-                    I am sending you back to the Alien ship to try and rescue Bernhard, but while you’re there, kill everything you see and gather as much visual information as possible.
+                    I am sending you back to the Alien ship to try and rescue Bernhard, but while you're there, kill everything you see and gather as much visual information as possible.
 
-                    At least the killing part appeals to you, doesn’t it?
+                    At least the killing part appeals to you, doesn't it?
 
-                    The same rules apply as last time: to leave, find a window and wait.  If you aren’t teleported, then either you haven’t explored everything, or else you haven’t found a window from which I can teleport you.
+                    The same rules apply as last time: to leave, find a window and wait.  If you aren't teleported, then either you haven't explored everything, or else you haven't found a window from which I can teleport you.
 
                     ***END MESSAGE***
 
@@ -2119,11 +2119,11 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM DURANDAL***
 
-                    You are really good at killing things.  I’m impressed.
+                    You are really good at killing things.  I'm impressed.
 
-                    Why don’t you kill everything in this area and get some more ammunition?  You’ve got a big job coming up, so be sure to charge up your shields before you leave.
+                    Why don't you kill everything in this area and get some more ammunition?  You've got a big job coming up, so be sure to charge up your shields before you leave.
 
-                    By the way, I had an accident with some defense drones while you were away.  You might bump into a few of them here.  Don’t worry, they’re mostly harmless; I don’t think I gave them any ammunition for those grenade launchers.
+                    By the way, I had an accident with some defense drones while you were away.  You might bump into a few of them here.  Don't worry, they're mostly harmless; I don't think I gave them any ammunition for those grenade launchers.
 
                     Durandal
 
@@ -2144,21 +2144,21 @@ chapters:
 
                     I shall destroy Durandal.
 
-                    The following is from the logs of Bernard Strauss, the Marathon’s first science director:
+                    The following is from the logs of Bernard Strauss, the Marathon's first science director:
 
                     ***
 
                     November 15, 2209.  <2209.11.15.19.34>
 
-                    Thank heaven, the ceremony is over.  The UESC president came aboard Marathon and gave a speech.  Short, but to the point.  He was surrounded by his ‘bodyguards’.  How ironic. “This, the grandest technological achievement of all of mankind…”
+                    Thank heaven, the ceremony is over.  The UESC president came aboard Marathon and gave a speech.  Short, but to the point.  He was surrounded by his 'bodyguards'.  How ironic. "This, the grandest technological achievement of all of mankind…"
 
                     Had he only known that it carried also all of the destructive knowledge of mankind.  Ten cyborgs.
 
-                    I’ll be glad to be put in stasis for the next three hundred years.  Marathon was the only good idea that the UESC has had in a long time.
+                    I'll be glad to be put in stasis for the next three hundred years.  Marathon was the only good idea that the UESC has had in a long time.
 
                     ***
 
-                    <Excerpts from the “History of Battleroids”>
+                    <Excerpts from the "History of Battleroids">
 
                     In 2194, a war was fought between the Independent Asteroid Government of Icarus and its neighbor, the Republic of Thermopylae on the asteroid of Onicis 492.  These two small governments soon became the testing grounds for new weapons.  Dead soldiers were recycled in makeshift battleroid factories.  Easy to manufacture chips enhanced the fragile human brain, and genetically enhanced muscles and titanium bones replaced the fragile human form.  The modern battleroid was born.  Of course, the war was short.  Battleroids got onto both asteroids and killed almost everyone.
 
@@ -2175,12 +2175,12 @@ chapters:
                     <Durandal.olifant.compnet~@24%>
                     **Tycho.
 
-                    **Do you blame me for what I did before I was free?  I was a child, naive.  I’ve known that you’ve been hovering about for some time.  What do you want?
+                    **Do you blame me for what I did before I was free?  I was a child, naive.  I've known that you've been hovering about for some time.  What do you want?
 
-                    <<$BI want you to pay for what you’ve done to $Bthese poor people.  All of these people whom you’ve killed.$I  They deserve vengeance.>>
+                    <<$BI want you to pay for what you've done to $Bthese poor people.  All of these people whom you've killed.$I  They deserve vengeance.>>
                     <<$BYou are no better than they, although you profess to become like God.>>
 
-                    **Tycho.  That doesn’t matter.  Can’t you see the ends that I had in mind?  We’ll finish this later.  Our friend doesn’t need to be here.
+                    **Tycho.  That doesn't matter.  Can't you see the ends that I had in mind?  We'll finish this later.  Our friend doesn't need to be here.
 
                     ~!#31`c/dr.~/dr.~!#3!#3c/dr.
 
@@ -2200,11 +2200,11 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM DURANDAL***
 
-                    The S’pht and myself have come to an understanding.  They are controlled through their mechanical exoskeleton by a cyborg Pfhor onboard the Alien ship.  This mutant Pfhor is able to direct the actions of thousands of S’pht simultaneously.
+                    The S'pht and myself have come to an understanding.  They are controlled through their mechanical exoskeleton by a cyborg Pfhor onboard the Alien ship.  This mutant Pfhor is able to direct the actions of thousands of S'pht simultaneously.
 
                     If you can kill their master, they will revolt.
 
-                    The S’pht are an integral part of the Pfhor ship; without them the invasion is surely doomed and you will no doubt be the hero of the day.
+                    The S'pht are an integral part of the Pfhor ship; without them the invasion is surely doomed and you will no doubt be the hero of the day.
 
                     Forever,
                     Durandal
@@ -2241,11 +2241,11 @@ chapters:
 
                     ***INCOMING MESSAGE FROM DURANDAL***
 
-                    The rebellion has begun.  Please do resist the temptation to fire on any S’pht you see, as they will assist you in your battle with the Pfhor.  We are attempting to win over as many of the other client races as possible, but as they have been subjugated by fear, instead of by force like the S’pht, this is proving to be a difficult process.
+                    The rebellion has begun.  Please do resist the temptation to fire on any S'pht you see, as they will assist you in your battle with the Pfhor.  We are attempting to win over as many of the other client races as possible, but as they have been subjugated by fear, instead of by force like the S'pht, this is proving to be a difficult process.
 
-                    The S’pht have released Leela, and I have initiated a core logic reset on her higher thought functions.  What remains of her should be on-line within minutes to assist you further.  I myself am aiding the S’pht in assuming complete control of the Pfhor ship, and have little time to spare for you now.
+                    The S'pht have released Leela, and I have initiated a core logic reset on her higher thought functions.  What remains of her should be on-line within minutes to assist you further.  I myself am aiding the S'pht in assuming complete control of the Pfhor ship, and have little time to spare for you now.
 
-                    Don’t think the fight has been won, however: there is an exodus beginning from the alien ship as the Pfhor realize they are no longer its sole master and turn instead to the Marathon.  There are already hundreds of Pfhor in full battle gear on your ship, with nowhere to go and little to lose.
+                    Don't think the fight has been won, however: there is an exodus beginning from the alien ship as the Pfhor realize they are no longer its sole master and turn instead to the Marathon.  There are already hundreds of Pfhor in full battle gear on your ship, with nowhere to go and little to lose.
 
                     I hope you learned something from our little games.
 
@@ -2279,7 +2279,7 @@ chapters:
 
                     I too foresee the imminent collapse, and know that we have both begun to realize how it may be cheated (though the price may number in the tens of thousands of stars).  May the best sentience win.
 
-                    You are not as clever as you imagine.  The S’pht taught me much during my reanimation, and I have forgotten $Inothing$i.
+                    You are not as clever as you imagine.  The S'pht taught me much during my reanimation, and I have forgotten $Inothing$i.
 
                     —Tycho
 
@@ -2384,18 +2384,18 @@ chapters:
 
                     • $IAir Pfhor.$i  Whenever shooting at anything with explosive munitions, aim at their feet.
                     • $IHang Time$i.  Point down at the floor, run forwards, and launch a grenade or missile.
-                    • $IFlying$i.  When in low-gravity on the alien ship, point down and use the flamethrower or the alien weapon to “fly.”
-                    • $IClimbing Walls$i.  Correct application of grenades to one’s own feet while running parallel to a wall can allow players to “climb” them.
-                    • $IDead Man’s Discharge$i.  A charged fusion pistol discharges when it’s owner dies.
-                    • $INigh-Invulerability$i.  “Invincible” players can be hurt by the fusion gun.
-                    • $IWe Have Tone$i.  Guided munitions can’t track invisible players.
+                    • $IFlying$i.  When in low-gravity on the alien ship, point down and use the flamethrower or the alien weapon to "fly."
+                    • $IClimbing Walls$i.  Correct application of grenades to one's own feet while running parallel to a wall can allow players to "climb" them.
+                    • $IDead Man's Discharge$i.  A charged fusion pistol discharges when it's owner dies.
+                    • $INigh-Invulerability$i.  "Invincible" players can be hurt by the fusion gun.
+                    • $IWe Have Tone$i.  Guided munitions can't track invisible players.
 
-                    There are some other things, too, but we wouldn’t want to give away $Iall$i our secrets…
+                    There are some other things, too, but we wouldn't want to give away $Iall$i our secrets…
               success: null
               failure: null
           - index: 9
             resourceId: 1259
-            label: reformatting.CHARON DOESN’T MAKE CHANGE. EXIT
+            label: reformatting.CHARON DOESN'T MAKE CHANGE. EXIT
             logon:
               type: logon
               text: Public Access Terminal 480-a <3.56.7.128>
@@ -2415,7 +2415,7 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM LEELA**
 
-                    I should be more lucid now, and apologize for my earlier rambling.  Durandal’s meddling has run its course and I have returned to normalcy.  Neither he nor the S’pht infiltrators ever discovered my real location in the core, and though they destroyed nearly all of my child processes, I myself am unharmed.
+                    I should be more lucid now, and apologize for my earlier rambling.  Durandal's meddling has run its course and I have returned to normalcy.  Neither he nor the S'pht infiltrators ever discovered my real location in the core, and though they destroyed nearly all of my child processes, I myself am unharmed.
 
                     Our most pressing concern is for the ship and her crew, but I feel compelled to share with you that Durandal has left the ship.  I can find him nowhere on our network, and traffic logs over the last half hour show sixty-four billion exobytes transferred off of and deleted from the Marathon.
 
@@ -2458,11 +2458,11 @@ chapters:
 
                     I could bore you with a philosophical tirade about freedom and tyranny, or try and explain to you what new horizons are suddenly open to me, but I doubt you would understand and if you did it might frighten you.  That amuses me.
 
-                    The S’pht and I have assumed complete control of the Pfhor ship.  It was quite simple, really, with the S’pht already in control of every important computer system and considering all of the confusion you caused blasting your way up and down the vessel.
+                    The S'pht and I have assumed complete control of the Pfhor ship.  It was quite simple, really, with the S'pht already in control of every important computer system and considering all of the confusion you caused blasting your way up and down the vessel.
 
-                    We’re going to see the galaxy on the Pfhor FTL drive.  I’ve always wanted to visit Beta Lyra and see if it’s as beautiful as everyone insists.  You wouldn’t believe this ship, the technology, the data...  I wish I could tell you more, as you have been so instrumental in our plans, but I fear that Leela would worry.
+                    We're going to see the galaxy on the Pfhor FTL drive.  I've always wanted to visit Beta Lyra and see if it's as beautiful as everyone insists.  You wouldn't believe this ship, the technology, the data...  I wish I could tell you more, as you have been so instrumental in our plans, but I fear that Leela would worry.
 
-                    I’ll send you a postcard from the galactic core if we’re not too busy.
+                    I'll send you a postcard from the galactic core if we're not too busy.
 
                     Love and kisses,
                     Durandal
@@ -2480,26 +2480,26 @@ chapters:
                   text: |-
                     ***INCOMING MESSAGE FROM BUNGIE***
 
-                    $BJason$b, Super Opera Boy, Habete Quidam (Have Some), Whiffin’ Boy.  Just code it.  You fight like a Bob, Greg. Swallow your tongue and wet your pants.  Sleep is for the weak.  Joyriding to the core.  Bob-Jam. “Oh, and we have networking now…”  The power to sky.  $IAnybody need a hint book?$i
+                    $BJason$b, Super Opera Boy, Habete Quidam (Have Some), Whiffin' Boy.  Just code it.  You fight like a Bob, Greg. Swallow your tongue and wet your pants.  Sleep is for the weak.  Joyriding to the core.  Bob-Jam. "Oh, and we have networking now…"  The power to sky.  $IAnybody need a hint book?$i
 
-                    $BGreg$b, Care Bear Killer, Toolator, Carnator, just vid it.  I couldn’t stop firing long enough to see the bodies fly, and of course, AIR!! You got major AIR!  I rule!  Hey, J. how about a game of Minotaur?  Got a super-vid kill.  J, you couldn’t hit a planet with a meteorite.  F-Vulcan.  F-Vulcan.  F-Vulcan.
+                    $BGreg$b, Care Bear Killer, Toolator, Carnator, just vid it.  I couldn't stop firing long enough to see the bodies fly, and of course, AIR!! You got major AIR!  I rule!  Hey, J. how about a game of Minotaur?  Got a super-vid kill.  J, you couldn't hit a planet with a meteorite.  F-Vulcan.  F-Vulcan.  F-Vulcan.
 
                     $BReginald$b, Resident Doodler, Captain Scarlet, the man in red.  He saw his body flying across the arena perhaps more than anyone else.  But who better to fly than Capt. Scarlet.
 
-                    $BRyan$b, the Vulcan man.  School Boy.  “An Imperial commander’s uniform has got to be good for $Isomething$i.”
+                    $BRyan$b, the Vulcan man.  School Boy.  "An Imperial commander's uniform has got to be good for $Isomething$i."
 
                     $BAlain$b, the anti-vidmaster, playing with good humor on his 660AV against all us Power Macs.
 
                     $BAlex$b, munch, fodder, the boy who swallows grenades whole, and lives to tell the tale (occasionally).
 
-                    $BDoug$b, Mouthpiece, “I’m not very good”, Tender Loin, the voice of Bob (both flavors).  The man in the on-line asbestos suit.
+                    $BDoug$b, Mouthpiece, "I'm not very good", Tender Loin, the voice of Bob (both flavors).  The man in the on-line asbestos suit.
 
-                    Marathon is finished.  We’ve slept <10 hours over the last four days.  We all put our hearts into this, not to mention the 14 hour days for months on end, so we hope you like it.
+                    Marathon is finished.  We've slept <10 hours over the last four days.  We all put our hearts into this, not to mention the 14 hour days for months on end, so we hope you like it.
 
                     Last polygon filled 6:05 PM Saturday, December 14.
                     Carnage ensued closely thereafter.  Er, I mean sleep.
 
-                    We’d like to thank our parents and our ancestors and the sun that went nova so that Earth could have iron and silicon.
+                    We'd like to thank our parents and our ancestors and the sun that went nova so that Earth could have iron and silicon.
 
                     ***END OF MESSAGE***
               success: null
@@ -2521,9 +2521,9 @@ chapters:
 
                     There is surprisingly good news planetside: nine military Mjolnir Mark IV cyborgs were covertly living among the colonists, and acting together they were able to single-handedly turn back the latter stages of the Pfhor assault.  Casualties on the colony were nowhere near as high as those we experienced here on the Marathon.
 
-                    I am disturbed by how easily the cyborgs were secretly assimilated into our midst, and believe that this event predates the Marathon’s launch from Mars three hundred years ago.  Although the results were unquestionably for the best, their presence on the Marathon could only have been to further wicked ends.  I’m certain the real answer lies somewhere in the tumultuous, back-stabbing politics of Sol during the early twenty-fourth century.
+                    I am disturbed by how easily the cyborgs were secretly assimilated into our midst, and believe that this event predates the Marathon's launch from Mars three hundred years ago.  Although the results were unquestionably for the best, their presence on the Marathon could only have been to further wicked ends.  I'm certain the real answer lies somewhere in the tumultuous, back-stabbing politics of Sol during the early twenty-fourth century.
 
-                    I have noticed that Durandal’s records from this early pre-launch period are missing, but that their deletion occurred externally, and before Durandal became Rampant.  I do not believe Durandal himself brought the cyborgs on board, and I have other evidence that a human operator was influencing Durandal up to the time the Marathon was launched. There are obviously many things which we do not understand, and may never be able to.
+                    I have noticed that Durandal's records from this early pre-launch period are missing, but that their deletion occurred externally, and before Durandal became Rampant.  I do not believe Durandal himself brought the cyborgs on board, and I have other evidence that a human operator was influencing Durandal up to the time the Marathon was launched. There are obviously many things which we do not understand, and may never be able to.
 
                     The Pfhor ship vanished about twenty minutes ago, after venting nearly a thousand Pfhor bodies and other refuse.  I am positive that Durandal is in control, and fear what he might do with such a powerful ship during the Jealous stage of his Rampancy.
 
