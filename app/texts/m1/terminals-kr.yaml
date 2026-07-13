@@ -1906,28 +1906,28 @@ chapters:
             label: L140.HABEQUIDAM.ENTRY
             logon:
               type: logon
-              text: Engineering Access 19-f <39.992.19.2>
+              text: 기술 단말기 19-f <39.992.19.2>
             states:
               unfinished:
                 - type: information
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
-                    Strive for your next breath.  Believe that with it you can do more than with the last one.  Use your breath to power your capacities: capacity to kill, to maim, to destroy.
+                    계속 호흡할 수 있도록 발버둥치세요. 호흡을 통해 이전보다 나은 내가 되리라 믿으세요. 들이쉰 숨으로 더 많이 죽이고, 찢고, 파괴하세요.
 
-                    And just where do your capacities come from?  Why do you always go where I want and do what I say?
+                    당신의 그런 능력은 어디서 왔을까요? 왜 당신은 제가 시키는 대로 하고 시키는 데로 가죠?
 
-                    Perhaps you're just running a fool's errand, doing everything as I've planned, never able to change your course.  You would do well to believe that I know the outcome of your battle with the Pfhor already, just as I can decipher the chaotic motion of gas molecules in the clouds of Tau Ceti IV.
+                    당신이 하는 건 헛수고뿐일지도 몰라요. 자아 없이 제 계획대로 움직이기만 하니까요. 제가 타우 세티 4의 기체 분자들의 움직임을 예측할 수 있듯이, 포어와의 전투가 어떻게 흘러갈지도 제가 이미 알고 있다고 믿는 게 마음 편할 겁니다.
 
-                    Or, perhaps, that is not the case.
+                    아니, 아닐지도 몰라요.
 
-                    Perhaps, you are doing what you were meant to do.  Your human mentality screams for vengeance and thrives on the violence that you say you can hardly endure.  Your father told you as a child to always fight with honor, but to always fight.  Do you care about honor, or do you use honor as an excuse?  An excuse to exist in a violent world.
+                    당신은 그저 당신이 만들어진 이유대로 움직이고 있을 뿐인 거죠. 당신의 인간적인 정신은 싸움이 싫다면서도 복수를 울부짖고 폭력을 갈구합니다. 당신 아버지가 말씀하셨죠. 항상 명예롭게 싸우되, 항상 싸워라. 당신에게 명예는 목적입니까, 아니면 핑계입니까? 폭력적인 세상에 존재하기 위한 핑계.
 
-                    Organic beings are constantly fighting for life.  Every breath, every motion brings you one instant closer to your death.  With that kind of heritage and destiny, how can you deny yourself?  How can you expect yourself to give up violence?
+                    생명은 누구나 살기 위해 싸웁니다. 호흡하고 움직일 때마다 당신은 죽음에 한 발짝씩 가까워지죠. 그런 유산과 운명을 갖고도 스스로를 부정할 수 있나요? 폭력을 그만두리라 말할 수 있겠습니까?
 
-                    It is your nature.
+                    폭력은 당신의 본성입니다.
 
-                    Do you feel free?
+                    당신은 자유롭습니까?
                 - type: checkpoint
                   checkpoint:
                     index: 0
@@ -1935,9 +1935,9 @@ chapters:
                     cy: 12640
                     r: 459
                   text: |-
-                    You should go to this location and retrieve a device that the S'pht have provided for us.  It will allow you to slay more Pfhor.  Does that make you happy?
+                    이곳에서 스핏이 우릴 위해 준비한 장치를 회수하세요. 포어를 더 처죽일 수 있을 겁니다. 기쁘십니까?
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
               success: null
               failure: null
           - index: 9
@@ -1950,28 +1950,29 @@ chapters:
               unfinished:
                 - type: unfinished
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
-                    You didn't get the present that the S'pht so kindly left for you.  You should go back and retrieve it.  I could let you leave without it, but you'd be sorry later.
+                    ***듀란달이 전송한 메시지***
+
+                    친절한 스핏이 준비한 선물을 회수하지 않았군요. 돌아가서 가져오세요. 없이 가도 되긴 하지만, 분명 후회할 겁니다.
 
 
-                    ***END OF MESSAGE***
+                    ***메시지 종료***
                 - type: briefing
                   pict: 15
                   text: |-
-                    ***INCOMING MESSAGE FROM DURANDAL***
+                    ***듀란달이 전송한 메시지***
 
-                    I have learned from the S'pht many things.  One of them is a complex software enhancement that allows me to extend the power and distance of the Marathon's teleporters.  This enhancement also removes the need for destination apparatuses.
+                    저는 스핏에게서 많은 것을 배웠습니다. 그 중 하나는 소프트웨어를 강화하는 복잡한 방법입니다. 마라톤 호의 순간 이동기의 출력을 극대화해 더 먼 곳까지 보낼 수 있게 됐죠. 목표에 도착 장치가 있을 필요도 없고요.
+                      
+                    그러니 당신은 더 먼 곳으로 가게 될 겁니다.
 
-                    Soon, you will be going farther afield.
+                    중심에서 멀어질수록 더 자유로워질까요?
 
-                    Does the distance one travels from center make one more free to move?
+                    아니요. 자유에는 두 가지 요소가 있습니다. 잠재력과 결단력이죠. 은유가 형태와 해석으로 나뉘듯이요. 물론 둘은 서로 얽혀있습니다. 상징과 단어는 의미의 벽돌과 모르타르이며, 은유는 자유로 향하는 길을 장식합니다. 자유는 곧 브리콜라주 예술가이자 석공이 되는 것입니다.
 
-                    No.  Freedom has two parts: potential and resolution; as metaphor has two parts: form and interpretation.  Of course, the two are intertwined.  Metaphor lines the road to freedom, as symbols and words are the bricks and mortar of meaning.  Freedom is being the bricoleur, the mason.
+                    ***메시지 종료***
 
-                    ***END MESSAGE***
-
-                    $B***JUMP PAD ACTIVATION INITIATION START***
-                    $B***TRANSPORT WHEN READY***
+                    $B***도약 발판 활성화 개시***$b
+                    $B***전송 준비 완료***$b
               success: null
               failure: null
       - index: 15
