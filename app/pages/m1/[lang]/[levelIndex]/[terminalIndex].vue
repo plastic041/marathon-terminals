@@ -86,7 +86,8 @@ useHead({
           />
           <TerminalsTextOnly
             v-else
-            :text="terminal.states[state]![screenIndex]?.text!"
+            :key="terminal.states[state]![screenIndex]!.text!"
+            :text="terminal.states[state]![screenIndex]!.text!"
           />
         </div>
 
