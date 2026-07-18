@@ -18,7 +18,7 @@ const lang = computed(() => route.params.lang as "en" | "ko");
     </div>
     <div class="h-[24lh] whitespace-pre-wrap flex border-y border-y-green1">
       <ScrollArea
-        class="min-h-0 grow overflow-y-auto wrap-break-word py-[1lh]"
+        class="min-h-0 grow overflow-y-auto wrap-break-word py-[1lh] break-keep leading-relaxed"
         v-if="props.type === 'reading'"
       >
         <slot />

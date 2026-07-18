@@ -57,11 +57,11 @@ useHead({
     <main class="w-full max-w-200 min-h-0 h-4/5 mx-auto flex flex-col">
       <div class="size-full min-h-0 flex flex-col">
         <h1 class="leading-none text-xl px-[1ch] flex flex-col">
-          <span class="leading-normal text-pretty">
-            {{ level.index }}. {{ level.name }}
+          <span class="leading-none text-pretty indent-[3ch_hanging]">
+            {{ level.index.toString().padStart(2, "0") }}. {{ level.name }}
           </span>
           <span
-            class="text-sm leading-tight text-pretty break-keep indent-[5ch_hanging] h-[2lh]"
+            class="text-sm leading-none text-pretty break-keep indent-[5ch_hanging] h-[2lh] mt-[0.25lh]"
           >
             #{{ terminal.index }} - {{ terminal.logon.text }}
           </span>

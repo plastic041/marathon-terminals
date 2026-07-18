@@ -35,7 +35,7 @@ useHead({
       </span>
 
       <div
-        class="whitespace-pre-wrap w-full"
+        class="whitespace-pre-wrap w-full text-lg text-pretty sm:text-balance break-keep wrap-break-word"
         v-html="decorate(TEXTS[lang].intro)"
       />
 
