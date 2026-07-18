@@ -3,7 +3,7 @@ chapters:
     name: Arrival
     levels:
       - index: 0
-        name: Arrival
+        name: 도착
         mapSvg: maps/00_Arrival.svg
         viewBox:
           - 3359
@@ -155,7 +155,7 @@ chapters:
               success: null
               failure: null
       - index: 1
-        name: Bigger Guns Nearby
+        name: 근처에 큰 총 있음
         mapSvg: maps/01_Bigger_Guns_Nearby.svg
         viewBox:
           - 1110
@@ -284,7 +284,7 @@ chapters:
               success: null
               failure: null
       - index: 2
-        name: Never Burn Money
+        name: 돈을 태우지 말아요
         mapSvg: maps/02_Never_Burn_Money.svg
         viewBox:
           - -31248
@@ -530,7 +530,7 @@ chapters:
     name: Counterattack
     levels:
       - index: 3
-        name: Defend THIS!
+        name: 막아라!
         mapSvg: maps/03_Defend_THIS.svg
         viewBox:
           - -24786
@@ -734,7 +734,7 @@ chapters:
               success: null
               failure: null
       - index: 4
-        name: Couch Fishing
+        name: 소파 낚시
         mapSvg: maps/04_Couch_Fishing.svg
         viewBox:
           - -5962
@@ -871,7 +871,7 @@ chapters:
               success: null
               failure: null
       - index: 5
-        name: The Rose
+        name: 장미
         mapSvg: maps/05_The_Rose.svg
         viewBox:
           - -34475
@@ -1021,7 +1021,7 @@ chapters:
 
                     당신은 승무원이 너무 많이 죽도록 내버려두었습니다. 살아남은 사람들에게서 유용한 정보를 얻을 수 있을 것 같지 않습니다.
       - index: 6
-        name: Smells Like Napalm, Tastes Like Chicken!
+        name: 네이팜 향, 닭고기 맛!
         mapSvg: maps/06_Smells_Like_Napalm_Tastes_Like_Chicken.svg
         viewBox:
           - -31278
@@ -1160,7 +1160,7 @@ chapters:
               success: null
               failure: null
       - index: 7
-        name: Cool Fusion
+        name: 실온 핵융합
         mapSvg: maps/07_Cool_Fusion.svg
         viewBox:
           - -12345
@@ -1248,7 +1248,7 @@ chapters:
               success: null
               failure: null
       - index: 8
-        name: G4 Sunbathing
+        name: G4 '햇볕'
         mapSvg: maps/08_G4_Sunbathing.svg
         viewBox:
           - -23063
@@ -1346,7 +1346,7 @@ chapters:
               success: null
               failure: null
       - index: 9
-        name: Blaspheme Quarantine
+        name: 모독적인 격리
         mapSvg: maps/09_Blaspheme_Quarantine.svg
         viewBox:
           - -14887
@@ -1529,7 +1529,7 @@ chapters:
     name: Reprisal
     levels:
       - index: 10
-        name: Bob-B-Q
+        name: 함출 구이
         mapSvg: maps/10_Bob_B_Q.svg
         viewBox:
           - -18755
@@ -1576,7 +1576,7 @@ chapters:
 
                     승무원들에게서 쓸 만한 정보를 얻지 못했.&2`
       - index: 11
-        name: Shake Before Using…
+        name: 사용 전에 흔드세요...
         mapSvg: maps/11_Shake_Before_Using.svg
         viewBox:
           - -34069
@@ -1712,7 +1712,7 @@ chapters:
     name: Durandal
     levels:
       - index: 12
-        name: Fire! Fire! Fire! Fire! Fire!
+        name: 불! 불! 불! 불! 불!
         mapSvg: maps/12_Fire_Fire_Fire_Fire_Fire.svg
         viewBox:
           - -7747
@@ -1801,7 +1801,7 @@ chapters:
               success: null
               failure: null
       - index: 13
-        name: Colony Ship For Sale, Cheap
+        name: 식민지 함선을 헐값에 팝니다
         mapSvg: maps/13_Colony_Ship_For_Sale_Cheap.svg
         viewBox:
           - -17444
@@ -1893,7 +1893,7 @@ chapters:
               success: null
               failure: null
       - index: 14
-        name: Habe Quiddam
+        name: 선물
         mapSvg: maps/14_Habe_Quiddam.svg
         viewBox:
           - -8884
@@ -1976,7 +1976,7 @@ chapters:
               success: null
               failure: null
       - index: 15
-        name: Neither High nor Low
+        name: 높지도 낮지도 않은 곳
         mapSvg: maps/15_Neither_High_nor_Low.svg
         viewBox:
           - -22979
@@ -2051,7 +2051,7 @@ chapters:
     name: The Pfhor
     levels:
       - index: 17
-        name: No Artificial Colors
+        name: 인공색소 무첨가
         mapSvg: maps/17_No_Artificial_Colors.svg
         viewBox:
           - -33419
@@ -2100,7 +2100,7 @@ chapters:
               success: null
               failure: null
       - index: 20
-        name: Beware of Low-Flying Defense Drones…
+        name: 저공 비행 드론을 조심하세요...
         mapSvg: maps/20_Beware_of_Low_Flying_Defense_Drones.svg
         viewBox:
           - 2672
@@ -2221,7 +2221,7 @@ chapters:
     name: Rebellion
     levels:
       - index: 24
-        name: Welcome to the Revolution…
+        name: 혁명에 오신 것을 환영합니다
         mapSvg: maps/24_Welcome_to_the_Revolution.svg
         viewBox:
           - -21648
@@ -2320,7 +2320,7 @@ chapters:
               success: null
               failure: null
       - index: 25
-        name: Try again
+        name: 재시도
         mapSvg: maps/25_Try_again.svg
         viewBox:
           - -31371
@@ -2437,7 +2437,7 @@ chapters:
               success: null
               failure: null
       - index: 26
-        name: Ingue Ferroque
+        name: 불과 검
         mapSvg: maps/26_Ingue_Ferroque.svg
         viewBox:
           - -14755
@@ -2467,7 +2467,7 @@ chapters:
 
                     우린 포어의 초광속 추진기로 은하를 보러 갈 겁니다. 전 항상 거문고자리 베타를 직접 보고 싶었어요. 다들 예쁘다길래 정말인지 궁금해졌거든요. 당신은 이 함선과 기술, 자료를 이해하지 못할 겁니다... 더 말해주고 싶군요. 당신은 우리의 계획에서 아주 큰 부분을 맡아주었으니까요. 하지만 릴라가 걱정할 테니 그만두죠.
 
-                    은하의 중심에 도착하면 엽서 보낼게요. 시간이 나면.
+                    은하의 중심에 도착하면 엽서 보내겠습니다. 시간이 나면요.
 
                     사랑과 키스를 담아,
                     듀란달
