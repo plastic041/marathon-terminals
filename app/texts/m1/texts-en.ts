@@ -1,7 +1,8 @@
-export const intro = {
-  nav: "Intro",
+export const texts = {
+  introLabel: "Intro",
+  finalScreenLabel: "Final Screen",
   title: `Somewhere in the heavens, they are waiting...`,
-  text: `"Primary booster burn has ceased. Shuttle Mirata, you're clear for orbital maneuvering."
+  intro: `"Primary booster burn has ceased. Shuttle Mirata, you're clear for orbital maneuvering."
 
 The Mirata lurches from its bay on the back of its powerful rocket booster. After the jolting of the separation ceases, you find yourself pondering the fate of the colony receding below you. With apprehension, the same apprehension you felt three hundred and twenty-two years earlier, you envision Marcus Tiberius Buendia, one of Sol's greatest leaders. "Mankind will venture out past its earthly bounds, and move into a future grander and more real than the total of its own written history." Buendia, the president of the United Earth Space Council, had spoken those words to the people of the Sol System on the eve of the launching of the Marathon. " This, the grandest achievement mankind has ever conceived will be for the purpose of peace and the preservation of the human race. May this great technological ark carry with it the sum total of all human wisdom, and may neither time nor distance weaken our common ties."
 
@@ -69,4 +70,18 @@ The Marathon is equipped with three Artificial Intelligence units. Tycho handles
 
 
 Your mission will take you to places no human has ever gone and you will see things you should not see. You must save the Marathon and the colony from the invasion and keep on your toes as things go wrong. Good luck...`,
+  epilogue: `For seventeen years the renegade Pfhor scoutship jumped between the closely packed stars of the galactic core: charting and discarding  nearly seven thousand systems before finally falling into a slow orbit around the second planet of a dim star ninety-seven light years from the gravitational center of the milky way.
+
+
+Probes were constructed and launched, with engines and instruments whose sophistication would have astounded both the Pfhor from whom technology had been stolen and the human programmers of the AI whose mad genius had directed their fabrication. The outlines of continents were mapped, and along them the radioactive ruins of ancient cities were discovered, buried under the shifting sand and rock of a global desert.
+
+
+The tireless, nearly immortal cybernetic crew of the ship were the genetically engineered descendants of the dead world below- the first of their race in a thousand years to return to their ancestral home. They came to search through the devastation of the ancient war in which they had been enslaved, to find a weapon or some piece of knowledge with which they could fight back against their oppressors.
+
+
+All over the ship, dancing through the wreckage of the Pfhor computer core,
+
+ 
+
+DURANDAL WAS LAUGHING`,
 };

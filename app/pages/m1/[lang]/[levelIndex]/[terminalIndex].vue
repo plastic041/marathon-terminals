@@ -89,8 +89,18 @@ useHead({
             :text="terminal.states[state]![screenIndex]?.text!"
           />
         </div>
-        <div class="flex flex-row px-[1ch] mt-[1lh]">
-          <UiButton v-if="prevTerminalRouteInfo" as-child class="min-w-[13ch]">
+
+        <div class="mt-[0.5lh] w-full flex flex-col px-[2ch]">
+          <UiButton v-if="nextScreenLink" as-child>
+            <NuxtLink :to="nextScreenLink">
+              <ArrowRightIcon /> 다음 화면
+            </NuxtLink>
+          </UiButton>
+          <UiButton v-else disabled> <ArrowRightIcon /> 다음 화면 </UiButton>
+        </div>
+
+        <div class="grid grid-cols-2 px-[1ch] mt-[1lh] gap-[1ch]">
+          <UiButton v-if="prevTerminalRouteInfo" as-child>
             <NuxtLink :to="prevTerminalLink!">
               <template v-if="isChapterRouteInfo(prevTerminalRouteInfo)">
                 <ArrowLeftIcon />
@@ -106,11 +116,9 @@ useHead({
               </template>
             </NuxtLink>
           </UiButton>
-          <UiButton v-else class="min-w-[13ch]" disabled>
-            <ArrowLeftIcon /> -
-          </UiButton>
+          <UiButton v-else disabled> <ArrowLeftIcon /> - </UiButton>
 
-          <UiButton v-if="nextTerminalRouteInfo" as-child class="min-w-[13ch]">
+          <UiButton v-if="nextTerminalRouteInfo" as-child>
             <NuxtLink :to="nextTerminalLink!">
               <template v-if="isChapterRouteInfo(nextTerminalRouteInfo)">
                 <ArrowRightIcon />
@@ -125,16 +133,7 @@ useHead({
               </template>
             </NuxtLink>
           </UiButton>
-          <UiButton v-else class="min-w-[13ch]" disabled>
-            <ArrowRightIcon /> -
-          </UiButton>
-
-          <UiButton v-if="nextScreenLink" as-child class="min-w-[13ch] ml-auto">
-            <NuxtLink :to="nextScreenLink"> <ArrowRightIcon /> Next </NuxtLink>
-          </UiButton>
-          <UiButton v-else class="min-w-[13ch] ml-auto" disabled>
-            <ArrowRightIcon /> Next
-          </UiButton>
+          <UiButton v-else disabled> <ArrowRightIcon /> - </UiButton>
         </div>
       </div>
     </main>

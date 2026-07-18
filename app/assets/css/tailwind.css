@@ -9,6 +9,14 @@
 }
 
 @font-face {
+  font-family: "Orbit";
+  src: url("/Orbit-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "ChicagoKare";
   src: url("/ChicagoKare-Regular.woff2") format("woff2");
   font-weight: normal;
@@ -43,7 +51,7 @@
     @apply outline-green/50;
   }
   body {
-    @apply bg-black text-green;
+    @apply bg-black text-green font-sans;
   }
   strong {
     @apply font-extrabold;

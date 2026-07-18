@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import type { TerminalsFile } from "~/types/terminal";
 import type { ComponentPublicInstance } from "vue";
-import d from "~/texts/m1/terminals-en.yaml";
+import dEN from "~/texts/m1/terminals-en.yaml";
+import dKR from "~/texts/m1/terminals-kr.yaml";
 import { PopoverClose } from "reka-ui";
 import ScrollArea from "~/components/ui/scroll-area/scroll-area.vue";
-import { INTRO } from "~/texts/m1/intro";
-
-const chapters = (d as TerminalsFile).chapters;
+import { TEXTS } from "~/texts/m1/texts";
 
 const route = useRoute();
 const selectedEl = ref<HTMLElement | null>(null);
 
 const lang = computed(() => route.params.lang as "en" | "ko");
+
+const d = computed(() => (lang.value === "ko" ? dKR : dEN));
+
+const chapters = (d.value as TerminalsFile).chapters;
 
 function setSelectedRef(
   el: Element | ComponentPublicInstance | null,
@@ -46,7 +49,7 @@ onMounted(() => {
               },
             }"
           >
-            {{ INTRO[lang].nav }}
+            {{ TEXTS[lang].introLabel }}
           </NuxtLink>
         </li>
         <li v-for="chapter in chapters" class="flex flex-col gap-[0.5lh]">
@@ -113,7 +116,7 @@ onMounted(() => {
                               state: 'success',
                             },
                           }"
-                          >[Success]</NuxtLink
+                          >[성공]</NuxtLink
                         >
                       </PopoverClose>
                     </li>
@@ -131,7 +134,7 @@ onMounted(() => {
                               state: 'failure',
                             },
                           }"
-                          >[Failure]</NuxtLink
+                          >[실패]</NuxtLink
                         >
                       </PopoverClose>
                     </li>
@@ -140,6 +143,18 @@ onMounted(() => {
               </ul>
             </li>
           </ul>
+        </li>
+        <li>
+          <NuxtLink
+            :to="{
+              name: 'm1-lang-end',
+              params: {
+                lang,
+              },
+            }"
+          >
+            {{ TEXTS[lang].finalScreenLabel }}
+          </NuxtLink>
         </li>
       </ul>
     </nav>

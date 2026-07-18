@@ -2,7 +2,7 @@
 import { ArrowRightIcon } from "@radix-icons/vue";
 import { decorate } from "~/lib/decoration";
 import { BASE_URL } from "~/lib/url";
-import { INTRO } from "~/texts/m1/intro";
+import { TEXTS } from "~/texts/m1/texts";
 
 const route = useRoute();
 const lang = computed(() => route.params.lang as "en" | "ko");
@@ -31,12 +31,12 @@ useHead({
       class="font-[Orbit] mx-auto w-full max-w-[65ch] flex flex-col items-center gap-[1lh] px-[2ch] pb-80"
     >
       <span class="text-lg">
-        {{ INTRO[lang].title }}
+        {{ TEXTS[lang].title }}
       </span>
 
       <div
         class="whitespace-pre-wrap w-full"
-        v-html="decorate(INTRO[lang].text)"
+        v-html="decorate(TEXTS[lang].intro)"
       />
 
       <UiButton as-child>
