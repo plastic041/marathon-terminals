@@ -32,9 +32,7 @@ const {
   nextScreenLink,
 } = useTerminals(chapters);
 
-const ogTitle = computed(
-  () => `L${String(levelIndex.value).padStart(2, "0")}#${terminalIndex.value}`,
-);
+const ogTitle = computed(() => terminal.value.logon.text);
 const ogDescription = computed(() => escapeHtml(terminal.value.logon.text));
 
 useHead({

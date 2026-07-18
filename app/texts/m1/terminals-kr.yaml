@@ -1,6 +1,6 @@
 chapters:
   - index: 0
-    name: Arrival
+    name: 도착
     levels:
       - index: 0
         name: 도착
@@ -527,7 +527,7 @@ chapters:
               success: null
               failure: null
   - index: 1
-    name: Counterattack
+    name: 반격
     levels:
       - index: 3
         name: 막아라!
@@ -1526,7 +1526,7 @@ chapters:
               success: null
               failure: null
   - index: 2
-    name: Reprisal
+    name: 보복
     levels:
       - index: 10
         name: 함출 구이
@@ -1709,7 +1709,7 @@ chapters:
               success: null
               failure: null
   - index: 3
-    name: Durandal
+    name: 듀란달
     levels:
       - index: 12
         name: 불! 불! 불! 불! 불!
@@ -2048,7 +2048,7 @@ chapters:
               success: null
               failure: null
   - index: 4
-    name: The Pfhor
+    name: 포어
     levels:
       - index: 17
         name: 인공색소 무첨가
@@ -2218,7 +2218,7 @@ chapters:
               success: null
               failure: null
   - index: 5
-    name: Rebellion
+    name: 반란
     levels:
       - index: 24
         name: 혁명에 오신 것을 환영합니다
