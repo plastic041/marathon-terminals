@@ -2,7 +2,7 @@
 import type { Chapter, CheckpointGroup } from "~/types/terminal";
 import dataEN from "~/texts/m1/terminals-en.yaml";
 import dataKR from "~/texts/m1/terminals-kr.yaml";
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-icons/vue";
+import { ArrowLeftIcon, ArrowRightIcon, EnterIcon } from "@radix-icons/vue";
 import { BASE_URL } from "~/lib/url";
 import { escapeHtml } from "~/lib/decoration";
 import { useTerminals } from "~/composables/useTerminals";
@@ -52,7 +52,7 @@ useHead({
 <template>
   <div class="h-dvh flex flex-col gap-4">
     <Header />
-    <main class="w-full max-w-200 min-h-0 h-4/5 mx-auto flex flex-col">
+    <main class="w-full max-w-200 min-h-0 h-full mx-auto flex flex-col">
       <div class="size-full min-h-0 flex flex-col">
         <h1 class="leading-none text-xl px-[1ch] flex flex-col">
           <span class="leading-none text-pretty indent-[3ch_hanging]">
@@ -91,14 +91,12 @@ useHead({
 
         <div class="mt-[0.5lh] w-full flex flex-col px-[2ch]">
           <UiButton v-if="nextScreenLink" as-child>
-            <NuxtLink :to="nextScreenLink">
-              <ArrowRightIcon /> 다음 화면
-            </NuxtLink>
+            <NuxtLink :to="nextScreenLink"> <EnterIcon /> 다음 화면 </NuxtLink>
           </UiButton>
           <UiButton v-else disabled> <ArrowRightIcon /> 다음 화면 </UiButton>
         </div>
 
-        <div class="grid grid-cols-2 px-[1ch] mt-[1lh] gap-[1ch]">
+        <div class="grid grid-cols-2 px-[1ch] mt-[0.5lh] gap-[1ch]">
           <UiButton v-if="prevTerminalRouteInfo" as-child>
             <NuxtLink :to="prevTerminalLink!">
               <template v-if="isChapterRouteInfo(prevTerminalRouteInfo)">

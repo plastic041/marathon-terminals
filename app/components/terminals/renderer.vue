@@ -16,7 +16,7 @@ const lang = computed(() => route.params.lang as "en" | "ko");
       <span> {{ BORDERS[lang][props.type].tl }} </span>
       <span> 0025 08.25.2337 </span>
     </div>
-    <div class="h-[24lh] whitespace-pre-wrap flex border-y border-y-green1">
+    <div class="h-[22lh] whitespace-pre-wrap flex border-y border-y-green1">
       <ScrollArea
         class="min-h-0 grow overflow-y-auto wrap-break-word py-[1lh] break-keep leading-relaxed"
         v-if="props.type === 'reading'"
