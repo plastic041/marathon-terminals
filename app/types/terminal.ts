@@ -1,6 +1,13 @@
-// $B..$b = bold
-// $I..$i = italic
-// $U..$u = underline
+// Inline markup in `text` fields (reconstructed from the binary font-change table,
+// mirroring the M1 source convention in parsed/scripts/extract_terminals.py):
+//   $B..$b = bold        (well-nested, stack-parseable)
+//   $I..$i = italic      (well-nested)
+//   $U..$u = underline   (well-nested)
+//   $Cn    = color, n = 0-7 — a persistent state, not nested (lasts until next $Cn; $C0 = default)
+// Color palette (Aleph One InterfaceColors[], _computer_interface_text_color + n):
+//   $C0 #00FF00 green (default)   $C1 #FFFFFF white        $C2 #FF0000 red
+//   $C3 #009C00 dark green        $C4 #00B0C9 aqua (cyan)  $C5 #FFE700 yellow
+//   $C6 #AF0000 dark red          $C7 #0C00FF blue
 
 /** Root object of terminals.json. */
 export interface TerminalsFile {
@@ -58,6 +65,10 @@ export type ContentGroup =
 
 export interface LogonGroup {
   type: "logon";
+  /** Logon-screen PICT resource id (varies per terminal: 1600, 1601, …), or null. */
+  pict: number | null;
+  /** Path to the extracted logon PICT image (relative to parsed_m2/), or null. */
+  image: string | null;
   /** Raw text with inline markup preserved. */
   text: string;
 }
@@ -81,6 +92,8 @@ export interface BriefingGroup {
   type: "briefing";
   /** PICT resource id shown alongside the briefing text. */
   pict: number | null;
+  /** Path to the extracted PICT image (relative to parsed_m2/), or null. */
+  image: string | null;
   text: string;
 }
 

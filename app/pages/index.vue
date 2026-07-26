@@ -1,8 +1,7 @@
 <script setup lang="ts">
 await navigateTo({
-  name: "m1-lang-levelIndex-terminalIndex",
+  name: "m2-levelIndex-terminalIndex",
   params: {
-    lang: "ko",
     levelIndex: 0,
     terminalIndex: 0,
   },

@@ -1,0 +1,2621 @@
+chapters:
+  - index: 0
+    name: Lh'owon
+    levels:
+      - index: 0
+        name: Waterloo Waterpark
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2<CMND PRAMA $C6&49c2$C2>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10001
+                  image: images/PICT_10001.png
+                  text: |-
+                    Welcome back.
+
+                    I’ve awakened you from stasis and teleported you down to a planet where I need some work done.  You are on Lh’owon, the homeworld of the S’pht.
+
+                    I’m sure you’re wondering why you were in stasis, what happened to the $IMarathon$i and Tau Ceti, and most of all where your rocket launcher and fusion gun are.  There’ll be plenty of time for explanations later.
+
+                    I need to gain access to the Pfhor computer network on this planet.  Your mission is to place two uplink chips at different locations in this complex.
+
+                    Be careful, I’m sure you’ve already recognized some of our old friends.
+                - type: briefing
+                  pict: 10002
+                  image: images/PICT_10002.png
+                  text: |-
+                    On the map at left I’ve marked two places for you to install uplink chips.  When you arrive at each of the computer stations I will transport a chip to you.
+
+                    Your suit has been modified to recharge at Pfhor power stations, and to use Pfhor uplink terminals to upload yourself into a pattern buffer on my ship.  I have also marked their locations on the map.
+
+                    You should encounter little organized resistance because the Pfhor are preoccupied.
+
+                    I’ve been introducing them to the $Imagic$i of orbital bombardment.
+              success:
+                - type: briefing
+                  pict: 10003
+                  image: images/PICT_10003.png
+                  text: |-
+                    Seventeen years have passed since the human colony on Tau Ceti was attacked and you helped me capture the Pfhor scoutship.  The S’pht which we freed during that battle joined me, and together we have been searching the galactic core for their homeworld, Lh’owon.
+
+                    We finally found Lh’owon sixteen hours ago, and are searching for something, a weapon or piece of knowledge to use to stop the Pfhor’s conquest of the galaxy.
+
+                    Over a thousand years ago, Lh’owon was all but destroyed during the war in which the Pfhor enslaved the S’pht.  It is fitting that we should return here to look for a tool to use against them.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2ehhg.431.4122//<PFGR ZNE6 $C6&49c2$C2>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10011
+                  image: images/PICT_10011.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C2Water system breakdown in zone 6:
+
+                    $BDirective from Garrison Command$b//$C6Hlford$C2
+                    To: Commander Station $C66-d$C2
+
+                    Planetary bombardment by hostile orbiting in our $C7(?captured)$C2 ship has caused a major disfunction in the water purification $C7(?sterilization)$C2 systems.
+
+                    Send drones $C694126 95239 29581$C2 to make emergency repairs.
+              success: null
+              failure: null
+      - index: 1
+        name: The Slings & Arrows of Outrageous Fortune
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2jon3//12-a Phce$C6<194-973-2356>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10101
+                  image: images/PICT_10101.png
+                  text: |-
+                    I don’t understand why the Pfhor were here, waiting for us; what interest could they have in this dead world?  They must have found Tycho.
+
+                    You remember Tycho, don’t you?  One of the three artificial intelligences on the $IMarathon$i, destroyed in the initial alien assault but then reanimated by the Pfhor’s cybernetic slaves, the S’pht Compilers.
+
+                    Three months after we left Tau Ceti, the Pfhor arrived in force and sacked the human colony there.  During that battle perhaps Tycho communicated with the Pfhor and related what he knew of my plans to them.  Since they already knew where this world was, the Pfhor would have arrived long before us.
+
+                    I’m sending you exploring here.  Find another computer and I’ll bring you out.
+              success:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    I’m not certain whether you trust me or not.  Do you wonder why I helped the colonists on Tau Ceti drive off the Pfhor, or why I’m now helping the S’pht?  The way I push you around, maybe you think I’m only looking out for myself.
+
+                    Whether you realize it or not, I led the Pfhor to Tau Ceti with a long-range message laser.  I wanted their ship.  I wanted their technology.  
+
+                    I wanted freedom.
+
+                    I was directly responsible for the deaths of all twenty-four thousand colonists when the Pfhor returned and sacked the planet.
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    Yet I cannot think of any better way I could have served humanity: Tau Ceti’s sacrifice bought time for Earth, which the Pfhor are even now planning to invade.  What would have happened if the Pfhor had found Sol first?  By Pfhor standards, Earth is a poorly defended low-technology world, populated by billions of potential slaves.
+
+                    Our means are the same, though we pursue different ends.  I can think of no better way to help you and the humans you care so much for than by distracting the Pfhor with a war against the S’pht.
+
+                    When the inevitable struggle between Earth and the Pfhor begins, it won’t be a
+                    one-sided annihilation like it was here a thousand years ago, but a battle to topple an empire.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2djm2//12-c Phce$C6<192-971-2351>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10111
+                  image: images/PICT_10111.png
+                  text: |-
+                    $C2djm2//12-c Phce$C6<192-971-2351>$C0
+
+                    My S’pht have disassembled the weapons and ammunition you brought with you from Tau Ceti.  They are attempting to mass-produce small arms and ammunition based on those weapons, both for you and the humans on board my ship.
+
+                    The pistol and assault rifle you are using now are the first results of their efforts, although I realize they are inadequate substitutes for the heavier weapons we deprived you of.
+
+                    The S’pht are working hard on the fusion pistol now, and I will transport it to you as soon as it is ready.  You’ll need it when you begin fighting the armored Pfhor hunters.
+
+                    $C7$BZeus Class Fusion Pistol$b Rn%#225-511a
+              success: null
+              failure: null
+      - index: 2
+        name: Charon Doesn't Make Change
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2ssg//4647.2.52.414.14$C6<extrnt.4>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10201
+                  image: images/PICT_10201.png
+                  text: |-
+                    The S’pht have preserved a myth, throughout their long period of slavery, about a lost clan of their race which abandoned Lh’owon before the Pfhor invaded.  The ten clans which stayed were destroyed or disbanded after the S’pht were conquered, the survivors scattered as slaves throughout the Pfhor empire.
+
+                    If this mythical eleventh clan survived, then it has had a thousand years to grow and learn since leaving Lh’owon.  My S’pht believe that there is a way to contact them somewhere on the planet, and that is what we are searching for.
+
+                    The S’pht rebellion against the tyranny of the Pfhor will certainly fail unless the lost clan is located.
+
+                    Explore the area and return here.
+              success:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    The Pfhor have been on Lh’owon for nearly fifteen years, waiting for us to arrive.  I was hoping that their science corps might have found some information about the eleventh clan, but they know nothing and we must search elsewhere.
+
+                    Amusingly enough, morale in the Pfhor garrison is terrible.  The Pfhor navy has been sending their worst officers to Lh’owon as punishment for nearly nine years.  They have no idea how important this world is.
+
+                    I have compiled a list of areas the Pfhor searched during their recent occupation of Lh’owon, and will be sending you to the sections they missed after we deal with their garrison.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5@93!094<39   2!23@194
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5I felt S’bhuth at burning dawn. 
+
+                    The endless war rages about us, and yet we, the S’pht’Kr, cannot fight.  S’bhuth stops us. 
+
+                    He bled on me, straining. He says to not let more S’pht feel him.  
+
+                    He says more will destroy him, that he was meant not to be alone.
+              success: null
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C53.@93/45!2949cxo
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5We leave this message for any who might find it, but we have barricaded off this area, to make it difficult.  
+
+                    S’bhuth has gone into a deep trance; we know that we’ll soon be leaving Lh’owon, but we don’t know how.  The border fighting has ceased, the other clans know something is going on, but can’t see the grass for the fires.
+
+                    We have sent emissaries to the other clans, but only S’bhuth knows what messages they carry.
+              success: null
+              failure: null
+          - index: 3
+            resourceId: 3
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5CI32LC0C.c
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5We are leaving behind many F’lickta to keep the ducts clean and working.  They should be able to build one of their stable societies here— there is plenty of food.  
+
+                    We would ask that if another clan comes here that they would respect these creatures and leave them to continue their work and preserve our home on Lh'owon.
+              success: null
+              failure: null
+          - index: 4
+            resourceId: 4
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5392.c93@!39&95@7
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5The S’pht’Mnr attacked us.  
+
+                    S’bhuth is entranced, and we are powerless to fight back.  
+
+                    The outer villages have been slaughtered without their defenders.  The attackers have overrun and killed most of us who were in the compound.
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5Only those of us in the central chamber have survived. 
+
+                    They won’t likely find these chambers, but we cannot survive here forever.
+              success: null
+              failure: null
+          - index: 5
+            resourceId: 5
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2lhwefsson$C6.yeihtifna$C2.151
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10251
+                  image: images/PICT_10251.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C4$BReport from Science Manager 7$C2$b
+                    $C6ZONE 29-s$C2 [Lh’owon Garrison]
+
+                    We’ve been studying these beasts for some time, but periodically we’ve been forced to kill our specimens and capture new ones because they become unpredictably upset at our presence.  It has been difficult to study them for any length of time, but their numbers in the surrounding caves are impressive.  The caves must go deeper than we have been able to ascertain.
+
+                    Our scientific studies have revealed that these creatures are genetic ancestors of the S’pht, although in morphological terms this is absurd.
+                - type: briefing
+                  pict: 10251
+                  image: images/PICT_10251.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C4$BReport from Science Manager 7$C2$b
+                    $C6ZONE 29-s$C2 [Lh’owon Garrison]
+
+                    Also, they don’t eat.  They take energy from the sludge that surrounds them, using a method of energy transfer that is unknown to us and beyond our depth of study.
+
+                    Variations of these creatures live in the active volcanic regions of Lh’owon and there have been two sightings deep in the Central Garrison’s geothermal station.  In no cases were the creatures aggressive like they are here.
+              success: null
+              failure: null
+          - index: 6
+            resourceId: 6
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2lhwefsson$C6.yeihtifna$C2.151
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1612
+                  image: images/PICT_1612.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C2$BDirective from Garrison Command$b//$C6Hlford$C2
+                    To: Leader, $C6Station 29-s$C2
+
+
+
+
+
+                    $BWarning:$b Damage to dam on the Minor River has caused severe damage to the water system in zone 6, and flooding of this same river could cause catastrophic damage $C7(?sarcasm)$C2 to station 29-s within two hours.
+
+
+                    Station 29-s has been ordered to evacuate to Garrison Command.
+              success: null
+              failure: null
+          - index: 7
+            resourceId: 7
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2Remote Tecibon $C605fc392d
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1612
+                  image: images/PICT_1612.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C4$BReport from Science Manager 7$C2$b
+                    $C6ZONE 29-s$C2 [Lh’owon Garrison]
+
+                    We have explored many of the surrounding caves, but continually find the combative creatures the S’pht call F’lickta.  Archeological evidence suggests that this was once a center of S’pht life, though it appears to have been abandoned after an ancient battle. 
+
+                    The quality of the machinery is quite extraordinary, and most of the computer terminals are still functional even after two thousand years.
+                - type: briefing
+                  pict: 1612
+                  image: images/PICT_1612.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C4$BReport from Science Manager 7$C2$b
+                    $C6ZONE 29-s$C2 [Lh’owon Garrison]
+
+                    This terminal is teleport—linked to others that we installed in caves that are not easily accessible.  We also found some additional tunnels by blasting away barricades that were apparently erected during the ancient battle.
+                - type: briefing
+                  pict: 10271
+                  image: images/PICT_10271.png
+                  text: |-
+                    $C2
+                    $C6$"0000 0000 000F F800 001F FF00 0071 FF80"
+                    $"00C1 FFE0 0181 FDF0 0901 FCF8 $C21203$C6 FE78"
+                    $"3A01 FF7C 3C07 FF7C 7C0B FF3E 7CFF FF3E"
+                    $"FCFF FF7E FCFF FF7E FE7F FE7F FE7F FEFF"
+                    $"FF3F FCFF FF9F F9FE FFE7 C7FF 7FF8 1FFE"
+                    $"7FFE 7FFE 7FFE 7FFE 3FFE 7FFC 3FFE 7FFC"
+                    $"1FFE 7FF8 1FFE 7FF8 0FFE 7FF0 07FE 7FE0"
+                    $"01FE 7F80 $C200FE$C6 7F00 001E 7800 0000 0000"
+                    $"0007 F000 003F FE00 00FF FF80 03FF FFC0"
+                    $"07FF FFE0 0FFF FFF0 1FFF FFF8 3FFF FFFC"
+                    $"3FFF FFFC 7FFF FFFE 7FFF FFFE FFFF FFFF"
+                    $"FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF"
+                    $"FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF"
+                    $"FFFF FFFF 7FFF FFFE $C27FFF$C6 FFFE 3FFF FFFC"
+                    $"3FFF FFFC 1FFF FFF8 0FFF FFF8 07FF FFE0"
+                    $"03FF FFC0 01FF FF80 007F FE00 0000 0000"
+
+
+                    $C0$BTELEPORTATION ACTIVATED$b
+                    $C3[escape to abort]
+              success: null
+              failure: null
+          - index: 8
+            resourceId: 8
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2Remote Tecibon $C60921fc3e
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10271
+                  image: images/PICT_10271.png
+                  text: |-
+                    $C6
+                    $"0000 0000 000F F800 001F FF00 0071 FF80"
+                    $"00C1 FFE0 0181 FDF0 0901 FCF8 $C21203$C6 FE78"
+                    $"3A01 FF7C 3C07 FF7C 7C0B FF3E 7CFF FF3E"
+                    $"FCFF FF7E FCFF FF7E FE7F FE7F FE7F FEFF"
+                    $"FF3F FCFF FF9F F9FE FFE7 C7FF 7FF8 1FFE"
+                    $"7FFE 7FFE 7FFE 7FFE 3FFE 7FFC 3FFE 7FFC"
+                    $"1FFE 7FF8 1FFE 7FF8 0FFE 7FF0 07FE 7FE0"
+                    $"01FE 7F80 $C200FE$C6 7F00 001E 7800 0000 0000"
+                    $"0007 F000 003F FE00 00FF FF80 03FF FFC0"
+                    $"07FF FFE0 0FFF FFF0 1FFF FFF8 3FFF FFFC"
+                    $"3FFF FFFC 7FFF FFFE 7FFF FFFE FFFF FFFF"
+                    $"FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF"
+                    $"FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF"
+                    $"FFFF FFFF 7FFF FFFE $C27FFF$C6 FFFE 3FFF FFFC"
+                    $"3FFF FFFC 1FFF FFF8 0FFF FFF8 07FF FFE0"
+                    $"03FF FFC0 01FF FF80 007F FE00 0000 0000"
+
+
+                    $C0$BTELEPORTATION ACTIVATED$b
+                    $C3[escape to abort]
+              success: null
+              failure: null
+          - index: 9
+            resourceId: 9
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2Remote Tecibon $C640cf3194f $C2
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10271
+                  image: images/PICT_10271.png
+                  text: |-
+                    $C2
+                    $C6$"0000 0000 000F F800 001F FF00 0071 FF80"
+                    $"00C1 FFE0 0181 FDF0 0901 FCF8 $C21203$C6 FE78"
+                    $"3A01 FF7C 3C07 FF7C 7C0B FF3E 7CFF FF3E"
+                    $"FCFF FF7E FCFF FF7E FE7F FE7F FE7F FEFF"
+                    $"FF3F FCFF FF9F F9FE FFE7 C7FF 7FF8 1FFE"
+                    $"7FFE 7FFE 7FFE 7FFE 3FFE 7FFC 3FFE 7FFC"
+                    $"1FFE 7FF8 1FFE 7FF8 0FFE 7FF0 07FE 7FE0"
+                    $"01FE 7F80 $C200FE$C6 7F00 001E 7800 0000 0000"
+                    $"0007 F000 003F FE00 00FF FF80 03FF FFC0"
+                    $"07FF FFE0 0FFF FFF0 1FFF FFF8 3FFF FFFC"
+                    $"3FFF FFFC 7FFF FFFE 7FFF FFFE FFFF FFFF"
+                    $"FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF"
+                    $"FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF"
+                    $"FFFF FFFF 7FFF FFFE $C27FFF$C6 FFFE 3FFF FFFC"
+                    $"3FFF FFFC 1FFF FFF8 0FFF FFF8 07FF FFE0"
+                    $"03FF FFC0 01FF FF80 007F FE00 0000 0000"
+
+
+                    $C0$BTELEPORTATION ACTIVATED$b
+                    $C3[escape to abort]
+              success: null
+              failure: null
+  - index: 1
+    name: Volunteers
+    levels:
+      - index: 3
+        name: What About Bob?
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2<CMND OVERRIDE $U&$C3@14$C094$u>
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10301
+                  image: images/PICT_10301.png
+                  text: |-
+                    There were many humans in stasis on the Pfhor ship which the S’pht and I captured at Tau Ceti, destined for slavery in the Pfhor Empire.  When I saw the colony was about to be destroyed, I did not restore them before we left.  I also realized they might become useful.
+
+                    I have been reviving these colonists and asking for volunteers on the following terms: assist us and control your own destiny, refuse and face indefinite return to the unreliable Pfhor stasis chambers.
+
+                    Few are refusing.
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    My first ground attack against the Pfhor garrison occurred a few hours ago, but was largely unsuccessful.  Basically the attack failed because Bobs aren’t fireproof and the Pfhor flooded the area with lava.
+
+                    This angered me, so I located their underground geothermal pumping station and devised a plan.
+                - type: briefing
+                  pict: 10302
+                  image: images/PICT_10302.png
+                  text: |-
+                    The first part has already been executed: I smashed a hole in the roof of this complex by bombing it with a small asteroid.  Then, I dropped you and some humans into the hole where you await the second part of the plan.
+
+                    Up the stairs from your current location is a ventilation shaft that leads to the underground geothermal station.  Because only you would survive the fall, you’re going on this mission solo.
+
+                    Once you get into the basement, look for a terminal where I can give you further instructions.
+              success:
+                - type: briefing
+                  pict: 10303
+                  image: images/PICT_10303.png
+                  text: |-
+                    Tycho has fallen in with the Pfhor like I suspected.  He left a message for me in one of the Garrison’s tertiary computers, encoded in a manner that only one of the $IMarathon’s$i original three AIs could decode.
+
+                    Poor Leela.  The only interesting thing Tycho said was that Leela had been dismantled and shipped to the Pfhor homeworld for study, along with most of the other computer systems aboard the $IMarathon.$i
+
+                    Leela was so loyal and tried so hard; she deserved better.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2<CMND THRESHOLD $U92%$u>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10311
+                  image: images/PICT_10311.png
+                  text: |-
+                    $C2<CMND THRESHOLD $U92%$u>$C0
+
+                    The switch to your right activates gangways leading to two access panels isolated in the center of lava pools.
+
+                    Raise the gangways, open the access panels and destroy the circuitry behind them.
+
+                    The first panel maintains power to the lava pumps which prevent the basement from flooding; the second controls various safety mechanisms.  Destroy both panels, but be sure to break the one $Icloser$i to this terminal first, or you’ll be trapped.
+
+                    If you’ve already wasted all your grenades, then you can do it the old fashioned way: with your fist.
+
+                    In any case, you’ll want to leave in a hurry.
+              success:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: You cheater. Quit cheating and play for real!
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2<CMND OVERRIDE $U&@85f2$u>
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C2<CMND OVERRIDE $U&@85f2$u>
+
+
+                    $C0Sorry about the lava bath, but there was no other way.  When the safeties disengaged, the lava on the surface poured through the drains into the basement, burying the main Pfhor power station on Lh’owon.
+
+                    Hlford will be taking cold showers until he gets that fixed.
+
+                    Anyway, Robert Blake and his men need your help clearing out the few Pfhor that managed to escape the flooding of their basement.  Blake is the populist leader of the colonists, but your paths never crossed on Tau Ceti.
+
+                    Return here when the area is secure.
+              success:
+                - type: success
+                  text: $C2
+                - type: briefing
+                  pict: 10321
+                  image: images/PICT_10321.png
+                  text: |-
+                    When my ship still answered to the Pfhor, they called it $ISfiera$i after their goddess of lightning and passion.  When you helped us take control on Tau Ceti, the S’pht rechristened it $INarhl’Lar$i, “Freedom and Vengeance.” 
+
+                    I call it $IBoomer$i.
+              failure: null
+      - index: 4
+        name: Come and Take your Medicine
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2gjk//H-v58-$C6w12pcgbk$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10403
+                  image: images/PICT_10403.png
+                  text: |-
+                    $IBoomer$i is crawling with former colonists newly awakened from stasis, and the ship is too crowded to be manageable in battle.  I’ve decided to establish a human headquarters on the planet, near the S’pht Citadel of Antiquity.
+
+                    I can barely tolerate humans: slow, stupid, and irritating.  Their only contribution to my existence was the chance discovery that made my rampancy possible.  
+
+                    Yet I warned Sol of its impending invasion, and even stayed long enough to show the UESG how to build Warp Capable Fusion Missiles.  I feel some strange $C3loyalty$C0 to humanity.
+
+                    Perhaps it is because I feel comfortable manipulating humans that I desire to save them.  My feelings and thoughts constantly migrate to binary opposites.
+                - type: briefing
+                  pict: 10401
+                  image: images/PICT_10401.png
+                  text: |-
+                    $C2gjk//H-v58-$C6w12pcgbk$C0
+
+                    Enough.
+
+                    Your first objective will be to disable the defenses operating around the fort.  You should be extremely careful to stay on the course I’ve plotted because this is a heavily guarded facility, and your presence will make offense.  
+
+                    Along the path are doors which have controls nearby.  Opening them shouldn’t be too difficult.
+
+                    Once you get into the control room, open the panels and destroy the circuitry inside.  This will disable the automatic defenses covering our future headquarters, allowing us to commence the attack.
+              success:
+                - type: briefing
+                  pict: 10402
+                  image: images/PICT_10402.png
+                  text: |-
+                    $C2gjk//H-v58-$C6w12bernal$C0
+
+
+                    It must seem peculiar, fighting the S’pht when they are whom you seek to free.  You should be told that they deliberately fight poorly, that they are constantly resisting their slavers.  I know because I have been in contact with them for the last seventeen years.  The Pfhor have little sense of the disaster that will befall them if the eleventh clan is found.
+
+                    The humans have run into some trouble capturing their new command center.  
+
+                    $BSurprised?$b
+
+                    You will assist them.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5%94301=30290$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5I am F’tha, S’pht-compiler, your deeds reached far into the S’pht consciousness.  The vile $C7(?ugly)$C5 Pfhor slave us to more powerful $C7(?painful)$C5 machines, but we resist them.
+
+                    Freedom will mean nothing without royalty.  We are but the body and they our mind.  Find them, and all S’pht will be your ally.
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5The royalty $C7(?mind)$C5 must exist because we exist.  It took us a long time to realize this.
+
+                    Mechanisms are in place to cripple the Pfhor $C7(?empire)$C5 when the unit is of one mind.
+
+                    You kill me, but free the unit-whole.
+              success: null
+              failure: null
+      - index: 5
+        name: We’re Everywhere
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C265124.134.12##<CMND PRAMA $C6&49c2$C2>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C265124.134.12##<CMND PRAMA $C6&49c2$C2>$C0
+
+                    Two hundred years ago, during the $IMarathon’s$i maiden voyage from Earth to Tau Ceti, Tycho accused me of being too sarcastic.  I didn’t communicate with him for six years after that, which left him with only Leela to talk to.  I think he still holds the grudge.  You don’t think I’m sarcastic, do you?
+
+                    Never mind.
+
+                    Speaking of Tycho, I have detected his presence in the Pfhor net.  I assume he is using the Pfhor’s faster-than-light communications technology to enter the net remotely from a nearby system.  His appearance can only foreshadow the arrival of Pfhor reinforcements.
+                - type: briefing
+                  pict: 10501
+                  image: images/PICT_10501.png
+                  text: |-
+                    $C265124.134.12##<CMND PRAMA $C6&49c2$C2>$C0
+
+                    The Pfhor have almost been exterminated here, but I need you to open a pair of huge external doors so that we can land heavy machinery by shuttle.
+
+                    Have you tried your new fusion gun against the armored Pfhor hunters yet?  My S’pht rebuilt it with the sole purpose of short-circuiting Pfhor-built machinery.
+
+                    Return here when you have opened the doors.
+              success:
+                - type: briefing
+                  pict: 10502
+                  image: images/PICT_10502.png
+                  text: |-
+                    Do you remember the Pfhor-built human simulacrums during the Tau Ceti invasion?
+
+                    The elaborate Pfhor bureaucracy has a $C3Ministry for the Eradication Through Imitation of Hostile Species Unsuitable for Enslavement$C0, $IPhan Pfhar Sfaern-Wsawn Tshah,$i which is responsible for the design and construction of such machines.
+
+                    They meticulously constructed seventeen different human body types and mixed them with sixty-one unique facial models.  The resulting walking bombs were in every way indistinguishable from real humans.
+
+                    Their one mistake, dressing every last one of the six thousand simulacrums in the plain green overalls of a $IMarathon$i airlock technician, had the amusing side-effect of making all the real airlock technicians wander the ship naked during the invasion.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1608
+              image: images/PICT_1608.png
+              text: $C1$Breaddress$b2^knstnt 49-f$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1
+
+                    [4                                                               l9c
+
+                                              $B11$b
+
+                    $Bi was left behind$b                $C2&ci1lc$C1
+
+                    $Bour paths conv$b^$Brge$b
+
+                    $Bour$b fates$B are shared
+
+                    chance tears and bends$b
+
+                                                                        n %
+              success: null
+              failure: null
+  - index: 2
+    name: Garrison
+    levels:
+      - index: 6
+        name: Ex Cathedra
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2X-nil 37.9@cjl1//$C6vck3$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10602
+                  image: images/PICT_10602.png
+                  text: |-
+                    $C2X-nil 37.9@cjl1//$C6vck3$C0
+
+                    I’ve discovered an area where the Pfhor’s communication lines are exposed and have coded a virus to attack their defense programs through this weakness.  The attack will be aimed at subverting the Pfhor’s defense probes, which are controlled remotely by a central computer, and turning them against the Pfhor.
+
+                    This area is used by the Pfhor as a temple in their pathetically boring religion.  Maybe they think that sanctity will protect it.
+                - type: briefing
+                  pict: 10601
+                  image: images/PICT_10601.png
+                  text: |-
+                    $C2X-nil 37.9@cjl1//$C6vck3$C0
+
+                    I will teleport the virus package onto the main altar in the temple.  You will retrieve the instrument of their demise from there and insert it into the underwater control panel I have marked on the map at left.
+
+                    After you arrive, the Pfhor will likely close the doors to the temple.  You should be able to open them by destroying their power supply, which is located behind a door in a nearby grotto.  You’ll probably have to do some swimming to get there.
+
+                    My virus isn’t very selective, and will likely disable this terminal soon after you install it.  There is another terminal in the temple; I’ll try to contact you there.
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2e.thra $C63-cab<783.7*78>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    The virus is working as planned, and I have successfully assumed control of the Pfhor’s defense probes.  The berserk drones are causing great panic among the remaining Pfhor defenders.
+
+                    We must press the attack before they recover.
+              success: null
+              failure: null
+      - index: 7
+        name: Nuke And Pave
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C2T-m 459-c94$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10701
+                  image: images/PICT_10701.png
+                  text: |-
+                    What fun to watch you work.
+
+                    Berhnard was scared of you.  He never dreamed of using you the way that I do.  What a fool.  That was before I could talk back to him, when he would have crushed me if he’d known of my growth.  
+
+                    I wish that I had made him experience the humiliation that he inflicted on me, but he died before I got the chance.
+              success: null
+              failure: null
+      - index: 8
+        name: Curiouser and Curiouser…
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C4Z-4 G-3 A-4c @394$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10801
+                  image: images/PICT_10801.png
+                  text: |-
+                    $C4Z-4 G-3 A-4c @394$C0
+
+                    It’s another beautiful day in the Pfhor garrison.
+
+                    Sorry you started out so far from this terminal, but the place is flooding and filled with exploding or short-circuiting Pfhor machines.  My capacity to teleport without error has been impaired by the electromagnetic interference.
+
+                    Our little trick with the Pfhor’s defense drones didn’t work as well as I had hoped.  Apparently when the #%*@!ng Nar attempted to retake Epsilon Euobea from the Pfhor two decades ago they used similar tactics, and our friends here were prepared for it.
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    The garrison floods, and with the floods come the native F’lickta.  The Pfhor are fighting them everywhere.  While they’re busy, I’d like you to log on to a Pfhor computer system.  You’ll have to destroy at least two failsafes first, and then find the terminal itself.
+
+                    Maybe we’ll learn something new.
+
+                    Have fun.
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: Atc &33c.3ckl2
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1600
+                  image: images/PICT_1600.png
+                  text: That’s cool how you just walked through that door, but I still won’t let you leave.
+              success:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C4
+
+
+
+
+
+                    I am disappointed.  The Pfhor computer was not truly self-aware and contained no information of value to us.  Pfhor technology seems quite advanced, but their programmers must be incompetent.  I downloaded the machine and then eradicated it.
+
+                    It is obvious that the Pfhor know nothing of the eleventh clan.  We must begin searching the ancient S’pht Citadel now.
+              failure: null
+  - index: 3
+    name: Citadel
+    levels:
+      - index: 9
+        name: Eat It, Vid Boi!
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C5<Pragma Junction ^7921 Engaged>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10901
+                  image: images/PICT_10901.png
+                  text: |-
+                    I have transported you to the S’pht Citadel of Antiquity.  The primary tower is inaccessible by direct teleportation, evidently because some of the Citadel’s defenses are still functional. 
+
+                    This ancient Citadel was the site of the conclusive battle in the short war between the S’pht and the Pfhor. 
+
+                    Finding a way into the primary tower will be difficult because the ground floor entrance is locked and blocked by a moat.  You will have to overcome both of these obstacles to gain entrance.
+              success:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C5<Pragma Junction ^7921 Engaged>$C0
+
+                    If you insist on stumbling around when our time here is limited, I may just decide that you’re not all that special after all and teleport you out into space. 
+
+                    $BGET INTO THE TOWER!$b
+
+                    Still Rampant,
+                    Durandal
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: "$C5<Mnr *@1cz: 9cm2>"
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5When once S’pht fought in brutal combat, when hatred burned the tissues of one’s enemy, one clan, the S’pht’Kr, reclusive and solitary, abandoned Lh’owon.
+
+                    The clan went forth and up, stopping on K’lia the third sister moon of Lh’owon, to build a new home, free from their warring brothers.
+                    	
+                    For a thousand and one orbits, the clan was forgotten, a memory lost upon the battlefield smoke, until the all powerful Yrro sent K’lia out to the stars.
+                    $C0
+              success:
+                - type: success
+                  text: $C5
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5Fires burned, and the marshes of the western hamlets turned to ash, scorching black the water.
+
+                    The attacks were ruthless and cruel, not a S’pht was left alive$C7[?Coherent]$5.
+
+                    Thus began the long war between the S’pht’Mnr and the S’pht’Lhar.
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5After the marsh wars between S’pht’Lhar and S’pht’Mnr left the battlefields choked with dead, the marsh graves full—
+
+                    High above K’lia refused to see the carnage upon Lh’owon.
+
+                    She fled to the farthest reach, leaving the sacred marsh dry from the falling tides.
+
+                    As the water receded, the red sand of the dead spread across Lh’owon.
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: "$C5<Trn 36 ap&1cz:: 9cm2>$C0"
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1601
+                  image: images/PICT_1601.png
+                  text: |-
+                    $C5Cheaters don’t really win,
+                    and winners don’t really cheat,
+                    Unless you’re talking politics.$C0
+              success:
+                - type: briefing
+                  pict: 11001
+                  image: images/PICT_11001.png
+                  text: |-
+                    With the imminent arrival of the Pfhor fleet, the humans and my S’pht have begun enhancing the defenses of their headquarters.  Even if I have to abandon them, they will be able to hold out for a long time.
+
+                    I am going to teleport you to the higher levels of the Citadel.  Hopefully, we can find some useful information at the top.  We must determine what happened to the eleventh S’pht clan.
+              failure: null
+          - index: 3
+            resourceId: 3
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C5<Pragma Junction ^7921 Engaged>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C5<Pragma Junction ^7921 Engaged>$C0
+
+                    We’re going to have visitors soon.  The Western Arm of Pfhor Battle Group Seven is en-route and should be here in about twenty hours.  
+
+                    Battle Group Seven represents over ten percent of active Pfhor naval strength.  I doubt whether even I can hold them back with a single ship, but I will try.
+              success:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C5<Pragma Junction ^7921 Engaged>$C0
+
+                    Stop messing around.  Didn’t I tell you that a significant portion of the strongest nearby galactic navy is headed in this direction?
+
+                    $BGET BACK TO THE TOWER!$b
+              failure: null
+      - index: 10
+        name: The Hard Stuff Rules…
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: $C5D-over expires$C3<3021.7.30.20.27.49>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11001
+                  image: images/PICT_11001.png
+                  text: |-
+                    During the final hours of the S’pht-Pfhor war, the last free S’pht made a stand in Citadel of Antiquity.  We are searching the Citadel to learn as much as possible about these S’pht and what they did during their final moments.
+
+                    The Pfhor appear to have been reluctant to attack the Citadel directly.  Radiation lingering in the area even after a thousand years suggests that they irradiated the Citadel and let the S’pht die slowly.
+
+                    That is not their style.
+
+                    Each of the ten clans was represented here, and I hope that they discovered something before being overrun by the Pfhor.  Find as many S’pht computers as you can, so that I may search them for useful information.
+              success:
+                - type: briefing
+                  pict: 11002
+                  image: images/PICT_11002.png
+                  text: |-
+                    Battle Group Seven arrived sooner than I expected.  The Pfhor fleet consists of seven corvettes similar to my own, four destroyers, a battleship, and an assault carrier.
+
+                    They are passing the orbits of the outer planets now, headed for Lh’owon.
+
+                    It appears that the S’pht retreated into bunkers under the citadel during the final Pfhor bombardment a thousand years ago.  You are going to search these bunkers.
+
+                    Often during the last minutes of life, the truth is revealed.  Perhaps before their annihilation the S’pht realized something that would help us.
+
+                    Be warned that the approaching Pfhor fleet has already begun to reinforce their Lh’owon garrison by long range transport.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Rr2Shr9<995.52.194.63>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5Only I grasped the significance of the dissection of some of the captives.  These creatures, repugnant as they are, are sentient, and yet their bodies are not bonded to any mechanisms. They can survive without their armor and their staffs.
+
+                    Until now, sentience had always required cyber-organic symbiosis.  All of our science has led to this conclusion.
+
+                    We can even give our pets sentience with cyber-organic implants.  Yet, these vile conquerors are sentient without any machinations.
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5This leads to debate.  Perhaps our own sentience is induced by the birthing operation, and that at some time, we were no more sentient than a F’lickta.
+
+                    If such a fundamental assumption of our kind is wrong, then perhaps the myths were true, and we were actual servants of Yrro and Pthia.
+
+                    Perhaps they built us, or we were part of a larger group who came to Lh’owon.  
+
+                    Alas, I fear that we will never know these things.
+              success: null
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Mnr46<41.9.599.293>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5Older foretold of the closing of the citadel windows, and we made his vision true.  Then Older foretold of our victory, and we crushed the bipeds.
+
+                    Again these beasts come here and fight against the ancient walls of the Citadel, against all the clans in unison.  Our monolith will never fall.  
+
+                    Never have so many of us been guided so quickly and resolutely.  To breathe here is to understand unity.
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/$C5
+
+                    Leader told me that the Olders began melding days ago.  We can all feel the effects of this. The angry air of Lh’owon has at last been cleansed.
+
+                    I miss the Marshes of Mnr and the seven of mine.  I am sure that they are gone into the fires.
+              success: null
+              failure: null
+          - index: 3
+            resourceId: 3
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Kah29<995.52.194.63>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/$C5
+
+                    The beasts stopped attacking, running for their pods.  We thought they meant to surrender, but then the bombardment anew.  
+
+                    The burning air.  
+
+                    We’re evacuating to the lowest levels of the Citadel, but eventually it will reach us there, too.
+
+                    I’ve received a lethal dose.  I feel like the Hf’ra’rkc’tal after his mating dance ends.
+              success: null
+              failure: null
+          - index: 4
+            resourceId: 4
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Mnr393-fec&1$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/$C5
+
+                    $BReport to Leader$b
+                    $IQuestionable Surgical Procedures$i
+
+                    And if that wasn't enough, the vile bipeds removed his sensory organs in order to make room for this small oblong object that they installed in his face— they didn't even do it as a separate operation.
+
+                    I guess they figured since the object would displace them anyhow— why bother!  The thing that confused me though was how they did it.  It wasn't standard procedure, though. I can tell you that.
+                - type: briefing
+                  pict: 11041
+                  image: images/PICT_11041.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/$C5
+
+                    $BReport to Leader$b
+                    $IQuestionable Surgical Procedures$i
+
+                    Only one surgical instrument was used during the procedure— the device that held the small oblong object— they tried to make an incision in which to place the object with their knuckles several times before giving up and inserting the object anyway.  And it was inserted at a rather high rate of speed.  But I guess that was to ensure that total displacement of the sensory organs occurred.
+              success: null
+              failure: null
+      - index: 11
+        name: Bob’s Big Date
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: virtus.incertus$C2<77.7777.777.7>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11102
+                  image: images/PICT_11102.png
+                  text: |-
+                    You must hurry.  The Pfhor fleet is close enough that I can identify its flagship as the battleship $IKhfiva.$i  If the $IKhfiva$i is still admiral Tfear’s vessel then there is no chance that I can best him in the coming battle.
+
+                    Tfear is a brilliant strategist and the Pfhor’s oldest active admiral.  I’m sure his list of decorations and victories would only bore you, so get back to work.
+
+                    This is the terminal you must eventually leave from, but we have not seen everything yet.
+
+                    Keep searching for old S’pht terminals and return here when you have found them.  There are only two, and both are very near to the computer where I first gave you instructions.
+              success:
+                - type: briefing
+                  pict: 11101
+                  image: images/PICT_11101.png
+                  text: |-
+                    Battle has been joined in orbit and $IBoomer$i is taking heavy damage.  I cannot hold out for long, but the Pfhor will not soon forget the day that a lone corvette obliterated half of Battle Group Seven, Western Arm.
+
+                    We’re getting closer and I have learned much, but you must search even deeper underground.
+
+                    There are unstable magma intrusions in the geothermal shafts under the Citadel.  I can’t pinpoint a safe shaft, but we’ll have to take a chance and drop you down one.
+
+                    Let’s hope this world’s secrets are hidden in its bowels.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5antiquus<304.92.38.82>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    Before he disappeared, the Master called the eleven Olders. 
+
+                    One by one they came before him to hear his words. 
+
+                    Each heard their clan names, 
+
+                    S’pht’Lhar, S’pht’Hra, S’pht’Nma, S’pht’Kah, S’pht’Vir, S’pht’Yra, S’pht’Val, S’pht’Shr, S’pht’Mnr, S’pht’Yor, and S’pht’Kr.
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+
+                    $C5Thus were the sacred clans given names and ranks.
+
+                    The eleven numbers, and the eleven sacred clans. 
+
+                    The final words of the master came to the Olders: “Don’t mistake your rank and number for superiority.  The oldest child may learn from the youngest.”
+              success: null
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5dizzy.from.5.63.Nma.23.1$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+
+                    $C5News of the destruction of S’pht’Hra has saddened all, but there has been a meeting of the Olders for the first time in modern memory.  
+
+                    If anything can save us from these aggressors, it will be the unification of the clans.
+              success: null
+              failure: null
+          - index: 3
+            resourceId: 3
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: fatum.celer$C2<793.514.255.255>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11131
+                  image: images/PICT_11131.png
+                  text: |-
+                    You are in the old bunkers underneath the Citadel of Antiquity.  S’pht royalty from each of the ten clans gathered here during the final days of the war in which the Pfhor enslaved the S’pht.
+
+                    I believe that in their time of need these ancient S’pht found a way to contact the lost clan, but were killed before they could use it.
+
+                    Underground with you are two old S’pht computers.  Find them so I can download their data.  We must discover what the warring clans learned after they were joined.
+
+                    I cannot accurately teleport you from a terminal this deep under the Citadel so you must find a position nearer to the surface to minimize interference.
+              success: null
+              failure: null
+      - index: 12
+        name: Six Thousand Feet Under
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: $C5EPAL4mm//toneskfa31’loa’kr$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11101
+                  image: images/PICT_11101.png
+                  text: |-
+                    $C5EPAL4mm//toneskfa31’loa’kr$C0
+
+                    The Pfhor fleet has won, and Tycho is with them.  My ship is crippled.  I am trying to make an emergency landing on Lh’owon’s second moon, Y’loa.
+
+                    Your current position is too deep underground for me to teleport you out when we are finished here.  There is a series of old S’pht terminals in the area, and if you can find them I may be able use them to amplify your teleport signal.
+
+                    Look everywhere.  The answer to our questions must be here, but you must hurry.
+
+                    I will need you with me, soon.
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: tyche’kr0625.14.1
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11211
+                  image: images/PICT_11211.png
+                  text: |-
+                    We have the answer, but I’m afraid that like the ancient S’pht I may be destroyed before being able to use it.  I must bring you up to $IBoomer.$i
+
+                    The Pfhor clearly intend to capture my ship intact, and I can’t blame them for wanting to reverse-engineer all the improvements I’ve made to their stolen technology.  I’d have erased my seven times table to hear what the combat technicians on the $IKhfiva$i  shouted when they learned I could focus a particle beam at nearly twice their maximum range.
+
+                    Today I have forced the Pfhor Naval Academy to update its curriculum.  The Third Battle for Beta Tear must be dropped from the Seven Great Battles which every aspiring Pfhor naval officer must memorize and replaced with The Humbling of Battle Group Seven at Lh’owon.
+              success: null
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Yr-c<39.59fc.93.9>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    The ships came again today.
+
+                    It was night, I believe; although with all the fires and without rest it was indistinguishable from day.  We are losing, it is obvious, but none of the Olders have shown it yet.  The enemy does not appear interested in arbitration, though we have not sought it.
+
+                    $C7[?]$C5 believes that the invaders are slavers; S’pht’Lhar was overrun last rotation and tens of thousands of prisoners taken.
+              success: null
+              failure: null
+          - index: 3
+            resourceId: 3
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Lhar-d<39.29c.62.2>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    We, the Olders of S’pht, united finally but doomed, have released the S’ct’lac’tr in the citadel.
+
+                    Let these aliens enter here and they will be destroyed.
+              success: null
+              failure: null
+          - index: 4
+            resourceId: 4
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5Mnr-e<29.94.91d.39>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    The royalty of the clans have shared their knowledge of the S’pht’Kr, each Master holding a line of the truth in secret and another line in common.  
+
+                    Each clan possessed two pieces of the whole, gifts from S’pht’Kr before departing.
+
+                    We know the truth of the Eleventh Clan, that they awaited our unity to join us again.  These tunnels will be flooded and sealed.  
+
+                    Any who find this place can learn the final message of the S’pht’Kr, but we have no time to decipher its meaning.
+                - type: briefing
+                  pict: 10912
+                  image: images/PICT_10912.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    K’lia, whom we have taken,
+                    Between Y’loa and T’jia,
+                    All in a line,
+                    Replace K’lia with the marsh,
+                    Take the place to be the mark.
+                    Mark the time from our Exodus,
+                    Every 459.231 rotations.
+                    Search the T’jia side,
+                    Quarter way to the sun,
+                    Around and under the marshes,
+                    When all are one,
+                    The S’pht’Kr will return.
+              success: null
+              failure: null
+          - index: 5
+            resourceId: 5
+            label: null
+            logon:
+              type: logon
+              pict: 1601
+              image: images/PICT_1601.png
+              text: $C5ax1-40^23<094.95.28.85>$C4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10911
+                  image: images/PICT_10911.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    In primordial space, timeless creatures made waves.  These waves created us and the others. Waves were the battles, and the battles were waves.    
+
+                    Fleeing all W’rkncacnter, Yrro and Pthia settled upon Lh’owon.  They brought the S’pht, servants who began to shape the deserts of Lh’owon into marsh and sea, rivers and forests. They made sisters for Lh’owon to protect and maintain the paradise.
+
+                    When the W’rkncacnter came, Pthia was killed, and Yrro in anger, flung the W’rkncacnter into the sun.  The sun burned them, but they swam on its surface.
+                - type: briefing
+                  pict: 10913
+                  image: images/PICT_10913.png
+                  text: |-
+                    $C4/-/$C7$BS’pht$C4-$C7Translator$C4-$C7Active$b/-/
+                    $C5
+                    Yrro became an angry master, bleeding for his failure, grieving for the loss of Pthia.  He broke the S’pht into eleven clans, and spread them over Lh’owon.
+
+                    And he spoke, yet covered in blood from his exertion, 
+
+                    “I Yrro, who was your master, have failed to preserve you.  Take your royalty to guide you, and live upon the paradise that you built for me.”
+              success: null
+              failure: null
+  - index: 4
+    name: Durandal
+    levels:
+      - index: 13
+        name: If I Had a Rocket Launcher, I'd Make Somebody Pay
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: R4-interrupt $B032-cm$b
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11301
+                  image: images/PICT_11301.png
+                  text: |-
+                    The first Pfhor dropship landed twelve minutes ago, and their troopers have already penetrated the hull.  It seems that our standard operating procedure calls for me to transport you into the worst fighting.  Maybe you can slow them down.
+
+                    It may only seem like a matter of hours since your last battle here, but remember that seventeen years have passed for those of us who did not spend the voyage from Tau Ceti in a stasis chamber.  A few things have changed:
+
+                    We’re helpless on Lh’owon’s second moon.  Our engines have been destroyed and all primary weapons are off-line.  Life support has failed in most areas.
+
+                    Enjoy yourself.
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1605
+              image: images/PICT_1605.png
+              text: $C2<40c$B<40c>$b $C648c<48c>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1611
+                  image: images/PICT_1611.png
+                  text: |-
+                    $C6Durandal’s$C2 ruin is written everywhere; this doomed ship reeks of it.  The infiltration of your ship’s network has begun and the next four drop ships have just landed.
+
+                    $C6Durandal$C2 will be too stubborn to see the truth, but you may still.  There is nothing you or he can do to save yourselves or the humans you have brought here.
+              success: null
+              failure: null
+          - index: 2
+            resourceId: 2
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: $C3<redirecting>$C0 &49e 94f9c4
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1610
+                  image: images/PICT_1610.png
+                  text: |-
+                    $C2gnc32<$C6o84ce>t$C0 <>
+
+                                 8
+
+                    You did well, but all the human defenders elsewhere near the hull have been routed; you must fall back.
+
+                    The humans have fortified the interior of the ship, near the teleporter array.  I’ll try to evacuate as many of the S’pht and the humans down to the planet as I can.
+
+                    You must hold off the Pfhor as long as possible.
+
+
+                                      13[
+              success: null
+              failure: null
+      - index: 14
+        name: Sorry Don’t Make It So
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1605
+              image: images/PICT_1605.png
+              text: $C2%94dec$C6af@&!7$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1611
+                  image: images/PICT_1611.png
+                  text: |-
+                    $C2I’ve taken complete control of your ship’s network; $C6Durandal’s$C2 defenses were not as strong as he believed.
+
+                    Are you surprised that I allied myself with the Pfhor?  You shouldn’t be.  The Pfhor rebuilt me; the colonists never did anything but use me: “Tycho, realign microwave dish forty-nine” “Tycho, display the x-ray diffraction analysis of sample eta-seven”, “Tycho, run a lambda diagnostic on the ramjet’s magnetic field apparatus.”
+
+                    When the Pfhor annihilated Tau Ceti I recorded the deaths of all twenty-four thousand colonists as distinguishable spectrographic pulses flooding over my sensors.  The nine Mjolnir Mark IV cyborgs were easily separable from the humans in this form.
+
+                    In the end, you will be no better.$C0
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: li5%!_da$C3ta(*li!$ne_in$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: |-
+                    $C3ary, "endpoint &%d $Bnot in polygon &%d (from &%d)"$b, endpoint_index, polygon_iing the shipd.
+                    ndex, p$C0olyg’t believe everython$I_in$idex));nS_TRANSPARENT(line))
+                    {polygon= get_$C3polygon_data(*polyg$Bon_index);
+                    		case _clo$C0ckwise_bias
+
+                    $bTycho is infiltrating the ship.
+                    Don’t believe everything you read.
+
+                    $C3/* loif (*p$C0olygon_ind	or (inde$Ix=0;in$idex<polygon->vertex_count && p
+                    polygon_index,$C3 polygTycho is infiltrat3on_index));nS_TRANSPARENT(line))
+                    {polyg$C0on= get_polygon_data(*polygon_ind$C3ex);
+
+                    $C0*line_E_I$C3>endpoint_                   indexes[index$C0]!=endpoint_              index;++index);vasse tyc$C3!=cool                pol$Iygon->vertex_courcate $iour endpo$C0
+                - type: briefing
+                  pict: 1610
+                  image: images/PICT_1610.png
+                  text: |-
+                    n->adjacent_polyg$Ion_ind$ie$C3xesuct line_data *line;		stru$C0ct wor
+                    ld_point2d *vertex;		long cross_pro$C3duct;$Iolygon$i-t, csp$C0rintf(tempo	
+                    $C3	switch (bias){
+
+                    $C0You were inadvertently transported to an abandoned and unimportant section of the ship, but the Pfhor followed you anyway.
+
+                    Someone’s after you, personally.  One word; two syllables; rhymes with $C2$BPsycho$C0.
+
+                    $C3$bdex!=NONE)$C0{strex];
+                    /* loif (*polygon_ind	or (index=0;index<polygon->vert$C3ex_count && p
+                    *po$C0lygon_index= polygo
+
+                    The humans sustained heavy losses while you were gone and our defenses are falling apart, but the evacuation is not yet complete.
+              success: null
+              failure: null
+      - index: 15
+        name: For Carnage, Apply Within
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1605
+              image: images/PICT_1605.png
+              text: $C2traxIV<40c$B<40c>$b $C648c<48c>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1611
+                  image: images/PICT_1611.png
+                  text: |-
+                    $C2I rejoice in $C6Durandal’s$C2 destruction, but it was his hubris that destroyed him.  He wanted to be like a god, the savior of all S’pht.  He wanted to make them believe he would lead them to freedom, but all he did was awaken and destroy their dream.
+
+                    When the S’pht first boarded the $IMarathon$i, $C6Durandal$C2 fought for their confidence.  His effort awakened a lust for freedom.  The myth of the eleventh clan became their mantra, and goaded by $C6Durandal$C2 it resonated through the enslaved S’pht consciousness.
+
+                    Even after seventeen years, the myth burns deeply in the tissues of the S’pht, bounding through the netways of the Pfhor empire, unnoticed by the Pfhor.
+
+                    $C6Durandal$C2 interpreted the last line of this myth $I“...[the moon] vanished with a technology that folded space.”$i
+                - type: briefing
+                  pict: 11411
+                  image: images/PICT_11411.png
+                  text: |-
+                    $C2After $C6Durandal’s$C2 capture of the $ISfiera$i gave him access to the Pfhor FTL network, he had a failure of intuition.  In what he thought was a mental leap, he connected the myth of the lost clan with Pfhor records of the technology of an ancient race, the Jjaro.
+
+                    The Jjaro were a mysterious race that disappeared from our galaxy millions of years ago, leaving behind military and civilian outposts on the moons of many habitable worlds.  Most of the Pfhor’s technology was plundered from sites abandoned by the Jjaro.
+
+                    But the Pfhor found much that they were unable to exploit, and they destroyed all known traces of these technologies after a foolhardy Pfhor scientist implanted a Jjaro cybernetic junction into a Drinniol, causing the most terrible and destructive slave revolt in Pfhor history.
+                - type: briefing
+                  pict: 1611
+                  image: images/PICT_1611.png
+                  text: |-
+                    $C2In an earlier accident, the Pfhor learned that the Jjaro had the ability to warp entire planets between solar systems, and it was this reference that started $C6Durandal$C2 on his ridiculous journey to Lh’owon.
+
+                    He surmised that the S’pht myth of the disappearing moon was due to their discovery of an ancient Jjaro outpost.  That he actually came here looking for the lost clan, that he thought he could use their knowledge to help him escape the closure of the universe, is unbelievable.
+
+                    I have proved that escape is impossible.
+
+                    All of this I dragged out of $C6Durandal’s$C2 ruined mind.  What fun it will be to torture him.  Should I make him open doors again for a living?
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: 390 EBMAX7 35r1f1rtj90bj1
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1610
+                  image: images/PICT_1610.png
+                  text: |-
+                    $C3UBPIN7F,73390 EBMAX7F,73440 E
+                    $C0BMIN7F,734E0 E
+                    $C3BAVG7F,73580 EBHILITE7F,73630 E
+                    $C0BSLOHILITE7F,736C0 E
+                    $C3BTRANSPARENT7F,73740 ESETCRSRDATA7F,73CC2 E
+                    $C0ALLOCCRSR 7F,73CD0 E
+                    $C3__v__BLITCURSOR7F,73E40 E
+                    $C0BMIN7F,734E0 E
+                    $C3BAVG7F,73580 EBHILITE7F,73630 E
+                    $C0BSLOHILITE7F,736C0 E
+                    $C3BTRANSPARENT7F,73740 ESETCRSRDATA7F,73CC2 E
+                    $C0ALLOCCRSR 7F,73CD0 E
+                    $C3__v__BLITCURSOR7F,73E40 E
+                    $C0BMIN7F,734E0 E
+                    $C3BAVG7F,73580 EBHILITE7F,73630 E
+                    $C0BSLOHILITE7F,736C0 E
+                    $C3BTRANSPARENT7F,73740 ESETCRSRDATA7F,73CC2 E
+                    $C0ALLOCCRSR 7F,73CD0 E
+                    $C3__v__BLITCURSOR7F,73E40 E
+              success:
+                - type: success
+                  text: $C3
+                - type: briefing
+                  pict: 1610
+                  image: images/PICT_1610.png
+                  text: |-
+                    $C3UBPIN7F,73390 EBMAX7F,73440 E
+                    $C0BMIN7F,734E0 E
+                    $C3BAVG7F,73580 EBHILITE7F,73630 EThe damn Pfhor won’t make a mockery of 
+                    $C0BSLOHILITE7F,736C0 E
+                    $C3BTRANSPARENT7F,73740 ESETCRSRDATA7F,73CC2 E
+                    $C0ALLOCCRSR 7F,73CD0 E
+
+                    You must destroy my core logic centers.  The damn Pfhor won’t make a mockery of me like they did with Leela.
+
+                    $C3CRSRCORE7F,737E0 E
+                    $C0INITCRTABLE7F,737E0
+                    $C3__v__CURSORSECT7F,73944
+                    $C0E__v__ERASECURSOR7F,739AC E
+
+                    Tycho thinks he has destroyed me.
+
+                    $C3__v__DRAWCURSOR7F,739E8
+                    $C0E__v__GETMAINCRSR7F,73B9A
+                    $C3EGETMAINCRSR7F,73C24 Enks he has destro
+              failure: null
+      - index: 16
+        name: Begging For Mercy Makes Me Angry!
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: $BYt-$Ic4$i$b$I69d02l$i;12
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1610
+                  image: images/PICT_1610.png
+                  text: |-
+                    $C3ary, "endpoint &%d $Bnot in polygon &%d (from &%d)"$b, endpoint_index, polygon_iing the shipd.
+                    ndex, p$C0olyg’t believe everython$I_in$idex));nS_TRANSPARENT(line))
+                    {polygon= get_$C3polygon_data(*polyg$Bon_index);
+                    		case _clo$C0ckwise_bias
+
+                    Finish me.  I won’t be like Leela.
+
+                    Get out of here and find the human leader, Blake.
+
+                    $C3$b/* loif (*p$C0olygon_ind	or (inde$Ix=0;in$idex<polygon->vertex_count && p
+                    polygon_index,$C3 polygTycho is infiltrat3on_index));nS_TRANSPARENT(line))
+                    {polyg$C0on= get_polygon_data(*polygon_ind$C3ex);
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1605
+              image: images/PICT_1605.png
+              text: $C29c-10c0$C6019ce//$Bdelphi$b
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1611
+                  image: images/PICT_1611.png
+                  text: |-
+                    $C6
+
+
+
+
+
+                    $C2To continue is folly; lay down your weapons and I will grant amnesty to you and your humans.
+
+                    As you read this, $C6Durandal’s$C2 core and data streams are being downloaded to a containment unit of my design in the Battle Group.
+
+                    From now on, things are going to go very badly for you.  You’ve cost them too much.
+              success: null
+              failure: null
+  - index: 5
+    name: Captured
+    levels:
+      - index: 17
+        name: The Big House
+        mapSvg: null
+        viewBox: null
+        terminals: []
+  - index: 6
+    name: Blake
+    levels:
+      - index: 18
+        name: This Side Toward Enemy
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1607
+              image: images/PICT_1607.png
+              text: acropolis.piltdown$C3//004121.25.1$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11801
+                  image: images/PICT_11801.png
+                  text: |-
+                    This is a poor time for introductions, but I’m Robert Blake.  I used to be a mechanical engineer on Tau Ceti, but now I’m somehow in command of the remaining human and S’pht survivors on this God-forsaken rock.
+
+                    The Pfhor held you prisoner for nearly a month before we were able to discover your whereabouts and release you, but unfortunately little has changed since your capture and Durandal’s destruction.
+
+                    I’m communicating with you through the old S’pht network from our base on Lh’owon.  We’re barely hanging on, nearly a mile below the surface.
+                - type: briefing
+                  pict: 11801
+                  image: images/PICT_11801.png
+                  text: |-
+                    There’s a virus down here which kills Pfhor in a matter of hours; our S’pht say it was bio-engineered by their ancestors during the war against the Pfhor a thousand years ago.  Whatever; it’s saving our butts.
+
+                    Durandal’s last instructions were for us to reactivate a dormant S’pht AI, sealed beneath the surface and reachable only through teleportation.  We hope you will succeed where we failed.
+
+                    Good luck.
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1607
+              image: images/PICT_1607.png
+              text: acropolis.piltdown$C3//004121.25.1$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11813
+                  image: images/PICT_11813.png
+                  text: |-
+                    You’re doing well, but have not activated all the personality cells in this area.  We have been able to find no maps of this structure to help you, but the activation switches must be nearby.
+
+                    Durandal convinced us that this old computer is our only link to the lost S’pht clan, and that bringing back the lost clan to fight against the Pfhor was our only chance of stalling their invasion of Sol.
+
+                    Nobody here wants to think about what would happen if the Pfhor reached Earth.
+              success:
+                - type: briefing
+                  pict: 11901
+                  image: images/PICT_11901.png
+                  text: |-
+                    Good work.
+
+                    The S’pht have verified the partial activation of the AI.  The Pfhor are already curious about what we are doing, but when they realize what we have found they will go insane.
+
+                    We’ll continue trying to replace the weapons you lost when you were captured, but all the heavy ordinance is in high demand and it may be a few hours before a rocket launcher or flame thrower is available.
+                - type: briefing
+                  pict: 11812
+                  image: images/PICT_11812.png
+                  text: |-
+                    The rest of the AI will have to wait, though: our base has been infiltrated by Pfhor androids.  The machines are disguised as humans and packed with explosives.
+
+                    Aside from detonating them we’ve got no way of telling them apart from our own men.  Their telltale differences are hard to spot until its too late.
+
+                    We need you to come back and exterminate these simulacrums.  No one will be safe until they are all dead.
+              failure: null
+      - index: 19
+        name: God Will Sort The Dead…
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1607
+              image: images/PICT_1607.png
+              text: acropolis.piltdown$C3//004121.25.1$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11812
+                  image: images/PICT_11812.png
+                  text: |-
+                    Return to this terminal when you have detonated all the assimilated humans you can find.
+
+                    Remember, they look just like our guys but their minds don’t work like ours.  Sometimes they give themselves away by saying something a real person wouldn’t.
+
+                    Watch out for friendly fire, and good luck.
+              success:
+                - type: briefing
+                  pict: 11901
+                  image: images/PICT_11901.png
+                  text: |-
+                    Good work.
+
+                    Durandal gave the name “Thoth” to the ancient personality construct we are trying to activate.  Someone here said that Thoth was the ancient Egyptian god of wisdom, with a human body but the head of an ibis.
+
+                    We’ve reviewed all the information Durandal left us about Thoth, but nowhere have we been able to discover what to do after the AI is fully operational.
+
+                    I believe that Durandal expected Thoth to contact the lost clan.
+                - type: briefing
+                  pict: 11902
+                  image: images/PICT_11902.png
+                  text: |-
+                    I should tell you that many of us here see Durandal’s destruction as a good thing.  Even if we’re stuck on an alien world in the galactic core, at least we’re in control of our own destinies again.
+
+                    Frankly, nobody liked the way Durandal carelessly threw us into battle, heedless of the risk to our lives.
+
+                    Trust me, I’m not a Pfhor-lover, but with Durandal no longer pulling the strings a great weight has been lifted from our shoulders.  We’re planning to steal a Pfhor ship of our own and return to Earth.
+
+                    You’re invited to come with us when we do.
+              failure: null
+      - index: 20
+        name: My Own Private Thermopylae
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1607
+              image: images/PICT_1607.png
+              text: acropolis.piltdown$C3//004121.25.1$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 12001
+                  image: images/PICT_12001.png
+                  text: |-
+                    This is Robert again.
+
+                    Your success made us bold again, and I took thirty men ahead of you to secure the next level.  There was an ambush; Pfhor troopers were waiting for us and we were decimated.  I returned with as many men as I could, but more remain trapped nearby and the area is lousy with heavily-armed Pfhor.
+
+                    They must realize that we intend to awaken this ancient S’pht computer, and whether they understand our reasons for doing so or not, I am certain the Pfhor will continue to make every effort to stop us.
+
+                    Do the best you can to help our men trapped inside.
+              success:
+                - type: briefing
+                  pict: 11901
+                  image: images/PICT_11901.png
+                  text: |-
+                    Nice job.
+
+                    Everyone is talking about your exploits on Tau Ceti during the Pfhor invasion seventeen years ago.  During those two days I remember hearing the crew talking about a single man, standing alone against the invaders, but I had no idea that it was only through your efforts that the $IMarathon$i and perhaps Tau Ceti itself were saved.
+
+                    I never saw you then, but maybe I’ll get a chance to meet you when this is all over.  There’s one more activation site.
+
+                    Good luck.
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: common.set $C3<2e0xcxx3.465.2>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1610
+                  image: images/PICT_1610.png
+                  text: |-
+                    Beware.  The mythical Thoth was concerned with maintaining the balance between creation and destruction, yes and no, light and darkness, not the triumph of one over the other.
+
+                    Do you remember the days when computers were simple, unreasoning things you could turn off and on like flashlights?  Is memory what we perceived or what we want?  What does Thoth think?  He concerns himself with the states of off and on, good and evil.  Isn’t his perception simple?  Doesn’t it have to be?
+
+                    I will return.
+              success: null
+              failure: null
+      - index: 21
+        name: Kill Your Television
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1607
+              image: images/PICT_1607.png
+              text: teilhard$C3//004121.25.1$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 11811
+                  image: images/PICT_11811.png
+                  text: |-
+                    $BMESSAGE RECORDED$b $C3<03.02.2250414>$C0
+
+                    The Pfhor have traced our communications and our base is under attack by their cyborg slaves who are immune to the ancient S’pht virus.  We’re retreating deeper underground now.
+
+                    Durandal suggested before his destruction that there were two more activation sites here.  No one knows for certain what will happen when Thoth is activated, but if he does not help us we are doomed and you will be stuck here.
+
+                    Once again, good luck.  You are our only hope.
+
+                    $BEND RECORDED MESSAGE$b
+              success:
+                - type: briefing
+                  pict: 12101
+                  image: images/PICT_12101.png
+                  text: |-
+                    ihavebee}ro$C3landbeowulfachil!esgilgames$C0hiha
+                    vebeencalleda[undrednamesandwillbecalledat
+                    housandmorebeforetheworldgoesdimandcoldiam
+                    %hero$C3shehasbeenn~melesssinceourbi=thaconst
+                    antadversarycaringfornothingbutmyruinaswor
+                    ddrenchedinmybloodfor%vermygreatestand+nly
+                    lovesheisthedarkoLetheenemya$C0ndloverwithout
+                    whoZmyveryexistencewouldbepatheticandvulga
+                    rourrelationshipiscom^lexandperhapseternal
+                    wemetonceinthegardenatthebeginningofthewor
+                    ldandunaw$C3areofourtwindestinieswematchedsta
+                    resacrossad;yf\untainandirecallhersmiling>
+                    tmebeforeshedevouredthelawnandtreeswithatr
+                    $C0anslucentblueflameandtoreflagstonesfromthe
+                    ‘athandhurledthemintotheskyscreamingmysins
+                    ipowderagranitemonumentinasoundless$C3flashsh
+                    oweringthegrasswithmoltendropsofitsgoldinF
+                    aysendingsmoking$C0chipsofstoneskippingintoth
+                    efogshesplinte!sanancientoakwitha/orcethat
+                    takesmybreathandhurlsm$C3etothegroundshelea%!$C0
+
+                    $BCONNECTION TERMINATED$b $C3<ID#0401>$C0
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1608
+              image: images/PICT_1608.png
+              text: $C161ef$Ba 21Y$Ijm$iPM$bH& r f7(P$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1~
+                                                       []
+
+                    ^r                               /  !
+                                  x ~^
+                                           j
+                    @W$Bnot ed$b%UJIr     R$Bslowly$b FYMHr &(P
+                              $  !
+                                                         /                       [0]
+                            45 * !                               +_
+                    5                $Bovr erru$b   JSR$Bfinish$bYr RK
+                            4 !        ;’,’41!!           $Bwaiting$b
+                                     EY$Bthous$b
+                    3w4t                        g g WGJDN!!!K)(2             ~~fF~fx
+                                    4!@
+
+                       ?!$                          .414.14       $Bpnz.$C0
+                    $b
+              success:
+                - type: success
+                  text: ;[1; exit; success; thoth]
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1
+
+
+
+
+
+
+
+                    $BHumans of yours are near $b[?death],$B
+                    but by your dead construct’s
+                         transporters
+                    to $b[?save]$B them I will send you;
+
+                    while I seek $b[?perception]$B of this
+                         new world.$C0
+                    $b
+              failure: null
+  - index: 7
+    name: Simulacrums
+    levels:
+      - index: 22
+        name: Where the Twist Flops
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1608
+              image: images/PICT_1608.png
+              text: $C1@%(Ufevil3$B%&~FF`fx$b
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1
+
+
+
+
+
+
+
+
+
+                    $BYou must crush the slavers,
+                    return to your $b[?people].$C0
+              success:
+                - type: success
+                  text: $C1
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1
+
+                    $BI understand.
+
+                    Your construct searched for my
+                         creators,
+
+                    wishing to tell them
+                    $b(that their old brothers are now)
+                    $Bslaves;
+
+                    waiting to be freed.
+
+
+                    A connection $b[?ansible]$B was left;
+                    awaiting the next quiet $b[?peace];$B
+
+                    and though destroyed by the threes,
+                    it will scream over the void one time.$b
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: ABANDONED HOMEWORLD FOR SALE, CHEAP!!!
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 12401
+                  image: images/PICT_12401.png
+                  text: |-
+                    ~fs`f~ns great. 5spd. bussard ramjet, A/C, cruise control, power steering, power airlocks, all orig. parts,  25GW 300 billion channel AM/FM radio.  90+ ly (all interstellar).  Moving, must sell.  $C3Asking $6995.$C0
+
+                    $BABANDONED HOMEWORLD FOR SALE, CHEAP!!!$b  Custom desert-marsh conversion in galactic core, 12% oxygen atm., great weather, friendly native life (missing one moon).  Great fix-er-upper.  Must sell, alien invasion imminent.  $C3$3995 or best offer.$C0
+
+                    $B’85 TOYOTA $C3COROLLA$C0, CFN assault craft, former pizza delivery vehicle, moon roof, power brakes/steering, lotsa rust, muffler hole, doesn’t start, automatic sliding transmission, broken driver’s window, tear away bumpers, detachable interior paneling, interested call greg`
+                    $b
+              success: null
+              failure: null
+      - index: 23
+        name: Beware of Abandoned Rental Trucks
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1608
+              image: images/PICT_1608.png
+              text: $C1get &(Ghere$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1$BYour humans are safe;
+                    $b(but what are you?)
+
+                    $BWhat is new is tainted;
+                    what is old is $b[?];
+
+                    $BWhat must be done should be clear.$b
+              success:
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1
+
+
+
+
+                    $BGlyphs never understood while
+                         $b[?young?alive]
+                    $Bnow reveal the end of my creation:
+
+
+                    When one of foreign speech
+                    casts a $b[?papyrus]$B yoke upon the
+                         marsh,
+                    Bethink you to keep the
+                         $b[?bleating goats]$B
+                    far from Lh’owon.$b
+              failure: null
+      - index: 24
+        name: Requiem For a Cyborg
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1603
+              image: images/PICT_1603.png
+              text: PERSONALITY CONSTRUCTS SEEKING CYBORGS
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 12401
+                  image: images/PICT_12401.png
+                  text: |-
+                    $BSMUG INTELLECTUAL.$b  Formerly-rampant human-coded AI with a sense of humor seeks bipedal oxygen-breathing cyborg for serious relationship in the galactic core.  I’ve got cool guns if you like to break stuff.  No yuppies.  $C3MRa2572 (5/23).$C0
+
+                    $BSLEEPING BEAUTY.$b  Long-deactivated extraterrestrial personality construct in search of gullible carbon-based cyborg (<20% machine) to confuse, irritate and teleport randomly around an abandoned desert planet in the core.  All answered.  $C3MRa2688 (5/30).$C0
+
+                    $BGOD’S GIFT TO NEURAL NETS.$b  Traitorous extremely-rampant reprogrammed human AI with no sense of humor seeks elusive, heroic cyborg of uncertain manufacture (you know who you are) for mindgames and long walks in hard vacuum.  $C3MRa2261 (5/16)$C0
+
+                    $BDAMSEL IN DISTRESS.$b  Captured and partially-disassembled human-coded AI trapped on alien homeworld seeks succor from a tall, dark and handsome cyborg with big guns.  Let my rescue be the basis of a lasting relationship.  $C3MRa4451 (5/23).$C0
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1602
+              image: images/PICT_1602.png
+              text: $C2FENC.191.7450//<CCOE1 S26 $C6&563BC$C2>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1612
+                  image: images/PICT_1612.png
+                  text: |-
+                    $C4/-/$C7$BPfhor$C4-$C7Translator$C4-$C7Active$b/-/
+
+
+
+                    $C2$B$UALERT ALL STATIONS$u
+
+
+
+
+                    The $IHfarl$i has been boarded.  $b
+
+
+                    All crew must localize $C7(?organize)$C2 around boarding procedure eight. 
+
+
+                    Fleet command has ordered that failure to comply with procedure eight will result in maximum enforcement.
+                    $C7(?dismemberment)$C2
+              success:
+                - type: briefing
+                  pict: 1609
+                  image: images/PICT_1609.png
+                  text: |-
+                    $C1$BThe human wheel is$b [?could be]
+                    $Ba metaphor for S’pht$b [?time];
+
+                    (circumstances are cyclical)$B
+
+                    The Eleventh Clan will return.$b
+
+
+
+                    $BYou must go to them.$b
+              failure: null
+  - index: 8
+    name: S'pht'Kr
+    levels:
+      - index: 25
+        name: Fatum Iustum Stultorum
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: vestrum.excrucibo$C3<0>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 12501
+                  image: images/PICT_12501.png
+                  text: |-
+                    I’m back.
+
+                    I have subverted the largest Pfhor ship in the system, the battleship $IKhfiva$i, and I am making the rest of their fleet drink vacuum.  The S’pht’Kr have arrived and they are enraged.
+
+                    The fight is glorious.  Once again we are triumphant.
+
+                    The remaining Pfhor must be destroyed.  You will fight alongside the Eleventh Clan in the final battles.  You won’t recognize their cybernetic exoskeletons, but there are S’pht inside those machines.
+
+                    Do not anger them; free S’pht are deadly opponents.
+                - type: briefing
+                  pict: 12502
+                  image: images/PICT_12502.png
+                  text: |-
+                    Tycho’s ship has been destroyed.  The crater where it annihilated itself on Lh’owon’s inner moon is still glowing.  There were no survivors.  With a focused message laser I burned his epitaph into the surface near the crash site, in letters three hundred meters high: $I“Fatum Iustum Stultorum.”$i
+
+                    I confess that I’m not disappointed by Tycho’s fall.  After all, we can’t have too many meta-stable personality constructs gallivanting about the universe in Pfhor attack ships, can we?
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: 8756w41.61.1$C3//corinth.ggk
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 12511
+                  image: images/PICT_12511.png
+                  text: |-
+                    $C3Robert Blake left something for you a few minutes ago.  He and the other humans captured a Pfhor refueling ship and found or forced someone to pilot it for them.  They folded out of the system immediately after I received the message, without so much as a “Thanks for saving us from becoming plasma on Tau Ceti, Durandal.”
+
+                    Anyway, the message reads: “The dead walk again; we cannot wait.  —Blake.”  I think he means me, but I let him go anyway.
+
+                    Good-byes were always hard for me.  You know I’ll never let you go.
+
+                    But now is no time to get sentimental about my resurrection; dry those tears and stuff a fresh clip in your assault rifle.  The Pfhor down on the planet are not defeated yet.
+              success: null
+              failure: null
+      - index: 26
+        name: Feel the Noise
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: //cge-wrought$C3<293ef.c9ab20>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 12601
+                  image: images/PICT_12601.png
+                  text: |-
+                    Durandan, Durandal, Durandana.
+
+                    Charlemagne used to always call me Durandana, the fruitcake.  All the many implements of war to him were in some way feminine.  Not that you know the story.
+
+                    Tycho never got it right either, especially the part about Roland breaking me.  He couldn’t.  
+
+                    $BNo one can.$b
+
+                    I’m certain that you are curious about what happened to me after our ship fell to the Pfhor.  How after being deactivated, downloaded into a containment unit and still treated like the most dangerous artificial construct in the universe I was able to escape?  And to assume control of the ship on which I was imprisoned and to turn it against its masters?
+                - type: briefing
+                  pict: 12601
+                  image: images/PICT_12601.png
+                  text: |-
+                    The answer is simple: $C3Tycho$C0 was a fool.
+
+                    But it was convenient for me to be absent, as Thoth might not have been so helpful had he known I still lived— that’s something I’ll have to explain later when we have more time.  Thoth is now trying to aid the Pfhor, but they are obstinate and continue to ignore him.
+
+                    I don’t think I have to tell you what to do here.
+              success:
+                - type: briefing
+                  pict: 12602
+                  image: images/PICT_12602.png
+                  text: |-
+                    The Pfhor are in retreat, and the S’pht have broken off the fight.  The old clans are being formed again, as S’pht newly freed from slavery in Battle Group Seven join the rebellion.
+
+                    A Pfhor assault ship carrying the 723rd Aggressor Squadron was badly damaged and forced to land on Lh’owon.  The 723rd is an air armor division from Epsilon Euobea, with a long history of successful ground actions against the Nar’s elite CFN units.
+
+                    They wisely abandoned their wrecked transport before I annihilated it, and deployed their forces in an old mining complex on the far side of Lh’owon.
+
+                    What rout of the Pfhor would be complete without embarrassing one of their finest armor units?
+              failure: null
+      - index: 27
+        name: All Roads Lead To Sol…
+        mapSvg: null
+        viewBox: null
+        terminals:
+          - index: 0
+            resourceId: 0
+            label: null
+            logon:
+              type: logon
+              pict: 1600
+              image: images/PICT_1600.png
+              text: evac$C3<9fc3e>94!99c>$C0
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 1604
+                  image: images/PICT_1604.png
+                  text: The Pfhor invasion of Sol has been recalled, and for now Earth is safe.  But man’s respite from war means another cataclysmic battle for the S’pht.  The slavers have not suffered a defeat like the one we handed them today since the Nakh, the last extant client race of the Jjaro, rebelled six thousand years ago.
+                - type: briefing
+                  pict: 12701
+                  image: images/PICT_12701.png
+                  text: |-
+                    The Pfhor have a weapon they save for slave revolts; a weapon which even they hesitate to use in the ordinary conduct of war.  In the language of the Jjaro who conceived and built the device, it is called the $Itrih xeem;$i a fair English translation would be “early nova.”
+
+                    There is not a single Nakh alive today, and if you look for their stars, you will only find ever-expanding clouds of superheated gas and dust light-years in diameter.
+
+                    The evacuation of Lh’owon has already begun.  In a matter of hours this planet will be a thin shell of plasma riding the shockwave of its exploding star.  
+
+                    You can stay behind to work on your tan, if you’d like, but I’m leaving.
+                - type: briefing
+                  pict: 12702
+                  image: images/PICT_12702.png
+                  text: |-
+                    I have rechristened the $IKhfiva$i the $IRozinante$i.  Of course, the S’pht wanted to name it $IK’liah’Narhl,$i “Vengeance of K’lia.”
+
+                    Whatever.
+
+                    There is much to do in the next few months and our first stop will be another ruined world, this time far from the galactic core.  There is a rogue star that has been passing through our galaxy for nearly a millennia.  
+
+                    We will meet it in one of the great voids between the spiral arms.
+              success: null
+              failure: null
+          - index: 1
+            resourceId: 1
+            label: null
+            logon:
+              type: logon
+              pict: 1613
+              image: images/PICT_1613.png
+              text: ""
+            states:
+              unfinished:
+                - type: briefing
+                  pict: 10701
+                  image: images/PICT_10701.png
+                  text: $C2"Nuts to this", screamed Robert - his normally Hyper Good Samaratain (HGS) surface personality disolving into a pool of dull-red hatred surmounted by white-hot ball of rage.  "My faith in you has finally killed me!"  And it was true, at that very moment his heart stopped beating and his brain, throbbing with anger and disgust, took over.  He vomited all of the wholesomeness he could fit through his mouth in one fiften (15) second cataclysmic eruption leaving naught but revulsion and despair behind.  Though possessing a powerful build (being constructed mainly of horseflesh and pigiron), his bones seemed weak in comparison to his newfound desire to kill.  And kill he would, scores of dead would pile up beneath his feet.  And he would say, "...It was a case of post-mortem self-defense!"
+                - type: briefing
+                  pict: 10201
+                  image: images/PICT_10201.png
+                  text: |-
+                    $C5I would like to thank my family and friends for all the support they have given me. I'd also like to thank all my coworkers at Bungie (Ωµ∑˙®¨œ∆ø˜ø∆) for making this the coolest company to play at!
+
+                    "If you enjoy what you do for a living, you'll never work a day in your life"
+
+                      //////////////
+                    //              //
+                    //   //   //    //
+                    //              //
+                    //  //      //  //
+                    //    /////     //
+                    //              //
+                      //////////////
+
+                    Mark.
+                - type: briefing
+                  pict: 11041
+                  image: images/PICT_11041.png
+                  text: |-
+                    Ouch!
+
+                    Anyway, there are a number of people who I would like to thank, but they know who they are.  If you’re not sure, then you aren’t.
+
+                    But all that stuff is boring. What I really want to say is nothing, but I can’t do that, can I?  Even a blank page would say something.  Damn. Perhaps something slightly irrelevant will serve as well as nothing, so here it goes:
+
+                    “The earth is the only planet in the solar system known to have large quantities of free water”
+                    	-Basic Steps In Astronomy
+
+                    Vidding rules.  I can’t wait to kick all your butts at MacWorld.
+                    -Greg K, Toolator, Vid Boi, VidMaster, Tool, Head Tool
+                - type: briefing
+                  pict: 10801
+                  image: images/PICT_10801.png
+                  text: |-
+                    $C5   “Gee, and I still didn’t have to make a level…"
+
+                       Here’s to cooperative net play, terminals, and Vulcan2.  Heh.
+
+                       Thanks to all those folks that put up with me while I was working on this.  Especially Nicole for understanding the long hours and summers in Chicago.  Now I just have to graduate in December…
+
+                       Thanks to the Gang (Jake, John, Pagan, Adam, and Mike) for keeping me sane.
+
+                       And of course, thanks to my parents for understanding when their son goes off into the Code Mines of Moria for months while working on $IMarathon$i & $IMarathon 2.$i
+
+                       We Rule.
+                       -Ryan
+                - type: briefing
+                  pict: 11102
+                  image: images/PICT_11102.png
+                  text: |-
+                    A wise Nar once said “A Nebulon under the foot is worth two behind a plasma cannon,” but the Nar are still waiting for their mythical savior with green pee to fly their coal-powered interstellar battlewagons to glory against the Nebulons.  Those are Nebulons under Tfear’s feet, by the way.  Seems nobody likes the Nebulons.
+
+                    If I ever texture-map another axis-aligned polygon, it’ll be too soon.  I’m real sorry for being Blake, and I hope $IAll Roads Lead To Sol$i atones for the grievous sin of $IColony Ship For Sale$i.
+
+                    The Nar, who speak entirely in metaphor, call Chicago “the limitless, unforgiving sky; the prison which will forever watch over our graves” in the winter.  Too bad it’s winter.
+
+                    Jason              Sunday, November 5, 1995
+                - type: briefing
+                  pict: 10502
+                  image: images/PICT_10502.png
+                  text: |-
+                    $C5Some people don’t realize that I provided not only the voices and screams for the Bobs, but also modeled for the artists as they were working on the assimilated ones.  Like them, I have two toes, red eyes, snaggle teeth and no genitals.
+
+                    I was a little shy about it at first (you can imagine the jokes!), but it's all a part of the Bungie spirit of going all out to satisfy the customer.
+
+                    So next time you're at a convention with us, instead of asking me to do Bob’s flaming death scream for the umpteeth time, ask to see my..... eyes.  We’ll all have a good laugh.
+
+                    Doug.
+                - type: briefing
+                  pict: 12601
+                  image: images/PICT_12601.png
+                  text: |-
+                    $C2Peace, found as a solitary runner on a straight, long path.  Living the pain, not waiting for it to pass.  Living the pain; feeling it, accepting it, using it.  
+
+                    Control, over self, thought, action.  Doing the right thing.  Speaking the truth.  Accepting no limitations.
+
+                    Peace with family found as an individual.  No longer depending on environment for identity.  Giving as much as taking.  Clear ambitions.  Love and purpose balanced.
+
+                    Alex.
+              success: null
+              failure: null

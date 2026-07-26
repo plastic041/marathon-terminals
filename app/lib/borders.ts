@@ -1,7 +1,7 @@
 export const BORDERS = {
   en: {
     logon: {
-      tl: "Opening Connection to b.4.5-23",
+      tl: "Opening Connection to ß.4.5-23",
       tr: "%H%M %m.%d.%Y",
       bl: "CAS.qterm//CyberAcme Systems Inc.",
       br: "<931.461.60231.14.vt920>",
@@ -27,7 +27,7 @@ export const BORDERS = {
   },
   ko: {
     logon: {
-      tl: "b.4.5-23에 연결 중",
+      tl: "ß.4.5-23에 연결 중",
       tr: "%H%M %m.%d.%Y",
       bl: "CAS.qterm//CyberAcme Systems Inc.",
       br: "<931.461.60231.14.vt920>",
