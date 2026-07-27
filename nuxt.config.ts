@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
 
-  modules: ["shadcn-nuxt"],
+  modules: ["shadcn-nuxt", "@nuxt/test-utils/module"],
 
   shadcn: {
     /**

@@ -7,7 +7,9 @@
     "dev": "nuxt dev --port 2337",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@js-temporal/polyfill": "^0.5.1",
@@ -26,10 +28,14 @@
     "vue-router": "^5.1.0"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^4.0.3",
     "@rollup/plugin-yaml": "^5.0.0",
     "@tailwindcss/vite": "^4.3.2",
+    "@vue/test-utils": "^2.4.11",
+    "happy-dom": "^20.11.1",
     "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
+    "vitest": "^4.1.10",
     "vue-tsc": "^3.3.5"
   }
 }

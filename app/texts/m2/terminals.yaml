@@ -1854,14 +1854,14 @@ chapters:
                     From now on, things are going to go very badly for you.  You’ve cost them too much.
               success: null
               failure: null
-  - index: 5
-    name: Captured
-    levels:
-      - index: 17
-        name: The Big House
-        mapSvg: null
-        viewBox: null
-        terminals: []
+  # - index: 5
+  #   name: Captured
+  #   levels:
+  #     - index: 17
+  #       name: The Big House
+  #       mapSvg: null
+  #       viewBox: null
+  #       terminals: []
   - index: 6
     name: Blake
     levels:
