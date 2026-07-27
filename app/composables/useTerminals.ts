@@ -1,46 +1,12 @@
 import type { RouteLocationRaw } from "vue-router";
-import type { Chapter, Level } from "~/types/terminal";
 
-export type TerminalState =
-  | "logon"
-  | "unfinished"
-  | "success"
-  | "failure"
-  | "logoff";
+export function useTerminals() {
+  const { gameId, chapters } = useGame();
 
-type TerminalRouteInfo = {
-  levelIndex?: number;
-  terminalIndex?: number;
-  state?: TerminalState;
-  screenIndex?: number;
-};
-
-/** Routes to a chapter page instead of a terminal. */
-type ChapterRouteInfo = {
-  chapterIndex: number;
-};
-
-/** Routes to End */
-type EndRouteInfo = {
-  end: true;
-};
-
-type RouteInfo = TerminalRouteInfo | ChapterRouteInfo | EndRouteInfo;
-
-export function isChapterRouteInfo(info: RouteInfo): info is ChapterRouteInfo {
-  return "chapterIndex" in info;
-}
-
-export function isEndRouteInfo(info: RouteInfo): info is EndRouteInfo {
-  return "end" in info;
-}
-
-export function useTerminals(chapters: Chapter[]) {
-  const levels = computed(() => chapters.flatMap((c) => c.levels));
+  const levels = computed(() => chapters.value.flatMap((c) => c.levels));
 
   const route = useRoute();
 
-  const lang = computed(() => route.params.lang ?? "en");
   const levelIndex = computed(() => Number(route.params.levelIndex));
   const terminalIndex = computed(() => Number(route.params.terminalIndex));
   const state = computed<TerminalState>(
@@ -72,18 +38,18 @@ export function useTerminals(chapters: Chapter[]) {
   function makeRoute(info: RouteInfo): RouteLocationRaw {
     if (isChapterRouteInfo(info)) {
       return {
-        path: `/m1/${lang.value}/${info.chapterIndex}`,
+        path: `/${gameId.value}/${info.chapterIndex}`,
       };
     }
 
     if (isEndRouteInfo(info)) {
       return {
-        path: `/m1/${lang.value}/end`,
+        path: `/${gameId.value}/end`,
       };
     }
 
     return {
-      path: `/m1/${lang.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
+      path: `/${gameId.value}/${info.levelIndex ?? levelIndex.value}/${info.terminalIndex ?? terminalIndex.value}`,
       query: {
         state: info.state ?? state.value,
         screenindex: info.screenIndex ?? screenIndex.value,
@@ -92,7 +58,7 @@ export function useTerminals(chapters: Chapter[]) {
   }
 
   const prevTerminalRouteInfo = computed<RouteInfo | null>(() => {
-    const chapter = chapters.find((c) =>
+    const chapter = chapters.value.find((c) =>
       c.levels.some((l) => l.index === levelIndex.value),
     )!;
     const isFirstLevelOfChapter = levelIndex.value === chapter.levels[0]!.index;
@@ -131,22 +97,26 @@ export function useTerminals(chapters: Chapter[]) {
   });
 
   const nextTerminalRouteInfo = computed<RouteInfo | null>(() => {
-    if (terminalIndex.value === 9 && levelIndex.value === 26) {
+    const lastLevel = chapters.value.at(-1)!.levels.at(-1)!;
+    const isLastTerminalOfGame =
+      levelIndex.value === lastLevel.index &&
+      terminalIndex.value === lastLevel.terminals.at(-1)!.index;
+    if (isLastTerminalOfGame) {
       return {
         end: true,
       };
     }
 
-    const chapterArrIndex = chapters.findIndex((c) =>
+    const chapterArrIndex = chapters.value.findIndex((c) =>
       c.levels.some((l) => l.index === levelIndex.value),
     );
-    const chapter = chapters[chapterArrIndex]!;
+    const chapter = chapters.value[chapterArrIndex]!;
     const isLastLevelOfChapter =
       levelIndex.value === chapter.levels.at(-1)!.index;
     const isLastTerminalOfLevel =
       terminalIndex.value === level.value.terminals.at(-1)!.index;
     if (isLastLevelOfChapter && isLastTerminalOfLevel) {
-      const nextChapter = chapters[chapterArrIndex + 1];
+      const nextChapter = chapters.value[chapterArrIndex + 1];
       if (nextChapter) {
         return { chapterIndex: nextChapter.index };
       }
@@ -206,14 +176,6 @@ export function useTerminals(chapters: Chapter[]) {
   });
 
   const nextScreenLink = computed<RouteLocationRaw | null>(() => {
-    if (
-      levelIndex.value === 20 &&
-      terminalIndex.value === 2 &&
-      state.value === "logoff"
-    ) {
-      return null;
-    }
-
     if (state.value === "logoff") {
       return null;
     }
@@ -229,6 +191,9 @@ export function useTerminals(chapters: Chapter[]) {
       case "unfinished": {
         if (screenIndex.value < terminal.value.states.unfinished.length - 1) {
           return makeRoute({ screenIndex: screenIndex.value + 1 });
+        }
+        if ((terminal.value.states.success?.length ?? 0) > 0) {
+          return makeRoute({ state: "success", screenIndex: 0 });
         }
         return makeRoute({ state: "logoff", screenIndex: 0 });
       }

@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import type { Chapter } from "~/types/terminal";
-import data from "~/texts/m1/terminals.yaml";
 import { ArrowRightIcon } from "@radix-icons/vue";
 
 const route = useRoute();
-const chapterIndex = computed(() => Number(route.params.chapterIndex));
+const { gameId, game, chapters } = useGame();
 
-const chapters = computed(() => data.chapters as Chapter[]);
+const chapterIndex = computed(() => Number(route.params.chapterIndex));
 
 const chapter = computed(
   () => chapters.value.find((c) => c.index === chapterIndex.value)!,
 );
 
+const image = computed(() => game.value.chapterImage(chapterIndex.value));
+
 const firstTerminalLink = computed(() => {
   const firstLevel = chapter.value.levels[0]!;
   const firstTerminal = firstLevel.terminals[0]!;
   return {
-    path: `/m1/${firstLevel.index}/${firstTerminal.index}`,
+    path: `/${gameId.value}/${firstLevel.index}/${firstTerminal.index}`,
   };
 });
 </script>
@@ -24,10 +24,7 @@ const firstTerminalLink = computed(() => {
 <template>
   <div class="h-100dvh flex flex-col gap-8">
     <Header />
-    <img
-      :src="`/chapters/${chapterIndex}.gif`"
-      class="max-w-4xl mx-auto w-full"
-    />
+    <img v-if="image" :src="image" class="max-w-4xl mx-auto w-full" />
     <UiButton as-child class="w-fit mx-auto">
       <NuxtLink :to="firstTerminalLink">
         <ArrowRightIcon />

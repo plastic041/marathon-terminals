@@ -12,13 +12,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [yaml(), svgLoader(), tailwindcss()],
     optimizeDeps: {
-      include: [
-        "@chenglou/pretext",
-        "@chenglou/pretext",
-        "@radix-icons/vue",
-        "@vueuse/core",
-        "reka-ui",
-      ],
+      include: ["@radix-icons/vue", "@vueuse/core", "reka-ui"],
     },
   },
 

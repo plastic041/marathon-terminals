@@ -2,10 +2,8 @@
 import { ArrowRightIcon } from "@radix-icons/vue";
 import { decorate } from "~/lib/decoration";
 import { BASE_URL } from "~/lib/url";
-import { texts } from "~/texts/m2/texts";
 
-const route = useRoute();
-const lang = computed(() => route.params.lang as "en" | "ko");
+const { gameId, texts } = useGame();
 
 const ogTitle = `Marathon`;
 const ogDescription = `그들이 하늘에서, 기다린다.`;
@@ -42,9 +40,9 @@ useHead({
       <UiButton as-child>
         <NuxtLink
           :to="{
-            name: 'm1-lang-chapterIndex',
+            name: 'game-chapterIndex',
             params: {
-              lang,
+              game: gameId,
               chapterIndex: 0,
             },
           }"

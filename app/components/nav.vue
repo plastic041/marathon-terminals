@@ -1,20 +1,12 @@
 <script setup lang="ts">
-import type { TerminalsFile } from "~/types/terminal";
 import type { ComponentPublicInstance } from "vue";
-import dEN from "~/texts/m1/terminals-en.yaml";
-import dKR from "~/texts/m1/terminals-kr.yaml";
 import { PopoverClose } from "reka-ui";
 import ScrollArea from "~/components/ui/scroll-area/scroll-area.vue";
-import { TEXTS } from "~/texts/m1/texts";
 
 const route = useRoute();
 const selectedEl = ref<HTMLElement | null>(null);
 
-const lang = computed(() => route.params.lang as "en" | "ko");
-
-const d = computed(() => (lang.value === "ko" ? dKR : dEN));
-
-const chapters = (d.value as TerminalsFile).chapters;
+const { gameId, chapters, texts } = useGame();
 
 function setSelectedRef(
   el: Element | ComponentPublicInstance | null,
@@ -43,22 +35,22 @@ onMounted(() => {
         <li>
           <NuxtLink
             :to="{
-              name: 'm1-lang',
+              name: 'game',
               params: {
-                lang,
+                game: gameId,
               },
             }"
           >
-            {{ TEXTS[lang].introLabel }}
+            {{ texts.introLabel }}
           </NuxtLink>
         </li>
         <li v-for="chapter in chapters" class="flex flex-col gap-[0.5lh]">
           <h2 class="font-bold">
             <NuxtLink
               :to="{
-                name: 'm1-lang-chapterIndex',
+                name: 'game-chapterIndex',
                 params: {
-                  lang,
+                  game: gameId,
                   chapterIndex: chapter.index,
                 },
               }"
@@ -88,9 +80,9 @@ onMounted(() => {
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
-                            name: 'm1-lang-levelIndex-terminalIndex',
+                            name: 'game-levelIndex-terminalIndex',
                             params: {
-                              lang,
+                              game: gameId,
                               levelIndex: level.index,
                               terminalIndex: term.index,
                             },
@@ -106,9 +98,9 @@ onMounted(() => {
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
-                            name: 'm1-lang-levelIndex-terminalIndex',
+                            name: 'game-levelIndex-terminalIndex',
                             params: {
-                              lang,
+                              game: gameId,
                               levelIndex: level.index,
                               terminalIndex: term.index,
                             },
@@ -124,9 +116,9 @@ onMounted(() => {
                       <PopoverClose as-child>
                         <NuxtLink
                           :to="{
-                            name: 'm1-lang-levelIndex-terminalIndex',
+                            name: 'game-levelIndex-terminalIndex',
                             params: {
-                              lang,
+                              game: gameId,
                               levelIndex: level.index,
                               terminalIndex: term.index,
                             },
@@ -147,13 +139,13 @@ onMounted(() => {
         <li>
           <NuxtLink
             :to="{
-              name: 'm1-lang-end',
+              name: 'game-end',
               params: {
-                lang,
+                game: gameId,
               },
             }"
           >
-            {{ TEXTS[lang].finalScreenLabel }}
+            {{ texts.finalScreenLabel }}
           </NuxtLink>
         </li>
       </ul>

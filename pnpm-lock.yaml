@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@chenglou/pretext':
-        specifier: ^0.0.8
-        version: 0.0.8
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -224,9 +221,6 @@ packages:
         optional: true
       commander:
         optional: true
-
-  '@chenglou/pretext@0.0.8':
-    resolution: {integrity: sha512-yqm2GMxnPI7VHcHwe84P8ZF0JK/2d2DMKPqMN+s95jQhwDMYYXKVFVJUMEaVWckQStdsjdLav/0Vu+d9YbtGxA==}
 
   '@clack/core@1.4.2':
     resolution: {integrity: sha512-0Ty/1Gfm+Kb07sXcuESjyKfwEhSy4Ns1AgeEisHb/bDY5fWme0tTeTkU14T1Gmcs17YIjB/teiDe4uaCghbYqQ==}
@@ -4048,8 +4042,6 @@ snapshots:
     optionalDependencies:
       cac: 6.7.14
       citty: 0.2.2
-
-  '@chenglou/pretext@0.0.8': {}
 
   '@clack/core@1.4.2':
     dependencies:

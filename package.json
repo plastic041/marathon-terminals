@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 2337",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@chenglou/pretext": "^0.0.8",
     "@js-temporal/polyfill": "^0.5.1",
     "@lucide/vue": "^1.22.0",
     "@radix-icons/vue": "^1.0.0",

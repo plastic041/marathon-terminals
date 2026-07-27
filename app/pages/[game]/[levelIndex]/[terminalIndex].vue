@@ -1,25 +1,15 @@
 <script setup lang="ts">
-import type { Chapter, CheckpointGroup } from "~/types/terminal";
-import dataEN from "~/texts/m1/terminals-en.yaml";
-import dataKR from "~/texts/m1/terminals-kr.yaml";
+import type { CheckpointGroup } from "~/types/terminal";
 import { ArrowLeftIcon, ArrowRightIcon, EnterIcon } from "@radix-icons/vue";
 import { BASE_URL } from "~/lib/url";
 import { escapeHtml } from "~/lib/decoration";
-import { useTerminals } from "~/composables/useTerminals";
-
-const route = useRoute();
-const lang = computed(() => route.params.lang);
-
-const chapters = (lang.value === "en" ? dataEN : dataKR).chapters as Chapter[];
 
 const {
   screenIndex,
 
   state,
   level,
-  levelIndex,
   terminal,
-  terminalIndex,
 
   groupType,
 
@@ -30,7 +20,7 @@ const {
   nextTerminalLink,
 
   nextScreenLink,
-} = useTerminals(chapters);
+} = useTerminals();
 
 const ogTitle = computed(() => terminal.value.logon.text);
 const ogDescription = computed(() => escapeHtml(terminal.value.logon.text));
@@ -63,9 +53,6 @@ useHead({
           >
             #{{ terminal.index }} - {{ terminal.logon.text }}
           </span>
-          <template v-if="state === 'success' || state === 'failure'">
-            [{{ state }}]
-          </template>
         </h1>
         <div>
           <TerminalsLog
